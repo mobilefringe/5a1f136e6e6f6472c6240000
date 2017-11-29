@@ -108,7 +108,7 @@ body{
         &:after{
             -webkit-transform: scale3d(0.7, 0.7, 1);
             transform: scale3d(0.7, 0.7, 1);
-            background-color:#000;
+            background-color: $theme_color; //#000;
         }
     }
 }
