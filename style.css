@@ -21,9 +21,9 @@ hr{
   src: url('//codecloud.cdn.speedyrails.net/sites/581107b46e6f642cc0000000//1491597046000/beloved.woff')
 }
 
-$theme_color:#000;//#FF001A;
-$secondary_color: #fff;// #DCBB8D;
-$description_color: #4d4d4d ; //#999;//#ABABAB;
+$theme_color:##7e0100;// #000;
+$secondary_color: #fff;
+$description_color: #4d4d4d ; 
 
 .feature_item figure figcaption .view_button{
    background: #b9dcd2;
