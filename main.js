@@ -48,7 +48,63 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
     data: function () {
       return {
         dataLoaded: false,
-        show_mobile_menu : false
+        show_mobile_menu : false,
+        menu_items: [
+            {
+                name: "Home",
+                id: "home_link",
+                href: "/",
+                parent_id: "home",
+                parent_class_list: "menu_item",
+                hover_id: "home_underline",
+                hover_class_list:"menu_underline"
+            },
+            {
+                name: "Store Directory",
+                id: "stores_link",
+                href: "/stores",
+                parent_id: "stores",
+                parent_class_list: "menu_item",
+                hover_id: "stores_underline",
+                hover_class_list:"menu_underline"
+            },
+            {
+                name: "Sales & Promos",
+                id: "sales_link",
+                href: "/promotions",
+                parent_id: "sales",
+                parent_class_list: "menu_item",
+                hover_id: "sales_underline",
+                hover_class_list:"menu_underline"
+            },
+            {
+                name: "Events",
+                id: "events_link",
+                href: "/",
+                parent_id: "events",
+                parent_class_list: "menu_item",
+                hover_id: "events_underline",
+                hover_class_list:"menu_underline"
+            },
+            {
+                name: "Careers",
+                id: "jobs_link",
+                href: "/",
+                parent_id: "jobs",
+                parent_class_list: "menu_item",
+                hover_id: "jobs_underline",
+                hover_class_list:"menu_underline"
+            },
+            {
+                name: "Store Hours",
+                id: "hours_link",
+                href: "/",
+                parent_id: "hours",
+                parent_class_list: "menu_item",
+                hover_id: "hours_underline",
+                hover_class_list:"menu_underline"
+            }
+        ]
       }
     },
     created() {
