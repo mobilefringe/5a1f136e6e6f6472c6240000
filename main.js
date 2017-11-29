@@ -18,8 +18,7 @@ require.config({
     'Fuse': 'https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.0.4/fuse.min',
     'store': 'https://mmvue.codecloudapp.com/store',
     'vue-moment': 'https://mmvue.codecloudapp.com/vue-moment',
-    'today_hours': 'https://mmvue.codecloudapp.com/today_hours.vue?noext', //append a dummy query string so requireJS doesn't auto-append .js to the end of the url
-    'search-component': 'https://mmvue.codecloudapp.com/search-component.vue?noext'
+    'search-component': 'https://mmvue.codecloudapp.com/search-component.vue?noext'//append a dummy query string so requireJS doesn't auto-append .js to the end of the url
   }
 });
 
