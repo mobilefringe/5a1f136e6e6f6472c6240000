@@ -64,26 +64,22 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             {
                 name: "Sales & Promos",
                 id: "sales_link",
-                href: "/promotions",
-                parent_id: "sales"
+                href: "/promotions"
             },
             {
                 name: "Events",
                 id: "events_link",
                 href: "/",
-                parent_id: "events"
             },
             {
                 name: "Careers",
                 id: "jobs_link",
                 href: "/jobs",
-                parent_id: "jobs"
             },
             {
                 name: "Store Hours",
                 id: "hours_link",
                 href: "/hours",
-                parent_id: "hours"
             }
         ]
       }
