@@ -12,7 +12,7 @@
   </head>
   <body>
     <div id="app" v-cloak v-if="dataLoaded">
-      <div class="mobile_menu_container" @click="show_mobile_menu = !show_mobile_menu">
+      <div class="mobile_menu_container" v-show="show_mobile_menu">
         <div class="opened_mobile_menu">
             <h3>
                 MENU
