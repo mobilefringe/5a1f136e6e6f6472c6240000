@@ -3,9 +3,9 @@ This is a Saas file has an 'Asset Type' of SCSS. CSS will be compiled when savin
 For more information on asset types please see http://www.getcodecloud.com/docs#SaSS
 */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600);
-$theme_color:#000;//#FF001A;
-$secondary_color: #fff;// #DCBB8D;
-$description_color: #4d4d4d ;//#999;//#ABABAB;
+$theme_color: #7e0100 ;// #000;
+$secondary_color: #fff;
+$description_color: #4d4d4d;
 body{
     color:#000;//#424242;
     font-family:'Open Sans';
