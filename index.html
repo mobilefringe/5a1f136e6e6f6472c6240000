@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" data-vue-meta-server-rendered>
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div id="app" v-cloak v-if="dataLoaded">
+      <div class="mobile_menu_container">
+        <div class="opened_mobile_menu">
+            <h3>
+                MENU
+            </h3>
+            <ul>
+                <li>
+                    <a href="/stores" >
+                        DIRECTORY
+                    </a>
+                </li>
+                <li>
+                    <a href="/promotions"  >
+                        PROMOTIONS
+                    </a>
+                </li>
+                <li>
+                    <a href="/events"  >
+                        EVENTS
+                    </a>
+                </li>
+                <li>
+                    <a href="#"  class="submenu_expander">
+                        LEASING
+                        <img class="menu_icon plus_icon" src="//codecloud.cdn.speedyrails.net/sites/59d288ac6e6f6459f81d0000/image/png/1507650035000/plus_2x_icon42.png" style="display: inline;">
+						<img class="menu_icon minus_icon" src="//codecloud.cdn.speedyrails.net/sites/59d288ac6e6f6459f81d0000/image/png/1507650030000/minus_2x_icon42.png" style="display: none;">
+                    </a>
+                    <ul class="sub_menu hidden_now">
+                        <li><a href="/pages/hazeldean-leasing">Leasing</a></li>
+                        <li><a href="/photos">Photos</a></li>
+					</ul>
+                </li>
+                <li>
+                    <a href="#"  class="submenu_expander">
+                        CONTACT US
+                        <img class="menu_icon plus_icon" src="//codecloud.cdn.speedyrails.net/sites/59d288ac6e6f6459f81d0000/image/png/1507650035000/plus_2x_icon42.png" style="display: inline;">
+						<img class="menu_icon minus_icon" src="//codecloud.cdn.speedyrails.net/sites/59d288ac6e6f6459f81d0000/image/png/1507650030000/minus_2x_icon42.png" style="display: none;">
+                    </a>
+                    <ul class="sub_menu hidden_now">
+                        <li><a href="/contact">Contact Us</a></li>
+                        <li><a href="/find_us">Find Us</a></li>
+                        <li><a href="/jobs">Jobs</a></li>
+                        <li><a href="/hours">Shopping Hours</a></li>
+                        <li><a href="/community">Community</a></li>
+					</ul>
+                </li>
+            </ul>
+            <h4 id="close_menu">close</h4>
+            <hr class="strikethrough" />
+            <div class="social_icons_menu show_phone text-center">
+                <p>Follow us on</p>
+                <a href="https://www.facebook.com/HazeldeanMall" target="_blank">
+                    <img src="//codecloud.cdn.speedyrails.net/sites/59d288ac6e6f6459f81d0000/image/png/1455911898000/icon_facebook2.png" class="" alt="FB">
+                </a>
+            </div>
+        </div>
+    </div>
+    <section class="content_container  position_relative menu_header">
+        <div class="mobile_search visible_phone position_relative">
+            <input type="text" placeholder="Search" id="site_search_m" class="site_search" />
+            <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/jpeg/1456781961000/icon_close.jpg" class="close_search close_search_m" alt="search">  
+            <div class="search_results_container_m">
+                    <div class="site_search_results" id="search_results_stores_m"></div>
+                    <div class="site_search_results" id="search_results_events_m"></div>
+                    <div class="site_search_results" id="search_results_promotions_m"></div>
+                </div>
+            
+        </div>
+        
+        <div class="row header mobile_margin row header mobile_margin main_container menu_header_content">
+            <div class="col-sm-4 col-xs-2">
+                <p class="hidden_phone">Follow us on</p>
+                <div class="social_icons hidden_phone">
+                    <a class="social_fb" href="//www.facebook.com/HazeldeanMall" target="_blank"></a>
+                    <!--<a class="social_twitter" href="https://twitter.com/FairfaxCornerVA" target="_blank"></a>-->
+                    <!--<a class="social_insta" href="https://www.instagram.com/fairfaxcornerva/" target="_blank"></a>-->
+                    <!--<a class="social_newsletter" href="/newsletter" target="_blank"></a>-->
+                </div>
+                <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1455905827000/icon_menu.png" class="open_menu show_phone" alt="Menu"  id="open_menu">
+            </div>
+            <div class="col-sm-4 col-xs-8 text-center">
+                <a href="/">
+                    <!--<img src="//codecloud.cdn.speedyrails.net/sites/59e0c5676e6f642b330a0000/image/png/1509645151000/hazelogo-01-01.png" class="" alt="">-->
+                    <img src="//www.mallmaverick.com/system/site_images/photos/000/033/853/original/hazeldeansvglogo400-01.svg?1510007603" class="" alt="" style="width:316px;">
+                   
+                </a>
+            </div>
+            <div class="col-sm-4 col-xs-2 text-center position_relative">
+                <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1455901042000/icon_search.png" class="search_btn search_btn_desk hidden_phone" alt="search">
+                <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1455901042000/icon_search.png" class="search_btn search_btn_m show_phone" alt="search">
+                <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/jpeg/1456781961000/icon_close.jpg" class="close_search close_search_desk hidden_phone" alt="search">
+                <input type="text" placeholder="Search" id="site_search" class="site_search search_field hidden_phone" />
+                <div class="search_results_container">
+                    <div class="site_search_results" id="search_results_stores"></div>
+                    <div class="site_search_results" id="search_results_events"></div>
+                    <div class="site_search_results" id="search_results_promotions"></div>
+                </div>
+            </div>
+        </div>
+        
+       
+        <div class="menu_container hidden_phone main_container menu_header_content">
+            <ul class="stc_nav nav navbar-nav">
+            <li class=" nav_li"> <a href="/stores">Store Directory</a></li>
+            <li class="nav_li"> <a href="/events">Events</a></li>
+            <li class="nav_li"><a href="/promotions">Promotions</a></li>
+            <li class="dropdown nav_li"><a href="" data-toggle="dropdown" class="menu_link dropdown-toggle menu_dropdown_parent">Leasing</a>
+                <div class="dropdown-menu invisible_dropdown_div dd_programs dropdown-menu-hover">
+                    <ul class="dd_guest dropdown_list">
+                        <div class="triangle-up"></div>
+                        <div class="triangle-up-inside"></div>
+                        <li><a href="/pages/hazeldean-leasing">Leasing</a></li>
+                        <li><a href="/photos">Photos</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="dropdown nav_li"> <a href="" data-toggle="dropdown" class="menu_link dropdown-toggle menu_dropdown_parent">Contact Us</a>
+                <div class="dropdown-menu invisible_dropdown_div dd_about dropdown-menu-hover">
+                    <ul class="dd_guest dropdown_list">
+                        <div class="triangle-up"></div>
+                        <div class="triangle-up-inside"></div>
+                        <li><a href="/contact">Contact Us</a></li>
+                        <li><a href="/find_us">Find Us</a></li>
+                        <li><a href="/jobs">Jobs</a></li>
+                        <li><a href="/hours">Shopping Hours</a></li>
+                        <li><a href="/community">Community</a></li>
+                       
+                    </ul>
+                </div></li>
+            </ul>
+        </div>
+    </section>
+      <router-view></router-view>
+    </div>
+    <script data-main="/main" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.3/require.min.js"></script>
+  </body>
+</html>
