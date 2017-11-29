@@ -954,30 +954,6 @@ hr {
     background-color: rgba(160, 53, 73, 1);
 }
 
-// #black:checked ~ .section .teamy{
-//     --demoColorMask: rgba(0, 0, 0, .7);
-//     --demoColorContent: rgba(0, 0, 0, .85);
-//     --demoColorIcon: rgba(0, 0, 0, 1);
-// }
-
-// #blue:checked ~ .section .teamy{
-//     --demoColorMask: rgba(80, 126, 209, .7);
-//     --demoColorContent: rgba(80, 126, 209, .85);
-//     --demoColorIcon: rgba(80, 126, 209, 1);
-// }
-
-// #green:checked ~ .section .teamy{
-//     --demoColorMask: rgba(42, 155, 132, .7);
-//     --demoColorContent: rgba(42, 155, 132, .85);
-//     --demoColorIcon: rgba(42, 155, 132, 1);
-// }
-
-// #red:checked ~ .section .teamy{
-//     --demoColorMask: rgba(160, 53, 73, .7);
-//     --demoColorContent: rgba(160, 53, 73, .85);
-//     --demoColorIcon: rgba(160, 53, 73, 1);
-// }
-
 /* demo params */
 
 .teamy__preview:before{
