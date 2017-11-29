@@ -115,7 +115,36 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         set (value) {
           this.$store.commit('SET_LOCALE', { lang: value })
         }
-      }
+      },
+        getBanners () {
+            console.log(this.$store.state.results.banners);
+            return this.$store.state.results.banners;
+        },
+        getMainBanner () {
+            console.log( _.filter(this.getBanners, { 'position': 1})[0]);
+            return  _.filter(this.getBanners, { 'position': 1})[0];
+        },
+        copyright_year() {
+            return moment().year();
+        },
+        property(){
+            return this.$store.getters.getProperty;
+        },
+        hours(){
+            var hours = 
+            _.filter(this.$store.state.results.hours, function(o) { return o.store_ids==null && o.is_holiday==0 })
+            console.log(hours);
+            return hours;
+        },
+        todays_hours () {
+            return this.$store.getters.getTodayHours;
+        },
+        timezone () {
+            return this.$store.getters.getTimezone;
+        },
+        allStores() {
+            return this.$store.getters.processedStores;
+        }
     },
     methods: {
       // utility method to allow user to change locale value
