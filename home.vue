@@ -30,7 +30,7 @@
 </template>
 
 <script>
-  define(["Vue",  "vue!search-component"], function(Vue, SearchComponent) {
+  define(["Vue", "vue!search-component"], function(Vue, SearchComponent) {
     return Vue.component("home-component", {
       template: template, // the variable template will be injected
       data: function() {
