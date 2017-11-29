@@ -120,10 +120,6 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             console.log(this.$store.state.results.banners);
             return this.$store.state.results.banners;
         },
-        getMainBanner () {
-            console.log( _.filter(this.getBanners, { 'position': 1})[0]);
-            return  _.filter(this.getBanners, { 'position': 1})[0];
-        },
         copyright_year() {
             return moment().year();
         },
