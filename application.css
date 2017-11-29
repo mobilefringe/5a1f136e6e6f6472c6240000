@@ -60,7 +60,7 @@ body{
 }
 
 .animated_btn{
-    background-color:#000;
+    background-color: $theme_color; //#000;
     position: relative;
     overflow: hidden;
     z-index: 1;
