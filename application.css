@@ -475,46 +475,46 @@ body{
 }
 
 .social_fb{
-    background-image:url('//codecloud.cdn.speedyrails.net/sites/59d288ac6e6f6459f81d0000/image/png/1507240176000/fb@2x.png');
+    background-image:url('//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1507232976000/fb@2x.png');
     &:hover{
-        background-image:url('//codecloud.cdn.speedyrails.net/sites/59d288ac6e6f6459f81d0000/image/png/1507240209000/fbc@2x.png');
+        background-image:url('//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1507233008000/fbc@2x.png');
     }
 }
 
 .social_twitter{
-    background-image:url('//codecloud.cdn.speedyrails.net/sites/59d288ac6e6f6459f81d0000/image/png/1507240179000/twt@2x.png');
+    background-image:url('//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1507232978000/twt@2x.png');
     &:hover{
-        background-image: url('//codecloud.cdn.speedyrails.net/sites/59d288ac6e6f6459f81d0000/image/png/1507240209000/twtc@2x.png');
+        background-image: url('//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1507233008000/twtc@2x.png');
     }
 }
 
 .social_insta{
-    background-image:url('//codecloud.cdn.speedyrails.net/sites/59d288ac6e6f6459f81d0000/image/png/1507240177000/inst@2x.png');
+    background-image:url('//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1507232976000/inst@2x.png');
     &:hover{
-        background-image: url('//codecloud.cdn.speedyrails.net/sites/59d288ac6e6f6459f81d0000/image/png/1507240209000/instc@2x.png');
+        background-image: url('//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1507233008000/instc@2x.png');
     }
 }
 
-.social_yt{
-    background-image:url('//codecloud.cdn.speedyrails.net/sites/59d288ac6e6f6459f81d0000/image/png/1507058537000/icon_yt.png');
-    &:hover{
-        background-image: url('//codecloud.cdn.speedyrails.net/sites/59d288ac6e6f6459f81d0000/image/png/1507058537000/icon_yt.png');
-    }
-}
+// .social_yt{
+//     background-image:url('//codecloud.cdn.speedyrails.net/sites/59d288ac6e6f6459f81d0000/image/png/1507058537000/icon_yt.png');
+//     &:hover{
+//         background-image: url('//codecloud.cdn.speedyrails.net/sites/59d288ac6e6f6459f81d0000/image/png/1507058537000/icon_yt.png');
+//     }
+// }
 
-.social_gp{
-    background-image:url('//codecloud.cdn.speedyrails.net/sites/59d288ac6e6f6459f81d0000/image/png/1507058440000/icon_gplus.png');
-    &:hover{
-        background-image: url('//codecloud.cdn.speedyrails.net/sites/59d288ac6e6f6459f81d0000/image/png/1507058440000/icon_gplus.png');
-    }
-}
+// .social_gp{
+//     background-image:url('//codecloud.cdn.speedyrails.net/sites/59d288ac6e6f6459f81d0000/image/png/1507058440000/icon_gplus.png');
+//     &:hover{
+//         background-image: url('//codecloud.cdn.speedyrails.net/sites/59d288ac6e6f6459f81d0000/image/png/1507058440000/icon_gplus.png');
+//     }
+// }
 
-.social_newsletter{
-    background-image:url('//codecloud.cdn.speedyrails.net/sites/59d288ac6e6f6459f81d0000/image/png/1507058429000/icon_newsletter.png');
-    &:hover{
-        background-image: url('//codecloud.cdn.speedyrails.net/sites/59d288ac6e6f6459f81d0000/image/png/1507058429000/icon_newsletter.png');
-    }
-}
+// .social_newsletter{
+//     background-image:url('//codecloud.cdn.speedyrails.net/sites/59d288ac6e6f6459f81d0000/image/png/1507058429000/icon_newsletter.png');
+//     &:hover{
+//         background-image: url('//codecloud.cdn.speedyrails.net/sites/59d288ac6e6f6459f81d0000/image/png/1507058429000/icon_newsletter.png');
+//     }
+// }
 
 
 
