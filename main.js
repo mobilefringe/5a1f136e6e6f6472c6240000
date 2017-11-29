@@ -50,12 +50,12 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         dataLoaded: false,
         show_mobile_menu : false,
         menu_items: [
-            {
-                name: "Home",
-                id: "home_link",
-                href: "/",
-                parent_id: "home"
-            },
+            // {
+            //     name: "Home",
+            //     id: "home_link",
+            //     href: "/",
+            //     parent_id: "home"
+            // },
             {
                 name: "Store Directory",
                 id: "stores_link",
