@@ -81,7 +81,7 @@
             </div>
             <div class="col-md-12">
                 <h5 class="category_header" style="display:none" id="cat_name_header">All</h5>
-                <div class="row">
+                <div class="row" v-if="this.processedStores">
                     <div v-for="chunk in productChunks">
                         <div class="col-md-4 store_col_1">
                             <div v-for="(stores,key) in chunk">
