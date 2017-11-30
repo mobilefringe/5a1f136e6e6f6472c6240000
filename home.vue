@@ -48,8 +48,8 @@
                                 </router-link>
                             </div>
                         </article>
-                        <h3 class="promotion_header home_promos">{{name}}</h3>
-                        <p class="promotion_dates">{{dates}}</p>
+                        <h3 class="promotion_header home_promos">{{promo.name}}</h3>
+                        <p class="promotion_dates">{{promo.dates}}</p>
                     </div>
                 </div>
                 <div class="clearfix"></div>
