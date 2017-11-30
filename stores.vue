@@ -1,9 +1,10 @@
 <template>
   <div class="content_container main_container position_relative padding_top_20">
     <div class="map_container">
-        <div id="map" class="hidden_phone">
+        <!--<div id="map" class="hidden_phone">-->
             <!--<img alt="map" id="map_image" src="">-->
-        </div>
+        <!--</div>-->
+        <svg-map @updateMap="updateSVGMap()" :svgMapUrl="getSVGurl"></svg-map>
     </div>
     <h2 class="stores_main_heading">Directory</h2>
     <p class="store_main_desc">explore • enjoy • shop</p>
