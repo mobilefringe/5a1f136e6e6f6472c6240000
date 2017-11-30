@@ -28,7 +28,7 @@
             </div>
             <div class="promotions" v-if="promotions">
                 <h3 class="promotion_heading">Up Coming Events & Promotions!</h3>
-                <p class="exclusive_deals">Don’t miss our exclusive deals</p>
+                <p class="exclusive_deals">Don’t miss our exclusive deals & events</p>
                 <hr/>
                 <div class="home_promotions feature_row" id="promos_container">
                     <div class="promotion_item wow animated flipInX animated teamy-team text_center" v-for="promo in promotions">
