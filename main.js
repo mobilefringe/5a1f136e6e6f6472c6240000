@@ -107,7 +107,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         // console.log(this.$store.getters.getTodayHours);
       },
       show_mobile_menu : function () {
-          console.log(this.show_mobile_menu);
+          console.log("show_mobile_menu",this.show_mobile_menu);
       }
     },
     computed: {
