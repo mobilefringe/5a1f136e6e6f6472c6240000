@@ -38,55 +38,55 @@
                 </div>
             </div>
         </div>
-    <section class="content_container  position_relative menu_header">
-        <div class="mobile_search visible_phone position_relative">
-            <input type="text" placeholder="Search" id="site_search_m" class="site_search" />
-            <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/jpeg/1456781961000/icon_close.jpg" class="close_search close_search_m" alt="search">  
-            <div class="search_results_container_m">
-                    <div class="site_search_results" id="search_results_stores_m"></div>
-                    <div class="site_search_results" id="search_results_events_m"></div>
-                    <div class="site_search_results" id="search_results_promotions_m"></div>
+        <section class="content_container  position_relative menu_header">
+            <div class="mobile_search visible_phone position_relative">
+                <input type="text" placeholder="Search" id="site_search_m" class="site_search" />
+                <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/jpeg/1456781961000/icon_close.jpg" class="close_search close_search_m" alt="search">  
+                <div class="search_results_container_m">
+                        <div class="site_search_results" id="search_results_stores_m"></div>
+                        <div class="site_search_results" id="search_results_events_m"></div>
+                        <div class="site_search_results" id="search_results_promotions_m"></div>
+                    </div>
+                </div>
+            
+            <div class="row header mobile_margin row header mobile_margin main_container menu_header_content">
+                <div class="col-sm-4 col-xs-2">
+                    <p class="hidden_phone">Follow us on</p>
+                    <div class="social_icons hidden_phone">
+                        <a class="social_fb" href="https://www.facebook.com/CanyonCrestTowneCentre/" target="_blank"></a>
+                        <a class="social_twitter" href="https://twitter.com/shopcanyoncrest" target="_blank"></a>
+                        <a class="social_insta" href="https://www.instagram.com/shopcanyoncrest/" target="_blank"></a>
+                    </div>
+                    <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1455905827000/icon_menu.png" class="open_menu show_phone" alt="Menu"  id="open_menu"  @click="show_mobile_menu = !show_mobile_menu">
+                </div>
+                <div class="col-sm-4 col-xs-8 text-center">
+                    <router-link to="/">
+                        <img class="site-logo" src="//codecloud.cdn.speedyrails.net/sites/5a1891476e6f645140560000/image/png/1511801356595/site_logo.png" alt="" style="width:316px;">
+                    </router-link>
+                </div>
+                <div class="col-sm-4 col-xs-2 text-center position_relative">
+                    <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1455901042000/icon_search.png" class="search_btn search_btn_desk hidden_phone" alt="search" v-show="!is_searching">
+                    <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1455901042000/icon_search.png" class="search_btn search_btn_m show_phone" alt="search">
+                    <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/jpeg/1456781961000/icon_close.jpg" class="close_search close_search_desk hidden_phone" alt="search" v-show="is_searching">
+                    <input type="text" placeholder="Search" id="site_search" class="site_search search_field hidden_phone" />
+                    <div class="search_results_container">
+                        <div class="site_search_results" id="search_results_stores"></div>
+                        <div class="site_search_results" id="search_results_events"></div>
+                        <div class="site_search_results" id="search_results_promotions"></div>
+                    </div>
                 </div>
             </div>
-        
-        <div class="row header mobile_margin row header mobile_margin main_container menu_header_content">
-            <div class="col-sm-4 col-xs-2">
-                <p class="hidden_phone">Follow us on</p>
-                <div class="social_icons hidden_phone">
-                    <a class="social_fb" href="https://www.facebook.com/CanyonCrestTowneCentre/" target="_blank"></a>
-                    <a class="social_twitter" href="https://twitter.com/shopcanyoncrest" target="_blank"></a>
-                    <a class="social_insta" href="https://www.instagram.com/shopcanyoncrest/" target="_blank"></a>
-                </div>
-                <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1455905827000/icon_menu.png" class="open_menu show_phone" alt="Menu"  id="open_menu"  @click="show_mobile_menu = !show_mobile_menu">
+            
+           
+            <div class="menu_container hidden_phone main_container menu_header_content">
+                <ul class="stc_nav nav navbar-nav">
+                <li v-for="item in menu_items" :id="item.parent_id" class=" nav_li">
+                    <router-link :to="item.href" :id="item.id" class="all_caps">{{item.name}} </router-link>
+                </li>
+                </ul>
             </div>
-            <div class="col-sm-4 col-xs-8 text-center">
-                <router-link to="/">
-                    <img class="site-logo" src="//codecloud.cdn.speedyrails.net/sites/5a1891476e6f645140560000/image/png/1511801356595/site_logo.png" alt="" style="width:316px;">
-                </router-link>
-            </div>
-            <div class="col-sm-4 col-xs-2 text-center position_relative">
-                <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1455901042000/icon_search.png" class="search_btn search_btn_desk hidden_phone" alt="search" v-show="!is_searching">
-                <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1455901042000/icon_search.png" class="search_btn search_btn_m show_phone" alt="search">
-                <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/jpeg/1456781961000/icon_close.jpg" class="close_search close_search_desk hidden_phone" alt="search" v-show="is_searching">
-                <input type="text" placeholder="Search" id="site_search" class="site_search search_field hidden_phone" />
-                <div class="search_results_container">
-                    <div class="site_search_results" id="search_results_stores"></div>
-                    <div class="site_search_results" id="search_results_events"></div>
-                    <div class="site_search_results" id="search_results_promotions"></div>
-                </div>
-            </div>
-        </div>
-        
-       
-        <div class="menu_container hidden_phone main_container menu_header_content">
-            <ul class="stc_nav nav navbar-nav">
-            <li v-for="item in menu_items" :id="item.parent_id" class=" nav_li">
-                <router-link :to="item.href" :id="item.id" class="all_caps">{{item.name}} </router-link>
-            </li>
-            </ul>
-        </div>
-    </section>
-      <router-view></router-view>
+        </section>
+         <router-view></router-view>
       <section class="content_container main_container">
         <div class="newsletter_container text-center">
             <h2 class="heading">SIGN UP TO RECEIVE OUR UPDATES</h2>
