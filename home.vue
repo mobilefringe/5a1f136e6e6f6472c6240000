@@ -2,6 +2,7 @@
   <div class="row main_container">
         <slick ref="slick" :options="slickOptions">
             <div class="" v-for="banner in banners">
+                <router-link :to="banner.url"></router-link>
                 <img :src="banner.image_url" class="" alt="">
             </div>
         </slick>
