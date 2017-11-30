@@ -1713,6 +1713,11 @@ ul.nav li.dropdown:hover > .dropdown-menu-hover {
         left: 50%;
         transform: translate(-50%,-50%);
         z-index: 5;
+        /* EVENTS: */
+        font-family: .SFNSDisplay;
+        font-size: 20px;
+        color: #FFFFFF;
+        letter-spacing: 0.83px;
     }
     .feature_item {
         // padding-left: 10px;
