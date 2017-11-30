@@ -49,7 +49,7 @@
         <div class="row padding_bottom_50">
             <div class="col-md-12">
                 <div class="alpha_list">
-                    <a href="#7" id="all_stores_a">all</a>
+                    <a href="#7" id="all_stores_a">All</a>
                     <a @click="filterStores('#')">#</a>
                     <a @click="filterStores('A')">A</a>
                     <a @click="filterStores('B')">B</a>
