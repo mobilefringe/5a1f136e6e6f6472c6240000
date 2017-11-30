@@ -12,13 +12,13 @@
             <div class="feature_row" id="feature_container_2">
                 <div class="feature_item_container">
                     <div v-for="item in feature_items">
-                        <p class="feature_title">{{name}}</p>
+                        <p class="feature_title">{{item.name}}</p>
                         <div class="feature_item wow animated flipInX animated teamy-team">
                             <article class="teamy teamy_style2 teamy_mask-circle teamy_zoom-photo">
                                 <div class="teamy__layout">
-                                    <a href="{{url}}" >
+                                    <a href="{{item.url}}" >
                                         <div class="teamy__preview">
-                                            <img src="{{image_url}}" class="teamy__avatar" alt="The demo photo">
+                                            <img :src="item.image_url" class="teamy__avatar" alt="The demo photo">
                                         </div>
                                         <div class="teamy__back">
                                             <div class="teamy__back-inner">
