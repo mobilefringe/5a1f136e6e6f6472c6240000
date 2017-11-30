@@ -165,17 +165,20 @@
         }
       },
       computed: {
-        storesByAlphaIndex() {
-          return this.$store.getters.storesByAlphaIndex;
-        },
-        storesByCategoryName() {
-          return this.$store.getters.storesByCategoryName;
-        },
+          property (){
+                return this.$store.getters.getProperty;
+            },
         getSVGurl () {
             return "https://www.mallmaverick.com" + this.property.svgmap_url;
         },
         allStores() {
             return this.$store.getters.processedStores;
+        },
+        storesByAlphaIndex() {
+          return this.$store.getters.storesByAlphaIndex;
+        },
+        storesByCategoryName() {
+          return this.$store.getters.storesByCategoryName;
         },
         svgMapRef() {
             return _.filter(this.$children, function(o) { return (o.$el.className == "svg-map") })[0];
