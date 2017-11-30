@@ -74,7 +74,7 @@
                 },
                 feature_items () {
                     console.log(this.$store.state.results.feature_items);
-                    return return  _.slice(this.$store.state.results.feature_items, 0, 3);
+                    return  _.slice(this.$store.state.results.feature_items, 0, 3);
                 }
             },
             methods: {
