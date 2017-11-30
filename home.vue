@@ -50,7 +50,7 @@
                             </div>
                         </article>
                         <h3 class="promotion_header home_promos">{{promo.name}}</h3>
-                        <router-link :to="'/promotions/'+promo.slug"> class="newsletter_btn animated_btn">Read More</router-link>
+                        <router-link :to="'/promotions/'+promo.slug" class="newsletter_btn animated_btn">Read More</router-link>
                     </div>
                 </div>
                 <div class="clearfix"></div>
