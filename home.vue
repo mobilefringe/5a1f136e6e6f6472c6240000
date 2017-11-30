@@ -26,7 +26,7 @@
                     </div>
                 </div>
             </div>
-            <div class="promotions">
+            <div class="promotions" v-if="promotions">
                 <h3 class="promotion_heading">Up Coming Promotions & Events!</h3>
                 <p class="exclusive_deals">don’t miss our exclusive deals</p>
                 <hr/>
