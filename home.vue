@@ -109,7 +109,7 @@
                     return  _.slice(this.$store.state.results.feature_items, 0, 3);
                 },
                 promotions () {
-                    console.log(this.$store.getters.processedPromos)
+                    console.log(this.$store.getters.processedPromos);
                     return this.$store.getters.processedPromos;
                 }
             },
