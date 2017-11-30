@@ -86,8 +86,8 @@
                     <div v-for="store in storesByAlphaIndex">
                         <!--<span class="store_initial open_stores numbers_exist" data-initial="number">#</span>-->
                         <div id="numbered_store_list_container" class="numbers_exist">
-                            <div class="store_list_content cats_row" data-cat="{{cat_list}}">
-                                <p class="store_name"><a href="/stores/{{slug}}">{{name}}</a></p>
+                            <div class="store_list_content cats_row" :data-cat="cat_list">
+                                <p class="store_name"><router-link :to="'/stores/'=slug">{{name}}</router-link></p>
                             </div>
                         </div>   
                         </div>
