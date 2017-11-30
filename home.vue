@@ -1,7 +1,9 @@
 <template>
   <div class="row">
         <slick ref="slick" :options="slickOptions">
-            <div v-for="banner in banners" :style="'background-image:url('+banner.image_url+')'" class="banner_image_div">
+            <div v-for="banner in banners" >
+                <div :style="'background-image:url('+banner.image_url+')'" class="banner_image_div">
+            </div>
                 <router-link :to="banner.url" class="banner_image_li"></router-link>
                 <!--<img :src="banner.image_url" class="" alt="">-->
             </div>
