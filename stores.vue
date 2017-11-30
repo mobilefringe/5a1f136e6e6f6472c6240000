@@ -84,7 +84,7 @@
                 <div class="row">
                     <div class="col-md-6 store_col_1">
                     <div v-for="(store,key) in storesByAlphaIndex">
-                        <span class="store_initial open_stores numbers_exist" data-initial="number">#</span>
+                        <span class="store_initial open_stores numbers_exist" data-initial="number">{{key}}</span>
                         <div id="numbered_store_list_container" class="numbers_exist">
                             <div class="store_list_content cats_row" :data-cat="store.cat_list">
                                 <p class="store_name"><router-link :to="'/stores/'+slug">{{store.name}}</router-link></p>
