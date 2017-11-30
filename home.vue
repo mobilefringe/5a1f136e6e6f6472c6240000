@@ -2,6 +2,7 @@
   <div class="row">
         <slick ref="slick" :options="slickOptions">
             <div v-for="banner in banners" v-if="banners">
+                {{banner}}
                 <div style="background-image:url(http://placehold.it/1920x500)" class="banner_image_div">
                     <router-link :to="banner.url" class="banner_image_li"></router-link>
                 </div>
