@@ -22,7 +22,7 @@
                                         <div class="teamy__back">
                                             <div class="teamy__back-inner">
                                                 <div class="teamy__content">
-                                                    <h3 class="teamy__name">View</h3>
+                                                    <!--<h3 class="teamy__name">View</h3>-->
                                                 </div>
                                             </div>
                                         </div>
