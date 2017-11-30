@@ -149,47 +149,47 @@
                 window.Raphael = Raphael; // our mapSvg plugin is stupid and outdated. need this hack to tie Raphael to window object (global variable)
             },
             methods: {
-            changeMode (mode) {
-                this.listMode = mode;
-            },
-            dropPin(store) {
-                this.svgMapRef.hideMarkers();
-                console.log(store);
-                this.svgMapRef.addMarker(store,'//codecloud.cdn.speedyrails.net/sites/589e308f6e6f641b9f010000/image/png/1484850466000/show_pin.png');
-                this.svgMapRef.setViewBox(store)
-            },
-            filterStores (letter) {
-                if(letter == "#"){
-                    this.processedStores = _.filter(this.allStores, function(o) { return _.inRange(_.toNumber(o.name[0]), -1, 10); });
+                changeMode (mode) {
+                    this.listMode = mode;
+                },
+                dropPin(store) {
+                    this.svgMapRef.hideMarkers();
+                    console.log(store);
+                    this.svgMapRef.addMarker(store,'//codecloud.cdn.speedyrails.net/sites/589e308f6e6f641b9f010000/image/png/1484850466000/show_pin.png');
+                    this.svgMapRef.setViewBox(store)
+                },
+                filterStores (letter) {
+                    if(letter == "#"){
+                        this.processedStores = _.filter(this.allStores, function(o) { return _.inRange(_.toNumber(o.name[0]), -1, 10); });
+                    }
+                    else {
+                        this.processedStores = _.filter(this.allStores, function(o) { return _.lowerCase(o.name[0]) == _.lowerCase(letter); });
+                    }
+                    // console.log(this.processedStores);
                 }
-                else {
-                    this.processedStores = _.filter(this.allStores, function(o) { return _.lowerCase(o.name[0]) == _.lowerCase(letter); });
-                }
-                // console.log(this.processedStores);
+            },
+            computed: {
+              property (){
+                    return this.$store.getters.getProperty;
+                },
+            getSVGurl () {
+                // return "https://www.mallmaverick.com" + this.property.svgmap_url;
+                return "//www.mallmaverick.com/system/site_images/photos/000/035/014/original/Canyon_Crest_-_Map.svg?1512066588";
+            },
+            allStores() {
+                return this.$store.getters.processedStores;
+            },
+            storesByAlphaIndex() {
+                console.log(this.$store.getters.storesByAlphaIndex);
+              return this.$store.getters.storesByAlphaIndex;
+            },
+            storesByCategoryName() {
+              return this.$store.getters.storesByCategoryName;
+            },
+            svgMapRef() {
+                return _.filter(this.$children, function(o) { return (o.$el.className == "svg-map") })[0];
             }
-        },
-      computed: {
-          property (){
-                return this.$store.getters.getProperty;
-            },
-        getSVGurl () {
-            // return "https://www.mallmaverick.com" + this.property.svgmap_url;
-            return "//www.mallmaverick.com/system/site_images/photos/000/035/014/original/Canyon_Crest_-_Map.svg?1512066588";
-        },
-        allStores() {
-            return this.$store.getters.processedStores;
-        },
-        storesByAlphaIndex() {
-            console.log(this.$store.getters.storesByAlphaIndex);
-          return this.$store.getters.storesByAlphaIndex;
-        },
-        storesByCategoryName() {
-          return this.$store.getters.storesByCategoryName;
-        },
-        svgMapRef() {
-            return _.filter(this.$children, function(o) { return (o.$el.className == "svg-map") })[0];
-        }
-      }
+          }
     });
   });
 </script>
