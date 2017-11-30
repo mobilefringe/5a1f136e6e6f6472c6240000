@@ -1,5 +1,5 @@
 <template>
-  <div class="row">
+    <div class="row">
         <slick ref="slick" :options="slickOptions">
             <div v-for="banner in banners" v-if="banners">
                 <div style="background-image:url(http://placehold.it/1920x500)" class="banner_image_div">
@@ -8,7 +8,7 @@
                 <!--<img :src="banner.image_url" class="" alt="">-->
             </div>
         </slick>
-  </div>
+    </div>
 </template>
 
 <script>
