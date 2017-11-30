@@ -49,7 +49,6 @@
                             </div>
                         </article>
                         <h3 class="promotion_header home_promos">{{promo.name}}</h3>
-                        <p class="promotion_dates">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
                     </div>
                 </div>
                 <div class="clearfix"></div>
