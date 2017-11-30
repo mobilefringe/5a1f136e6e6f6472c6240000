@@ -168,7 +168,7 @@
                     // }
                     var filtered = _.filter(this.storesByAlphaIndex, function(o,i) { return _.lowerCase(i) == _.lowerCase(letter); });
                     console.log(this.processedStores);
-                    this.processedStores = _.groupBy(stores, store => (isNaN(store.name.charAt(0)) ? store.name.charAt(0) : "#"));
+                    this.processedStores = _.groupBy(filtered, store => (isNaN(store.name.charAt(0)) ? store.name.charAt(0) : "#"));
                 }
             },
             computed: {
