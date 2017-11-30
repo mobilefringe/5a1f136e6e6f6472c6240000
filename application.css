@@ -1707,6 +1707,13 @@ ul.nav li.dropdown:hover > .dropdown-menu-hover {
         border-bottom: 1px solid #000000;
         padding: 15px 0;
     }
+    .feature_text {
+        position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 5;
+    }
     .feature_item {
         // padding-left: 10px;
         // padding-right: 10px;
