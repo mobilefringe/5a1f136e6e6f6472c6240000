@@ -147,7 +147,7 @@
                 window.Raphael = Raphael; // our mapSvg plugin is stupid and outdated. need this hack to tie Raphael to window object (global variable)
             },
             mounted () {
-                
+                this.processedStores = storesByAlphaIndex
             },
             methods: {
                 changeMode (mode) {
