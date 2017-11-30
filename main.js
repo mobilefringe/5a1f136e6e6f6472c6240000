@@ -111,7 +111,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             console.log("Changed to route:",this.$route.path);
             
             if(this.$route.path == "/") {
-                this.show_hero_banner = true;
+                this.show_subscrption = false;
             }
             else {
                 this.show_hero_banner = false;
