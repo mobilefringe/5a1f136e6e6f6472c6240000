@@ -11,7 +11,7 @@
         <div class="content_container main_container hidden_phone  position_relative">
             <div class="feature_row" id="feature_container_2">
                 <div class="feature_item_container" v-for="item in feature_items">
-                        <p class="feature_title"></p>
+                        <!--<p class="feature_title"></p>-->
                         <div class="feature_item wow animated flipInX animated teamy-team">
                             <article class="teamy teamy_style2 teamy_mask-circle teamy_zoom-photo">
                                 <div class="teamy__layout">
