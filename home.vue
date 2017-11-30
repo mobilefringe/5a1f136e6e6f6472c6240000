@@ -3,7 +3,6 @@
         <slick ref="slick" :options="slickOptions">
             <div class="" v-for="banner in banners">
                 <img :src="banner.image_url" class="" alt="">
-                
             </div>
         </slick>
     <!--<div class="large-6 columns">-->
