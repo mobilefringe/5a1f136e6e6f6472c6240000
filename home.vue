@@ -11,24 +11,26 @@
         <div class="content_container main_container hidden_phone  position_relative">
             <div class="feature_row" id="feature_container_2">
                 <div class="feature_item_container">
-                    <p class="feature_title">{{name}}</p>
-                    <div class="feature_item wow animated flipInX animated teamy-team">
-                        <article class="teamy teamy_style2 teamy_mask-circle teamy_zoom-photo">
-                            <div class="teamy__layout">
-                                <a href="{{url}}" >
-                                    <div class="teamy__preview">
-                                        <img src="{{image_url}}" class="teamy__avatar" alt="The demo photo">
-                                    </div>
-                                    <div class="teamy__back">
-                                        <div class="teamy__back-inner">
-                                            <div class="teamy__content">
-                                                <h3 class="teamy__name">View</h3>
+                    <div v-for="item in feature_items">
+                        <p class="feature_title">{{name}}</p>
+                        <div class="feature_item wow animated flipInX animated teamy-team">
+                            <article class="teamy teamy_style2 teamy_mask-circle teamy_zoom-photo">
+                                <div class="teamy__layout">
+                                    <a href="{{url}}" >
+                                        <div class="teamy__preview">
+                                            <img src="{{image_url}}" class="teamy__avatar" alt="The demo photo">
+                                        </div>
+                                        <div class="teamy__back">
+                                            <div class="teamy__back-inner">
+                                                <div class="teamy__content">
+                                                    <h3 class="teamy__name">View</h3>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </article>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
                     </div>
                 </div>
             </div>
