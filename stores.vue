@@ -96,11 +96,11 @@
                     <!--    <div class="store_list" id="store_list_container2"></div>-->
                     <!--</div>-->
                 </div>
-                <div id="cat_store_container">
-                    <div class="store_list_content cats_row" data-cat="{{cat_list}}">
-                        <p class="store_name"><a href="/stores/{{slug}}">{{name}}</a></p>
-                    </div>
-                </div>
+                <!--<div id="cat_store_container">-->
+                <!--    <div class="store_list_content cats_row" data-cat="{{cat_list}}">-->
+                <!--        <p class="store_name"><a href="/stores/{{slug}}">{{name}}</a></p>-->
+                <!--    </div>-->
+                <!--</div>-->
             </div>
             <!--<div class="col-md-4 hidden_phone">-->
             <!--    <div id="new_stores">-->
