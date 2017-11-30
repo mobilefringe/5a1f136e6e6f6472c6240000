@@ -83,7 +83,7 @@
                 <h5 class="category_header" style="display:none" id="cat_name_header">All</h5>
                 <div class="row">
                     <div class="col-md-4 store_col_1">
-                        <div v-for="(stores,key) in processedStores | slice 0 5">
+                        <div v-for="(stores,key) in processedStores">
                            
                             <span class="store_initial" :data-initial="key">{{key}}</span>
                             <div id="store_list_container" class="store_list" v-for="store in stores">
