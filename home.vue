@@ -36,7 +36,7 @@
                             <div class="teamy__layout">
                                 <router-link :to="'/promotions/'+slug">
                                     <div class="teamy__preview">
-                                        <img src="{{image_url}}" class="teamy__avatar featured_promo_img" alt="The demo photo">
+                                        <img :src="image_url" class="teamy__avatar featured_promo_img" alt="The demo photo">
                                     </div>
                                     <div class="teamy__back">
                                         <div class="teamy__back-inner">
