@@ -1,5 +1,5 @@
 <template>
-  <div class="row">
+  <div class="row main_container">
         <slick ref="slick" :options="slickOptions">
             <div class="" v-for="banner in banners">
                 <img :src="banner.image_url" class="" alt="">
