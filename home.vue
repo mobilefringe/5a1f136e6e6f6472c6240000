@@ -83,6 +83,9 @@
                 property(){
                   return this.$store.getters.getProperty;
                 },
+                timezone () {
+                    return this.$store.getters.getTimezone;
+                },
                 processedStores() {
                   return this.$store.getters.processedStores;
                 },
