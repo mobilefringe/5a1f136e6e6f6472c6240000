@@ -23,6 +23,10 @@ require.config({
     'slick' : 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min',
     'vue-slick' : 'https://mmvue.codecloudapp.com/slick.vue?noext',
     'vue-select' : 'https://cdn.jsdelivr.net/npm/vue-select@2.3.0/dist/vue-select.min',
+    'Raphael': 'https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min', //'http://mallmaverick.com/javascripts/mapsvg/raphael',
+    'mousewheel': 'https://mallmaverick.com/javascripts/mapsvg/jquery.mousewheel',
+    'mapsvg': 'https://mallmaverick.com/javascripts/mapsvg/mapsvg',
+    'mm_mapsvg': 'https://mmvue.codecloudapp.com/mallmaverick_svgmap',
     'svg-map': 'https://5a1f136e6e6f6472c6240000.codecloudapp.com/svg_map.vue?noext'
   }
 });
