@@ -6,7 +6,7 @@
                 <img :src="banner.image_url" class="" alt="">
             </div>
         </slick>
-        <div style="background-image:url(//codecloud.cdn.speedyrails.net/sites/59e0c5676e6f642b330a0000/image/jpeg/1509717633000/HomePageMobileSantaExperience.jpg)" class="banner_image_div">-->
+        <div style="background-image:url(//codecloud.cdn.speedyrails.net/sites/59e0c5676e6f642b330a0000/image/jpeg/1509717633000/HomePageMobileSantaExperience.jpg)" class="banner_image_div">
                     <a class="banner_image_li" href="/events/hazeldean-santa-claus-at-hazeldean-mall" >
                     </a>
                 </div>
