@@ -26,6 +26,7 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <p class="feature_title">{{item.name}}</p>
                                     </a>
                                 </div>
                             </article>
