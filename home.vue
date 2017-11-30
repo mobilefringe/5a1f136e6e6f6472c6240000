@@ -26,7 +26,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <p class="">{{item.name}}</p>
+                                        <p class="feature_text">{{item.name}}</p>
                                     </a>
                                 </div>
                             </article>
