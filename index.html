@@ -12,32 +12,32 @@
   </head>
   <body>
     <div id="app" v-cloak v-if="dataLoaded">
-      <div class="mobile_menu_container" v-show="show_mobile_menu">
-        <div class="opened_mobile_menu">
-            <h3>
-                MENU
-            </h3>
-            <ul>
-                <li v-for="item in menu_items">
-                    <router-link :to="item.href" :id="item.id" class="all_caps">{{item.name}} </router-link>
-                </li>
-            </ul>
-            <h4 id="close_menu" @click="show_mobile_menu = !show_mobile_menu">close</h4>
-            <hr class="strikethrough" />
-            <div class="social_icons_menu show_phone text-center">
-                <p>Follow us on</p>
-                <a href="https://www.facebook.com/CanyonCrestTowneCentre/" target="_blank">
-                    <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1507232976000/fb@2x.png" class="" alt="FB">
-                </a>
-                <a href="https://twitter.com/shopcanyoncrest" target="_blank">
-                    <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1507232978000/twt@2x.png" class="" alt="FB">
-                </a>
-                <a href="https://www.instagram.com/shopcanyoncrest/" target="_blank">
-                    <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1507232976000/inst@2x.png" class="" alt="FB">
-                </a>
+        <div class="mobile_menu_container" v-show="show_mobile_menu">
+            <div class="opened_mobile_menu">
+                <h3>
+                    MENU
+                </h3>
+                <ul>
+                    <li v-for="item in menu_items">
+                        <router-link :to="item.href" :id="item.id" class="all_caps">{{item.name}} </router-link>
+                    </li>
+                </ul>
+                <h4 id="close_menu" @click="show_mobile_menu = !show_mobile_menu">close</h4>
+                <hr class="strikethrough" />
+                <div class="social_icons_menu show_phone text-center">
+                    <p>Follow us on</p>
+                    <a href="https://www.facebook.com/CanyonCrestTowneCentre/" target="_blank">
+                        <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1507232976000/fb@2x.png" class="" alt="FB">
+                    </a>
+                    <a href="https://twitter.com/shopcanyoncrest" target="_blank">
+                        <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1507232978000/twt@2x.png" class="" alt="FB">
+                    </a>
+                    <a href="https://www.instagram.com/shopcanyoncrest/" target="_blank">
+                        <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1507232976000/inst@2x.png" class="" alt="FB">
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
     <section class="content_container  position_relative menu_header">
         <div class="mobile_search visible_phone position_relative">
             <input type="text" placeholder="Search" id="site_search_m" class="site_search" />
