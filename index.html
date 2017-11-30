@@ -11,173 +11,173 @@
     <link rel="stylesheet" href="/style.css">
   </head>
     <body>
-    <div id="app" v-cloak v-if="dataLoaded">
-        <div class="mobile_menu_container" v-show="show_mobile_menu">
-            <div class="opened_mobile_menu">
-                <h3>
-                    MENU
-                </h3>
-                <ul>
-                    <li v-for="item in menu_items">
+        <div id="app" v-cloak v-if="dataLoaded">
+            <div class="mobile_menu_container" v-show="show_mobile_menu">
+                <div class="opened_mobile_menu">
+                    <h3>
+                        MENU
+                    </h3>
+                    <ul>
+                        <li v-for="item in menu_items">
+                            <router-link :to="item.href" :id="item.id" class="all_caps">{{item.name}} </router-link>
+                        </li>
+                    </ul>
+                    <h4 id="close_menu" @click="show_mobile_menu = !show_mobile_menu">close</h4>
+                    <hr class="strikethrough" />
+                    <div class="social_icons_menu show_phone text-center">
+                        <p>Follow us on</p>
+                        <a href="https://www.facebook.com/CanyonCrestTowneCentre/" target="_blank">
+                            <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1507232976000/fb@2x.png" class="" alt="FB">
+                        </a>
+                        <a href="https://twitter.com/shopcanyoncrest" target="_blank">
+                            <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1507232978000/twt@2x.png" class="" alt="FB">
+                        </a>
+                        <a href="https://www.instagram.com/shopcanyoncrest/" target="_blank">
+                            <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1507232976000/inst@2x.png" class="" alt="FB">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <section class="content_container  position_relative menu_header">
+                <div class="mobile_search visible_phone position_relative">
+                    <input type="text" placeholder="Search" id="site_search_m" class="site_search" />
+                    <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/jpeg/1456781961000/icon_close.jpg" class="close_search close_search_m" alt="search">  
+                    <div class="search_results_container_m">
+                            <div class="site_search_results" id="search_results_stores_m"></div>
+                            <div class="site_search_results" id="search_results_events_m"></div>
+                            <div class="site_search_results" id="search_results_promotions_m"></div>
+                        </div>
+                    </div>
+                
+                <div class="row header mobile_margin row header mobile_margin main_container menu_header_content">
+                    <div class="col-sm-4 col-xs-2">
+                        <p class="hidden_phone">Follow us on</p>
+                        <div class="social_icons hidden_phone">
+                            <a class="social_fb" href="https://www.facebook.com/CanyonCrestTowneCentre/" target="_blank"></a>
+                            <a class="social_twitter" href="https://twitter.com/shopcanyoncrest" target="_blank"></a>
+                            <a class="social_insta" href="https://www.instagram.com/shopcanyoncrest/" target="_blank"></a>
+                        </div>
+                        <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1455905827000/icon_menu.png" class="open_menu show_phone" alt="Menu"  id="open_menu"  @click="show_mobile_menu = !show_mobile_menu">
+                    </div>
+                    <div class="col-sm-4 col-xs-8 text-center">
+                        <router-link to="/">
+                            <img class="site-logo" src="//codecloud.cdn.speedyrails.net/sites/5a1891476e6f645140560000/image/png/1511801356595/site_logo.png" alt="" style="width:316px;">
+                        </router-link>
+                    </div>
+                    <div class="col-sm-4 col-xs-2 text-center position_relative">
+                        <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1455901042000/icon_search.png" class="search_btn search_btn_desk hidden_phone" alt="search" v-show="!is_searching">
+                        <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1455901042000/icon_search.png" class="search_btn search_btn_m show_phone" alt="search">
+                        <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/jpeg/1456781961000/icon_close.jpg" class="close_search close_search_desk hidden_phone" alt="search" v-show="is_searching">
+                        <input type="text" placeholder="Search" id="site_search" class="site_search search_field hidden_phone" />
+                        <div class="search_results_container">
+                            <div class="site_search_results" id="search_results_stores"></div>
+                            <div class="site_search_results" id="search_results_events"></div>
+                            <div class="site_search_results" id="search_results_promotions"></div>
+                        </div>
+                    </div>
+                </div>
+                
+               
+                <div class="menu_container hidden_phone main_container menu_header_content">
+                    <ul class="stc_nav nav navbar-nav">
+                    <li v-for="item in menu_items" :id="item.parent_id" class=" nav_li">
                         <router-link :to="item.href" :id="item.id" class="all_caps">{{item.name}} </router-link>
                     </li>
-                </ul>
-                <h4 id="close_menu" @click="show_mobile_menu = !show_mobile_menu">close</h4>
-                <hr class="strikethrough" />
-                <div class="social_icons_menu show_phone text-center">
-                    <p>Follow us on</p>
-                    <a href="https://www.facebook.com/CanyonCrestTowneCentre/" target="_blank">
-                        <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1507232976000/fb@2x.png" class="" alt="FB">
-                    </a>
-                    <a href="https://twitter.com/shopcanyoncrest" target="_blank">
-                        <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1507232978000/twt@2x.png" class="" alt="FB">
-                    </a>
-                    <a href="https://www.instagram.com/shopcanyoncrest/" target="_blank">
-                        <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1507232976000/inst@2x.png" class="" alt="FB">
-                    </a>
+                    </ul>
                 </div>
-            </div>
-        </div>
-        <section class="content_container  position_relative menu_header">
-            <div class="mobile_search visible_phone position_relative">
-                <input type="text" placeholder="Search" id="site_search_m" class="site_search" />
-                <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/jpeg/1456781961000/icon_close.jpg" class="close_search close_search_m" alt="search">  
-                <div class="search_results_container_m">
-                        <div class="site_search_results" id="search_results_stores_m"></div>
-                        <div class="site_search_results" id="search_results_events_m"></div>
-                        <div class="site_search_results" id="search_results_promotions_m"></div>
-                    </div>
-                </div>
+            </section>
             
-            <div class="row header mobile_margin row header mobile_margin main_container menu_header_content">
-                <div class="col-sm-4 col-xs-2">
-                    <p class="hidden_phone">Follow us on</p>
-                    <div class="social_icons hidden_phone">
-                        <a class="social_fb" href="https://www.facebook.com/CanyonCrestTowneCentre/" target="_blank"></a>
-                        <a class="social_twitter" href="https://twitter.com/shopcanyoncrest" target="_blank"></a>
-                        <a class="social_insta" href="https://www.instagram.com/shopcanyoncrest/" target="_blank"></a>
-                    </div>
-                    <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1455905827000/icon_menu.png" class="open_menu show_phone" alt="Menu"  id="open_menu"  @click="show_mobile_menu = !show_mobile_menu">
-                </div>
-                <div class="col-sm-4 col-xs-8 text-center">
-                    <router-link to="/">
-                        <img class="site-logo" src="//codecloud.cdn.speedyrails.net/sites/5a1891476e6f645140560000/image/png/1511801356595/site_logo.png" alt="" style="width:316px;">
-                    </router-link>
-                </div>
-                <div class="col-sm-4 col-xs-2 text-center position_relative">
-                    <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1455901042000/icon_search.png" class="search_btn search_btn_desk hidden_phone" alt="search" v-show="!is_searching">
-                    <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1455901042000/icon_search.png" class="search_btn search_btn_m show_phone" alt="search">
-                    <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/jpeg/1456781961000/icon_close.jpg" class="close_search close_search_desk hidden_phone" alt="search" v-show="is_searching">
-                    <input type="text" placeholder="Search" id="site_search" class="site_search search_field hidden_phone" />
-                    <div class="search_results_container">
-                        <div class="site_search_results" id="search_results_stores"></div>
-                        <div class="site_search_results" id="search_results_events"></div>
-                        <div class="site_search_results" id="search_results_promotions"></div>
-                    </div>
-                </div>
-            </div>
+            <router-view></router-view>
             
-           
-            <div class="menu_container hidden_phone main_container menu_header_content">
-                <ul class="stc_nav nav navbar-nav">
-                <li v-for="item in menu_items" :id="item.parent_id" class=" nav_li">
-                    <router-link :to="item.href" :id="item.id" class="all_caps">{{item.name}} </router-link>
-                </li>
-                </ul>
-            </div>
-        </section>
-        
-        <router-view></router-view>
-        
-        <section class="content_container main_container">
-            <div class="newsletter_container text-center">
-                <h2 class="heading">SIGN UP TO RECEIVE OUR UPDATES</h2>
-                <p class="newsletter_desc">Special Offers <br class="show_phone" /><span>•</span> New Store Openings <br class="show_phone" /><span>•</span> Exclusive Events</p>
-                <router-link to="/newsletter" class="newsletter_btn animated_btn">Subscribe</router-link>
-            </div>
-            <div class="site_map">
-                <div class="row">
-                    <div class="col-md-4 col-xs-12 bottom_border">
-                        <div class="hidden_phone">
-                            <h4 class="site_map_heading">Visit Us</h4>
-                            <div class="col-md-7 col-xs-7" style="padding: 0;">
+            <section class="content_container main_container">
+                <div class="newsletter_container text-center">
+                    <h2 class="heading">SIGN UP TO RECEIVE OUR UPDATES</h2>
+                    <p class="newsletter_desc">Special Offers <br class="show_phone" /><span>•</span> New Store Openings <br class="show_phone" /><span>•</span> Exclusive Events</p>
+                    <router-link to="/newsletter" class="newsletter_btn animated_btn">Subscribe</router-link>
+                </div>
+                <div class="site_map">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12 bottom_border">
+                            <div class="hidden_phone">
+                                <h4 class="site_map_heading">Visit Us</h4>
+                                <div class="col-md-7 col-xs-7" style="padding: 0;">
+                                    <p class="site_map_desc">
+                                        {{property.address1}}
+                                        <br />  
+                                        {{property.city}}
+                                        <br />
+                                        {{property.province_state}} {{property.postal_code}}
+                                        <br />
+                                        <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2198.58586155242!2d-117.33154422162433!3d33.95621236060249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcafb3e8e622a7%3A0x9e4673950258330a!2s5225+Canyon+Crest+Dr%2C+Riverside%2C+CA+92507%2C+USA!5e0!3m2!1sen!2sca!4v1511989451889" target="_blank" style="color: #0065DB;">Click for Map </a>
+                                    </p>
+                                </div>
+                                <div class="col-md-5 col-xs-5 footer_hours text_center" style="padding: 0;">
+                                    <div class="todays_hours "> Today's Hours</div>
+                                    <!--<h4 class="site_map_heading text_center">10am-9pm</h4>-->
+                                    <span id="footer_hours_container">
+                                        <div class="hours_today site_map_desc text_center " id="hours_home">{{todays_hours.open_time | moment("h:mmA", timezone)}} - {{todays_hours.close_time | moment("h:mmA", timezone)}}</div>
+                                </span>
+                                    <router-link to="/hours" class="" ><u>View all hours</u></router-link>
+                                </div>
+                                
+                            </div>
+                            <div class="show_phone">
+                                <h4 class="site_map_heading">SOCIAL</h4>
                                 <p class="site_map_desc">
-                                    {{property.address1}}
-                                    <br />  
-                                    {{property.city}}
-                                    <br />
-                                    {{property.province_state}} {{property.postal_code}}
-                                    <br />
-                                    <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2198.58586155242!2d-117.33154422162433!3d33.95621236060249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcafb3e8e622a7%3A0x9e4673950258330a!2s5225+Canyon+Crest+Dr%2C+Riverside%2C+CA+92507%2C+USA!5e0!3m2!1sen!2sca!4v1511989451889" target="_blank" style="color: #0065DB;">Click for Map </a>
+                                    Connect with us!
                                 </p>
+                                <div class="social_icons">
+                                    <a href="https://www.facebook.com/CanyonCrestTowneCentre/" target="_blank">
+                                        <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1507232976000/fb@2x.png" class="mobile_social" alt="FB">
+                                    </a>
+                                    <a href="https://twitter.com/shopcanyoncrest" target="_blank">
+                                        <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1507232978000/twt@2x.png" class="mobile_social" alt="FB">
+                                    </a>
+                                    <a href="https://www.instagram.com/shopcanyoncrest/" target="_blank">
+                                        <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1507232976000/inst@2x.png" class="mobile_social" alt="FB">
+                                    </a>
+                                    <div class="clearfix"></div>
+                                </div>
                             </div>
-                            <div class="col-md-5 col-xs-5 footer_hours text_center" style="padding: 0;">
-                                <div class="todays_hours "> Today's Hours</div>
-                                <!--<h4 class="site_map_heading text_center">10am-9pm</h4>-->
-                                <span id="footer_hours_container">
-                                    <div class="hours_today site_map_desc text_center " id="hours_home">{{todays_hours.open_time | moment("h:mmA", timezone)}} - {{todays_hours.close_time | moment("h:mmA", timezone)}}</div>
-                            </span>
-                                <router-link to="/hours" class="" ><u>View all hours</u></router-link>
-                            </div>
-                            
                         </div>
-                        <div class="show_phone">
-                            <h4 class="site_map_heading">SOCIAL</h4>
-                            <p class="site_map_desc">
-                                Connect with us!
+                        <div class="col-md-4 right_border left_border bottom_border col-xs-12">
+                            <h4 class="site_map_heading">Site Map</h4>
+                            <div class="row footer_site_map">
+                                <div class="col-md-6 col-xs-6">
+                                    <ul>
+                                        <li><router-link to="/stores">Directory</router-link></li>
+                                        <li><router-link to="/promotions">Promotions</router-link></li>
+                                        <li><router-link to="/events">Events</router-link></li>
+                                        <!--<li><router-link to="/photos">Photos</router-link></li>-->
+                                        <li><router-link to="/hours">Shopping Hours</router-link></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 col-xs-6">
+                                    <ul>
+                                        <li><router-link to="/contact">Contact Us</router-link></li>
+                                        <li><router-link to="/find_us">Find Us</router-link></li>
+                                        <li><router-link to="/jobs">Jobs</router-link></li>
+                                        <li><router-link to="/community">Community</router-link></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12 bottom_border">
+                            <p class="rights_reserved">
+                                © {{copyright_year}} - {{property.name}}.<br/> All Rights Reserved.
+                                <router-link to="/pages/hazeldean-privacy-policy" target="_blank">Privacy Policy</router-link> 
+                                
                             </p>
-                            <div class="social_icons">
-                                <a href="https://www.facebook.com/CanyonCrestTowneCentre/" target="_blank">
-                                    <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1507232976000/fb@2x.png" class="mobile_social" alt="FB">
-                                </a>
-                                <a href="https://twitter.com/shopcanyoncrest" target="_blank">
-                                    <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1507232978000/twt@2x.png" class="mobile_social" alt="FB">
-                                </a>
-                                <a href="https://www.instagram.com/shopcanyoncrest/" target="_blank">
-                                    <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1507232976000/inst@2x.png" class="mobile_social" alt="FB">
-                                </a>
-                                <div class="clearfix"></div>
-                            </div>
+                            <!--<a href="//bentallkennedy.com/" target="_blank"><img src="//codecloud.cdn.speedyrails.net/sites/59e0c5676e6f642b330a0000/image/png/1507921818000/bentalllogo.png" class="footer_logo" alt=""></a>-->
+                            <p class="rights_reserved">
+                                
+                                Powered by <a href="//mallmaverick.com" target="_blank">Mall Maverick</a>
+                            </p>
                         </div>
-                    </div>
-                    <div class="col-md-4 right_border left_border bottom_border col-xs-12">
-                        <h4 class="site_map_heading">Site Map</h4>
-                        <div class="row footer_site_map">
-                            <div class="col-md-6 col-xs-6">
-                                <ul>
-                                    <li><router-link to="/stores">Directory</router-link></li>
-                                    <li><router-link to="/promotions">Promotions</router-link></li>
-                                    <li><router-link to="/events">Events</router-link></li>
-                                    <!--<li><router-link to="/photos">Photos</router-link></li>-->
-                                    <li><router-link to="/hours">Shopping Hours</router-link></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6 col-xs-6">
-                                <ul>
-                                    <li><router-link to="/contact">Contact Us</router-link></li>
-                                    <li><router-link to="/find_us">Find Us</router-link></li>
-                                    <li><router-link to="/jobs">Jobs</router-link></li>
-                                    <li><router-link to="/community">Community</router-link></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-xs-12 bottom_border">
-                        <p class="rights_reserved">
-                            © {{copyright_year}} - {{property.name}}.<br/> All Rights Reserved.
-                            <router-link to="/pages/hazeldean-privacy-policy" target="_blank">Privacy Policy</router-link> 
-                            
-                        </p>
-                        <!--<a href="//bentallkennedy.com/" target="_blank"><img src="//codecloud.cdn.speedyrails.net/sites/59e0c5676e6f642b330a0000/image/png/1507921818000/bentalllogo.png" class="footer_logo" alt=""></a>-->
-                        <p class="rights_reserved">
-                            
-                            Powered by <a href="//mallmaverick.com" target="_blank">Mall Maverick</a>
-                        </p>
                     </div>
                 </div>
-            </div>
-        </section>
-    </div>
+            </section>
+        </div>
         <script data-main="/main" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.3/require.min.js"></script>
     </body>
 </html>
