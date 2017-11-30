@@ -20,7 +20,7 @@
                                             <img :src="item.image_url" class="teamy__avatar" alt="The demo photo">
                                         </div>
                                         <div class="teamy__back">
-                                            <div class="teamy__back-inner">
+                                            <div class="teamy__back-inner position_relative">
                                                 <div class="teamy__content">
                                                     <!--<h3 class="teamy__name">View</h3>-->
                                                 </div>
