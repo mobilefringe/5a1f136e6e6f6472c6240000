@@ -1,13 +1,5 @@
 <template>
   <div class="content_container main_container position_relative padding_top_20">
-    <a href="#" class="locate_store hidden_phone">Locate store <i class="fa fa-search"></i></a>
-    <div class="stores_table">
-        <ul id="store_list_container_map">
-            <script id="store_list_template_map" type="x-tmpl-mustache/text">
-                <li><a href="#" store_id="store_{{id}}" onclick="return show_pin(this)" svgmap_region="{{svgmap_region}}">{{name}} </a><li>
-            </script>
-        </ul>
-    </div>
     <div class="map_container">
         <div id="map" class="hidden_phone">
             <!--<img alt="map" id="map_image" src="">-->
