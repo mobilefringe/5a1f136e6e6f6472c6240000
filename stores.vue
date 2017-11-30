@@ -137,37 +137,37 @@
 </style>
 
 <script>
-  define(["Vue","jquery", "Raphael", "mm_mapsvg","mousewheel", "vue!svg-map"], function(Vue,$, Raphael, mapSvg,mousewheel,SVGMapComponent) {
-    return Vue.component("stores-component", {
-      template: template, // the variable template will be injected
-      data: function() {
-        return {
-          listMode: "alphabetical"
-        }
-      },
-        created (){
-            window.Raphael = Raphael; // our mapSvg plugin is stupid and outdated. need this hack to tie Raphael to window object (global variable)
-        },
-      methods: {
-        changeMode (mode) {
-          this.listMode = mode;
-        },
-        dropPin(store) {
-            this.svgMapRef.hideMarkers();
-            console.log(store);
-            this.svgMapRef.addMarker(store,'//codecloud.cdn.speedyrails.net/sites/589e308f6e6f641b9f010000/image/png/1484850466000/show_pin.png');
-            this.svgMapRef.setViewBox(store)
-        },
-        filterStores (letter) {
-            if(letter == "#"){
-                this.processedStores = _.filter(this.allStores, function(o) { return _.inRange(_.toNumber(o.name[0]), -1, 10); });
+    define(["Vue","jquery", "Raphael", "mm_mapsvg","mousewheel", "vue!svg-map"], function(Vue,$, Raphael, mapSvg,mousewheel,SVGMapComponent) {
+        return Vue.component("stores-component", {
+            template: template, // the variable template will be injected
+            data: function() {
+                return {
+                    listMode: "alphabetical"
+                }
+            },
+            created (){
+                window.Raphael = Raphael; // our mapSvg plugin is stupid and outdated. need this hack to tie Raphael to window object (global variable)
+            },
+            methods: {
+            changeMode (mode) {
+                this.listMode = mode;
+            },
+            dropPin(store) {
+                this.svgMapRef.hideMarkers();
+                console.log(store);
+                this.svgMapRef.addMarker(store,'//codecloud.cdn.speedyrails.net/sites/589e308f6e6f641b9f010000/image/png/1484850466000/show_pin.png');
+                this.svgMapRef.setViewBox(store)
+            },
+            filterStores (letter) {
+                if(letter == "#"){
+                    this.processedStores = _.filter(this.allStores, function(o) { return _.inRange(_.toNumber(o.name[0]), -1, 10); });
+                }
+                else {
+                    this.processedStores = _.filter(this.allStores, function(o) { return _.lowerCase(o.name[0]) == _.lowerCase(letter); });
+                }
+                // console.log(this.processedStores);
             }
-            else {
-                this.processedStores = _.filter(this.allStores, function(o) { return _.lowerCase(o.name[0]) == _.lowerCase(letter); });
-            }
-            // console.log(this.processedStores);
-        }
-      },
+        },
       computed: {
           property (){
                 return this.$store.getters.getProperty;
