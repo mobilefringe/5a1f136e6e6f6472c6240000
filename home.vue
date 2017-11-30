@@ -97,8 +97,8 @@
                 feature_items () {
                     console.log(this.$store.state.results.feature_items);
                     return  _.slice(this.$store.state.results.feature_items, 0, 3);
-                }
-                ,promotions() {
+                },
+                promotions() {
                     return this.$store.getters.processedPromos;
                 }
             },
