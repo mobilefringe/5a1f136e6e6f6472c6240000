@@ -58,11 +58,11 @@
         
         <div class="content_container  hidden_phone  position_relative" style="padding:0">
             <div class="main_container">
-            <div class="newsletter_container text-center" v-show="show_subscrption">
-                    <h2 class="heading">SIGN UP TO RECEIVE OUR UPDATES</h2>
-                    <p class="newsletter_desc">Special Offers <br class="show_phone" /><span>•</span> New Store Openings <br class="show_phone" /><span>•</span> Exclusive Events</p>
-                    <router-link to="/newsletter" class="newsletter_btn animated_btn">Subscribe</router-link>
-                </div>
+                <div class="newsletter_container text-center" v-show="show_subscrption">
+                        <h2 class="heading">SIGN UP TO RECEIVE OUR UPDATES</h2>
+                        <p class="newsletter_desc">Special Offers <br class="show_phone" /><span>•</span> New Store Openings <br class="show_phone" /><span>•</span> Exclusive Events</p>
+                        <router-link to="/newsletter" class="newsletter_btn animated_btn">Subscribe</router-link>
+                    </div>
                  <hr/>
             </div>
             <!--<h2 class="promotion_heading text-center visit_us_header">Visit Us!</h2>-->
