@@ -81,25 +81,25 @@
             </div>
             <div class="col-md-8">
                 <h5 class="category_header" style="display:none" id="cat_name_header">All</h5>
-                <div class="row">
-                    <div class="col-md-6 store_col_1">
-                        <span class="store_initial open_stores numbers_exist" data-initial="number">#</span>
-                        <div id="numbered_store_list_container" class="numbers_exist">
-                            <div class="store_list_content cats_row" data-cat="{{cat_list}}">
-                                <p class="store_name"><a href="/stores/{{slug}}">{{name}}</a></p>
-                            </div>
-                        </div>
-                        <div class="store_list" id="store_list_container"></div>        
-                    </div>
-                    <div class="col-md-6 store_col_2">
-                        <div class="store_list" id="store_list_container2"></div>
-                    </div>
-                </div>
-                <div id="cat_store_container">
-                    <div class="store_list_content cats_row" data-cat="{{cat_list}}">
-                        <p class="store_name"><a href="/stores/{{slug}}">{{name}}</a></p>
-                    </div>
-                </div>
+                <!--<div class="row">-->
+                <!--    <div class="col-md-6 store_col_1">-->
+                <!--        <span class="store_initial open_stores numbers_exist" data-initial="number">#</span>-->
+                <!--        <div id="numbered_store_list_container" class="numbers_exist">-->
+                <!--            <div class="store_list_content cats_row" data-cat="{{cat_list}}">-->
+                <!--                <p class="store_name"><a href="/stores/{{slug}}">{{name}}</a></p>-->
+                <!--            </div>-->
+                <!--        </div>-->
+                <!--        <div class="store_list" id="store_list_container"></div>        -->
+                <!--    </div>-->
+                <!--    <div class="col-md-6 store_col_2">-->
+                <!--        <div class="store_list" id="store_list_container2"></div>-->
+                <!--    </div>-->
+                <!--</div>-->
+                <!--<div id="cat_store_container">-->
+                <!--    <div class="store_list_content cats_row" data-cat="{{cat_list}}">-->
+                <!--        <p class="store_name"><a href="/stores/{{slug}}">{{name}}</a></p>-->
+                <!--    </div>-->
+                <!--</div>-->
             </div>
             <!--<div class="col-md-4 hidden_phone">-->
             <!--    <div id="new_stores">-->
