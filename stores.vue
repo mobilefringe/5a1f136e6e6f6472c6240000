@@ -6,7 +6,7 @@
             </div>
             <!--<svg-map :svgMapUrl="getSVGurl"></svg-map>-->
         </div>
-        <h2 class="stores_main_heading">Directory</h2>
+        <h2 class="stores_main_heading">Shops & Entertaiment</h2>
         <p class="store_main_desc">explore • enjoy • shop</p>
         <div class="mobile_padding show_phone">
             <a href="/map" class="mobile_dd">Open Center Map</a>
