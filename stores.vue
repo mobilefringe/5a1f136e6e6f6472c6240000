@@ -1,0 +1,181 @@
+<template>
+  <div class="content_container main_container position_relative padding_top_20">
+    <a href="#" class="locate_store hidden_phone">Locate store <i class="fa fa-search"></i></a>
+    <div class="stores_table">
+        <ul id="store_list_container_map">
+            <script id="store_list_template_map" type="x-tmpl-mustache/text">
+                <li><a href="#" store_id="store_{{id}}" onclick="return show_pin(this)" svgmap_region="{{svgmap_region}}">{{name}} </a><li>
+            </script>
+        </ul>
+    </div>
+    <div class="map_container">
+        <div id="map" class="hidden_phone">
+            <!--<img alt="map" id="map_image" src="">-->
+        </div>
+    </div>
+    <h2 class="stores_main_heading">Directory</h2>
+    <p class="store_main_desc">explore • enjoy • shop</p>
+    <div class="mobile_padding show_phone">
+        <a href="/map" class="mobile_dd">Open Center Map</a>
+        <select id="mobile_cat_list" class="form-control custom_form_control">
+            <script id="category_template2" type="x-tmpl-mustache/text">
+                <option value="{{id}}">{{name}}</option>
+            </script>
+        </select>
+        <select id="mobile_alpha_list" class="form-control custom_form_control">
+            <option disabled="disabled" selected>Index</option>
+            <option value="7">top</option>
+            <option value="7">#</option>
+            <option value="a">a</option>
+            <option value="b">b</option>
+            <option value="c">c</option>
+            <option value="d">d</option>
+            <option value="e">e</option>
+            <option value="f">f</option>
+            <option value="g">g</option>
+            <option value="h">h</option>
+            <option value="i">i</option>
+            <option value="j">j</option>
+            <option value="k">k</option>
+            <option value="l">l</option>
+            <option value="m">m</option>
+            <option value="n">n</option>
+            <option value="o">o</option>
+            <option value="p">p</option>
+            <option value="q">q</option>
+            <option value="r">r</option>
+            <option value="s">s</option>
+            <option value="t">t</option>
+            <option value="u">u</option>
+            <option value="v">v</option>
+            <option value="w">w</option>
+            <option value="x">x</option>
+            <option value="y">y</option>
+            <option value="z">z</option>
+        </select>
+        
+    </div>
+    <div class="row padding_bottom_50">
+        <div class="col-md-12">
+            <div class="alpha_list">
+                <a href="#7" id="all_stores_a">all</a>
+                <a href="#7">#</a>
+                <a href="#A">A</a>
+                <a href="#B">B</a>
+                <a href="#C">C</a>
+                <a href="#D">D</a>
+                <a href="#E">E</a>
+                <a href="#F">F</a>
+                <a href="#G">G</a>
+                <a href="#H">H</a>
+                <a href="#I">I</a>
+                <a href="#J">J</a>
+                <a href="#K">K</a>
+                <a href="#L">L</a>
+                <a href="#M">M</a>
+                <a href="#N">N</a>
+                <a href="#O">O</a>
+                <a href="#P">P</a>
+                <a href="#Q">Q</a>
+                <a href="#R">R</a>
+                <a href="#S">S</a>
+                <a href="#T">T</a>
+                <a href="#U">U</a>
+                <a href="#V">V</a>
+                <a href="#W">W</a>
+                <a href="#X">X</a>
+                <a href="#Y">Y</a>
+                <a href="#Z">Z</a>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <h5 class="category_header" style="display:none" id="cat_name_header">All</h5>
+            <div class="row">
+                <div class="col-md-6 store_col_1">
+                    <span class="store_initial open_stores numbers_exist" data-initial="number">#</span>
+                    <div id="numbered_store_list_container" class="numbers_exist">
+                        <script id="numbered_store_list_template" type="x-tmpl-mustache/text">
+                            <div class="store_list_content cats_row" data-cat="{{cat_list}}">
+                                <p class="store_name"><a href="/stores/{{slug}}">{{name}}</a></p>
+                            </div>
+                        </script>
+                    </div>
+                    <div class="store_list" id="store_list_container"></div>        
+                </div>
+                <div class="col-md-6 store_col_2">
+                    <div class="store_list" id="store_list_container2"></div>
+                </div>
+            </div>
+            <div id="cat_store_container">
+                <script id="cat_store_template" type="x-tmpl-mustache/text">
+                    <div class="store_list_content cats_row" data-cat="{{cat_list}}">
+                        <p class="store_name"><a href="/stores/{{slug}}">{{name}}</a></p>
+                    </div>
+                </script>
+            </div>
+        </div>
+        <div class="col-md-4 hidden_phone">
+            <div id="new_stores">
+                <p class="category_header">Now Open</p>
+                <div id="new_store_container">
+                    <script id="new_store_template" type="x-tmpl-mustache/text">
+                        <h5 class="category_name"><a href="/stores/{{slug}}">{{name}}</a></h5>    
+                    </script>
+                </div>
+            </div>
+            <div id="coming_soon_stores">
+                <p class="category_header">Opening Soon</p>
+                <div id="coming_soon_container">
+                    <script id="coming_soon_template" type="x-tmpl-mustache/text">
+                        <h5 class="category_name"><a href="/stores/{{slug}}">{{name}}</a></h5>    
+                    </script>
+                </div>
+            </div>
+            <p class="category_header">Categories</p>
+            <h5 class="category_name active_cat hidden_phone"><a href="#" class="show_all_stores">All</a></h5>
+            <div id="category_container" class="hidden_phone">
+                <script id="category_template" type="x-tmpl-mustache/text">
+                    <h5 class="category_name"><a href="#" class="show_cat_stores" data-id="{{id}}">{{name}}</a></h5>    
+                </script>
+            </div>
+            
+            
+        </div>
+    </div>
+</div>
+</template>
+
+<style>
+  .center{
+    text-align: center
+  }
+  .store-section a{
+    color: #708090;
+  }
+</style>
+
+<script>
+  define(["Vue"], function(Vue) {
+    return Vue.component("stores-component", {
+      template: template, // the variable template will be injected
+      data: function() {
+        return {
+          listMode: "alphabetical"
+        }
+      },
+      methods: {
+        changeMode (mode) {
+          this.listMode = mode;
+        }
+      },
+      computed: {
+        storesByAlphaIndex() {
+          return this.$store.getters.storesByAlphaIndex;
+        },
+        storesByCategoryName() {
+          return this.$store.getters.storesByCategoryName;
+        }
+      }
+    });
+  });
+</script>
