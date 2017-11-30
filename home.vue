@@ -22,7 +22,7 @@
                                         <div class="teamy__back">
                                             <div class="teamy__back-inner position_relative">
                                                 <div class="teamy__content">
-                                                    <h3 class="teamy__name"> {{item.name}}</h3>
+                                                    <!--<h3 class="teamy__name"> {{item.name}}</h3>-->
                                                 </div>
                                             </div>
                                         </div>
