@@ -80,7 +80,7 @@
                 </div>
             </div>
             <div class="col-md-12">
-                <h5 class="category_header" style="display:none" id="cat_name_header">All</h5>
+                <!--<h5 class="category_header" style="display:none" id="cat_name_header">All</h5>-->
                 <div class="row">
                     <div v-for="(stores,key) in processedStores">
                         <div  v-for="n in 30">
