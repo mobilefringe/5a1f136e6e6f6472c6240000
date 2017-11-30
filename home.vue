@@ -60,7 +60,7 @@
             <div class="main_container">
                 <div class="newsletter_container text-center">
                         <h2 class="heading">SIGN UP TO RECEIVE OUR UPDATES</h2>
-                        <p class="newsletter_desc">Special Offers <br class="show_phone" /><span>•</span> New Store Openings <br class="show_phone" /><span>•</span> Exclusive Events</p>
+                        <p class="newsletter_desc sub_title">Special Offers <br class="show_phone" /><span>•</span> New Store Openings <br class="show_phone" /><span>•</span> Exclusive Events</p>
                         <router-link to="/newsletter" class="newsletter_btn animated_btn">Subscribe</router-link>
                     </div>
                  <hr/>
