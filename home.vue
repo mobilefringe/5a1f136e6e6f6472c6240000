@@ -50,6 +50,7 @@
                             </div>
                         </article>
                         <h3 class="promotion_header home_promos">{{promo.name}}</h3>
+                        <router-link to="/newsletter" class="newsletter_btn animated_btn">Subscribe</router-link>
                     </div>
                 </div>
                 <div class="clearfix"></div>
