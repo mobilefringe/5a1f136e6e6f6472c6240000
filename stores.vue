@@ -197,6 +197,7 @@
                 },
                 productChunks(){
                       return _.chunk(this.processedStores, 4);
+                }
                 
             },
             filters:{
