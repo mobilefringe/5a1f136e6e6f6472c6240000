@@ -151,20 +151,20 @@
           this.listMode = mode;
         },
         dropPin(store) {
-                    this.svgMapRef.hideMarkers();
-                    console.log(store);
-                    this.svgMapRef.addMarker(store,'//codecloud.cdn.speedyrails.net/sites/589e308f6e6f641b9f010000/image/png/1484850466000/show_pin.png');
-                    this.svgMapRef.setViewBox(store)
-                },
-                filterStores (letter) {
-                    if(letter == "#"){
-                        this.processedStores = _.filter(this.allStores, function(o) { return _.inRange(_.toNumber(o.name[0]), -1, 10); });
-                    }
-                    else {
-                        this.processedStores = _.filter(this.allStores, function(o) { return _.lowerCase(o.name[0]) == _.lowerCase(letter); });
-                    }
-                    // console.log(this.processedStores);
-                }
+            this.svgMapRef.hideMarkers();
+            console.log(store);
+            this.svgMapRef.addMarker(store,'//codecloud.cdn.speedyrails.net/sites/589e308f6e6f641b9f010000/image/png/1484850466000/show_pin.png');
+            this.svgMapRef.setViewBox(store)
+        },
+        filterStores (letter) {
+            if(letter == "#"){
+                this.processedStores = _.filter(this.allStores, function(o) { return _.inRange(_.toNumber(o.name[0]), -1, 10); });
+            }
+            else {
+                this.processedStores = _.filter(this.allStores, function(o) { return _.lowerCase(o.name[0]) == _.lowerCase(letter); });
+            }
+            // console.log(this.processedStores);
+        }
       },
       computed: {
         storesByAlphaIndex() {
