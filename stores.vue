@@ -145,6 +145,9 @@
           listMode: "alphabetical"
         }
       },
+        created (){
+            window.Raphael = Raphael; // our mapSvg plugin is stupid and outdated. need this hack to tie Raphael to window object (global variable)
+        },
       methods: {
         changeMode (mode) {
           this.listMode = mode;
