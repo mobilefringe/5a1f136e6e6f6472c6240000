@@ -170,7 +170,7 @@
             },
         getSVGurl () {
             // return "https://www.mallmaverick.com" + this.property.svgmap_url;
-            return "//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/svg+xml/1511892731000/Canyon Crest - Map.svg";
+            return "//www.mallmaverick.com/system/site_images/photos/000/035/014/original/Canyon_Crest_-_Map.svg?1512066588";
         },
         allStores() {
             return this.$store.getters.processedStores;
