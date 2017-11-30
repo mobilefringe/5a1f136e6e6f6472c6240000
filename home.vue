@@ -45,7 +45,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
                                 </router-link>
                             </div>
                         </article>
