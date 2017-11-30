@@ -192,7 +192,12 @@
                 svgMapRef() {
                     return _.filter(this.$children, function(o) { return (o.$el.className == "svg-map") })[0];
                 }
-            }
+            },
+            filters:{
+        		slice: function (value, begin, end){
+        			return value.slice(begin, end)
+        		}
+        	}
         });
     });
 </script>
