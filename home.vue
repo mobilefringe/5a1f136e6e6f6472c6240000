@@ -31,7 +31,7 @@
                 <p class="exclusive_deals">don’t miss our exclusive deals</p>
                 <hr/>
                 <div class="home_promotions feature_row" id="promos_container">
-                    <div class="promotion_item wow animated flipInX animated teamy-team">
+                    <div class="promotion_item wow animated flipInX animated teamy-team" v-for="promo in promotions">
                         <article class="teamy teamy_style2 teamy_mask-circle teamy_zoom-photo">
                             <div class="teamy__layout">
                                  <a href="/promotions/{{slug}}">
