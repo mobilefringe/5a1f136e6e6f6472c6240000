@@ -137,7 +137,7 @@
 </style>
 
 <script>
-  define(["Vue"], function(Vue) {
+  define(["Vue", "vue!svg-map"], function(Vue) {
     return Vue.component("stores-component", {
       template: template, // the variable template will be injected
       data: function() {
