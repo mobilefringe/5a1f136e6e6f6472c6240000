@@ -14,13 +14,13 @@
                     <div class="feature_item wow animated flipInX animated teamy-team">
                         <article class="teamy teamy_style2 teamy_mask-circle teamy_zoom-photo">
                             <div class="teamy__layout">
-                                <a href="{{item.url}}" >
+                                <router-link href="{{item.url}}" >
                                     <div class="teamy__preview">
                                         <img :src="item.image_url" class="teamy__avatar" alt="The demo photo">
                                     </div>
                                     <div class="teamy__back"></div>
                                     <p class="feature_text">{{item.name}}</p>
-                                </a>
+                                </router-link>
                             </div>
                         </article>
                     </div>
