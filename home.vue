@@ -1,15 +1,11 @@
 <template>
   <div class="row">
         <slick ref="slick" :options="slickOptions">
-            <div class="" v-for="banner in banners">
-                <router-link :to="banner.url"></router-link>
+            <div v-for="banner in banners" style="background-image:url(//codecloud.cdn.speedyrails.net/sites/59e0c5676e6f642b330a0000/image/jpeg/1509717633000/HomePageMobileSantaExperience.jpg)" class="banner_image_div">
+                <router-link :to="banner.url" class="banner_image_li"></router-link>
                 <img :src="banner.image_url" class="" alt="">
             </div>
         </slick>
-        <div style="background-image:url(//codecloud.cdn.speedyrails.net/sites/59e0c5676e6f642b330a0000/image/jpeg/1509717633000/HomePageMobileSantaExperience.jpg)" class="banner_image_div">
-                    <a class="banner_image_li" href="/events/hazeldean-santa-claus-at-hazeldean-mall" >
-                    </a>
-                </div>
     <!--<div class="large-6 columns">-->
     <!--  <div>-->
     <!--    <h1>{{title}}</h1>-->
