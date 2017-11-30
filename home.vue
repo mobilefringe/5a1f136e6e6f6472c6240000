@@ -56,6 +56,15 @@
                 <div class="clearfix"></div>
             </div>
         </div>
+        <div class="content_container main_container hidden_phone  position_relative" style="padding:0">
+    <h2 class="promotion_heading text-center visit_us_header">Visit Us!</h2>
+    <iframe  class="grayscale visit_us_iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1403.1596098534753!2d-75.87711965873454!3d45.301976899999985!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcb1455d27cd82d8!2sHazeldean+Mall!5e0!3m2!1sen!2sca!4v1509725766742"  width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <hr/>
+</div>
+<div class="content_container position_relative main_container show_phone ">
+   <h2 class="promotion_heading text-center visit_us_header">VISIT US!</h2>
+    <iframe  class="grayscale visit_us_iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1403.1596098534753!2d-75.87711965873454!3d45.301976899999985!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcb1455d27cd82d8!2sHazeldean+Mall!5e0!3m2!1sen!2sca!4v1509725766742"  width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
     </div>
 </template>
 
