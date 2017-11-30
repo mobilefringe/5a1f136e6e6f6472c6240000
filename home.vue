@@ -1,5 +1,5 @@
 <template>
-  <div class="row main_container">
+  <div class="row">
         <slick ref="slick" :options="slickOptions">
             <div class="" v-for="banner in banners">
                 <router-link :to="banner.url"></router-link>
