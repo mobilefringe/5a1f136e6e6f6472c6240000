@@ -136,7 +136,8 @@
                     var chunks = _.chunk(this.allStores,div_stores);
                     
                     console.log(chunks);
-                    
+                    _.forEach(this.storesByAlphaIndex, function(value) {
+                    }
                     
                     
                     if (end >=20){
