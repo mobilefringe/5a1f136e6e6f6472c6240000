@@ -166,7 +166,7 @@
                         console.log(value,i)
                         // console.log (num_store,div_stores)
                         if( num_store >= div_stores){
-                            console.log(temp_stores);
+                            console.log("temp_stores"temp_stores);
                             var x = _.groupBy(temp_stores, store => (isNaN(store.name.charAt(0)) ? store.name.charAt(0) : "#"));
                             console.log("x",x);
                             chunks[chunky] = x;
