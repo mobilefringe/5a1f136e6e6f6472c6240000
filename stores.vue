@@ -132,7 +132,9 @@
                     
                 },
                 sliceAllStores(start,end){
-                    console.log(this.allStores.length)
+                    total_num_stores = this.allStores.length/ 3;
+                    console.log(this.allStores.length);
+                    
                     if (end >=20){
                         end = this.alphabet.length;
                     }
