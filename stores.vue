@@ -160,7 +160,7 @@
                         chunks[i]=_.groupBy(value, store => (isNaN(store.name.charAt(0)) ? store.name.charAt(0) : "#"));
                     });
                     
-                    // console.log(chunks);
+                    console.log(chunks);
                     // if (end >=20){
                     //     end = this.alphabet.length;
                     // }
