@@ -168,7 +168,7 @@
                 storesByCategoryName() {
                   return this.$store.getters.storesByCategoryName;
                 },
-                findCategoryById () {
+                findCategoryById (id) {
                     return this.$store.getters.findCategoryById;
                 },
                 svgMapRef() {
