@@ -137,7 +137,7 @@
                     
                     console.log(chunks);
                     _.forEach(chunks, function(value) {
-                        
+                        _.groupBy(value, store => (isNaN(store.name.charAt(0)) ? store.name.charAt(0) : "#"));
                     }
                     
                     
