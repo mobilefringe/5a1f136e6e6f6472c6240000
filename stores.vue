@@ -32,7 +32,9 @@
                 <h5 class="category_header" style="display:none" id="cat_name_header">All</h5>
                 <div class="row" v-if="processedStores">
                     <div class="col-md-4 store_col_1" v-for="n in 3">
-                        <div v-for="(stores,key) in _.pick(this.processedStores, _.slice(this.alphabet, 0, 7))">
+                    
+                        <div v-for="(stores,key) in processedStores" v-if="_.indexOf(alphabet, key) > (_.keys(processedStores).length/3 * (n-1))  &&  _.indexOf(alphabet, key) < (_.keys(processedStores).length/3 * n) ">
+                        {{n}} {{_.indexOf(alphabet, key) }} {{ (_.keys(processedStores).length/3 * (n-1))}}
                             <span class="store_initial" :data-initial="key">{{key}}</span>
                             <div id="store_list_container" class="store_list" v-for="store in stores">
                                 <div class="store_list_content cats_row" :data-cat="store.cat_list">
@@ -106,9 +108,9 @@
                 //   total_stores = _.add(value.length,total_stores);
                 // });
                 // console.log(total_stores);
-                // var x = _.pick(this.storesByAlphaIndex, _.slice(this.alphabet, 0, 7));
+                var x = _.pick(this.storesByAlphaIndex, _.slice(this.alphabet, 0, 7));
                 
-                // console.log(x);
+                console.log(x);
             },
             methods: {
                 changeMode (mode) {
