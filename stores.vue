@@ -104,7 +104,7 @@
                 this.processedStores = this.storesByAlphaIndex;
                 var total_stores;
                 _.forEach(this.storesByAlphaIndex, function(value) {
-                  console.log(value);
+                //   console.log(value);
                   total_stores += value.length;
                 });
                 console.log(total_stores);
