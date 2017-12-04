@@ -159,7 +159,7 @@
                     var num_store = 0;
                     _.forEach(storesByAlphaIndex, function(value, i) {
                         // chunks[i]=_.groupBy(value, store => (isNaN(store.name.charAt(0)) ? store.name.charAt(0) : "#"));
-                        value.count
+                        num_store += value.count;
                         
                     });
                     
