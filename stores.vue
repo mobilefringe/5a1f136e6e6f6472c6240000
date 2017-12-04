@@ -102,7 +102,7 @@
             },
             mounted () {
                 this.processedStores = this.storesByAlphaIndex;
-                var x = _.pick(this.storesByAlphaIndex, this.alphabet[]);
+                var x = _.pick(this.storesByAlphaIndex, _.slice(this.alphabet, 0, 7));
                 
                 console.log();
             },
