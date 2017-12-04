@@ -139,14 +139,14 @@
                         chunks[i]=_.groupBy(value, store => (isNaN(store.name.charAt(0)) ? store.name.charAt(0) : "#"));
                     });
                     
-                    console.log(chunks);
-                    if (end >=20){
-                        end = this.alphabet.length;
-                    }
-                    var x =_.pick(this.storesByAlphaIndex, _.slice(this.alphabet, start, end));
-                    // console.log(start,end);
-                    // console.log(x);
-                   return x;
+                //     console.log(chunks);
+                //     if (end >=20){
+                //         end = this.alphabet.length;
+                //     }
+                //     var x =_.pick(this.storesByAlphaIndex, _.slice(this.alphabet, start, end));
+                //     // console.log(start,end);
+                //     // console.log(x);
+                //   return x;
                 }
             },
             computed: {
