@@ -163,7 +163,7 @@
                         // chunks[i]=_.groupBy(value, store => (isNaN(store.name.charAt(0)) ? store.name.charAt(0) : "#"));
                         num_store += value.count;
                         temp_stores.push(value);
-                        console.log(value)
+                        console.log(value,i)
                         if( num_store >= div_stores){
                             var x = _.groupBy(temp_stores, store => (isNaN(store.name.charAt(0)) ? store.name.charAt(0) : "#"));
                             console.log("x",x);
