@@ -1,18 +1,18 @@
 <template>
     <div class="content_container main_container position_relative padding_top_20">
-    <div class="row">
-    <div class="col-md-4">
-        
-    </div>
-    <div class="col-md-8">
-        <div class="map_container">
-            <div id="map" class="hidden_phone">
-                <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1511892740000/Canyon Crest - Map-01.png" class="" alt="" style="max-height:100%">
+        <div class="row">
+            <div class="col-md-4">
+                
             </div>
-            <!--<svg-map :svgMapUrl="getSVGurl"></svg-map>-->
+            <div class="col-md-8">
+                <div class="map_container">
+                    <div id="map" class="hidden_phone">
+                        <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1511892740000/Canyon Crest - Map-01.png" class="" alt="" style="max-height:100%">
+                    </div>
+                    <!--<svg-map :svgMapUrl="getSVGurl"></svg-map>-->
+                </div>
+            </div>
         </div>
-    </div>
-    </div>
         
         <h2 class="stores_main_heading">Shops & Entertaiment</h2>
         <p class="store_main_desc sub_title">Explore • Enjoy • Shop</p>
