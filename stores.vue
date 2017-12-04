@@ -155,7 +155,7 @@
                 sliceAllStores(start,end){
                     var div_stores = _.ceil(this.allStores.length/ 3);
                     var chunks = [];//_.chunk(this.allStores,div_stores);
-                    console.log(chunks);
+                    // console.log(chunks);
                     var num_store = 0;
                     var chunky = 0;
                     var temp_stores = [];
@@ -164,7 +164,7 @@
                         num_store = _.add(value.length, num_store);
                         temp_stores.push(value[0]);
                         console.log(value,i)
-                        console.log (num_store,div_stores)
+                        // console.log (num_store,div_stores)
                         if( num_store >= div_stores){
                             var x = _.groupBy(temp_stores, store => (isNaN(store.name.charAt(0)) ? store.name.charAt(0) : "#"));
                             console.log("x",x);
