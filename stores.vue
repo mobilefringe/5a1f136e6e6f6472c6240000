@@ -132,8 +132,10 @@
                     
                 },
                 sliceAllStores(start,end){
+                    var x =_.pick(this.storesByAlphaIndex, _.slice(this.alphabet, start, end));
                     console.log(start,end);
-                   return _.pick(this.storesByAlphaIndex, _.slice(this.alphabet, start, end));
+                    console.log(start,end);
+                   return 
                 }
             },
             computed: {
