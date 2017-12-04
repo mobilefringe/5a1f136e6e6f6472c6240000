@@ -104,7 +104,7 @@
                 this.processedStores = this.storesByAlphaIndex;
                 var x = _.pick(this.storesByAlphaIndex, _.slice(this.alphabet, 0, 7));
                 
-                console.log();
+                console.log(x);
             },
             methods: {
                 changeMode (mode) {
