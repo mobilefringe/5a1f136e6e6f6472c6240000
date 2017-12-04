@@ -150,6 +150,9 @@
                 allStores() {
                     return this.$store.getters.processedStores;
                 },
+                allCategories() {
+                    return this.$store.getters.processedCategories;
+                },
                 storesByAlphaIndex() {
                     console.log(this.$store.getters.storesByAlphaIndex);
                     return this.$store.getters.storesByAlphaIndex;
