@@ -132,9 +132,9 @@
                     
                 },
                 sliceAllStores(start,end){
-                    var div_stores = this.allStores.length/ 3;
-                    console.log(_.ceil(div_stores));
-                    
+                    var div_stores = _.ceil(this.allStores.length/ 3);
+                    console.log(div_stores);
+                    var chunks = 
                     if (end >=20){
                         end = this.alphabet.length;
                     }
