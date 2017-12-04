@@ -31,6 +31,7 @@
             <div class="col-md-12">
                 <h5 class="category_header" style="display:none" id="cat_name_header">All</h5>
                 <div class="row">
+                {{processedStores.length}}
                     <div class="col-md-4 store_col_1">
                     <div v-for="(stores,key) in processedStores" v-if="">
                         <span class="store_initial" :data-initial="key">{{key}}</span>
