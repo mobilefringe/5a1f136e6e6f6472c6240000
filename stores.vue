@@ -144,7 +144,7 @@
                     console.log(category_id);
                     var find = this.findCategoryById;
                     var y = _.filter(this.allStores, function(o) {o.tempCat = find(category_id); return _.indexOf(o.categories, _.toNumber(category_id)) > -1; });
-                    y = _.groupBy(y, store => store.category_name)
+                    y = _.groupBy(y, store => store.category_name);
                     console.log();
                 }
             },
