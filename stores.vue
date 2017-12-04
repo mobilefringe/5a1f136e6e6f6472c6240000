@@ -154,7 +154,7 @@
                 },
                 sliceAllStores(start,end){
                     var div_stores = _.ceil(this.allStores.length/ 3);
-                    var chunks = _.chunk(this.allStores,div_stores);
+                    var chunks = [];//_.chunk(this.allStores,div_stores);
                     console.log(chunks);
                     var num_store = 0;
                     var chunky = 0;
