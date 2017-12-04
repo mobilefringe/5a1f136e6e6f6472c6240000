@@ -158,6 +158,7 @@
                     console.log(chunks);
                     _.forEach(storesByAlphaIndex, function(value, i) {
                         // chunks[i]=_.groupBy(value, store => (isNaN(store.name.charAt(0)) ? store.name.charAt(0) : "#"));
+                        value.count
                         
                     });
                     
