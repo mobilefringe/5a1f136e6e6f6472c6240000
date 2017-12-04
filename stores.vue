@@ -2,10 +2,10 @@
     <div class="content_container main_container position_relative padding_top_20">
         <div class="row">
             <div class="col-md-4">
-                <div id="cat_store_container">
-                    <div class="store_list_content cats_row" v-for="cat in allCategories" data-cat="{{cat_list}}">
-                        <p class="store_name"><a href="/stores/{{slug}}">{{name}}</a></p>
-                    </div>
+                    <p class="category_header">Categories</p>
+                <h5 class="category_name active_cat hidden_phone"><a href="#" class="show_all_stores">All</a></h5>
+                <div id="category_container" class="hidden_phone">
+                    <h5 class="category_name"><a href="#" class="show_cat_stores" data-id="{{id}}">{{name}}</a></h5>
                 </div>
             </div>
             <div class="col-md-8">
