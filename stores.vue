@@ -102,6 +102,7 @@
             },
             mounted () {
                 this.processedStores = this.storesByAlphaIndex;
+                var total_stores;
                 console.log(_.countBy(this.storesByAlphaIndex, function (o,i){
                     return o.length;
                 }));
