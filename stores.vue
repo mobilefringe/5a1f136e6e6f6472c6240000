@@ -130,23 +130,6 @@
                         this.processedStores = _.groupBy(filtered, store => (isNaN(store.name.charAt(0)) ? store.name.charAt(0) : "#"));
                     }
                     
-                },
-                sliceAllStores(start,end){
-                    var div_stores = _.ceil(this.allStores.length/ 3);
-                    var chunks = _.chunk(this.allStores,div_stores);
-                    
-                    _.forEach(chunks, function(value, i) {
-                        chunks[i]=_.groupBy(value, store => (isNaN(store.name.charAt(0)) ? store.name.charAt(0) : "#"));
-                    });
-                    
-                    // console.log(chunks);
-                    // if (end >=20){
-                    //     end = this.alphabet.length;
-                    // }
-                    // var x =_.pick(this.storesByAlphaIndex, _.slice(this.alphabet, start, end));
-                    // // console.log(start,end);
-                    // // console.log(x);
-                   return chunks;
                 }
             },
             computed: {
