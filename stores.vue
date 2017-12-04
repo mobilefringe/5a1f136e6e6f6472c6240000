@@ -140,7 +140,7 @@
                     }
                     
                 },
-                filteredByCat () {
+                filteredByCategory () {
                     
                 }
             },
