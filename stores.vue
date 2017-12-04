@@ -102,6 +102,7 @@
             },
             mounted () {
                 this.processedStores = this.storesByAlphaIndex;
+                console.log();
             },
             methods: {
                 changeMode (mode) {
