@@ -169,7 +169,7 @@
                   return this.$store.getters.storesByCategoryName;
                 },
                 findCategoryByID () {
-                    return this.$store.getters.findCategoryByID;
+                    return this.$store.getters.findCategoryById;
                 },
                 svgMapRef() {
                     return _.filter(this.$children, function(o) { return (o.$el.className == "svg-map") })[0];
