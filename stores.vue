@@ -143,6 +143,7 @@
                 filteredByCategory (category_id) {
                     console.log(category_id);
                     var y = _.filter(this.allStores, function(o) {return _.indexOf(o.categories, _.toNumber(category_id)) > -1; });
+                    _.groupBy(y, store => store.category_name)
                     console.log(y);
                 }
             },
