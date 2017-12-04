@@ -105,7 +105,7 @@
                 var total_stores;
                 _.forEach(this.storesByAlphaIndex, function(value) {
                   console.log(value.length);
-                  total_stores = _.add(6, 4);
+                  total_stores = _.add(value.length,total_stores);
                 });
                 console.log(total_stores);
                 var x = _.pick(this.storesByAlphaIndex, _.slice(this.alphabet, 0, 7));
