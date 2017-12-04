@@ -165,6 +165,7 @@
                         temp_stores.push(value);
                         if( num_store >= div_stores){
                             var x = _.groupBy(temp_stores, store => (isNaN(store.name.charAt(0)) ? store.name.charAt(0) : "#"));
+                            console.log("x",x);
                             chunks[chunky] = x;
                             temp_stores= [];
                             chunky++;
