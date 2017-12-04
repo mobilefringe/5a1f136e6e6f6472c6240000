@@ -133,7 +133,7 @@
                     
                 },
                 sliceAllStores(start,end){
-                    
+                    _.pick(this.storesByAlphaIndex, _.slice(this.alphabet, 0, 7));
                 }
             },
             computed: {
