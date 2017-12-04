@@ -2,7 +2,7 @@
     <div class="content_container main_container position_relative padding_top_20">
         <div class="row">
             <div class="col-md-4">
-                 <div id="cat_store_container">
+                <div id="cat_store_container">
                     <div class="store_list_content cats_row" data-cat="{{cat_list}}">
                         <p class="store_name"><a href="/stores/{{slug}}">{{name}}</a></p>
                     </div>
