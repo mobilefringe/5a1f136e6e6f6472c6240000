@@ -165,6 +165,7 @@
                         temp_stores.push(value);
                         if( num_store >= div_stores){
                             chunks[chunky] = temp_stores;
+                            temp_stores= [];
                             chunky++;
                         }
                     });
