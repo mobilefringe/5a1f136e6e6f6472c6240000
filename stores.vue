@@ -123,7 +123,7 @@
                 },
                 filterStores (letter) {
                     if(letter == "All"){
-                        this.processedStores = this.storesByAlphaIndex;
+                        this.processedStores = this.sliceAllStores;//this.storesByAlphaIndex;
                     }
                     else {
                         var filtered = _.filter(this.storesByAlphaIndex, function(o,i) { return _.lowerCase(i) == _.lowerCase(letter); })[0];
