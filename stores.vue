@@ -1,7 +1,7 @@
 <template>
     <div class="content_container main_container position_relative padding_top_20">
         <div class="row">
-            <div class="col-md-4 ">
+            <div class="col-md-4" id="category_container">
                 <p class="category_header">Categories</p>
                 <h5 class="category_name active_cat hidden_phone"><a href="#" class="show_all_stores">All</a></h5>
                 <div  class="hidden_phone" v-for="cat in allCategories">
