@@ -164,7 +164,7 @@
                         num_store += value.count;
                         temp_stores.push(value);
                         if( num_store >= div_stores){
-                            chunks[chunky] = ;
+                            chunks[chunky] = temp_stores;
                             chunky++;
                         }
                     });
