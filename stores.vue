@@ -102,7 +102,7 @@
             },
             mounted () {
                 this.processedStores = this.storesByAlphaIndex;
-                var x  = this.storesByAlphaIndex;
+                var x = this.storesByAlphaIndex;
                 console.log();
             },
             methods: {
