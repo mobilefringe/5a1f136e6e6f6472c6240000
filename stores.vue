@@ -102,7 +102,8 @@
             },
             mounted () {
                 this.processedStores = this.storesByAlphaIndex;
-                var x = this.storesByAlphaIndex;
+                var x = _.pick(this.storesByAlphaIndex, [paths]);
+                
                 console.log();
             },
             methods: {
