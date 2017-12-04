@@ -103,7 +103,7 @@
             mounted () {
                 this.processedStores = this.storesByAlphaIndex;
                 var total_stores;
-                _.forEach([1, 2], function(value) {
+                _.forEach(this.storesByAlphaIndex, function(value) {
                   console.log(value);
                   total_stores += value.length;
                 });
