@@ -140,8 +140,8 @@
                         end = this.alphabet.length;
                     }
                     var x =_.pick(this.storesByAlphaIndex, _.slice(this.alphabet, start, end));
-                    console.log(start,end);
-                    console.log(x);
+                    // console.log(start,end);
+                    // console.log(x);
                    return x;
                 }
             },
