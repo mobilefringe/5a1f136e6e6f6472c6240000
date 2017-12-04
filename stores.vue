@@ -16,7 +16,7 @@
             <select id="mobile_alpha_list" class="form-control custom_form_control">
                 <option disabled="disabled" selected>Index</option>
                 <option value="7">#</option>
-                <option value="a" v-for="letter in alphabet"> {{letter}}</option>
+                <option :value="letter" v-for="letter in alphabet"> {{letter}}</option>
                 <option value="a">a</option>
                 <option value="b">b</option>
                 <option value="c">c</option>
