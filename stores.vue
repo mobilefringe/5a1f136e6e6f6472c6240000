@@ -142,7 +142,7 @@
                 },
                 filteredByCategory (category_id) {
                     console.log(category_id);
-                    var y = _.filter(this.allStores, function(o) { console.log(o.categories, category_id, _.indexOf(o.categories, _.toNumber(category_id)) ); return _.indexOf(o.categories, _.toNumber(category_id)); });
+                    var y = _.filter(this.allStores, function(o) { console.log(o.categories, _.toNumber(category_id), _.indexOf(o.categories, _.toNumber(category_id)) ); return _.indexOf(o.categories, _.toNumber(category_id)); });
                     console.log(y);
                 }
             },
