@@ -162,7 +162,7 @@
                     _.forEach(this.storesByAlphaIndex, function(value, i) {
                         // chunks[i]=_.groupBy(value, store => (isNaN(store.name.charAt(0)) ? store.name.charAt(0) : "#"));
                         num_store = _.add(value.length, num_store);
-                        temp_stores.push(value[0]);
+                        temp_stores.push(value);
                         console.log(value,i)
                         // console.log (num_store,div_stores)
                         if( num_store >= div_stores){
