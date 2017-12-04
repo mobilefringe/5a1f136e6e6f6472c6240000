@@ -50,6 +50,7 @@
             <div class="col-md-12">
                 <div class="alpha_list">
                     <a @click="filterStores('All')" class="all_a">All</a>
+                    <a v-for="letter in alphabet"></a>
                     <a @click="filterStores('#')">#</a>
                     <a @click="filterStores('A')">A</a>
                     <a @click="filterStores('B')">B</a>
