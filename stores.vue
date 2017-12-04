@@ -103,9 +103,11 @@
             mounted () {
                 this.processedStores = this.storesByAlphaIndex;
                 var total_stores;
-                console.log(_.countBy(this.storesByAlphaIndex, function (o,i){
-                    return o.length;
-                }));
+                _.forEach([1, 2], function(value) {
+                  console.log(value);
+                  total_stores += value.length;
+                });
+                console.log();
                 var x = _.pick(this.storesByAlphaIndex, _.slice(this.alphabet, 0, 7));
                 
                 console.log(x);
