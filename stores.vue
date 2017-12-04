@@ -142,7 +142,7 @@
                 },
                 filteredByCategory (category_id) {
                     console.log(category_id);
-                    _filter(this.allStores, function(o) { return !o.categories; });
+                    _filter(this.allStores, function(o) { return _.indexOf(o.categories, category_id); });
                 }
             },
             computed: {
