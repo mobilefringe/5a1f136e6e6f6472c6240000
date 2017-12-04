@@ -143,7 +143,7 @@
                 filteredByCategory (category_id) {
                     console.log(category_id);
                     var find = this.findCategoryById;
-                    var y = _.filter(this.allStores, function(o) { console.log(find); o.tempCat = find(category_id); return _.indexOf(o.categories, _.toNumber(category_id)) > -1; });
+                    var y = _.filter(this.allStores, function(o) {o.tempCat = find(category_id); return _.indexOf(o.categories, _.toNumber(category_id)) > -1; });
                     
                     console.log(_.groupBy(y, store => store.category_name));
                 }
