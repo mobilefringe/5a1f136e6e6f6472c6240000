@@ -155,7 +155,7 @@
                 sliceAllStores(start,end){
                     var div_stores = _.ceil(this.allStores.length/ 3);
                     var chunks = _.chunk(this.storesByAlphaIndex,div_stores);
-                    
+                    console.log(chunks)
                     _.forEach(chunks, function(value, i) {
                         chunks[i]=_.groupBy(value, store => (isNaN(store.name.charAt(0)) ? store.name.charAt(0) : "#"));
                     });
