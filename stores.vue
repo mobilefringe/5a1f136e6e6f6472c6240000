@@ -134,7 +134,7 @@
                 sliceAllStores(start,end){
                     var x =_.pick(this.storesByAlphaIndex, _.slice(this.alphabet, start, end));
                     console.log(start,end);
-                    console.log(start,end);
+                    console.log(x);
                    return x;
                 }
             },
