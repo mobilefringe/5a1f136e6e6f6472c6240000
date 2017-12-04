@@ -108,9 +108,9 @@
                 //   total_stores = _.add(value.length,total_stores);
                 // });
                 // console.log(total_stores);
-                var x = 
+                // var x = 
                 
-                console.log(x);
+                // console.log(x);
             },
             methods: {
                 changeMode (mode) {
