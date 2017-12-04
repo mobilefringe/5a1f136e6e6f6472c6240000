@@ -32,7 +32,7 @@
                 <h5 class="category_header" style="display:none" id="cat_name_header">All</h5>
                 <div class="row" v-if="processedStores">
                     <div class="col-md-4 store_col_1" v-for="chunk in sliceAllStores">
-                        <div v-for="(stores,key) in sliceAllStores(((n-1) * 7),(n*7))">
+                        <div v-for="(stores,key) in chunk">
                             <span class="store_initial" :data-initial="key">{{key}}</span>
                             <div id="store_list_container" class="store_list" v-for="store in stores">
                                 <div class="store_list_content cats_row" :data-cat="store.cat_list">
