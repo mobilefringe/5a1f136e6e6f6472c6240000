@@ -136,7 +136,7 @@
                     var chunks = _.chunk(this.allStores,div_stores);
                     
                     console.log(chunks);
-                    _.forEach(this.storesByAlphaIndex, function(value) {
+                    _.forEach(chunks, function(value) {
                     }
                     
                     
