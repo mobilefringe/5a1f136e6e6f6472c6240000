@@ -162,7 +162,8 @@
                         // chunks[i]=_.groupBy(value, store => (isNaN(store.name.charAt(0)) ? store.name.charAt(0) : "#"));
                         num_store += value.count;
                         if( num_store >= div_stores){
-                            chunks[]
+                            chunks[chunky] = ;
+                            chunky++;
                         }
                     });
                     
