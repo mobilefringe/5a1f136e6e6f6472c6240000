@@ -175,7 +175,7 @@
                         }
                     });
                     
-                    console.log(chunks);
+                    console.log("chunks",chunks);
                     // if (end >=20){
                     //     end = this.alphabet.length;
                     // }
