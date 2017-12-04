@@ -108,7 +108,7 @@
                 //   total_stores = _.add(value.length,total_stores);
                 // });
                 // console.log(total_stores);
-                var x = _.pick(this.storesByAlphaIndex, _.slice(this.alphabet, 0, 7));
+                var x = 
                 
                 console.log(x);
             },
