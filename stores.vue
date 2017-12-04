@@ -43,7 +43,6 @@
                             </div>
                         </div>
                     </div>
-                    
                 </div>
                 <!--<div id="cat_store_container">-->
                 <!--    <div class="store_list_content cats_row" data-cat="{{cat_list}}">-->
