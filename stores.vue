@@ -51,7 +51,7 @@
                 <div class="alpha_list">
                     <a @click="filterStores('All')" class="all_a">All</a>
                     <a @click="filterStores('#')">#</a>
-                    <a v-for="letter in alphabet"></a>
+                    <a v-for="letter in alphabet" @click="filterStores('A')"></a>
                     <!--<a @click="filterStores('A')">A</a>-->
                     <!--<a @click="filterStores('B')">B</a>-->
                     <!--<a @click="filterStores('C')">C</a>-->
