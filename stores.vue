@@ -146,6 +146,7 @@
                     var y = _.filter(this.allStores, function(o) {o.tempCat = find(category_id); return _.indexOf(o.categories, _.toNumber(category_id)) > -1; });
                     sortedCats = _.groupBy(y, store => store.category_name);
                     console.log(sortedCats);
+                    this.processedStores = sortedCats;
                 }
             },
             computed: {
