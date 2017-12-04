@@ -135,7 +135,7 @@
                 },
                 storesByAlphaIndex() {
                     console.log(this.$store.getters.storesByAlphaIndex);
-                  return this.$store.getters.storesByAlphaIndex;
+                    return this.$store.getters.storesByAlphaIndex;
                 },
                 storesByCategoryName() {
                   return this.$store.getters.storesByCategoryName;
