@@ -107,7 +107,7 @@
                   console.log(value);
                   total_stores += value.length;
                 });
-                console.log();
+                console.log(total_stores);
                 var x = _.pick(this.storesByAlphaIndex, _.slice(this.alphabet, 0, 7));
                 
                 console.log(x);
