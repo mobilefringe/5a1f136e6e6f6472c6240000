@@ -133,7 +133,7 @@
                 },
                 sliceAllStores(start,end){
                     if (end >=20){
-                        end = this.alphabet.length
+                        end = this.alphabet.length;
                     }
                     var x =_.pick(this.storesByAlphaIndex, _.slice(this.alphabet, start, end));
                     console.log(start,end);
