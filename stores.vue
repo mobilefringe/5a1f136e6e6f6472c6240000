@@ -34,7 +34,6 @@
                     <div class="col-md-4 store_col_1" v-for="chunk in sliceAllStores">
                         <div v-for="(stores,key) in chunk">
                             <span class="store_initial" :data-initial="key">{{key}}</span>
-                            {{stores}}
                             <div id="store_list_container" class="store_list" v-for="store in stores">
                                 <div class="store_list_content cats_row" :data-cat="store.cat_list">
                                     <p class="store_name"><router-link :to="'/stores/'+store.slug">{{store.name}}</router-link></p>
