@@ -133,7 +133,7 @@
                 },
                 sliceAllStores(start,end){
                     var div_stores = this.allStores.length/ 3;
-                    console.log(div_stores);
+                    console.log(_.ceil(div_stores));
                     
                     if (end >=20){
                         end = this.alphabet.length;
