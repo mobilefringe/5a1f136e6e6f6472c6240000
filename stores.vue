@@ -158,6 +158,7 @@
                     console.log(chunks);
                     var num_store = 0;
                     var chunky = 0;
+                    var temp_stores = [];
                     _.forEach(storesByAlphaIndex, function(value, i) {
                         // chunks[i]=_.groupBy(value, store => (isNaN(store.name.charAt(0)) ? store.name.charAt(0) : "#"));
                         num_store += value.count;
