@@ -142,7 +142,7 @@
                 },
                 filteredByCategory (category_id) {
                     console.log(category_id);
-                    var y = _.filter(this.allStores, function(o) {o.tempCat = this.findCategoryByID (category_id); return _.indexOf(o.categories, _.toNumber(category_id)) > -1; });
+                    var y = _.filter(this.allStores, function(o) {o.tempCat = this.findCategoryById (category_id); return _.indexOf(o.categories, _.toNumber(category_id)) > -1; });
                     _.groupBy(y, store => store.category_name)
                     console.log(y);
                 }
