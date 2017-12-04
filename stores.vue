@@ -136,6 +136,9 @@
                     var chunks = _.chunk(this.allStores,div_stores);
                     
                     console.log(chunks);
+                    
+                    
+                    
                     if (end >=20){
                         end = this.alphabet.length;
                     }
