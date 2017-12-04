@@ -102,7 +102,7 @@
             },
             mounted () {
                 this.processedStores = this.storesByAlphaIndex;
-                console.log(this.storesByAlphaIndex)
+                console.log(_.values(this.storesByAlphaIndex).length)
                 var x = _.pick(this.storesByAlphaIndex, _.slice(this.alphabet, 0, 7));
                 
                 console.log(x);
