@@ -141,7 +141,7 @@
                     
                 },
                 filteredByCategory (category_id) {
-                    
+                    console.log(category_id);
                 }
             },
             computed: {
