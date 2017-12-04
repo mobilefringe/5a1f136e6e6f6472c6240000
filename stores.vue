@@ -167,6 +167,7 @@
                             chunks[chunky] = _.groupBy(temp_stores, store => (isNaN(store.name.charAt(0)) ? store.name.charAt(0) : "#"));
                             temp_stores= [];
                             chunky++;
+                            num_store= 0 ;
                         }
                     });
                     
