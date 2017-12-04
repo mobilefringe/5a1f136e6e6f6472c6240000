@@ -38,7 +38,7 @@
                                 <div class="store_list_content cats_row" :data-cat="store.cat_list">
                                     <p class="store_name"><router-link :to="'/stores/'+store.slug">{{store.name}}</router-link></p>
                                 </div>
-                        </div>   
+                            </div>   
                         </div>
                     </div>
                 </div>
