@@ -131,6 +131,9 @@
                         this.processedStores = _.groupBy(filtered, store => (isNaN(store.name.charAt(0)) ? store.name.charAt(0) : "#"));
                     }
                     
+                },
+                sliceAllStores(){
+                    
                 }
             },
             computed: {
