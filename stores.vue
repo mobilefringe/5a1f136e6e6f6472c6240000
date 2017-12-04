@@ -4,7 +4,9 @@
     <div class="col-md-4">
         
     </div>
+    <div class="col-md-4">
         
+    </div>
     </div>
         <div class="map_container">
             <div id="map" class="hidden_phone">
