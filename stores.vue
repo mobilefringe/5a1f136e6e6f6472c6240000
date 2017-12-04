@@ -5,7 +5,7 @@
                 <p class="category_header">Categories</p>
                 <h5 class="category_name active_cat hidden_phone"><a href="#" class="show_all_stores">All</a></h5>
                 <div id="category_container" class="hidden_phone" v-for="cat in allCategories">
-                    <h5 class="category_name"><a href="#" class="show_cat_stores" :data-id="cat.id">{{name}}</a></h5>
+                    <h5 class="category_name"><a href="#" class="show_cat_stores" :data-id="cat.id">{{cat.name}}</a></h5>
                 </div>
             </div>
             <div class="col-md-8">
