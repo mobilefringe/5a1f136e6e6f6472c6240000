@@ -11,7 +11,7 @@
                 <h2 class="promo_list_name">{{currentPromo.name}}</h2>
                 <div class="store_details_desc">{{currentPromo.description}}</div>
                 <div class="text_center padding_top_20">
-                    <social-sharing :url="shareURL(currentPromo.slug)" :title="currentPromo.title" :description="currentPromo.body" :quote="truncate(currentPromo.description)" twitter-user="NorthParkCenter" :media="currentPromo.image_url" inline-template>
+                    <social-sharing :url="shareURL(currentPromo.slug)" :title="currentPromo.title" :description="currentPromo.body" :quote="truncate(currentPromo.description)" twitter-user="ShopCanyonCrest" :media="currentPromo.image_url" inline-template>
                             <div class="blog-social-share">
                                 <h5>Share this promotion</h5>
                                 <network network="facebook">
