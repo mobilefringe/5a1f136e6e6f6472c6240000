@@ -80,6 +80,7 @@
         currentPromo : function (){
             var vm = this;
             var temp_promo = [];
+            console.log(this.currentPromo)
             _.forEach(this.currentPromo.store.promotions, function(value, key) {
                 console.log(value.id , this.currentPromo.id);
                 if(value.id != this.currentPromo.id){
