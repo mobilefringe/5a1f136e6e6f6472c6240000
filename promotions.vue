@@ -2,7 +2,7 @@
     <div class=" main_container" id="promotions_container"> <!-- for some reason if you do not put an outer container div this component template will not render -->
         <div class="page_title"> Promotions </div>
         <div class="row">
-            <div class="col-md-3" v-for="promo in promotions">
+            <div class="col-md-4" v-for="promo in promotions">
                 <div class="promo_list_container">
                     <div class="promo_list_img_container">
                         <!--<a :href="promo.image_url" target="_blank">-->
