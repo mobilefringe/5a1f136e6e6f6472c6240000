@@ -158,6 +158,9 @@
                 findPromoById () {
                     return this.$store.getters.findPromoById;
                 },
+                findPromoById () {
+                    return this.$store.getters.findPromoById;
+                },
                 property (){
                     return this.$store.getters.getProperty;
                 },
