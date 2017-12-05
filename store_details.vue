@@ -142,13 +142,14 @@
                 currentStore : function (){
                     console.log("currentStore promo",this.currentStore );
                     var vm = this;
-                    var temp = [];
+                    var temp_promo = [];
                     _.forEach(this.currentStore.promotions, function(value, key) {
                         console.log(vm.findPromoById(value));
-                        temp.push(vm.findPromoById(value));
+                        temp_promo.push(vm.findPromoById(value));
                     });
-                    this.promotions = temp;
+                    this.promotions = temp_promo;
                     console.log("promos",this.promotions);
+                    findJobById
                 }
             },
             computed: {
