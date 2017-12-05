@@ -1,7 +1,7 @@
 <template>
     <div class="row main_container" v-if="currentStore">
         <div id="store_container">
-           <div class="promo_main_header">
+           <div class="promo_main_header sub_title">
                 {{currentStore.name}}
                 <div class="store_details_anchors pull-right">
                     <a href="#map">
