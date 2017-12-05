@@ -80,16 +80,12 @@
         currentPromo : function (){
             var vm = this;
             var temp_promo = [];
-            var allPromo = this.currentPromo.store.promotions;
-            console.log("currentPromo" , allPromo)
-            
-            _.forEach(allPromo, function(val, key) {
-                console.log(val);
-                // if(value.id != this.currentPromo.id){
-                //     var current_promo = vm.findPromoById(value);
-                //     current_promo.description_short = _.truncate(current_promo.description, {'length': 70});
-                //     temp_promo.push(current_promo);
-                // }
+            _.forEach(this.currentPromo.store.promotions, function(value, key) {
+                if(value.id != this.currentPromo.id){
+                    var current_promo = vm.findPromoById(value);
+                    current_promo.description_short = _.truncate(current_promo.description, {'length': 70});
+                    temp_promo.push(current_promo);
+                }
             });
             this.storePromos = temp_promo;
             console.log("promos",this.storePromos);
