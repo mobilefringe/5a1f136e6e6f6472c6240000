@@ -1,7 +1,7 @@
 <template>
     <div class="row main_container" v-if="currentPromo">
         <div class="promo_main_header sub_title">
-                {{currentPromo.store.name | capitalize}}
+                {{currentPromo.store.name | uppercase}}
         </div>
         <div class="row mobile_padding" id="promo_details_container">
             <div class="col-md-4">
