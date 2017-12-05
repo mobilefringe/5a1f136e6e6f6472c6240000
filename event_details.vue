@@ -119,7 +119,7 @@
                 },
                 shareURL(slug){
                     // console.log(window.location.host, "\n http://"+ window.location.host);
-                    var share_url = "http://www.shopcanyoncrest.com/promotions/" + slug;
+                    var share_url = "http://www.shopcanyoncrest.com/events/" + slug;
                     return share_url;
                 }
             }
