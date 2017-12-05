@@ -26,7 +26,7 @@
                 </div>
             </div>
         </div>
-        <div class="promo_main_header sub_title" v-if="storePromos && property" style="border-top: 1px solid #000;">
+        <div class="promo_main_header sub_title" v-if="storeJobs && property" style="border-top: 1px solid #000;">
                OTHER {{currentJob.store.name | uppercase }} JOBS
         </div>
         <div id="promos_container" v-if="storeJobs.length > 0">
