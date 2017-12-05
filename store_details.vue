@@ -32,12 +32,12 @@
                 <div class="col-md-4">
                     <img :src="currentStore.img_url" class="store_logo hidden_phone" :alt="currentStore.name" style="margin:0;" />
                     <div class="side_stores">
-                        <div class="store_header_btns newsletter_btn animated_btn" style="{{phone_show}}">
+                        <div class="store_header_btns newsletter_btn animated_btn" v-if="currentStore.phone">
                             <a :href="'tel:'+currentStore.phone" >{{currentStore.phone}}</a>
                         </div>
                         <br v-if="currentStore.phone"/>
                         <br/>
-                        <div class="store_header_btns newsletter_btn animated_btn" style="{{show}}">
+                        <div class="store_header_btns newsletter_btn animated_btn" v-if="currentStore.website">
                             <a :href="currentStore.website" target="_blank" >Visit Store Website</a>
                         </div>
                     </div>
