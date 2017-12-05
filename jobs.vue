@@ -49,7 +49,8 @@
             //       val.description = _.truncate(val.description, {'length':50,'separator': ' '})
             //     }
             // });
-            console.log()
+            var jobs = this.$store.getters.processedJobs;
+            console.log(_.groupBy(filtered, store => (isNaN(store.name.charAt(0)) ? store.name.charAt(0) : "#"));)
           return this.$store.getters.processedJobs;
         },
         timezone () {
