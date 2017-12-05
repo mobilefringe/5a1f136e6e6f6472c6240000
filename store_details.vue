@@ -90,7 +90,7 @@
                                 <span class="promo_store"> - {{promo.published_on | moment("MMM D", timezone)}}</span>
                             </p>
                             <div class="promo_list_desc">{{job.description_short}}</div>
-                            <div class="text_center">
+                            <div class="text_center position_relative">
                                 <router-link :to="'/jobs/'+job.slug" class="newsletter_btn animated_btn text_center">Read More</router-link>
                             </div>
                         </div>
