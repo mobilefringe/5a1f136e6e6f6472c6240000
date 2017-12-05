@@ -1,7 +1,6 @@
 <template>
     <div class="row main_container" v-if="currentStore">
         <div id="store_container">
-        <script id="store_template" type="x-tmpl-mustache/text">
            <div class="promo_main_header">
                 {{name}}
                 <div class="store_details_anchors pull-right">
@@ -44,7 +43,6 @@
                     </div>
                 </div> 
             </div>
-        </script>
     </div>
     <div class="row">
         <div class="col-md-8 promo_item" id="promos_main">
@@ -53,7 +51,6 @@
                 Promotions
             </h2>
             <div id="promos_container">
-                <script id="promos_template" type="x-tmpl-mustache/text">
                     <div class="row promo_item cats_row" data-cat="{{cat_list}}">
                         <div class="col-md-5">
                             <img class="promo_store_image" src="{{image_url}}" alt="{{name}}" />
@@ -67,7 +64,6 @@
                             <a class="read_more" href="/promotions/{{slug}}">Read More...</a>
                         </div>
                     </div>
-                </script>
             </div>
         </div>
         <div class="col-md-8 promo_item" id="jobs_main">
@@ -76,7 +72,6 @@
                 Jobs
             </h2>
             <div id="jobs_container">
-                <script id="jobs_template" type="x-tmpl-mustache/text">
                     <div class="row promo_item" data-cat="{{cat_list}}">
                         <div class="col-md-12">
                             <h2 class="promo_list_name">{{name}}</h2>
@@ -89,7 +84,6 @@
                             <a class="read_more" href="/jobs/{{slug}}">Read More...</a>
                         </div>
                     </div>
-                </script>
             </div>
         </div>
         <div class="col-md-8" id="hours_main">
@@ -98,13 +92,11 @@
                 Hours
             </h2>
             <div id="hours_container">
-                <script id="hours_template" type="x-tmpl-mustache/text">
                     <div class="row padding_top_20" data-cat="{{cat_list}}">
                         <div class="col-md-12">
                             <li class="promo_list_desc" style="list-style:none">{{h}}</li>
                         </div>
                     </div>
-                </script>
             </div>
         </div>
     </div>
