@@ -5,7 +5,7 @@
         </div>
         <div class="row mobile_padding" id="promo_details_container">
             <div class="col-md-4">
-                <img :src="currentJob.image_url"  alt="Store Logo" class="details_image" />
+                <img :src="currentJob.store.image_url"  alt="Store Logo" class="details_image" />
             </div>
             <div class="col-md-8">
                 <h2 class="promo_list_name">{{currentJob.name}}</h2>
