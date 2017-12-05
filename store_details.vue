@@ -91,7 +91,7 @@
                             </p>
                             <div class="promo_list_desc">{{job.description_short}}</div>
                             <div class="text_center position_relative">
-                                <router-link :to="'/jobs/'+job.slug" class="newsletter_btn animated_btn text_center">Read More</router-link>
+                                <router-link :to="'/jobs/'+job.slug" class="newsletter_btn animated_btn text_center"  style="bottom: -4px;">Read More</router-link>
                             </div>
                         </div>
                     </div>
