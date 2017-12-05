@@ -67,8 +67,8 @@
                 },
                 shareURL(slug){
                     // console.log(window)
-                    var share_url = window.location.host + slug
-                    return share_url
+                    var share_url = window.location.host + slug;
+                    return share_url;
                 }
             }
     });
