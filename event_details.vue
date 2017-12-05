@@ -99,7 +99,7 @@
           return this.$store.getters.findEventBySlug;
         },
         findEventById () {
-          return this.$store.getters.findEventBySlug;
+          return this.$store.getters.findEventById;
         },
         timezone() {
           return this.$store.getters.getTimezone;
