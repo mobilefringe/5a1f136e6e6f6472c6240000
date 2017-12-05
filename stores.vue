@@ -147,7 +147,7 @@
                     _.forEach(filtered, function(value, i) {
                         value.currentCategory = findCategoryById(category_id);
                     }
-                    console.log(y)
+                    console.log(filtered)
                     sortedCats = _.groupBy(filtered, store => store.category_name);
                     console.log(sortedCats);
                     this.processedStores = sortedCats;
