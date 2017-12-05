@@ -25,7 +25,7 @@
                     </div>
                     <div class="row promo_item">
                         <div class="col-md-12">
-                            <div class="store_details_desc hidden_phone padding_top_20">{{description}}</div>
+                            <div class="store_details_desc hidden_phone padding_top_20">{{currentStore.description}}</div>
                         </div>
                     </div>
                 </div>
