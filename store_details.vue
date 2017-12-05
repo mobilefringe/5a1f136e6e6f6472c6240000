@@ -110,7 +110,8 @@
             data: function() {
                 return {
                     currentStore: null,
-                    promotions : []
+                    promotions : [],
+                    map: null,
                 }
             },
             beforeRouteEnter (to, from, next) {
