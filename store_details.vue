@@ -81,7 +81,7 @@
                                 <span class="promo_store"> - {{ published_on }}</span>
                             </p>
                             <div class="promo_list_desc">{{job.description_short}}</div>
-                            <a class="read_more" href="/jobs/{{slug}}">Read More...</a>
+                            <router-link class="read_more" :to="'/jobs/'+job.slug">Read More...</router-link>
                         </div>
                     </div>
                 </div>
