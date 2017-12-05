@@ -134,10 +134,11 @@
                     _.forEach(this.currentStore.promotions, function(value, key) {
                         // console.log(vm.findPromoById(value));
                         temp_promo.push(vm.findPromoById(value));
+                        temp_job.push(vm.findJobById(value));
                     });
                     this.promotions = temp_promo;
                     console.log("promos",this.promotions);
-                    findJobById
+                    
                 }
             },
             computed: {
