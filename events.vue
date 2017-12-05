@@ -1,5 +1,5 @@
 <template>
-    <div><!-- for some reason if you do not put an outer container div this component template will not render -->
+    <div class=" main_container" id="events_container"><!-- for some reason if you do not put an outer container div this component template will not render -->
   
         <div class="page_title"> Events </div>
         <div class="row">
