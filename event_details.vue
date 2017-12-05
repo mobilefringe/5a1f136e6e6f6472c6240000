@@ -77,11 +77,11 @@
           this.$router.replace({ name: '404'});
         }
       },
-      mounted () {
-          allEvents
-          var vm = this;
+      watch : {
+        currentPromo : function (){
+            var vm = this;
             var temp_promo = [];
-            // var current_id =_.toNumber(this.currentPromo.id);
+            var current_id =_.toNumber(this.currentPromo.id);
             // console.log(x);
             _.forEach(this.currentPromo.store.events, function(value, key) {
                 if(_.toNumber(value) != current_id){
@@ -92,9 +92,7 @@
             });
             this.storePromos = temp_promo;
             console.log("promos",this.storePromos);
-      },
-      watch : {
-        
+        }  
       },
       computed: {
         findEventBySlug () {
