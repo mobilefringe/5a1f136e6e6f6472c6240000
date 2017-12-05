@@ -148,6 +148,7 @@
             },
             watch : {
                 map : function (){
+                    var vm = this;
                     setTimeout(function () {
                         console.log(this);
                         this.dropPin();
