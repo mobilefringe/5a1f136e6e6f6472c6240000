@@ -78,24 +78,10 @@
         }
       },
       mounted () {
-          
+          allEvents
       },
       watch : {
-        currentPromo : function (){
-            var vm = this;
-            var temp_promo = [];
-            var current_id =_.toNumber(this.currentPromo.id);
-            // console.log(x);
-            _.forEach(this.currentPromo.store.events, function(value, key) {
-                if(_.toNumber(value) != current_id){
-                    var current_promo = vm.findEventById(value);
-                    current_promo.description_short = _.truncate(current_promo.description, {'length': 70});
-                    temp_promo.push(current_promo);
-                }
-            });
-            this.storePromos = temp_promo;
-            console.log("promos",this.storePromos);
-        }  
+        
       },
       computed: {
         findEventBySlug () {
