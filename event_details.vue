@@ -11,7 +11,7 @@
                 <h2 class="promo_list_name">{{currentEvent.name}}</h2>
                 <p class="promo_dates sub_title">{{currentEvent.start_date | moment("MMM D", timezone)}} - {{currentEvent.end_date | moment("MMM D", timezone)}}</p>
                 <div class="store_details_desc">{{currentEvent.description}}</div>
-                <div class="text_center padding_top_20">
+                <div class="text_center padding_tb_20">
                     <social-sharing :url="shareURL(currentEvent.slug)" :title="currentEvent.title" :description="currentEvent.body" :quote="truncate(currentEvent.description)" twitter-user="ShopCanyonCrest" :media="currentEvent.image_url" inline-template>
                         <div class="blog-social-share">
                             <h5>Share this promotion</h5>
