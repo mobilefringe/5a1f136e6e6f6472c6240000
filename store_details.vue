@@ -160,14 +160,14 @@
                     var temp_job = [];
                     _.forEach(this.currentStore.promotions, function(value, key) {
                         // console.log(vm.findPromoById(value));
-                        var current_promo = vm.findPromoById(value)
+                        var current_promo = vm.findPromoById(value);
                         current_promo.description_short = _.truncate(current_promo.description, {'length': 70});
                         temp_promo.push(current_promo);
                     });
                     _.forEach(this.currentStore.jobs, function(value, key) {
-                        var current_job = vm.findPromoById(value)
+                        var current_job = vm.findJobById(value);
                         current_job.description_short = _.truncate(current_job.description, {'length': 70});
-                        temp_job.push(vm.findJobById(value));
+                        temp_job.push();
                         
                     })
                     this.promotions = temp_promo;
