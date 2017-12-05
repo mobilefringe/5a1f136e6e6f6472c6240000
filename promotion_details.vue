@@ -15,13 +15,13 @@
                             <div class="blog-social-share">
                                 <h5>Share</h5>
                                 <network network="facebook">
-                                    <i class="fa fa-facebook-square"></i>
+                                    <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512057980767/fb@2x_whiteborder.png" class="" alt="">
                                 </network>
                                 <network network="twitter">
-                                    <i class="fa fa-twitter-square"></i>
+                                    <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512058120246/twt@2x_whiteborder.png" class="" alt="">
                                 </network>
                                 <network network="pinterest">
-                                    <i class="fa fa-pinterest-square"></i>
+                                   <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512058077713/inst@2x_whiteborder.png" class="" alt="">
                                 </network>
                             </div>
                         </social-sharing>
