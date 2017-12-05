@@ -29,6 +29,7 @@
                     <img :src="currentStore.image_url" class="store_logo hidden_phone" :alt="currentStore.name" style="margin:0;" />
                    
                 </div> 
+            </div>
                 <div class="row">
                 <div class="col-md-8">
                     <div class="row promo_item">
