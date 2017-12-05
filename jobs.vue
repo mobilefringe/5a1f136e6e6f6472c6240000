@@ -4,7 +4,7 @@
         <p class="exclusive_deals sub_title">Join our family of dedicated professionals!</p>
         <div class="row">
             <div id="promos_container">
-                <div class="col-md-6 no_padding" v-for="promo in JOBS" :data-cat="promo.cat_list">
+                <div class="col-md-6 no_padding" v-for="promo in jobs" :data-cat="promo.cat_list">
                     <div class="promo_item cats_row is-table-row">
                         <div class="col-md-5 no_padding">
                             <img class="promo_store_image" :src="promo.image_url" :alt="promo.name" />
