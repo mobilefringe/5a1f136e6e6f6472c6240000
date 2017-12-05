@@ -16,8 +16,7 @@
                         <router-link :to="{ name: 'promotionDetails', params: { id: promo.slug }}" class="animated_btn text_center">Read More</router-link>
                     </div>
                 </div>
-            </div> 
-        </div>
+            </div>
     </div>
 </template>
 
