@@ -10,6 +10,22 @@
             <div class="col-md-8">
                 <h2 class="promo_list_name">{{currentPromo.name}}</h2>
                 <div class="store_details_desc">{{currentPromo.description}}</div>
+                <div>
+                    <social-sharing :url="shareURL(currentBlog.slug)" :title="currentBlog.title" :description="currentBlog.body" :quote="truncate(currentBlog.body)" twitter-user="NorthParkCenter" :media="currentBlog.image_url" inline-template>
+                            <div class="blog-social-share">
+                                <h5>Share</h5>
+                                <network network="facebook">
+                                    <i class="fa fa-facebook-square"></i>
+                                </network>
+                                <network network="twitter">
+                                    <i class="fa fa-twitter-square"></i>
+                                </network>
+                                <network network="pinterest">
+                                    <i class="fa fa-pinterest-square"></i>
+                                </network>
+                            </div>
+                        </social-sharing>
+                </div>
             </div>
         </div>
     </div>
