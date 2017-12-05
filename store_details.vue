@@ -151,7 +151,7 @@
                     var vm = this;
                     setTimeout(function () {
                         console.log(this);
-                        this.dropPin();
+                        vm.dropPin();
                       }, 500);
                 },
                 currentStore : function (){
