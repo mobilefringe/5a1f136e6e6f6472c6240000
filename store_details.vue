@@ -129,26 +129,26 @@
                         this.$router.replace({ name: '404'});
                     }
                 },
-      computed: {
-        findStoreBySlug () {
-          return this.$store.getters.findStoreBySlug;
-        },
-        findPromoById () {
-            return this.$store.getters.findPromoById;
-        },
-        property (){
-            return this.$store.getters.getProperty;
-        },
-        getSVGurl () {
-            return "https://www.mallmaverick.com" + this.property.svgmap_url;
-        },
-        svgMapRef () {
-            return _.filter(this.$children, function(o) { return (o.$el.className == "svg-map") })[0];
-        },
-        timezone () {
-            return this.$store.getters.getTimezone;
-        }
-      },
+                computed: {
+                    findStoreBySlug () {
+                      return this.$store.getters.findStoreBySlug;
+                    },
+                    findPromoById () {
+                        return this.$store.getters.findPromoById;
+                    },
+                    property (){
+                        return this.$store.getters.getProperty;
+                    },
+                    getSVGurl () {
+                        return "https://www.mallmaverick.com" + this.property.svgmap_url;
+                    },
+                    svgMapRef () {
+                        return _.filter(this.$children, function(o) { return (o.$el.className == "svg-map") })[0];
+                    },
+                    timezone () {
+                        return this.$store.getters.getTimezone;
+                    }
+                },
       methods: {
                 updateSVGMap (map) {
                     this.map = map;
