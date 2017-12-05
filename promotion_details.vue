@@ -2,10 +2,10 @@
     <div class="row main_container" v-if="currentPromo">
         <div class="row mobile_padding" id="promo_details_container">
             <div class="col-md-12">
-                <img src="{{image_url}}" style="{{promo_image_show}}" alt="Store Logo" class="details_image" />
-                <h2 class="promo_list_name">{{name}}</h2>
+                <img :src="currentPromo.image_url"  alt="Store Logo" class="details_image" />
+                <h2 class="promo_list_name">{{currentPromo.name}}</h2>
               
-                <p class="show_phone"><a href="/stores/{{store_slug}}" style="{{store_show}}" class="read_more">View Store Details</a></p>
+                <!--<p class="show_phone"><router href="/stores/{{store_slug}}" style="{{store_show}}" class="read_more">View Store Details</a></p>-->
                 <div class="store_details_desc">{{{rich_description}}}</div>
             </div>
         </div>
