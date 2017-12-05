@@ -174,7 +174,7 @@
                 storesByCategoryName() {
                   return this.$store.getters.storesByCategoryName;
                 },
-                findCategoryById () {
+                findCategoryById (id) {
                     console.log("hello");
                     return this.$store.getters.findCategoryById;
                 },
