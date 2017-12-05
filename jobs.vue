@@ -60,7 +60,7 @@
             // });
             var jobs = this.$store.getters.processedJobs;
             console.log(_.groupBy(jobs, job => job.store.name));
-          return _.sortBy(_.groupBy(jobs, job => job.store.name),'name' );;
+          return _.sortBy(_.groupBy(jobs, job => job.store.name),'name' );
         },
         timezone () {
           return this.$store.getters.getTimezone;
