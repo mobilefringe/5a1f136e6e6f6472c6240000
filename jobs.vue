@@ -49,7 +49,7 @@
             //       val.description = _.truncate(val.description, {'length':50,'separator': ' '})
             //     }
             // });
-          return this.$store.getters.processedEvents;
+          return this.$store.getters.processedJobs;
         },
         timezone () {
           return this.$store.getters.getTimezone;
