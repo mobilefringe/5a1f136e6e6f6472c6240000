@@ -3,9 +3,9 @@
         <div class="row mobile_padding" id="promo_details_container">
             <div class="col-md-4">
                 <img :src="currentPromo.image_url"  alt="Store Logo" class="details_image" />
+            </div>
+            <div class="col-md-8">
                 <h2 class="promo_list_name">{{currentPromo.name}}</h2>
-              
-                <!--<p class="show_phone"><router href="/stores/{{store_slug}}" style="{{store_show}}" class="read_more">View Store Details</a></p>-->
                 <div class="store_details_desc">{{currentPromo.description}}</div>
             </div>
         </div>
