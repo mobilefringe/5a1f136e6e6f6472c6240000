@@ -111,7 +111,7 @@
                 return {
                     currentStore: null,
                     promotions : [],
-                    map: null,
+                    map: null
                 }
             },
             beforeRouteEnter (to, from, next) {
