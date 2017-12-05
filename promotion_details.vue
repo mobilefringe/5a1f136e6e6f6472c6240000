@@ -83,7 +83,7 @@
             var allPromo = this.currentPromo.store.promotions;
             console.log("currentPromo" , allPromo)
             
-            _.forEach(this.currentPromo.store.promotions, function(val, key) {
+            _.forEach(allPromo, function(val, key) {
                 console.log(val.id , this.currentPromo.id);
                 if(value.id != this.currentPromo.id){
                     var current_promo = vm.findPromoById(value);
