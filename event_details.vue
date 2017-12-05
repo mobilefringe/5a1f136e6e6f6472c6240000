@@ -98,7 +98,7 @@
         findEventBySlug () {
           return this.$store.getters.findEventBySlug;
         },
-        findEventBySlug () {
+        findEventById () {
           return this.$store.getters.findEventBySlug;
         },
         timezone() {
