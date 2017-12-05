@@ -4,6 +4,7 @@
         <div class="row">
             <div class="col-md-4" v-for="promo in promotions">
                 <div class="promo_list_container text_center">
+                <p>{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
                     <div class="promo_list_img_container">
                         <!--<a :href="promo.image_url" target="_blank">-->
                         <img :src="promo.image_url" class="promo_list_img">
