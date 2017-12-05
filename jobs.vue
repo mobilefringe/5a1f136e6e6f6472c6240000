@@ -50,7 +50,7 @@
             //     }
             // });
             var jobs = this.$store.getters.processedJobs;
-            console.log(_.groupBy(jobs, store => (store => store.currentCategory);)
+            console.log(_.groupBy(jobs, store => (store => store.namw);)
           return jobs;
         },
         timezone () {
