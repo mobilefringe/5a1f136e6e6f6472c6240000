@@ -80,7 +80,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             {
                 name: "Events",
                 id: "events_link",
-                href: "/",
+                href: "/events",
             },
             {
                 name: "Careers",
