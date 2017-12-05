@@ -6,15 +6,15 @@
                 <div class="store_details_anchors pull-right">
                     <a href="#map">
                         <tt>Map</tt>
-                        <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456507179000/map_icon.png" class="" alt="">
+                        <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512494350242/map-icon.png" class="" alt="">
                     </a>
                     <a id="promo_anchor" href="#promos_main" v-if="promotions.length > 0">
                         <tt>Promos (<span>{{currentStore.total_published_promos}}</span>)</tt>
-                        <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456507166000/promo_icon.png" class="" alt="">
+                        <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512494363776/promo_icon.png" class="" alt="">
                     </a>
                     <a id="job_anchor" href="#jobs_main" v-if="jobs.length > 0">
                         <tt>Jobs (<span>{{currentStore.total_published_jobs}}</span>)</tt>
-                        <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456507192000/jobs_icon.png" class="" alt="jobs icon">
+                        <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512494378989/jobs_icon.png" class="" alt="jobs icon">
                     </a>
                 </div>
             </div>
