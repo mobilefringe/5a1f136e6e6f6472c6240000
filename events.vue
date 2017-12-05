@@ -13,7 +13,7 @@
                         <!--</a>-->
                     </div>
                     <p class="description_text">{{ promo.name }}</p>
-                    <router-link :to="{ name: 'promotionDetails', params: { id: promo.slug }}" class="animated_btn text_center">Read More</router-link>
+                    <router-link :to="{ name: 'eventDetails', params: { id: promo.slug }}" class="animated_btn text_center">Read More</router-link>
                 </div>
             </div>
         </div>
