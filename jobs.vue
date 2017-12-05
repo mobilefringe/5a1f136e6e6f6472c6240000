@@ -68,7 +68,7 @@
         truncate(val_body){
             var truncate = _.truncate(val_body, { 'length': 99, 'separator': ' ' });
             return truncate;
-        },
+        }
       }
     });
   });
