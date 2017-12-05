@@ -38,7 +38,7 @@
                         <br v-if="currentStore.phone"/>
                         <br/>
                         <div class="store_header_btns newsletter_btn animated_btn" style="{{show}}">
-                            <a href="//{{website}}" target="_blank" >Visit Store Website</a>
+                            <a :href="//{{currentStore.website}}" target="_blank" >Visit Store Website</a>
                         </div>
                     </div>
                 </div> 
