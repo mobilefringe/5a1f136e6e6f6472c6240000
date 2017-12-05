@@ -84,7 +84,7 @@
             console.log("currentPromo" , allPromo)
             
             _.forEach(allPromo, function(val, key) {
-                console.log(val.id , this.currentPromo.id);
+                console.log(val.id);
                 // if(value.id != this.currentPromo.id){
                 //     var current_promo = vm.findPromoById(value);
                 //     current_promo.description_short = _.truncate(current_promo.description, {'length': 70});
