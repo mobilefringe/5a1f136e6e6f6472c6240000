@@ -3,7 +3,7 @@
         <h3 class="promotion_heading" v-if="property"> Exclusive Events at {{property.name}}</h3>
         <p class="exclusive_deals sub_title">Join us to celebrate and enjoy!</p>
         <div class="row">
-            <div class="col-md-4" v-for="promo in events">
+            <div class="col-md-4" v-for="promo in jobs">
                 <div class="promo_list_container text_center">
                     <p>{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
                     <div class="promo_list_img_container">
