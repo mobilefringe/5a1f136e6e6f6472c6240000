@@ -27,7 +27,8 @@ require.config({
     'mousewheel': 'https://mallmaverick.com/javascripts/mapsvg/jquery.mousewheel',
     'mapsvg': 'https://mallmaverick.com/javascripts/mapsvg/mapsvg',
     'mm_mapsvg': 'https://mmvue.codecloudapp.com/mallmaverick_svgmap',
-    'svg-map': 'https://5a1f136e6e6f6472c6240000.codecloudapp.com/svg_map.vue?noext'
+    'svg-map': 'https://5a1f136e6e6f6472c6240000.codecloudapp.com/svg_map.vue?noext',
+    'vue-social-sharing': 'https://cdn.jsdelivr.net/npm/vue-social-sharing@2.3.1/dist/vue-social-sharing.min'
   }
 });
 
