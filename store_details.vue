@@ -141,7 +141,7 @@
                         // console.log(vm.findPromoById(value));
                         temp_promo.push(vm.findPromoById(value));
                     });
-                    _.{
+                    _.forEach(this.currentStore.jobs, function(value, key) {
                         
                         temp_job.push(vm.findJobById(value));
                     }
