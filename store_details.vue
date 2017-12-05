@@ -8,7 +8,7 @@
                         <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456507179000/map_icon.png" class="" alt="">
                         <tt>Map</tt>
                     </a>
-                    <a id="promo_anchor" href="#promos_main">
+                    <a id="promo_anchor" href="#promos_main" v-if="promotions">
                         <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456507166000/promo_icon.png" class="" alt="">
                         <tt>Promos (<span></span>)</tt>
                     </a>
