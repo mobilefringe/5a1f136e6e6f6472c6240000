@@ -37,12 +37,12 @@
                 </div>
                 <div class="col-md-4">
                     <div class="side_stores">
-                        <div class="store_header_btns newsletter_btn animated_btn" v-if="currentStore.phone">
+                        <div class="store_header_btns animated_btn" v-if="currentStore.phone">
                             <a :href="'tel:'+currentStore.phone" >{{currentStore.phone}}</a>
                         </div>
                         <br v-if="currentStore.phone"/>
                         <br/>
-                        <div class="store_header_btns newsletter_btn animated_btn" v-if="currentStore.website">
+                        <div class="store_header_btns animated_btn" v-if="currentStore.website">
                             <a :href="currentStore.website" target="_blank" >Visit Store Website</a>
                         </div>
                     </div>
