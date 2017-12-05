@@ -61,7 +61,6 @@
         currentPromo : function (){
             var vm = this;
             var temp_promo = [];
-            var temp_job = [];
             _.forEach(this.currentPromo.store.promotions, function(value, key) {
                 // console.log(vm.findPromoById(value));
                 var current_promo = vm.findPromoById(value);
