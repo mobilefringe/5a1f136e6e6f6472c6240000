@@ -26,7 +26,7 @@
                 </div>
             </div>
         </div>
-        <div class="promo_main_header sub_title" v-if="storePromos">
+        <div class="promo_main_header sub_title" v-if="storePromos" style="border-bottom: 1px solid #000;">
                OTHER {{currentPromo.store.name | uppercase }} PROMOTIONS
         </div>
         <div id="promos_container" v-if="storePromos">
