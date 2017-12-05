@@ -61,7 +61,7 @@
                             <div class="col-md-5 no_padding">
                                 <img class="promo_store_image" :src="promo.image_url" :alt="promo.name" />
                             </div>
-                            <div class="col-md-7">
+                            <div class="col-md-7 padding_tb_20">
                                 <h2 class="promo_list_name">{{promo.name}}</h2>
                                 <p>
                                     <span class="promo_dates sub_title">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</span>
