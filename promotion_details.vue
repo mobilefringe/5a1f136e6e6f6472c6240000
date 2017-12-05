@@ -9,7 +9,7 @@
             </div>
             <div class="col-md-8">
                 <h2 class="promo_list_name">{{currentPromo.name}}</h2>
-                <h3 class="sub_title">{{currentPromo.start_date | moment("MMM D", timezone)}} - {{currentPromo.end_date | moment("MMM D", timezone)}}</h3>
+                <h3 class="promo_date sub_title">{{currentPromo.start_date | moment("MMM D", timezone)}} - {{currentPromo.end_date | moment("MMM D", timezone)}}</h3>
                 <div class="store_details_desc">{{currentPromo.description}}</div>
                 <div class="text_center padding_top_20">
                     <social-sharing :url="shareURL(currentPromo.slug)" :title="currentPromo.title" :description="currentPromo.body" :quote="truncate(currentPromo.description)" twitter-user="ShopCanyonCrest" :media="currentPromo.image_url" inline-template>
