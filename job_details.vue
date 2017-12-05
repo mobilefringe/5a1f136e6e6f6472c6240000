@@ -42,7 +42,7 @@
                         </p>
                         <div class="promo_list_desc">{{promo.description_short }}</div>
                         <div class="text_center position_relative">
-                            <router-link :to="'/events/'+promo.slug" class="animated_btn text_center">Read More</router-link>
+                            <router-link :to="'/jobs/'+promo.slug" class="animated_btn text_center">Read More</router-link>
                         </div>
                     </div>
                 </div>
