@@ -66,8 +66,8 @@
                     return truncate;
                 },
                 shareURL(slug){
-                    console.log(window)
-                    var share_url = "http://www.northparkcenter.com/news/" + slug
+                    // console.log(window)
+                    var share_url = window.location.host + slug
                     return share_url
                 }
             }
