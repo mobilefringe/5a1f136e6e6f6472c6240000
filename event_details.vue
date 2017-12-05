@@ -58,7 +58,8 @@
       data: function() {
         return {
           currentEvent: null,
-          success_subscribe : false
+          success_subscribe : false,
+          storePromos : null
         }
       },
       beforeRouteEnter (to, from, next) {
