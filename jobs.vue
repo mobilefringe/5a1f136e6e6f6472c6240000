@@ -50,7 +50,7 @@
         }
       },
       computed: {
-        jobs() {
+        allJobs() {
             // var promos = this.$store.getters.processedEvents;
             // console.log(this.$store);
             // _.forEach(promos, function (val) {
