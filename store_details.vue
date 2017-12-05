@@ -33,7 +33,7 @@
             <div class="row is-table-row">
                 <div class="col-md-8">
                     <div class="row promo_item">
-                        <div class="col-md-12">
+                        <div class="col-md-12 no_padding">
                             <div class="store_details_desc hidden_phone padding_top_20">{{currentStore.description}}</div>
                         </div>
                     </div>
