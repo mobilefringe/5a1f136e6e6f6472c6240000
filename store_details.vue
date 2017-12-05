@@ -159,7 +159,7 @@
                     return this.$store.getters.findPromoById;
                 },
                 findJobById () {
-                    return this.$store.getters.findPromoById;
+                    return this.$store.getters.findJobById;
                 },
                 property (){
                     return this.$store.getters.getProperty;
