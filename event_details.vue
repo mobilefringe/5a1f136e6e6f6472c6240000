@@ -77,6 +77,9 @@
           this.$router.replace({ name: '404'});
         }
       },
+      mounted () {
+          
+      },
       watch : {
         currentPromo : function (){
             var vm = this;
