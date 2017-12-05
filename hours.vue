@@ -17,6 +17,48 @@
                 </div>
             </div>
         </div>
+        <div class="margin_25_across padding_top_20">
+    
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-12"> 
+                            <h3 class="hours_heading" >Regular Shopping Hours</h3>
+                            <div id="hours_container" class="hours_container">
+                                <script id="hours_template" type="x-tmpl-mustache/text">
+                                    <div class="hours_div">
+                                        <span>{{day}}:</span>
+                                        <span>{{h}}</span>
+                                    </div>
+                                </script>
+                            </div>
+                            <div class="padding_top_20"></div>
+                            <h3 class="hours_heading">Reduced Holiday Hours of Operation</h3>
+                            <div id="holidays_hours_container" class="hours_container">
+                                <script id="holidays_hours_template" type="x-tmpl-mustache/text">
+                                    <div class="hours_div">
+                                        <span>{{holiday_name}} ({{formatted_date}})</span>
+                                        <span>{{h}}</span>
+                                    </div>
+                                </script>
+                            </div>
+                            <div class="padding_top_20"></div>
+                            <h3 class="hours_heading">Holiday Closures</h3>
+                            <div id="closed_hours_container" class="hours_container">
+                                <script id="closed_hours_template" type="x-tmpl-mustache/text">
+                                    <div class="hours_div">
+                                        <span>{{holiday_name}} ({{formatted_date}})</span>
+                                    </div>
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 hidden_phone">
+                    <img style="margin-bottom:20px;" src="//codecloud.cdn.speedyrails.net/sites/59e0c5676e6f642b330a0000/image/jpeg/1509738369000/HOURS830x940.jpg" alt="plaza">
+                </div> 
+            </div>
+        </div>
     </div>
 </template>
 
