@@ -8,11 +8,11 @@
                         <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456507179000/map_icon.png" class="" alt="">
                         <tt>Map</tt>
                     </a>
-                    <a id="promo_anchor" href="#promos_main" v-if="promotions">
+                    <a id="promo_anchor" href="#promos_main" v-if="promotions.length > 0">
                         <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456507166000/promo_icon.png" class="" alt="">
                         <tt>Promos (<span></span>)</tt>
                     </a>
-                    <a id="job_anchor" href="#jobs_main" v-if="jobs">
+                    <a id="job_anchor" href="#jobs_main" v-if="jobs.length > 0">
                         <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456507192000/jobs_icon.png" class="" alt="jobs icon">
                         <tt>Jobs (<span></span>)</tt>
                     </a>
