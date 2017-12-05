@@ -65,7 +65,7 @@
                             <p>
                                 <span class="promo_dates sub_title">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</span>
                             </p>
-                            <div class="promo_list_desc">{{promo.description | truncate }}</div>
+                            <div class="promo_list_desc">{{promo.description}}</div>
                             <router-link class="read_more" :to="'/promotions/'+promo.slug">Read More...</router-link>
                         </div>
                     </div>
