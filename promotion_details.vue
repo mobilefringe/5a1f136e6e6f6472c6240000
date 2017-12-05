@@ -85,11 +85,11 @@
             
             _.forEach(allPromo, function(val, key) {
                 console.log(val.id , this.currentPromo.id);
-                if(value.id != this.currentPromo.id){
-                    var current_promo = vm.findPromoById(value);
-                    current_promo.description_short = _.truncate(current_promo.description, {'length': 70});
-                    temp_promo.push(current_promo);
-                }
+                // if(value.id != this.currentPromo.id){
+                //     var current_promo = vm.findPromoById(value);
+                //     current_promo.description_short = _.truncate(current_promo.description, {'length': 70});
+                //     temp_promo.push(current_promo);
+                // }
             });
             this.storePromos = temp_promo;
             console.log("promos",this.storePromos);
