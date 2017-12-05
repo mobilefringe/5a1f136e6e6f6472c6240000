@@ -145,7 +145,7 @@
                     var find = this.findCategoryById;
                     var filtered = _.filter(this.allStores, function(o) {return _.indexOf(o.categories, _.toNumber(category_id)) > -1; });
                     _.forEach(filtered, function(value, i) {
-                        value.currentCategory = findCategoryById(category_id);
+                        value.currentCategory = this.findCategoryById(category_id);
                     });
                     console.log(filtered)
                     sortedCats = _.groupBy(filtered, store => store.currentCategory);
