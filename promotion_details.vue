@@ -1,7 +1,7 @@
 <template>
     <div class="row main_container" v-if="currentPromo">
         <div class="row mobile_padding" id="promo_details_container">
-            <div class="col-md-10">
+            <div class="col-md-12">
                 <img src="{{image_url}}" style="{{promo_image_show}}" alt="Store Logo" class="details_image" />
                 <h2 class="promo_list_name">{{name}}</h2>
               
