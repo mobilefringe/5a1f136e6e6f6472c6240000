@@ -86,7 +86,7 @@
             console.log(current_id);
             _.forEach(this.allJobs, function(value, key) {
                 console.log(value)
-                if(_.toNumber(value.id) != current_id && _.toNumber(value.jobable_id) != job_id){
+                if(_.toNumber(value.id) != current_id && _.toNumber(value.jobable_id) == job_id){
                     var current_promo = vm.findJobById(value.id);
                     current_promo.description_short = _.truncate(current_promo.description, {'length': 70});
                     temp_promo.push(current_promo);
