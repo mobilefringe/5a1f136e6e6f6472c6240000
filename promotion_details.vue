@@ -86,8 +86,8 @@
                 current_promo.description_short = _.truncate(current_promo.description, {'length': 70});
                 temp_promo.push(current_promo);
             });
-            this.promotions = temp_promo;
-            console.log("promos",this.promotions);
+            this.storePromos = temp_promo;
+            console.log("promos",this.storePromos);
         }  
       },
       computed: {
