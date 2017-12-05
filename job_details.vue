@@ -59,7 +59,7 @@
         return {
           currentJob: null,
           success_subscribe : false,
-          storePromos : null
+          storeJobs : null
         }
       },
       beforeRouteEnter (to, from, next) {
