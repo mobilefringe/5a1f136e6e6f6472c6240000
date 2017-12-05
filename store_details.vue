@@ -56,11 +56,11 @@
                     {{currentStore.name}} Promotions
                 </h2>
                 <div id="promos_container">
-                    <div class="col-md-6 promo_item cats_row" v-for="promo in promotions" :data-cat="promo.cat_list">
-                        <div class="col-md-5 no_padding">
+                    <div class="col-md-6 promo_item cats_row no_padding" v-for="promo in promotions" :data-cat="promo.cat_list">
+                        <div class="col-md-5">
                             <img class="promo_store_image" :src="promo.image_url" :alt="promo.name" />
                         </div>
-                        <div class="col-md-7 no_padding">
+                        <div class="col-md-7">
                             <h2 class="promo_list_name">{{promo.name}}</h2>
                             <p>
                                 <span class="promo_dates">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</span>
