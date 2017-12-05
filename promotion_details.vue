@@ -1,14 +1,15 @@
 <template>
-  <div class="row main_container" v-if="currentPromo">
-    <div class="large-6 columns">
-      <div>
-        <h1>{{currentPromo.name}}</h1>
-        <p><router-link :to="{ name: 'storeDetails', params: { id: currentPromo.store.slug }}">{{currentPromo.store.name}}</router-link> | {{currentPromo.start_date | moment("MMM D", timezone)}} - {{currentPromo.end_date | moment("MMM D", timezone)}}</p>
-        <p>{{currentPromo.description}}</p>
-        <img :src="currentPromo.image_url">
-      </div>
+    <div class="row main_container" v-if="currentPromo">
+        <div class="row mobile_padding" id="promo_details_container">
+            <div class="col-md-10">
+                <img src="{{image_url}}" style="{{promo_image_show}}" alt="Store Logo" class="details_image" />
+                <h2 class="promo_list_name">{{name}}</h2>
+              
+                <p class="show_phone"><a href="/stores/{{store_slug}}" style="{{store_show}}" class="read_more">View Store Details</a></p>
+                <div class="store_details_desc">{{{rich_description}}}</div>
+            </div>
+        </div>
     </div>
-  </div>
 </template>
 
 <script>
