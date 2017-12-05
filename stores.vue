@@ -141,17 +141,21 @@
                     
                 },
                 filteredByCategory (category_id) {
-                    console.log(category_id);
-                    var find = this.findCategoryById;
-                    var filtered = _.filter(this.allStores, function(o) {return _.indexOf(o.categories, _.toNumber(category_id)) > -1; });
-                    _.forEach(filtered, function(value, i) {
-                        value.currentCategory = find(category_id).name;
-                    });
-                    console.log(filtered)
-                    sortedCats = _.groupBy(filtered, store => store.currentCategory);
-                    console.log(sortedCats);
-                    if()
-                    this.processedStores = sortedCats;
+                    if(letter == "All"){
+                        this.processedStores = this.storesByAlphaIndex;//this.storesByAlphaIndex;
+                    }
+                    else {
+                        var find = this.findCategoryById;
+                        var filtered = _.filter(this.allStores, function(o) {return _.indexOf(o.categories, _.toNumber(category_id)) > -1; });
+                        _.forEach(filtered, function(value, i) {
+                            value.currentCategory = find(category_id).name;
+                        });
+                        console.log(filtered)
+                        sortedCats = _.groupBy(filtered, store => store.currentCategory);
+                        console.log(sortedCats);
+                        if()
+                        this.processedStores = sortedCats;
+                    }
                 }
             },
             computed: {
