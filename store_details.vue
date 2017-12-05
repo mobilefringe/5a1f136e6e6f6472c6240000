@@ -35,7 +35,7 @@
                         <div class="store_header_btns newsletter_btn animated_btn" style="{{phone_show}}">
                             <a :href="'tel:'+currentStore.phone" >{{currentStore.phone}}</a>
                         </div>
-                        <br style="{{phone_show}}" />
+                        <br v-if="currentStore.phone"/>
                         <br/>
                         <div class="store_header_btns newsletter_btn animated_btn" style="{{show}}">
                             <a href="//{{website}}" target="_blank" >Visit Store Website</a>
