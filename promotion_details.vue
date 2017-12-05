@@ -27,7 +27,7 @@
             </div>
         </div>
         <div class="promo_main_header sub_title">
-               Other {{currentPromo.store.name}} | uppercase
+               Other {{currentPromo.store.name | uppercase }} 
         </div>
         
     </div>
