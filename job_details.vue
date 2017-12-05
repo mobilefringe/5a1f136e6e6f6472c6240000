@@ -92,7 +92,7 @@
                     temp_promo.push(current_promo);
                 }
             });
-            this.storePromos = temp_promo;
+            this.storeJobs = temp_promo;
             console.log("promos",this.storePromos);
         }  
       },
