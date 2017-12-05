@@ -32,7 +32,7 @@ require.config({
   }
 });
 
-require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'locales', 'moment', "vue-meta", "moment-timezone", "vue-moment",], function (Vue, Vue2Filters, VueRouter, appRoutes, store, VueI18n, messages, moment, Meta, tz, VueMoment) {
+require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'locales', 'moment', "vue-meta", "moment-timezone", "vue-moment",'vue-social-sharing'], function (Vue, Vue2Filters, VueRouter, appRoutes, store, VueI18n, messages, moment, Meta, tz, VueMoment,SocialSharing) {
   Vue.use(Meta);
   Vue.use(VueRouter);
   Vue.use(Vue2Filters);
