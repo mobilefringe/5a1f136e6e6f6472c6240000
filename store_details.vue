@@ -43,63 +43,63 @@
                     </div>
                 </div> 
             </div>
-    </div>
-    <div class="row">
-        <div class="col-md-8 promo_item" id="promos_main">
-            <h2 class="store_details_promo_heading">
-                <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456507166000/promo_icon.png" class="" alt="promo icon">
-                Promotions
-            </h2>
-            <div id="promos_container">
-                    <div class="row promo_item cats_row" data-cat="{{cat_list}}">
-                        <div class="col-md-5">
-                            <img class="promo_store_image" src="{{image_url}}" alt="{{name}}" />
+        </div>
+        <div class="row">
+            <div class="col-md-8 promo_item" id="promos_main">
+                <h2 class="store_details_promo_heading">
+                    <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456507166000/promo_icon.png" class="" alt="promo icon">
+                    Promotions
+                </h2>
+                <div id="promos_container">
+                        <div class="row promo_item cats_row" data-cat="{{cat_list}}">
+                            <div class="col-md-5">
+                                <img class="promo_store_image" src="{{image_url}}" alt="{{name}}" />
+                            </div>
+                            <div class="col-md-7">
+                                <h2 class="promo_list_name">{{name}}</h2>
+                                <p>
+                                    <span class="promo_dates">{{dates}}</span>
+                                </p>
+                                <div class="promo_list_desc">{{description_short}}</div>
+                                <a class="read_more" href="/promotions/{{slug}}">Read More...</a>
+                            </div>
                         </div>
-                        <div class="col-md-7">
-                            <h2 class="promo_list_name">{{name}}</h2>
-                            <p>
-                                <span class="promo_dates">{{dates}}</span>
-                            </p>
-                            <div class="promo_list_desc">{{description_short}}</div>
-                            <a class="read_more" href="/promotions/{{slug}}">Read More...</a>
+                </div>
+            </div>
+            <div class="col-md-8 promo_item" id="jobs_main">
+                <h2 class="store_details_promo_heading">
+                    <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456507192000/jobs_icon.png" class="" alt="jobs icon">
+                    Jobs
+                </h2>
+                <div id="jobs_container">
+                        <div class="row promo_item" data-cat="{{cat_list}}">
+                            <div class="col-md-12">
+                                <h2 class="promo_list_name">{{name}}</h2>
+                                <p>
+                                    <!-- <span class="promo_store">{{store_name}}</span>-->
+                                    <span class="promo_dates">{{job_type  }}</span> 
+                                    <span class="promo_store"> - {{ published_on }}</span>
+                                </p>
+                                <div class="promo_list_desc">{{description_short}}</div>
+                                <a class="read_more" href="/jobs/{{slug}}">Read More...</a>
+                            </div>
                         </div>
-                    </div>
+                </div>
+            </div>
+            <div class="col-md-8" id="hours_main">
+                <h2 class="store_details_promo_heading">
+                    <i class="fa fa-hourglass-half hours_icon" aria-hidden="true"></i>
+                    Hours
+                </h2>
+                <div id="hours_container">
+                        <div class="row padding_top_20" data-cat="{{cat_list}}">
+                            <div class="col-md-12">
+                                <li class="promo_list_desc" style="list-style:none">{{h}}</li>
+                            </div>
+                        </div>
+                </div>
             </div>
         </div>
-        <div class="col-md-8 promo_item" id="jobs_main">
-            <h2 class="store_details_promo_heading">
-                <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456507192000/jobs_icon.png" class="" alt="jobs icon">
-                Jobs
-            </h2>
-            <div id="jobs_container">
-                    <div class="row promo_item" data-cat="{{cat_list}}">
-                        <div class="col-md-12">
-                            <h2 class="promo_list_name">{{name}}</h2>
-                            <p>
-                                <!-- <span class="promo_store">{{store_name}}</span>-->
-                                <span class="promo_dates">{{job_type  }}</span> 
-                                <span class="promo_store"> - {{ published_on }}</span>
-                            </p>
-                            <div class="promo_list_desc">{{description_short}}</div>
-                            <a class="read_more" href="/jobs/{{slug}}">Read More...</a>
-                        </div>
-                    </div>
-            </div>
-        </div>
-        <div class="col-md-8" id="hours_main">
-            <h2 class="store_details_promo_heading">
-                <i class="fa fa-hourglass-half hours_icon" aria-hidden="true"></i>
-                Hours
-            </h2>
-            <div id="hours_container">
-                    <div class="row padding_top_20" data-cat="{{cat_list}}">
-                        <div class="col-md-12">
-                            <li class="promo_list_desc" style="list-style:none">{{h}}</li>
-                        </div>
-                    </div>
-            </div>
-        </div>
-    </div>
     </div>
 </template>
 
