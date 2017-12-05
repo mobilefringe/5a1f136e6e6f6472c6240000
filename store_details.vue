@@ -139,7 +139,9 @@
                     var temp_job = [];
                     _.forEach(this.currentStore.promotions, function(value, key) {
                         // console.log(vm.findPromoById(value));
-                        temp_promo.push(vm.findPromoById(value));
+                        var current_promo = vm.findPromoById(value)
+                        current_promo.description_short = ""
+                        temp_promo.push();
                     });
                     _.forEach(this.currentStore.jobs, function(value, key) {
                         temp_job.push(vm.findJobById(value));
