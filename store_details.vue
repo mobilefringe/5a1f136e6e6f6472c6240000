@@ -82,18 +82,18 @@
                 </h2>
                 <div id="jobs_container">
                     <div class="col-md-6 promo_item" v-for="job in jobs" :data-cat="job.cat_list">
-                        <div class="col-md-12">
-                            <h2 class="promo_list_name">{{job.name}}</h2>
-                            <p>
+                        <!--<div class="col-md-12">-->
+                        <!--    <h2 class="promo_list_name">{{job.name}}</h2>-->
+                        <!--    <p>-->
                                 <!-- <span class="promo_store">{{store_name}}</span>-->
-                                <span class="promo_dates">{{job.job_type}}</span> 
-                                <span class="promo_store"> - {{job.published_on | moment("MMM D", timezone)}}</span>
-                            </p>
-                            <div class="promo_list_desc">{{job.description_short}}</div>
-                            <div class="text_center position_relative">
-                                <router-link :to="'/jobs/'+job.slug" class="animated_btn text_center">Read More</router-link>
-                            </div>
-                        </div>
+                        <!--        <span class="promo_dates">{{job.job_type}}</span> -->
+                        <!--        <span class="promo_store"> - {{job.published_on | moment("MMM D", timezone)}}</span>-->
+                        <!--    </p>-->
+                        <!--    <div class="promo_list_desc">{{job.description_short}}</div>-->
+                        <!--    <div class="text_center position_relative">-->
+                        <!--        <router-link :to="'/jobs/'+job.slug" class="animated_btn text_center">Read More</router-link>-->
+                        <!--    </div>-->
+                        <!--</div>-->
                         <div class="promo_item cats_row is-table-row">
                             <div class="col-md-5 no_padding">
                                 <img class="promo_store_image" :src="job.image_url" :alt="promo.name" />
