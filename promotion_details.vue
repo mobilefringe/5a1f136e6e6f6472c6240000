@@ -69,6 +69,7 @@
                     return truncate;
                 },
                 shareURL(slug){
+                    console.log($route)
                     var share_url = "http://www.northparkcenter.com/news/" + slug
                     return share_url
                 }
