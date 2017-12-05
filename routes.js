@@ -58,7 +58,7 @@ define([], function () {
       children: [
         {
           path: '',
-          component: view('events'),
+          component: view('jobs'),
           name: 'storeList'
         },
         {
