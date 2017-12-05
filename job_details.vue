@@ -93,7 +93,7 @@
                 }
             });
             this.storeJobs = temp_promo;
-            console.log("promos",this.storePromos);
+            console.log("promos",this.storeJobs);
         }  
       },
       computed: {
