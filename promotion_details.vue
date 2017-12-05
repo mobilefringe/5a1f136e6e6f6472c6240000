@@ -62,18 +62,12 @@
             var vm = this;
             var temp_promo = [];
             var temp_job = [];
-            _.forEach(this.currentPromo.store..promotions, function(value, key) {
+            _.forEach(this.currentPromo.store.promotions, function(value, key) {
                 // console.log(vm.findPromoById(value));
                 var current_promo = vm.findPromoById(value);
                 current_promo.description_short = _.truncate(current_promo.description, {'length': 70});
                 temp_promo.push(current_promo);
             });
-            _.forEach(this.currentStore.jobs, function(value, key) {
-                var current_job = vm.findJobById(value);
-                current_job.description_short = _.truncate(current_job.description, {'length': 70});
-                temp_job.push(current_job);
-                
-            })
             this.promotions = temp_promo;
             this.jobs = temp_job;
             console.log("promos",this.promotions);
