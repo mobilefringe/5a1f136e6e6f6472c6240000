@@ -50,7 +50,7 @@
             //     }
             // });
             var jobs = this.$store.getters.processedJobs;
-            console.log(_.groupBy(jobs, store => (isNaN(store.name.charAt(0)) ? store.name.charAt(0) : "#"));)
+            console.log(_.groupBy(jobs, store => (store => store.currentCategory);)
           return jobs;
         },
         timezone () {
