@@ -26,7 +26,7 @@
                 </div>
             </div>
         </div>
-         <div class="promo_main_header sub_title">
+        <div class="promo_main_header sub_title">
                 {{currentPromo.store.name}}
         </div>
         
