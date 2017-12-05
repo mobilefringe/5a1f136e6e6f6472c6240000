@@ -82,10 +82,11 @@
             var temp_promo = [];
             _.forEach(this.currentPromo.store.promotions, function(value, key) {
                 // console.log(vm.findPromoById(value));
-                if(value.id != this.currentPromo.id)
-                var current_promo = vm.findPromoById(value);
-                current_promo.description_short = _.truncate(current_promo.description, {'length': 70});
-                temp_promo.push(current_promo);
+                if(value.id != this.currentPromo.id){
+                    var current_promo = vm.findPromoById(value);
+                    current_promo.description_short = _.truncate(current_promo.description, {'length': 70});
+                    temp_promo.push(current_promo);
+                }
             });
             this.storePromos = temp_promo;
             console.log("promos",this.storePromos);
