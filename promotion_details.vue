@@ -6,7 +6,7 @@
                 <h2 class="promo_list_name">{{currentPromo.name}}</h2>
               
                 <!--<p class="show_phone"><router href="/stores/{{store_slug}}" style="{{store_show}}" class="read_more">View Store Details</a></p>-->
-                <div class="store_details_desc">{{{rich_description}}}</div>
+                <div class="store_details_desc">{{currentPromo.description}}</div>
             </div>
         </div>
     </div>
