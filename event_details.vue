@@ -1,58 +1,53 @@
 <template>
-    <div>
-         <div class="page_container padding_30" v-if="currentEvent">
-            <div class="row">
-                <div class="col-md-4 ">
-                    <div class="promo_img_container">
-                        <img :src="currentEvent.image_url" class="promo_img">
-                    </div>
-                </div>
-                <div class="col-md-8 text_left promo_text_container">
-                    <div class="col-md-9">
-                        <p class="title all_caps" v-if="currentEvent.store">
-                            <router-link :to="{ name: 'storeDetails', params: { id: currentEvent.store.slug }}">{{currentEvent.store.name}}</router-link>
-                        </p>
-                        <p class="title all_caps" v-else>
-                           {{property.name}}
-                        </p>
-                        <p class="title">{{currentEvent.name}}</p>
-                        <br/>
-                        <p class="promo_dates"> {{currentEvent.start_date | moment("MMM D", timezone)}} - {{currentEvent.end_date | moment("MMM D", timezone)}}</p>
-                        <br/>
-                    </div>
-                    <div class="col-md-3" v-if="currentEvent.store">
-                        <img :src="currentEvent.store.store_front_url_abs" class="promo_store_logo" alt="">
-                    </div>
-                    <div class="col-md-12">
-                        <p class="description_text"> {{currentEvent.description}}</p>
-                    </div>
-                    
+    <div class="row main_container" v-if="currentPromo">
+        <div class="promo_main_header sub_title">
+                {{currentPromo.store.name | uppercase}}
+        </div>
+        <div class="row mobile_padding" id="promo_details_container">
+            <div class="col-md-4">
+                <img :src="currentPromo.image_url"  alt="Store Logo" class="details_image" />
+            </div>
+            <div class="col-md-8">
+                <h2 class="promo_list_name">{{currentPromo.name}}</h2>
+                <p class="promo_dates sub_title">{{currentPromo.start_date | moment("MMM D", timezone)}} - {{currentPromo.end_date | moment("MMM D", timezone)}}</p>
+                <div class="store_details_desc">{{currentPromo.description}}</div>
+                <div class="text_center padding_top_20">
+                    <social-sharing :url="shareURL(currentPromo.slug)" :title="currentPromo.title" :description="currentPromo.body" :quote="truncate(currentPromo.description)" twitter-user="ShopCanyonCrest" :media="currentPromo.image_url" inline-template>
+                        <div class="blog-social-share">
+                            <h5>Share this promotion</h5>
+                            <network network="facebook">
+                                <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512057980767/fb@2x_whiteborder.png" class="" alt="">
+                            </network>
+                            <network network="twitter">
+                                <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512058120246/twt@2x_whiteborder.png" class="" alt="">
+                            </network>
+                        </div>
+                    </social-sharing>
                 </div>
             </div>
         </div>
-        <hr/>
-        <div class="page_container">
-            <div class="row  newsletter_subscription" style="margin:30px auto">
-                <div class="col-md-8 text_left">
-                    <h3 class="subscribe_heading all_caps">Subscribe to {{property.name}} newsletter</h3>
-                    <p class="subscribe_text">
-                        For Events, Promotions and Shopping Centre News<br/>
-                        Disclaimer: You will receive Promotion E-mails.
-                    </p>
-                </div>
-                 <div class="newsletter_div col-md-4 ">
-                    <form action="//mobilefringe.createsend.com/t/d/s/ithdul/" method="post" id="newsletter_form" class="pull-right">
-                        <input name="cm-ithdul-ithdul" type="text" placeholder="Enter E-mail Here" class="newsletter_control" required /><br/>
-                        <button class="newsletter_btn animated_btn all_caps ">Submit</button>
-                        <p v-show="success_subscribe" id="success_subscribe">
-                            Thank you for subscribing.
+        <div class="promo_main_header sub_title" v-if="storePromos" style="border-top: 1px solid #000;">
+               OTHER {{currentPromo.store.name | uppercase }} PROMOTIONS
+        </div>
+        <div id="promos_container" v-if="storePromos">
+            <div class="col-md-6 no_padding" v-for="promo in storePromos" :data-cat="promo.cat_list">
+                <div class="promo_item cats_row is-table-row">
+                    <div class="col-md-5 no_padding">
+                        <img class="promo_store_image" :src="promo.image_url" :alt="promo.name" />
+                    </div>
+                    <div class="col-md-7 padding_tb_20">
+                        <h2 class="promo_list_name">{{promo.name}}</h2>
+                        <p>
+                            <span class="promo_dates sub_title">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</span>
                         </p>
-                    </form>
+                        <div class="promo_list_desc">{{promo.description_short }}</div>
+                        <div class="text_center position_relative">
+                            <router-link :to="'/promotions/'+promo.slug" class="animated_btn text_center">Read More</router-link>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <hr/>
-        <div style="padding:20px 0;"></div>
     </div>
 </template>
 
