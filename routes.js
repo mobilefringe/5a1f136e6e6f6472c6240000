@@ -43,7 +43,7 @@ define([], function () {
         {
           path: '',
           component: view('events'),
-          name: 'storeList'
+          name: 'eventList'
         },
         {
           path: ':id',
