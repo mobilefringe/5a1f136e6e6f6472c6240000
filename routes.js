@@ -59,7 +59,7 @@ define([], function () {
         {
           path: '',
           component: view('jobs'),
-          name: 'storeList'
+          name: 'jobList'
         },
         {
           path: ':id',
