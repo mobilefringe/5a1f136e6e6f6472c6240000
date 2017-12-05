@@ -1,18 +1,18 @@
 <template>
-    <div class="row main_container" v-if="currentEvent">
+    <div class="row main_container" v-if="currentJob">
         <div class="promo_main_header sub_title" v-if="property">
                 {{property.name | uppercase}}
         </div>
         <div class="row mobile_padding" id="promo_details_container">
             <div class="col-md-4">
-                <img :src="currentEvent.image_url"  alt="Store Logo" class="details_image" />
+                <img :src="currentJob.image_url"  alt="Store Logo" class="details_image" />
             </div>
             <div class="col-md-8">
-                <h2 class="promo_list_name">{{currentEvent.name}}</h2>
-                <p class="promo_dates sub_title">{{currentEvent.start_date | moment("MMM D", timezone)}} - {{currentEvent.end_date | moment("MMM D", timezone)}}</p>
-                <div class="store_details_desc">{{currentEvent.description}}</div>
+                <h2 class="promo_list_name">{{currentJob.name}}</h2>
+                <p class="promo_dates sub_title">{{currentJob.start_date | moment("MMM D", timezone)}} - {{currentJob.end_date | moment("MMM D", timezone)}}</p>
+                <div class="store_details_desc">{{currentJob.description}}</div>
                 <div class="text_center padding_tb_20">
-                    <social-sharing :url="shareURL(currentEvent.slug)" :title="currentEvent.title" :description="currentEvent.body" :quote="truncate(currentEvent.description)" twitter-user="ShopCanyonCrest" :media="currentEvent.image_url" inline-template>
+                    <social-sharing :url="shareURL(currentJob.slug)" :title="currentJob.title" :description="currentJob.body" :quote="truncate(currentJob.description)" twitter-user="ShopCanyonCrest" :media="currentJob.image_url" inline-template>
                         <div class="blog-social-share">
                             <h5>Share this promotion</h5>
                             <network network="facebook">
@@ -57,7 +57,7 @@
       template: template, // the variable template will be injected,
       data: function() {
         return {
-          currentEvent: null,
+          currentJob: null,
           success_subscribe : false,
           storePromos : null
         }
@@ -65,28 +65,28 @@
       beforeRouteEnter (to, from, next) {
         next(vm => {
           // access to component instance via `vm`
-          vm.currentEvent = vm.findEventBySlug(to.params.id);
-          if (vm.currentEvent === null || vm.currentEvent === undefined){
+          vm.currentJob = vm.findJobBySlug(to.params.id);
+          if (vm.currentJob === null || vm.currentJob === undefined){
             vm.$router.replace({ name: '404'});
           }
         })
       },
       beforeRouteUpdate (to, from, next) {
-        this.currentEvent = this.findEventBySlug(to.params.id);
-        if (this.currentEvent === null || this.currentEvent === undefined){
+        this.currentJob = this.findJobBySlug(to.params.id);
+        if (this.currentJob === null || this.currentJob === undefined){
           this.$router.replace({ name: '404'});
         }
       },
       watch : {
-        currentEvent : function (){
+        currentJob : function (){
             var vm = this;
             var temp_promo = [];
-            var current_id =_.toNumber(this.currentEvent.id);
+            var current_id =_.toNumber(this.currentJob.id);
             console.log(current_id);
-            _.forEach(this.allEvents, function(value, key) {
+            _.forEach(this.allJobs, function(value, key) {
                 console.log(value)
                 if(_.toNumber(value.id) != current_id){
-                    var current_promo = vm.findEventById(value.id);
+                    var current_promo = vm.findJobById(value.id);
                     current_promo.description_short = _.truncate(current_promo.description, {'length': 70});
                     temp_promo.push(current_promo);
                 }
@@ -96,14 +96,14 @@
         }  
       },
       computed: {
-        findEventBySlug () {
-          return this.$store.getters.findEventBySlug;
+        findJobBySlug () {
+          return this.$store.getters.findJobBySlug;
         },
-        findEventById () {
-          return this.$store.getters.findEventById;
+        findJobById () {
+          return this.$store.getters.findJobById;
         },
-        allEvents () {
-             return this.$store.getters.processedEvents;
+        allJobs () {
+             return this.$store.getters.processedJobs;
         },
         timezone() {
           return this.$store.getters.getTimezone;
