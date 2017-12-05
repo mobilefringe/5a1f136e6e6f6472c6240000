@@ -11,8 +11,6 @@
                             
                         <!--</a>-->
                     </div>
-                    <p class="sub_title">{{ promo.store.name }}</p>
-                    
                     <p class="description_text">{{ promo.name }}</p>
                     <router-link :to="{ name: 'promotionDetails', params: { id: promo.slug }}" class="animated_btn text_center">Read More</router-link>
                 </div>
