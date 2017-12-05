@@ -12,7 +12,7 @@
                         <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456507166000/promo_icon.png" class="" alt="">
                         <tt>Promos (<span></span>)</tt>
                     </a>
-                    <a id="job_anchor" href="#jobs_main">
+                    <a id="job_anchor" href="#jobs_main" v-if="jobs">
                         <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456507192000/jobs_icon.png" class="" alt="jobs icon">
                         <tt>Jobs (<span></span>)</tt>
                     </a>
