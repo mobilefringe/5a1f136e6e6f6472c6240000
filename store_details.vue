@@ -161,6 +161,6 @@
                         this.svgMapRef.setViewBox(this.currentStore)
                     }   
                 }
-            });
         });
+    });
 </script>
