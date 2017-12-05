@@ -38,7 +38,8 @@
       template: template, // the variable template will be injected,
       data: function() {
         return {
-          currentPromo: null
+          currentPromo: null,
+          storePromos : []
         }
       },
       beforeRouteEnter (to, from, next) {
