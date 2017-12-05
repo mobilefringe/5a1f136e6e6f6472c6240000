@@ -3,19 +3,25 @@
         <h3 class="promotion_heading" v-if="property">Start your Career at {{property.name}}</h3>
         <p class="exclusive_deals sub_title">Join our family of dedicated professionals!</p>
         <div class="row">
-            <div class="col-md-4" v-for="promo in jobs">
-                <div class="promo_list_container text_center">
-                    <p>{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
-                    <div class="promo_list_img_container">
-                        <!--<a :href="promo.image_url" target="_blank">-->
-                        <img :src="promo.store.image_url" class="promo_list_img">
-                            
-                        <!--</a>-->
+            <div id="promos_container">
+                    <div class="col-md-6 no_padding" v-for="promo in promotions" :data-cat="promo.cat_list">
+                        <div class="promo_item cats_row is-table-row">
+                            <div class="col-md-5 no_padding">
+                                <img class="promo_store_image" :src="promo.image_url" :alt="promo.name" />
+                            </div>
+                            <div class="col-md-7 padding_tb_20">
+                                <h2 class="promo_list_name">{{promo.name}}</h2>
+                                <p>
+                                    <span class="promo_dates sub_title">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</span>
+                                </p>
+                                <div class="promo_list_desc">{{promo.description_short }}</div>
+                                <div class="text_center position_relative">
+                                    <router-link :to="'/promotions/'+promo.slug" class="animated_btn text_center">Read More</router-link>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <p class="description_text">{{ promo.name }}</p>
-                    <router-link :to="{ name: 'eventDetails', params: { id: promo.slug }}" class="animated_btn text_center">Read More</router-link>
                 </div>
-            </div>
         </div>
     </div>
     
