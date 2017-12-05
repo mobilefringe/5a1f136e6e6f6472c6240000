@@ -1,7 +1,7 @@
 <template>
     <div class="row main_container" v-if="currentPromo">
         <div class="promo_main_header sub_title">
-                {{currentStore.name}}
+                {{currentPromo.store.name}}
         </div>
         <div class="row mobile_padding" id="promo_details_container">
             <div class="col-md-4">
