@@ -1,7 +1,7 @@
 <template>
     <div class=" main_container" id="promotions_container"> <!-- for some reason if you do not put an outer container div this component template will not render -->
         <h3 class="promotion_heading">Up Coming Events & Promotions!</h3>
-                <p class="exclusive_deals sub_title">Don’t miss our exclusive deals & events</p>
+        <p class="exclusive_deals sub_title">Don’t miss our exclusive deals & events</p>
         <div class="row">
             <div class="col-md-4" v-for="promo in promotions">
                 <div class="promo_list_container text_center">
