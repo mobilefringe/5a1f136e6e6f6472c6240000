@@ -39,7 +39,7 @@
       data: function() {
         return {
           currentPromo: null,
-          storePromos : []
+          storePromos : null
         }
       },
       beforeRouteEnter (to, from, next) {
