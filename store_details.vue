@@ -137,6 +137,7 @@
                         temp_job.push(vm.findJobById(value));
                     });
                     this.promotions = temp_promo;
+                    this.jobs = temp_job
                     console.log("promos",this.promotions);
                     
                 }
