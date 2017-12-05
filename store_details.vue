@@ -45,7 +45,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-8 promo_item" id="promos_main">
+            <div class="col-md-8 promo_item" id="promos_main" v-if="currentStore && currentStore.total_published_promos > 0">
                 <h2 class="store_details_promo_heading">
                     <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456507166000/promo_icon.png" class="" alt="promo icon">
                     Promotions
@@ -72,7 +72,7 @@
                     Jobs
                 </h2>
                 <div id="jobs_container">
-                    <div class="row promo_item" data-cat="{{cat_list}}">
+                    <div class="row promo_item" v-for="" data-cat="{{cat_list}}">
                         <div class="col-md-12">
                             <h2 class="promo_list_name">{{name}}</h2>
                             <p>
