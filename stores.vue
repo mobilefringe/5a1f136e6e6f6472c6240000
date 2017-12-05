@@ -148,7 +148,7 @@
                         value.currentCategory = findCategoryById(category_id);
                     }
                     console.log(filtered)
-                    sortedCats = _.groupBy(filtered, store => store.category_name);
+                    sortedCats = _.groupBy(filtered, store => store.currentCategory);
                     console.log(sortedCats);
                     this.processedStores = sortedCats;
                 }
