@@ -13,7 +13,7 @@
                 <div>
                     <social-sharing :url="shareURL(currentPromo.slug)" :title="currentPromo.title" :description="currentPromo.body" :quote="truncate(currentPromo.description)" twitter-user="NorthParkCenter" :media="currentPromo.image_url" inline-template>
                             <div class="blog-social-share">
-                                <h5>Share</h5>
+                                <h5>Share this promotion</h5>
                                 <network network="facebook">
                                     <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512057980767/fb@2x_whiteborder.png" class="" alt="">
                                 </network>
