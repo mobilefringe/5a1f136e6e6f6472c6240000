@@ -80,7 +80,7 @@
                                 <span class="promo_dates">{{job.job_type}}</span> 
                                 <span class="promo_store"> - {{ published_on }}</span>
                             </p>
-                            <div class="promo_list_desc">{{description_short}}</div>
+                            <div class="promo_list_desc">{{job.description_short}}</div>
                             <a class="read_more" href="/jobs/{{slug}}">Read More...</a>
                         </div>
                     </div>
