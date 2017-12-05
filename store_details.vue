@@ -165,7 +165,10 @@
                         temp_promo.push(current_promo);
                     });
                     _.forEach(this.currentStore.jobs, function(value, key) {
+                        var current_job = vm.findPromoById(value)
+                        current_job.description_short = _.truncate(current_job.description, {'length': 70});
                         temp_job.push(vm.findJobById(value));
+                        
                     })
                     this.promotions = temp_promo;
                     this.jobs = temp_job;
