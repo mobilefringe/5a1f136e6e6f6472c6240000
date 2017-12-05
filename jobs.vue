@@ -3,6 +3,9 @@
         <h3 class="promotion_heading" v-if="property">Start your Career at {{property.name}}</h3>
         <p class="exclusive_deals sub_title">Join our family of dedicated professionals!</p>
         <div class="row">
+            <h2 class="store_details_promo_heading sub_title">
+                    {{currentStore.name}}
+                </h2>
             <div id="promos_container">
                 <div class="col-md-6 no_padding" v-for="promo in jobs" :data-cat="promo.cat_list">
                     <div class="promo_item cats_row is-table-row">
