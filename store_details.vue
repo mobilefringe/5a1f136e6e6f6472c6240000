@@ -57,7 +57,7 @@
                 </h2>
                 <div id="promos_container">
                     <div class="col-md-6 promo_item cats_row" v-for="promo in promotions" :data-cat="promo.cat_list">
-                        <div class="col-md-5">
+                        <div class="col-md-5 no_padding">
                             <img class="promo_store_image" :src="promo.image_url" :alt="promo.name" />
                         </div>
                         <div class="col-md-7">
