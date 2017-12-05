@@ -96,7 +96,7 @@
                         <!--</div>-->
                         <div class="promo_item cats_row is-table-row">
                             <div class="col-md-5 no_padding">
-                                <img class="promo_store_image" :src="job.image_url" :alt="promo.name" />
+                                <img class="promo_store_image" :src="currentStore.image_url" :alt="promo.name" />
                             </div>
                             <div class="col-md-7 padding_tb_20">
                                 <h2 class="promo_list_name">{{job.name}}</h2>
