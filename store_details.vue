@@ -32,7 +32,7 @@
             </div>
             <div class="row is-table-row">
                 <div class="col-md-8">
-                            <div class="store_details_desc hidden_phone padding_top_20">{{currentStore.description}}</div>
+                            <div class="store_details_desc hidden_phone">{{currentStore.description}}</div>
                       
                 </div>
                 <div class="col-md-4">
