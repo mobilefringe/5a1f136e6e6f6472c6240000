@@ -21,7 +21,7 @@
             <div class="row">
                 <div class="col-md-8">
                     <div id="map">
-                        
+                        <svg-map @updateMap="updateSVGMap()" :svgMapUrl="getSVGurl" ></svg-map>
                     </div>
                     <div class="row promo_item">
                         <div class="col-md-12">
