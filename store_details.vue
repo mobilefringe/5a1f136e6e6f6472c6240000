@@ -86,19 +86,6 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-8" id="hours_main">
-                <h2 class="store_details_promo_heading">
-                    <i class="fa fa-hourglass-half hours_icon" aria-hidden="true"></i>
-                    Hours
-                </h2>
-                <div id="hours_container">
-                    <div class="row padding_top_20" data-cat="{{cat_list}}">
-                        <div class="col-md-12">
-                            <li class="promo_list_desc" style="list-style:none">{{h}}</li>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </template>
@@ -143,6 +130,7 @@
                     console.log("currentStore promo",this.currentStore );
                     var vm = this;
                     var temp_promo = [];
+                    var temp_job = [];
                     _.forEach(this.currentStore.promotions, function(value, key) {
                         console.log(vm.findPromoById(value));
                         temp_promo.push(vm.findPromoById(value));
