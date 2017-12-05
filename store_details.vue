@@ -61,7 +61,7 @@
                                 <span class="promo_dates">{{dates}}</span>
                             </p>
                             <div class="promo_list_desc">{{promo.description_short}}</div>
-                            <a class="read_more" href="/promotions/{{slug}}">Read More...</a>
+                            <router-link class="read_more" :to="/promotions/{{slug}}">Read More...</router-link>
                         </div>
                     </div>
                 </div>
