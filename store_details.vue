@@ -96,7 +96,7 @@
 </template>
 
 <script>
-    define(["Vue","jquery", "Raphael", "mm_mapsvg","mousewheel","vue!svg-map", "vue2-filters"], function(Vue, $, Raphael, mapSvg,mousewheel,SVGMapComponent) {
+    define(["Vue","jquery", "Raphael", "mm_mapsvg","mousewheel","vue!svg-map", "vue2-filters"], function(Vue, $, Raphael, mapSvg,mousewheel,SVGMapComponent, Vue2Filters) {
         return Vue.component("store-details-component", {
             template: template, // the variable template will be injected,
             data: function() {
