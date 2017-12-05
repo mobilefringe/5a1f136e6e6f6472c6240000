@@ -63,8 +63,8 @@ define([], function () {
         },
         {
           path: ':id',
-          component: view('event_details'),
-          name: 'eventDetails'
+          component: view('job_details'),
+          name: 'jobDetails'
         }
       ]
     },
