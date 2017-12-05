@@ -2,7 +2,7 @@
     <div class="row main_container" v-if="currentStore">
         <div id="store_container">
            <div class="promo_main_header">
-                {{name}}
+                {{currentStore.name}}
                 <div class="store_details_anchors pull-right">
                     <a href="#map">
                         <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456507179000/map_icon.png" class="" alt="">
