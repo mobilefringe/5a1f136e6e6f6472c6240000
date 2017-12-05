@@ -59,7 +59,7 @@
             //     }
             // });
             var jobs = this.$store.getters.processedJobs;
-            jobs = _.sortBy(_.groupBy(jobs, job => job.store.name),'name')
+            jobs = _.sortBy(jobs,'name')
             console.log(_.groupBy(jobs, job => job.store.name));
           return _.groupBy(jobs, job => job.store.name);
         },
