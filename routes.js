@@ -76,11 +76,6 @@ define([], function () {
           path: '',
           component: view('jobs'),
           name: 'jobList'
-        },
-        {
-          path: ':id',
-          component: view('job_details'),
-          name: 'jobDetails'
         }
       ]
     },
