@@ -107,60 +107,60 @@
     define(["Vue"], function(Vue) {
         return Vue.component("store-details-component", {
             template: template, // the variable template will be injected,
-                data: function() {
-                    return {
-                        title: "MM with Vue.js!",
-                        description: "An example of integration of Mall Maverick with Vue.js",
-                        currentStore: null
-                    }
-                },
-                beforeRouteEnter (to, from, next) {
-                    next(vm => {
-                        // access to component instance via `vm`
-                        vm.currentStore = vm.findStoreBySlug(to.params.id);
-                        if (vm.currentStore === null || vm.currentStore === undefined){
-                            vm.$router.replace({ name: '404'});
-                        }
-                    })
-                },
-                beforeRouteUpdate (to, from, next) {
-                    this.currentStore = this.findStoreBySlug(to.params.id);
-                    if (this.currentStore === null || this.currentStore === undefined){
-                        this.$router.replace({ name: '404'});
-                    }
-                },
-                computed: {
-                    findStoreBySlug () {
-                      return this.$store.getters.findStoreBySlug;
-                    },
-                    findPromoById () {
-                        return this.$store.getters.findPromoById;
-                    },
-                    property (){
-                        return this.$store.getters.getProperty;
-                    },
-                    getSVGurl () {
-                        return "https://www.mallmaverick.com" + this.property.svgmap_url;
-                    },
-                    svgMapRef () {
-                        return _.filter(this.$children, function(o) { return (o.$el.className == "svg-map") })[0];
-                    },
-                    timezone () {
-                        return this.$store.getters.getTimezone;
-                    }
-                },
-                methods: {
-                    updateSVGMap (map) {
-                        this.map = map;
-                        console.log("this",this);
-                    },
-                    dropPin () {
-                        console.log(this.currentStore.svgmap_region);
-                        // this.svgMapRef.hideMarkers();
-                        this.svgMapRef.addMarker(this.currentStore,'//codecloud.cdn.speedyrails.net/sites/589e308f6e6f641b9f010000/image/png/1484850466000/show_pin.png');
-                        this.svgMapRef.setViewBox(this.currentStore)
-                    }   
+            data: function() {
+                return {
+                    title: "MM with Vue.js!",
+                    description: "An example of integration of Mall Maverick with Vue.js",
+                    currentStore: null
                 }
+            },
+            beforeRouteEnter (to, from, next) {
+                next(vm => {
+                    // access to component instance via `vm`
+                    vm.currentStore = vm.findStoreBySlug(to.params.id);
+                    if (vm.currentStore === null || vm.currentStore === undefined){
+                        vm.$router.replace({ name: '404'});
+                    }
+                })
+            },
+            beforeRouteUpdate (to, from, next) {
+                this.currentStore = this.findStoreBySlug(to.params.id);
+                if (this.currentStore === null || this.currentStore === undefined){
+                    this.$router.replace({ name: '404'});
+                }
+            },
+            computed: {
+                findStoreBySlug () {
+                  return this.$store.getters.findStoreBySlug;
+                },
+                findPromoById () {
+                    return this.$store.getters.findPromoById;
+                },
+                property (){
+                    return this.$store.getters.getProperty;
+                },
+                getSVGurl () {
+                    return "https://www.mallmaverick.com" + this.property.svgmap_url;
+                },
+                svgMapRef () {
+                    return _.filter(this.$children, function(o) { return (o.$el.className == "svg-map") })[0];
+                },
+                timezone () {
+                    return this.$store.getters.getTimezone;
+                }
+            },
+            methods: {
+                updateSVGMap (map) {
+                    this.map = map;
+                    console.log("this",this);
+                },
+                dropPin () {
+                    console.log(this.currentStore.svgmap_region);
+                    // this.svgMapRef.hideMarkers();
+                    this.svgMapRef.addMarker(this.currentStore,'//codecloud.cdn.speedyrails.net/sites/589e308f6e6f641b9f010000/image/png/1484850466000/show_pin.png');
+                    this.svgMapRef.setViewBox(this.currentStore)
+                }   
+            }
         });
     });
 </script>
