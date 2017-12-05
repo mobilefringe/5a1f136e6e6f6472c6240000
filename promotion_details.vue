@@ -20,9 +20,6 @@
                                 <network network="twitter">
                                     <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512058120246/twt@2x_whiteborder.png" class="" alt="">
                                 </network>
-                                <network network="instagram">
-                                   <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512058077713/inst@2x_whiteborder.png" class="" alt="">
-                                </network>
                             </div>
                         </social-sharing>
                 </div>
