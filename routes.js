@@ -69,6 +69,22 @@ define([], function () {
       ]
     },
     {
+      path: '/jobs',
+      component: view('default'),
+      children: [
+        {
+          path: '',
+          component: view('jobs'),
+          name: 'jobList'
+        },
+        {
+          path: ':id',
+          component: view('job_details'),
+          name: 'jobDetails'
+        }
+      ]
+    },
+    {
       path: '/pages',
       component: view('default'),
       redirect: '/404',
