@@ -53,7 +53,7 @@
             <div class="col-md-8 promo_item" id="promos_main" v-if="currentStore && currentStore.total_published_promos > 0">
                 <h2 class="store_details_promo_heading">
                     <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456507166000/promo_icon.png" class="" alt="promo icon">
-                    Promotions
+                    {{currentStore.name}} Promotions
                 </h2>
                 <div id="promos_container">
                     <div class="row promo_item cats_row" v-for="promo in promotions" :data-cat="promo.cat_list">
