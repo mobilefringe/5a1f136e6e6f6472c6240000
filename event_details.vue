@@ -85,7 +85,7 @@
             console.log(current_id);
             _.forEach(this.allEvents, function(value, key) {
                 console.log(value)
-                if(_.toNumber(value) != current_id){
+                if(_.toNumber(value.id) != current_id){
                     var current_promo = vm.findEventById(value);
                     current_promo.description_short = _.truncate(current_promo.description, {'length': 70});
                     temp_promo.push(current_promo);
