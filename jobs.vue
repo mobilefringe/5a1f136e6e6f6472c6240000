@@ -66,6 +66,12 @@
             return this.$store.getters.getProperty;
         }
         
+      },
+      methods : {
+          truncate(val_body){
+            var truncate = _.truncate(val_body, { 'length': 75, 'separator': ' ' });
+            return truncate;
+        }
       }
     });
   });
