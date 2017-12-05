@@ -72,7 +72,7 @@
                     Jobs
                 </h2>
                 <div id="jobs_container">
-                    <div class="row promo_item" v-for="" data-cat="{{cat_list}}">
+                    <div class="row promo_item" v-for="job in jobs" data-cat="{{cat_list}}">
                         <div class="col-md-12">
                             <h2 class="promo_list_name">{{name}}</h2>
                             <p>
