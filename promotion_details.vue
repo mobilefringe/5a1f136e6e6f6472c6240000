@@ -62,7 +62,17 @@
         timezone() {
           return this.$store.getters.getTimezone;
         }
-      }
+      },
+      methods: {
+                truncate(val_body){
+                    var truncate = _.truncate(val_body, { 'length': 99, 'separator': ' ' });
+                    return truncate;
+                },
+                shareURL(slug){
+                    var share_url = "http://www.northparkcenter.com/news/" + slug
+                    return share_url
+                }
+            }
     });
   });
 </script>
