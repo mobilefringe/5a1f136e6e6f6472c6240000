@@ -63,7 +63,7 @@
                         <div class="col-md-7">
                             <h2 class="promo_list_name">{{promo.name}}</h2>
                             <p>
-                                <span class="promo_dates">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</span>
+                                <span class="promo_dates sub-title">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</span>
                             </p>
                             <div class="promo_list_desc">{{promo.description_short}}</div>
                             <router-link class="read_more" :to="'/promotions/'+promo.slug">Read More...</router-link>
