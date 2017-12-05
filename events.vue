@@ -1,6 +1,6 @@
 <template>
     <div class=" main_container" id="events_container"><!-- for some reason if you do not put an outer container div this component template will not render -->
-        <h3 class="promotion_heading" v-if="property"> Exclusive Events at {{propery.name}}</h3>
+        <h3 class="promotion_heading" v-if="property"> Exclusive Events at {{property.name}}</h3>
         <p class="exclusive_deals sub_title">Join us to celebrate and enjoy!</p>
         <div class="row">
             <div class="col-md-4" v-for="promo in events">
