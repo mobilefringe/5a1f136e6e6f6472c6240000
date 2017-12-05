@@ -78,10 +78,10 @@
         }
       },
       watch : {
-        currentPromo : function (){
+        currentEvent : function (){
             var vm = this;
             var temp_promo = [];
-            var current_id =_.toNumber(this.currentPromo.id);
+            var current_id =_.toNumber(this.currentEvent.id);
             // console.log(x);
             _.forEach(this.allEvents, function(value, key) {
                 if(_.toNumber(value) != current_id){
