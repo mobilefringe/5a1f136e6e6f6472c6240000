@@ -98,6 +98,7 @@
                 return {
                     currentStore: null,
                     promotions : [],
+                    jobs:[],
                     map: null
                 }
             },
