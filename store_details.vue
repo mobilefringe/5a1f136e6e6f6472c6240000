@@ -13,8 +13,8 @@
                         <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456507166000/promo_icon.png" class="" alt="">
                     </a>
                     <a id="job_anchor" href="#jobs_main" v-if="jobs.length > 0">
-                        <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456507192000/jobs_icon.png" class="" alt="jobs icon">
                         <tt>Jobs (<span>{{currentStore.total_published_jobs}}</span>)</tt>
+                        <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456507192000/jobs_icon.png" class="" alt="jobs icon">
                     </a>
                 </div>
             </div>
