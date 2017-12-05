@@ -27,7 +27,7 @@
             </div>
         </div>
         <div class="promo_main_header sub_title" v-if="storePromos" style="border-top: 1px solid #000;">
-               OTHER {{currentEvent.store.name | uppercase }} PROMOTIONS
+               OTHER {{property.name | uppercase }} PROMOTIONS
         </div>
         <div id="promos_container" v-if="storePromos">
             <div class="col-md-6 no_padding" v-for="promo in storePromos" :data-cat="promo.cat_list">
