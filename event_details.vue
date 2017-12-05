@@ -103,7 +103,7 @@
         },
         allEvents () {
              return this.$store.getters.processedEvents;
-        }
+        },
         timezone() {
           return this.$store.getters.getTimezone;
         },
