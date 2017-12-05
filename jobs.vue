@@ -19,7 +19,7 @@
                             </p>
                             <div class="promo_list_desc">{{truncate(promo.description) }}</div>
                             <div class="text_center position_relative">
-                                <router-link :to="'/promotions/'+promo.slug" class="animated_btn text_center">Read More</router-link>
+                                <router-link :to="'/jobs/'+promo.slug" class="animated_btn text_center">Read More</router-link>
                             </div>
                         </div>
                     </div>
