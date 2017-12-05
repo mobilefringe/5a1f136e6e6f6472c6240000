@@ -38,12 +38,12 @@
                 <div class="col-md-4">
                     <div class="side_stores">
                         <div class="store_header_btns animated_btn" v-if="currentStore.phone">
-                            <a :href="'tel:'+currentStore.phone" >{{currentStore.phone}}</a>
+                            <a :href="'tel:'+currentStore.phone" >{{currentStore.phone}} <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512504104945/phone_icon.png" class="" alt=""></a>
                         </div>
                         <br v-if="currentStore.phone"/>
                         <br/>
                         <div class="store_header_btns animated_btn" v-if="currentStore.website">
-                            <a :href="currentStore.website" target="_blank" >Visit Store Website</a>
+                            <a :href="currentStore.website" target="_blank" >Visit Store Website <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512504093874/web_icon.png" class="" alt=""></a>
                         </div>
                     </div>
                 </div> 
