@@ -69,7 +69,7 @@ define([], function () {
       ]
     },
     {
-      path: '/jobs',
+      path: '/hours',
       component: view('default'),
       children: [
         {
