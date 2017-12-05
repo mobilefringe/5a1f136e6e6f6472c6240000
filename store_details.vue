@@ -87,7 +87,7 @@
                             <p>
                                 <!-- <span class="promo_store">{{store_name}}</span>-->
                                 <span class="promo_dates">{{job.job_type}}</span> 
-                                <span class="promo_store"> - {{promo.published_on | moment("MMM D", timezone)}}</span>
+                                <span class="promo_store"> - {{job.published_on | moment("MMM D", timezone)}}</span>
                             </p>
                             <div class="promo_list_desc">{{job.description_short}}</div>
                             <div class="text_center position_relative">
