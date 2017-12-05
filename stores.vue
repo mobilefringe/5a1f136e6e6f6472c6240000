@@ -141,7 +141,7 @@
                     
                 },
                 filteredByCategory (category_id) {
-                    if(letter == "All"){
+                    if(category_id == "All"){
                         this.processedStores = this.storesByAlphaIndex;//this.storesByAlphaIndex;
                     }
                     else {
