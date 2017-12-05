@@ -1,18 +1,18 @@
 <template>
-    <div class="row main_container" v-if="currentPromo">
+    <div class="row main_container" v-if="currentEvent">
         <div class="promo_main_header sub_title">
-                {{currentPromo.store.name | uppercase}}
+                {{currentEvent.store.name | uppercase}}
         </div>
         <div class="row mobile_padding" id="promo_details_container">
             <div class="col-md-4">
-                <img :src="currentPromo.image_url"  alt="Store Logo" class="details_image" />
+                <img :src="currentEvent.image_url"  alt="Store Logo" class="details_image" />
             </div>
             <div class="col-md-8">
-                <h2 class="promo_list_name">{{currentPromo.name}}</h2>
-                <p class="promo_dates sub_title">{{currentPromo.start_date | moment("MMM D", timezone)}} - {{currentPromo.end_date | moment("MMM D", timezone)}}</p>
-                <div class="store_details_desc">{{currentPromo.description}}</div>
+                <h2 class="promo_list_name">{{currentEvent.name}}</h2>
+                <p class="promo_dates sub_title">{{currentEvent.start_date | moment("MMM D", timezone)}} - {{currentEvent.end_date | moment("MMM D", timezone)}}</p>
+                <div class="store_details_desc">{{currentEvent.description}}</div>
                 <div class="text_center padding_top_20">
-                    <social-sharing :url="shareURL(currentPromo.slug)" :title="currentPromo.title" :description="currentPromo.body" :quote="truncate(currentPromo.description)" twitter-user="ShopCanyonCrest" :media="currentPromo.image_url" inline-template>
+                    <social-sharing :url="shareURL(currentEvent.slug)" :title="currentEvent.title" :description="currentEvent.body" :quote="truncate(currentEvent.description)" twitter-user="ShopCanyonCrest" :media="currentEvent.image_url" inline-template>
                         <div class="blog-social-share">
                             <h5>Share this promotion</h5>
                             <network network="facebook">
@@ -27,7 +27,7 @@
             </div>
         </div>
         <div class="promo_main_header sub_title" v-if="storePromos" style="border-top: 1px solid #000;">
-               OTHER {{currentPromo.store.name | uppercase }} PROMOTIONS
+               OTHER {{currentEvent.store.name | uppercase }} PROMOTIONS
         </div>
         <div id="promos_container" v-if="storePromos">
             <div class="col-md-6 no_padding" v-for="promo in storePromos" :data-cat="promo.cat_list">
