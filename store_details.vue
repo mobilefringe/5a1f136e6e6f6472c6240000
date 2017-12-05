@@ -79,7 +79,7 @@
                 <div id="jobs_container">
                     <div class="col=md-6 promo_item" v-for="job in jobs" :data-cat="job.cat_list">
                         <div class="col-md-12">
-                            <h2 class="promo_list_name">{job.name}}</h2>
+                            <h2 class="promo_list_name">{{job.name}}</h2>
                             <p>
                                 <!-- <span class="promo_store">{{store_name}}</span>-->
                                 <span class="promo_dates">{{job.job_type}}</span> 
