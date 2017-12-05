@@ -80,7 +80,7 @@
         currentPromo : function (){
             var vm = this;
             var temp_promo = [];
-            var x =_.toNumber(this.currentPromo.id);
+            var current_id =_.toNumber(this.currentPromo.id);
             console.log(x);
             _.forEach(this.currentPromo.store.promotions, function(value, key) {
                 if(_.toNumber(value) != x){
