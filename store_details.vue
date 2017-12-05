@@ -33,7 +33,7 @@
                     <img src="{{alt_store_front_url}}" class="store_logo hidden_phone" alt="{{name}}" style="margin:0;" />
                     <div class="side_stores">
                         <div class="store_header_btns newsletter_btn animated_btn" style="{{phone_show}}">
-                            <a href="tel:{{phone}}" >{{phone}}</a>
+                            <a href="tel:{{phone}}" >{{currentStore.phone}}</a>
                         </div>
                         <br style="{{phone_show}}" />
                         <br/>
