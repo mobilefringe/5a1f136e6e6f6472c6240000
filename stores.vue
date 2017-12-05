@@ -143,11 +143,13 @@
                 filteredByCategory (category_id) {
                     console.log(category_id);
                     var find = this.findCategoryById;
-                    var y = _.filter(this.allStores, function(o) {return _.indexOf(o.categories, _.toNumber(category_id)) > -1; });
+                    var filtered = _.filter(this.allStores, function(o) {return _.indexOf(o.categories, _.toNumber(category_id)) > -1; });
                     _.forEach(this.storesByAlphaIndex, function(value, i) {
+                    
+                        
                     }
                     console.log(y)
-                    sortedCats = _.groupBy(y, store => store.category_name);
+                    sortedCats = _.groupBy(filtered, store => store.category_name);
                     console.log(sortedCats);
                     this.processedStores = sortedCats;
                 }
