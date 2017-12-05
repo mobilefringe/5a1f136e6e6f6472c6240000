@@ -175,7 +175,7 @@
                   return this.$store.getters.storesByCategoryName;
                 },
                 findCategoryById () {
-                    console.log("hello");
+                    console.log("hello",this.$store.getters.findCategoryById);
                     return this.$store.getters.findCategoryById;
                 },
                 svgMapRef() {
