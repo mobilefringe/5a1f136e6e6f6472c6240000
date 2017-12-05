@@ -81,7 +81,7 @@
         currentJob : function (){
             var vm = this;
             var temp_promo = [];
-            var current_id =_.toNumber(this.currentJob.id);
+            var current_id =_.toNumber(this.currentJob.jobable_id);
             console.log(current_id);
             _.forEach(this.allJobs, function(value, key) {
                 console.log(value)
