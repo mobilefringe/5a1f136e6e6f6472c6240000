@@ -153,7 +153,6 @@
                         console.log(filtered)
                         sortedCats = _.groupBy(filtered, store => store.currentCategory);
                         console.log(sortedCats);
-                        if()
                         this.processedStores = sortedCats;
                     }
                 }
