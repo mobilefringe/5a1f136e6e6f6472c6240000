@@ -4,7 +4,7 @@
         <p class="exclusive_deals sub_title">Join our family of dedicated professionals!</p>
         <div class="row" v-for="(jobs,store_name) in AllJobs">
             <h2 class="store_details_promo_heading sub_title">
-                    {{currentStore.name}}
+                    {{store_name}}
                 </h2>
             <div id="promos_container">
                 <div class="col-md-6 no_padding" v-for="promo in jobs" :data-cat="promo.cat_list">
