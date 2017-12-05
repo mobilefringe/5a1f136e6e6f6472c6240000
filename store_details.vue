@@ -158,7 +158,7 @@
                 findPromoById () {
                     return this.$store.getters.findPromoById;
                 },
-                findPromoById () {
+                findJobById () {
                     return this.$store.getters.findPromoById;
                 },
                 property (){
