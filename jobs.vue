@@ -51,13 +51,6 @@
       },
       computed: {
         allJobs() {
-            // var promos = this.$store.getters.processedEvents;
-            // console.log(this.$store);
-            // _.forEach(promos, function (val) {
-            //     if(val.description.length >50) {
-            //       val.description = _.truncate(val.description, {'length':50,'separator': ' '})
-            //     }
-            // });
             var jobs = this.$store.getters.processedJobs;
             jobs = _.sortBy(jobs, [function(o) { return o.store.name; }]);
             console.log(_.groupBy(jobs, job => job.store.name));
