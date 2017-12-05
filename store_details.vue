@@ -23,6 +23,14 @@
                     <div id="map">
                         <svg-map @updateMap="updateSVGMap()" :svgMapUrl="getSVGurl" ></svg-map>
                     </div>
+                    
+                </div>
+                <div class="col-md-4">
+                    <img :src="currentStore.image_url" class="store_logo hidden_phone" :alt="currentStore.name" style="margin:0;" />
+                   
+                </div> 
+                <div class="row">
+                <div class="col-md-8">
                     <div class="row promo_item">
                         <div class="col-md-12">
                             <div class="store_details_desc hidden_phone padding_top_20">{{currentStore.description}}</div>
@@ -30,7 +38,6 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <img :src="currentStore.image_url" class="store_logo hidden_phone" :alt="currentStore.name" style="margin:0;" />
                     <div class="side_stores">
                         <div class="store_header_btns newsletter_btn animated_btn" v-if="currentStore.phone">
                             <a :href="'tel:'+currentStore.phone" >{{currentStore.phone}}</a>
