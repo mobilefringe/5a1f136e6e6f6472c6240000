@@ -67,7 +67,7 @@
                 },
                 shareURL(slug){
                     console.log(window.location.host, "\n http://"+ window.location.host);
-                    var share_url = "http://www.northparkcenter.com/news/" + slug;
+                    var share_url = "http://www.shopcanyoncrest.com/news/" + slug;
                     return share_url;
                 }
             }
