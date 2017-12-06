@@ -11,7 +11,7 @@
                     <img style="margin-bottom:20px;" src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512580269422/placeholder_contact_image.png" alt="plaza">
                 </div> 
             </div>
-            <hr/>
+            <hr/> hi
             <div class="col-md-12 contact_contents">
             
                 <form name="contact_form" id="contact_form" method="post">
