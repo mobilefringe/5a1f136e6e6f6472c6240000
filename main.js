@@ -137,7 +137,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             console.log("Changed to route:",this.$route.path, "subscription is", this.show_subscrption);
         },
         mobile_search : function () {
-            console.log(this.mobile_search)
+            console.log(this.mobile_search);
         }
     },
     computed: {
