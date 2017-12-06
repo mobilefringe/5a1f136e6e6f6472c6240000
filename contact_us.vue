@@ -89,8 +89,8 @@
                   return this.$store.getters.getTimezone;
                 },
                 property (){
-            return this.$store.getters.getProperty;
-        }
+                    return this.$store.getters.getProperty;
+                }
                 hours () {
                     return this.$store.getters.getPropertyHours;
                 },
