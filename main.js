@@ -185,7 +185,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         
         this.$router.push("/stores/"+option.slug);
         $(".bannerSearch .options-list").hide();
-    },
+        },
     },
     router: router,
     store,
