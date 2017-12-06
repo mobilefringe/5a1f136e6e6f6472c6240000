@@ -46,7 +46,9 @@
                             <br>
                                 <label for="enterVerify">Enter the following number below to proceed: <div id="verifyNum">{{rannumber}}</div></label><br>
                                 <input type="hidden" :value="rannumber" id="verifyNumHidden" name="verifyNumHidden" />
+                                <div class="col-sm-12 col-md-12">
                                 <input type="text" class="form-control" id="enterVerify" name="enterVerify" />
+                                </div>
                             </div>
                         </div>
                         
