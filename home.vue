@@ -32,6 +32,7 @@
                 
                 <div class="home_promotions feature_row" id="promos_container">
                     <div class="promotion_item wow animated flipInX animated teamy-team text_center" v-for="promo in promotions">
+                        <hr class="show_phone" />
                         <p class="promotion_dates">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
                         <article class="teamy teamy_style2 teamy_mask-circle teamy_zoom-photo">
                             <div class="teamy__layout">
