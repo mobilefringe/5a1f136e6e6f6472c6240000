@@ -72,9 +72,8 @@
             template: template, // the variable template will be injected
             data: function() {
                 return {
-                    currentJob: null,
-                    success_subscribe : false,
-                    storeJobs : null
+                    dayOfTheWeek : [
+                    ]
                 }
             },
             mounted () {
