@@ -42,14 +42,14 @@
             <section class="content_container  position_relative menu_header">
                 <div class="mobile_search visible_phone position_relative" v-show="show_mobile_search">
                     <search-component :list="allStores" placeholder="Find Your Store" :suggestion-attribute="suggestionAttribute" v-model="bannerSearch" @select="onOptionSelect" class="bannerSearch large">
-                            <template slot="item" scope="option" class="manual">
-                                <article class="media">
-                                    <p>
-                                        <strong>{{ option.data.name }}</strong>
-                                    </p>
-                                </article>
-                            </template>
-                        </search-component>
+                        <template slot="item" scope="option" class="manual">
+                            <article class="media">
+                                <p>
+                                    <strong>{{ option.data.name }}</strong>
+                                </p>
+                            </article>
+                        </template>
+                    </search-component>
                     <!--<input type="text" placeholder="Search" id="site_search_m" class="site_search" />-->
                     <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/jpeg/1456781961000/icon_close.jpg" class="close_search close_search_m" alt="search" @click="show_mobile_search = !show_mobile_search">  
                     <div class="search_results_container_m">
