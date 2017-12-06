@@ -5,9 +5,7 @@
                 <div class="col-md-5">
                     <div class="row" v-if="currentPage">
                         <div class="col-md-12"> 
-                            <div class="description_text text_left" v-html="currentPage.body">
-                    
-                        </div>
+                            <div class="description_text text_left" v-html="currentPage.body"></div>
                         </div>
                     </div>
                 </div>
