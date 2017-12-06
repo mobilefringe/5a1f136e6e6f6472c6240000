@@ -72,6 +72,7 @@
       template: template, // the variable template will be injected
       mounted () {
           console.log(this.hours);
+          console.log(this.holidayHours);
       },
       computed: {
         promotions() {
