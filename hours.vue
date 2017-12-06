@@ -95,8 +95,8 @@
                     return this.$store.getters.getPropertyHolidayHours;
                 },
                 reducedHolidays () {
-                    var holidays = this.holidayHours;
-                    return _.filter(holidays, function(o) { return o.store_ids === null && o.is_holiday; });
+                    var holidayHours = this.holidayHours;
+                    return _.filter(holidayHours, function(o) { return o.store_ids === null && o.is_holiday; });
                 },
                 closeHolidays () {
                     
