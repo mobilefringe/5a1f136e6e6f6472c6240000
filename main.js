@@ -124,7 +124,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             else {
                 this.show_subscrption = true;
             }
-            if() {
+            if(this.$route.path == "/hours" ) {
                 this.show_map = true;
             }
             else {
