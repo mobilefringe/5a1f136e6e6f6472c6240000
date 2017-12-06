@@ -54,6 +54,7 @@
                         <router-link :to="'/promotions/'+promo.slug" class="animated_btn text_center">Read More</router-link>
                     </div>
                 </div>
+                <hr class="show_phone" />
                 <div class="clearfix"></div>
             </div>
         </div>
