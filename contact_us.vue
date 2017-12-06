@@ -7,7 +7,7 @@
                         <div class="col-md-12"> 
                             <div class="description_text text_left" v-html="currentPage.body">
                     
-                </div>
+                        </div>
                         </div>
                     </div>
                 </div>
