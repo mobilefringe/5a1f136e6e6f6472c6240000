@@ -27,7 +27,7 @@
                             <div id="hours_container" class="hours_container">
                                     <div class="hours_div" v-for="hour in hours">
                                         <span>{{day}}:</span>("h:mm A")
-                                        <span>{{promo.start_date | moment("h:mm A", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</span>
+                                        <span>{{promo.start_date | moment("h:mm A", timezone)}} - {{promo.end_date | moment("h:mm A", timezone)}}</span>
                                     </div>
                             </div>
                             <div class="padding_top_20"></div>
