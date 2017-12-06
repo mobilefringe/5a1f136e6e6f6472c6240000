@@ -73,7 +73,7 @@
             data: function() {
                 return {
                     dayOfTheWeek : [
-                    
+                        "Sunday", "Monday","Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
                     ]
                 }
             },
