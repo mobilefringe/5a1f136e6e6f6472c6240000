@@ -35,6 +35,39 @@
                     <img style="margin-bottom:20px;" src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512574241932/placeholder_insidepage_image.png" alt="plaza">
                 </div> 
             </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="row">
+                        <div class="col-md-12"> 
+                            <h3 class="hours_heading" >Regular Shopping Hours</h3>
+                            <div id="hours_container" class="hours_container">
+                                    <div class="hours_div" v-for="hour in hours">
+                                        <span>{{dayOfTheWeek[hour.day_of_week]}}:</span>
+                                        <span>{{hour.open_time | moment("h:mm A", timezone)}} - {{hour.close_time | moment("h:mm A", timezone)}}</span>
+                                    </div>
+                            </div>
+                            <div class="padding_top_20"></div>
+                            <h3 class="hours_heading">Reduced Holiday Hours of Operation</h3>
+                            <div id="holidays_hours_container" class="hours_container">
+                                    <div class="hours_div"  v-for="hour in reducedHolidays">
+                                        <span>{{hour.holiday_name}} ({{hour.holiday_date | moment("MMM D YYYY", timezone)}})</span>
+                                        <span>{{hour.open_time | moment("h:mm A", timezone)}} - {{hour.close_time | moment("h:mm A", timezone)}}</span>
+                                    </div>
+                            </div>
+                            <div class="padding_top_20"></div>
+                            <h3 class="hours_heading">Holiday Closures</h3>
+                            <div id="closed_hours_container" class="hours_container">
+                                    <div class="hours_div" v-for="hour in closeHolidays">
+                                        <span>{{hour.holiday_name}} ({{hour.holiday_date | moment("MMM D YYYY", timezone)}})</span>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 hidden_phone">
+                    <img style="margin-bottom:20px;" src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512574241932/placeholder_insidepage_image.png" alt="plaza">
+                </div> 
+            </div>
         </div>
     </div>
 </template>
