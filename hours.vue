@@ -27,7 +27,7 @@
                             <div id="hours_container" class="hours_container">
                                     <div class="hours_div" v-for="hour in hours">
                                         <span>{{dayOfTheWeek[hour.day_of_week]}}:</span>
-                                        <span>{{hour.open_time | moment("h:mm A", timezone)}} - {{promo.close_time | moment("h:mm A", timezone)}}</span>
+                                        <span>{{hour.open_time | moment("h:mm A", timezone)}} - {{hour.close_time | moment("h:mm A", timezone)}}</span>
                                     </div>
                             </div>
                             <div class="padding_top_20"></div>
