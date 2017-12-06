@@ -35,7 +35,7 @@
                             <div id="holidays_hours_container" class="hours_container">
                                     <div class="hours_div">
                                         <span>{{holiday_name}} ({{formatted_date}})</span>
-                                        <span>{{h}}</span>
+                                        <span>{{hour.open_time | moment("h:mm A", timezone)}} - {{hour.close_time | moment("h:mm A", timezone)}}</span>
                                     </div>
                             </div>
                             <div class="padding_top_20"></div>
