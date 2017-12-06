@@ -79,7 +79,7 @@
             },
             mounted () {
               console.log(this.hours);
-              console.log(this.holidayHours;
+              console.log(this.holidayHours);
             },
             computed: {
                 promotions() {
