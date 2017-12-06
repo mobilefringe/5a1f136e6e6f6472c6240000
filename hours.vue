@@ -26,7 +26,7 @@
                             <h3 class="hours_heading" >Regular Shopping Hours</h3>
                             <div id="hours_container" class="hours_container">
                                     <div class="hours_div" v-for="hour in hours">
-                                        <span>{{day}}:</span>("h:mm A")
+                                        <span>{{dayOfTheWeek[day]}}:</span>
                                         <span>{{promo.open_time | moment("h:mm A", timezone)}} - {{promo.close_time | moment("h:mm A", timezone)}}</span>
                                     </div>
                             </div>
