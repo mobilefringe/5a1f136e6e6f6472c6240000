@@ -59,6 +59,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         dataLoaded: false,
         show_mobile_menu : false,
         show_subscrption : false,
+        show_map: false,
         is_searching : false,
         menu_items: [
             // {
