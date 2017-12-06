@@ -76,6 +76,9 @@
         },
         timezone () {
           return this.$store.getters.getTimezone;
+        },
+        hours () {
+            return this.$store.getters.getPropertyHours;
         }
       }
     });
