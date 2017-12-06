@@ -85,7 +85,7 @@ define([], function () {
       children: [
         {
           path: '',
-          component: view('contactUs'),
+          component: view('contact_us'),
           name: 'contactUs'
         }
       ]
