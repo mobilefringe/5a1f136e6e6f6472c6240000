@@ -95,7 +95,7 @@
                     return this.$store.getters.getPropertyHolidayHours;
                 },
                 reducedHolidays () {
-                    
+                    var holidays = this.holidayHours;
                 },
                 closeHolidays () {
                     
