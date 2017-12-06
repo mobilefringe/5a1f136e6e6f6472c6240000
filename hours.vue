@@ -70,6 +70,9 @@
         Vue.use(Meta);
         return Vue.component("hours-component", {
             template: template, // the variable template will be injected
+            data{
+                
+            },
             mounted () {
               console.log(this.hours);
               console.log(this.holidayHours(819));
