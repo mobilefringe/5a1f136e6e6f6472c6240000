@@ -80,6 +80,17 @@ define([], function () {
       ]
     },
     {
+      path: '/contact_us',
+      component: view('default'),
+      children: [
+        {
+          path: '',
+          component: view('hours'),
+          name: 'hourList'
+        }
+      ]
+    },
+    {
       path: '/pages',
       component: view('default'),
       redirect: '/404',
