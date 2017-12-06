@@ -111,7 +111,7 @@
                   return this.$store.getters.processedStores;
                 },
                 banners () {
-                    console.log(_.orderBy(this.$store.state.results.banners, ['position'], ['asc']));
+                    // console.log(_.orderBy(this.$store.state.results.banners, ['position'], ['asc']));
                     return _.orderBy(this.$store.state.results.banners, ['position'], ['asc']);
                 },
                 feature_items () {
