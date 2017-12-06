@@ -42,7 +42,7 @@
                                 <label for="message">Message</label>
                                 <textarea name="message" id="message" rows="8" class="form-control" required></textarea>
                             </div>
-                            <div class="col-sm-4 col-md-4">
+                            <div class="col-sm-6 col-md-6">
                             <br>
                                 <label for="enterVerify">Enter the following number below to proceed: <div id="verifyNum">{{rannumber}}</div></label><br>
                                 <input type="hidden" :value="rannumber" id="verifyNumHidden" name="verifyNumHidden" />
