@@ -3,8 +3,8 @@
         <div class="margin_25_across padding_top_40">
             <div class="row">
                 <div class="col-md-5">
-                    <div class="row" v-if="currentPage">
-                        <div class="col-md-12"> 
+                    <div class="col-md-12" v-if="currentPage">
+                        <!--<div class="col-md-12"> -->
                             <div class="description_text text_left" v-html="currentPage.body"></div>
                         </div>
                     </div>
