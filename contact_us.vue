@@ -12,6 +12,7 @@
                 </div> 
             </div>
             <hr/> hi
+            <div class="row"> </div>
             <div class="col-md-12 contact_contents">
             
                 <form name="contact_form" id="contact_form" method="post">
