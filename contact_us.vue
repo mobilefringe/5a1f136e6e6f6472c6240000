@@ -13,7 +13,7 @@
             </div>
             <hr/>
             <div class="row"> 
-                <div class="col-md-12 contact_contents">
+                <div class="col-md-12 contact_contents padding_top_40">
             
                     <form name="contact_form" id="contact_form" method="post">
                         <div class="row "  style="margin-left:0px;margin-right:0px">
