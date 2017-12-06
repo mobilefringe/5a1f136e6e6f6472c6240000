@@ -85,7 +85,7 @@
             return this.$store.getters.getPropertyHours;
         },
         holidayHours () {
-            return this.$store.getters.getPropertyHolidayHours;
+            return this.$store.getters.findHourById;
         } 
       }
     });
