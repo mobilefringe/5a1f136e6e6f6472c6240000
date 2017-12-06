@@ -48,7 +48,7 @@
                         <div class="col-sm-12 col-md-12">
                         <br>
                             <label for="enterVerify">Enter the following number below to proceed: <div id="verifyNum"></div></label><br>
-                            <input type="hidden" value="701469" id="verifyNumHidden" name="verifyNumHidden" />
+                            <input type="hidden" :value="rannumber" id="verifyNumHidden" name="verifyNumHidden" />
                             <input type="text" id="enterVerify" name="enterVerify" />
                         </div>
                     </div>
