@@ -138,6 +138,14 @@
                 closeHolidays () {
                     var holidayHours = this.holidayHours;
                     return _.filter(holidayHours, function(o) { return o.is_closed; });
+                },
+                randomGen () {
+                    var rannumber='';
+                    for(ranNum=1; ranNum<=6; ranNum++){
+                      rannumber+=Math.floor(Math.random()*10).toString();
+                    }
+                    $('#verifyNum').html(rannumber);
+                    $('#verifyNumHidden').val(rannumber);
                 }
             }
         });
