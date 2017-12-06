@@ -129,6 +129,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             else {
                 this.show_subscrption = false;
             }
+            console.log("Changed to route:",this.$route.path);
         }
     },
     computed: {
