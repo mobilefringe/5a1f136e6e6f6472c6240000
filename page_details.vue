@@ -68,9 +68,6 @@
             });
       },
       computed: {
-        findEventBySlug () {
-          return this.$store.getters.findEventBySlug;
-        },
         timezone() {
           return this.$store.getters.getTimezone;
         },
