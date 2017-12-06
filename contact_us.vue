@@ -23,7 +23,6 @@
                         <h5 class="promo_list_desc">We value your feedback. Send us your comments or questions by completing the contact form below.</h5>
                     </div>
                     <div class="row padding_top_20" >
-                        
                         <div class="col-sm-6 col-md-6 ">
                             <label for="name">Name</label>
                             <input name="name" id="name" class="form-control" type="text" value="" required>
