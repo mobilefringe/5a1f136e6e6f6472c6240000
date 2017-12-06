@@ -70,6 +70,9 @@
     Vue.use(Meta);
     return Vue.component("hours-component", {
       template: template, // the variable template will be injected
+      mounted () {
+          hours ()
+      },
       computed: {
         promotions() {
           return this.$store.getters.processedPromos;
