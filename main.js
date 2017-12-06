@@ -123,12 +123,13 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             }
             else {
                 this.show_subscrption = true;
+                
             }
             if(this.$route.path == "/hours" ) {
                 this.show_map = true;
             }
             else {
-                this.show_subscrption = false;
+                this.show_map = false;
             }
             console.log("Changed to route:",this.$route.path, "subscription is", this.show_subscrption);
         }
