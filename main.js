@@ -61,7 +61,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         show_subscrption : false,
         show_map: false,
         is_searching : false,
-        is_mobile_search : false,
+        show_mobile_search : false,
         menu_items: [
             // {
             //     name: "Home",
