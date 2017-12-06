@@ -16,31 +16,70 @@
                 </div> 
             </div>
             <hr/>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="padding_top_20"></div>
-                    
-                    <h3 class="hours_heading">Reduced Holiday Hours of Operation</h3>
-                    <div id="holidays_hours_container" class="hours_container">
-                        <div class="hours_div"  v-for="hour in reducedHolidays">
-                            <span>{{hour.holiday_name}} ({{hour.holiday_date | moment("MMM D YYYY", timezone)}})</span>
-                            <span>{{hour.open_time | moment("h:mm A", timezone)}} - {{hour.close_time | moment("h:mm A", timezone)}}</span>
-                        </div>
-                    </div>
-                    
-                    <div class="padding_top_20"></div>
-                    
-                    <h3 class="hours_heading">Holiday Closures</h3>
-                    <div id="closed_hours_container" class="hours_container">
-                        <div class="hours_div" v-for="hour in closeHolidays">
-                            <span>{{hour.holiday_name}} ({{hour.holiday_date | moment("MMM D YYYY", timezone)}})</span>
-                        </div>
-                    </div>
-                    
+            <div class="col-md-8 contact_contents">
+            
+            <form name="contact_form" id="contact_form" method="post">
+                <div class="row "  style="margin-left:0px;margin-right:0px">
+                    <h5 class="promo_list_desc">We value your feedback. Send us your comments or questions by completing the contact form below.</h5>
                 </div>
+                <div class="row padding_top_20" >
+                    
+                    <div class="col-sm-6 col-md-6 ">
+                        <label for="name">Name</label>
+                        <input name="name" id="name" class="form-control" type="text" value="" required>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <label for="email" >E-mail</label>
+                        <input name="email" id="email" class="form-control" type="text" value="" required>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                        <label for="subject">Subject</label>
+                        <input name="subject" id="subject" class="form-control" type="text" required>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" rows="8" class="form-control" required></textarea>
+                    </div>
+                    <div class="col-sm-12 col-md-12">
+                    <br>
+                        <label for="enterVerify">Enter the following number below to proceed: <div id="verifyNum"></div></label><br>
+                        <input type="hidden" value="701469" id="verifyNumHidden" name="verifyNumHidden" />
+                        <input type="text" id="enterVerify" name="enterVerify" />
+                    </div>
+                </div>
+                
+                <div class="row">
+                        <div class="col-sm-12 col-md-12"><br/>
+                        <button id="submit" class="newsletter_btn animated_btn" type="submit">Submit</button>
+                    </div>
+                </div>
+                
+                
+                
+            </form>
+            <div id="send_contact_success" class="alert alert-success" role="alert" style="display:none">
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                <span class="sr-only">Success</span>
+                Thank you for contacting us. A member from our team will contact you shortly. 
+                  
             </div>
+            <div id="send_contact_error" class="alert alert-danger" role="alert" style="display:none">
+                <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                <span class="sr-only">Error:</span>
+                There was an error when trying to submit your request. Please ensure you have entered a valid email address and subject and please try again.
+            </div>    
+            <div class="padding_top_20"></div>
+            <img src="//codecloud.cdn.speedyrails.net/sites/59e0c5676e6f642b330a0000/image/jpeg/1509634558000/CONTACT830x940.jpg" class="hidden_phone" alt="">
+        </div>
             <div class="padding_top_40"></div>
         </div>
+        
     </div>
 </template>
 
