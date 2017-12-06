@@ -66,28 +66,28 @@
 </style>
 
 <script>
-  define(["Vue", "moment", "moment-timezone", "vue-moment", "vue-meta"], function(Vue, moment, tz, VueMoment, Meta) {
-    Vue.use(Meta);
-    return Vue.component("hours-component", {
-      template: template, // the variable template will be injected
-      mounted () {
-          console.log(this.hours);
-          console.log(this.holidayHours(819));
-      },
-      computed: {
-        promotions() {
-          return this.$store.getters.processedPromos;
-        },
-        timezone () {
-          return this.$store.getters.getTimezone;
-        },
-        hours () {
-            return this.$store.getters.getPropertyHours;
-        },
-        holidayHours () {
-            return this.$store.getters.findHourById;
-        } 
-      }
+    define(["Vue", "moment", "moment-timezone", "vue-moment", "vue-meta"], function(Vue, moment, tz, VueMoment, Meta) {
+        Vue.use(Meta);
+        return Vue.component("hours-component", {
+            template: template, // the variable template will be injected
+            mounted () {
+              console.log(this.hours);
+              console.log(this.holidayHours(819));
+            },
+            computed: {
+                promotions() {
+                  return this.$store.getters.processedPromos;
+                },
+                timezone () {
+                  return this.$store.getters.getTimezone;
+                },
+                hours () {
+                    return this.$store.getters.getPropertyHours;
+                },
+                holidayHours () {
+                    return this.$store.getters.findHourById;
+                } 
+            }
+        });
     });
-  });
 </script>
