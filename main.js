@@ -119,6 +119,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             
             if(this.$route.path == "/" || this.$route.path == "/stores") {
                 this.show_subscrption = false;
+                console.log("Changed to route:");
             }
             else {
                 this.show_subscrption = true;
