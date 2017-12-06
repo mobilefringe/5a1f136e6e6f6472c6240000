@@ -82,7 +82,10 @@
         },
         hours () {
             return this.$store.getters.getPropertyHours;
-        }
+        },
+        hours () {
+            return this.$store.getters.getPropertyHolidayHours;
+        
       }
     });
   });
