@@ -179,7 +179,31 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
       // utility method to allow user to change locale value
       changeLocale: function(val) {
         this.locale = val; // this will update the data store, which in turn will trigger the watcher to update the locale in the system
-      }
+      },
+      onOptionSelect(option) {
+                console.log('Selected option:', option);
+                // var counted_stores = _.countBy(this.allStores,'name');
+                
+                // // console.log("counted_stores is",counted_stores[option.name]);
+                // if(option.type==="click") {
+                //     console.log($(".input").val());
+                // }
+                
+                // else {
+                //     if( counted_stores[option.name] >1) {
+                //         var route = '/map/' + option.name;
+                //         console.log(route);
+                //         this.$router.push(route);
+                //     }
+                //     else {
+                //         var route = '/stores/' + option.slug;
+                //         console.log(route);
+                //         this.$router.push(route);
+                //     }
+                // }
+                this.$router.push("/stores/"+option.slug);
+                $(".bannerSearch .options-list").hide();
+            },
     },
     router: router,
     store,
