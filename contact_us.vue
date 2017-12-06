@@ -73,9 +73,7 @@
                     <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
                     <span class="sr-only">Error:</span>
                     There was an error when trying to submit your request. Please ensure you have entered a valid email address and subject and please try again.
-                </div>    
-                <div class="padding_top_20"></div>
-            <img src="//codecloud.cdn.speedyrails.net/sites/59e0c5676e6f642b330a0000/image/jpeg/1509634558000/CONTACT830x940.jpg" class="hidden_phone" alt="">
+                </div>
         </div>
         </div>
     </div>
