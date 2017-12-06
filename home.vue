@@ -8,7 +8,7 @@
                 <!--<img :src="banner.image_url" class="" alt="">-->
             </div>
         </slick>
-        <div class="content_container main_container hidden_phone  position_relative">
+        <div class="content_container main_container  position_relative">
             <div class="feature_row" id="feature_container_2">
                 <div class="feature_item_container" v-for="item in feature_items">
                     <div class="feature_item wow animated flipInX animated teamy-team">
