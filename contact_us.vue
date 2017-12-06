@@ -55,7 +55,7 @@
                     
                     <div class="row">
                             <div class="col-sm-12 col-md-12"><br/>
-                            <button id="submit" class="newsletter_btn animated_btn" type="submit">Submit</button>
+                            <button id="submit" class="animated_btn" type="submit">Submit</button>
                         </div>
                     </div>
                     
