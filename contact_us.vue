@@ -77,9 +77,7 @@
             <div class="padding_top_20"></div>
             <img src="//codecloud.cdn.speedyrails.net/sites/59e0c5676e6f642b330a0000/image/jpeg/1509634558000/CONTACT830x940.jpg" class="hidden_phone" alt="">
         </div>
-            <div class="padding_top_40"></div>
         </div>
-        
     </div>
 </template>
 
