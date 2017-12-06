@@ -70,8 +70,12 @@
         Vue.use(Meta);
         return Vue.component("hours-component", {
             template: template, // the variable template will be injected
-            data{
-                
+            data: function() {
+                return {
+                  currentJob: null,
+                  success_subscribe : false,
+                  storeJobs : null
+                }
             },
             mounted () {
               console.log(this.hours);
