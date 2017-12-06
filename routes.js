@@ -86,7 +86,7 @@ define([], function () {
         {
           path: '',
           component: view('hours'),
-          name: 'hourList'
+          name: 'contactusList'
         }
       ]
     },
