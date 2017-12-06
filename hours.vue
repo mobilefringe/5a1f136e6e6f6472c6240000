@@ -3,7 +3,7 @@
         <div class="margin_25_across padding_top_20">
     
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-6">
                     <div class="row">
                         <div class="col-md-12"> 
                             <h3 class="hours_heading" >Regular Shopping Hours</h3>
@@ -31,7 +31,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-7 hidden_phone">
+                <div class="col-md-6 hidden_phone">
                     <img style="margin-bottom:20px;" src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512574241932/placeholder_insidepage_image.png" alt="plaza">
                 </div> 
             </div>
