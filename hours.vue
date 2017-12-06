@@ -52,7 +52,6 @@
                                 <span>{{hour.holiday_name}} ({{hour.holiday_date | moment("MMM D YYYY", timezone)}})</span>
                             </div>
                     </div>
-                        
                 </div>
             </div>
         </div>
