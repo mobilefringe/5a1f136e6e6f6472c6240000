@@ -75,7 +75,7 @@
                 })
             },
             beforeRouteUpdate (to, from, next) {
-                this.$store.dispatch('LOAD_PAGE_DATA', {url:this.property.mm_host + "/pages/"+ to.params.id +".json"}).then(response => {
+                this.$store.dispatch('LOAD_PAGE_DATA', {url:this.property.mm_host + "/pages/contact.json"}).then(response => {
                     // this.dataLoaded = true;
                     this.currentPage = response.data;
                     console.log(this.currentPage);
