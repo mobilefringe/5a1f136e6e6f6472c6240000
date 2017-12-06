@@ -34,7 +34,7 @@
                             <h3 class="hours_heading">Reduced Holiday Hours of Operation</h3>
                             <div id="holidays_hours_container" class="hours_container">
                                     <div class="hours_div"  v-for="hour in holidayHours">
-                                        <span>{{hour.holiday_name}} ({{promo.start_date | moment("MMM D", timezone)}})</span>
+                                        <span>{{hour.holiday_name}} ({{hour.holiday_date | moment("MMM D", timezone)}})</span>
                                         <span>{{hour.open_time | moment("h:mm A", timezone)}} - {{hour.close_time | moment("h:mm A", timezone)}}</span>
                                     </div>
                             </div>
