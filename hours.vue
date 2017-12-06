@@ -96,6 +96,7 @@
                 },
                 reducedHolidays () {
                     var holidays = this.holidayHours;
+                    
                 },
                 closeHolidays () {
                     
