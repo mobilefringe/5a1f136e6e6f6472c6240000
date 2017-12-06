@@ -71,7 +71,7 @@
     return Vue.component("hours-component", {
       template: template, // the variable template will be injected
       mounted () {
-          hours ()
+          console.log(this.hours);
       },
       computed: {
         promotions() {
