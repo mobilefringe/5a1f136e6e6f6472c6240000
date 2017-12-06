@@ -42,7 +42,7 @@
                             <h3 class="hours_heading">Holiday Closures</h3>
                             <div id="closed_hours_container" class="hours_container">
                                     <div class="hours_div" v-for="hour in holidayHours">
-                                        <span>{{holiday_name}} ({{formatted_date}})</span>
+                                        <span>{{hour.holiday_name}} ({{formatted_date}})</span>
                                     </div>
                             </div>
                         </div>
