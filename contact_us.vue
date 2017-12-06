@@ -74,7 +74,7 @@
                     <span class="sr-only">Error:</span>
                     There was an error when trying to submit your request. Please ensure you have entered a valid email address and subject and please try again.
                 </div>
-        </div>
+            </div>
         </div>
     </div>
 </template>
