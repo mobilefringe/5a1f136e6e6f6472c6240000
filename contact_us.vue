@@ -4,9 +4,7 @@
             <div class="row">
                 <div class="col-md-5">
                     <div class="col-md-12" v-if="currentPage">
-                        <!--<div class="col-md-12"> -->
-                            <div class="description_text text_left" v-html="currentPage.body"></div>
-                        <!--</div>-->
+                        <div class="description_text text_left" v-html="currentPage.body"></div>
                     </div>
                 </div>
                 <div class="col-md-7 hidden_phone">
