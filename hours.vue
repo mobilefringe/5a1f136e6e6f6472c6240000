@@ -41,7 +41,7 @@
                             <div class="padding_top_20"></div>
                             <h3 class="hours_heading">Holiday Closures</h3>
                             <div id="closed_hours_container" class="hours_container">
-                                    <div class="hours_div" v-for="hour in holidayHours">
+                                    <div class="hours_div" v-for="hour in closeHolidays">
                                         <span>{{hour.holiday_name}} ({{hour.holiday_date | moment("MMM D YYYY", timezone)}})</span>
                                     </div>
                             </div>
