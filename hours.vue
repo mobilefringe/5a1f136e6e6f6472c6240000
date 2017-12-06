@@ -93,7 +93,8 @@
                 },
                 holidayHours () {
                     return this.$store.getters.getPropertyHolidayHours;
-                } 
+                },
+                closeHolidays
             }
         });
     });
