@@ -63,9 +63,6 @@
               console.log(this.holidayHours);
             },
             computed: {
-                promotions() {
-                  return this.$store.getters.processedPromos;
-                },
                 timezone () {
                   return this.$store.getters.getTimezone;
                 },
