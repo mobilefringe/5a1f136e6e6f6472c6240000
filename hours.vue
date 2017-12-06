@@ -99,7 +99,8 @@
                     return _.filter(holidayHours, function(o) { return o.store_ids === null && o.is_holiday; });
                 },
                 closeHolidays () {
-                    
+                    var holidayHours = this.holidayHours;
+                    return _.filter(holidayHours, function(o) { return o.store_ids === null && o.is_holiday; });
                 }
             }
         });
