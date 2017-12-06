@@ -13,7 +13,7 @@
             </div>
             <hr/>
             <div class="row"> 
-                <div class="col-md-12 contact_contents padding_top_40">
+                <div class="col-md-12 contact_contents padding_top_20">
             
                     <form name="contact_form" id="contact_form" method="post">
                         <div class="row "  style="margin-left:0px;margin-right:0px">
@@ -46,7 +46,7 @@
                             <br>
                                 <label for="enterVerify">Enter the following number below to proceed: <div id="verifyNum">{{rannumber}}</div></label><br>
                                 <input type="hidden" :value="rannumber" id="verifyNumHidden" name="verifyNumHidden" />
-                                <input type="text" id="enterVerify" name="enterVerify" />
+                                <input type="text" class="form-control" id="enterVerify" name="enterVerify" />
                             </div>
                         </div>
                         
