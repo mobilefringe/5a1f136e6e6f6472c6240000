@@ -73,6 +73,7 @@
             data: function() {
                 return {
                     dayOfTheWeek : [
+                    
                     ]
                 }
             },
