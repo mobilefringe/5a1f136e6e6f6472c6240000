@@ -1,8 +1,8 @@
 <template>
     <div>
-         <div class="main_container padding_30" v-if="currentPage">
+         <div class="main_container " v-if="currentPage">
             <h4 class="page_title promo_main_header" v-html="currentPage.title">  </h4>
-            <div class="row">
+            <div class="row"padding_30>
                 <div class="description_text text_left" v-html="currentPage.body">
                     
                 </div>
