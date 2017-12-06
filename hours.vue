@@ -96,7 +96,7 @@
                 },
                 reducedHolidays () {
                     var holidays = this.holidayHours;
-                    
+                    return _.filter(holidays, function(o) { return o.store_ids === null && o.is_holiday; });
                 },
                 closeHolidays () {
                     
