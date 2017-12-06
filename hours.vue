@@ -83,7 +83,7 @@
         hours () {
             return this.$store.getters.getPropertyHours;
         },
-        hours () {
+        holidayHours () {
             return this.$store.getters.getPropertyHolidayHours;
         
       }
