@@ -115,7 +115,7 @@
                     return _.orderBy(this.$store.state.results.banners, ['position'], ['asc']);
                 },
                 feature_items () {
-                    console.log(this.$store.state.results.feature_items);
+                    // console.log(this.$store.state.results.feature_items);
                     return  _.slice(this.$store.state.results.feature_items, 0, 3);
                 },
                 promotions () {
