@@ -6,7 +6,6 @@
                 <div class="col-md-5">
                     <div class="row">
                         <div class="col-md-12"> 
-                        
                             <h3 class="hours_heading" >Regular Shopping Hours</h3>
                             <div id="hours_container" class="hours_container">
                                     <div class="hours_div" v-for="hour in hours">
