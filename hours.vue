@@ -49,7 +49,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 hidden_phone">
-                    <img style="margin-bottom:20px;" src="//codecloud.cdn.speedyrails.net/sites/59e0c5676e6f642b330a0000/image/jpeg/1509738369000/HOURS830x940.jpg" alt="plaza">
+                    <img style="margin-bottom:20px;" src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512574241932/placeholder_insidepage_image.png" alt="plaza">
                 </div> 
             </div>
         </div>
