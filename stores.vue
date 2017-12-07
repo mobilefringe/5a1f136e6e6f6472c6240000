@@ -141,6 +141,11 @@
                     console.log (this.selected_cat)
                     var cat_id= this.findCategoryByName(this.selected_cat);
                     this.filteredByCategory(cat_id);
+                    if(category_id == "All"){
+                        this.processedStores = this.storesByAlphaIndex;//this.storesByAlphaIndex;
+                    }
+                    else {
+                    }
                 }
             },
             methods: {
