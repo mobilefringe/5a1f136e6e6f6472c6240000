@@ -181,7 +181,7 @@
                 },
                 allMobileCategories() {
                     var cats =_.map(this.$store.getters.processedCategories, 'name');;
-                    console.log();
+                    console.log(allMobileCategories);
                     return ;
                 },
                 storesByAlphaIndex() {
