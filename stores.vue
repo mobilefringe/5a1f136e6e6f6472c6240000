@@ -144,7 +144,7 @@
                         cat_id = this.selected_cat;
                     }
                     else {
-                        cat_id= this.findCategoryByName(this.selected_cat);
+                        cat_id= this.findCategoryByName(this.selected_cat).id;
                     }
                     console.log(cat_id);
                     this.filteredByCategory(cat_id);
