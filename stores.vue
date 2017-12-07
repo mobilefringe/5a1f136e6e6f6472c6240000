@@ -67,27 +67,14 @@
                     </div>
                    
                 </div>
-                <!--<div class="col-md-4 hidden_phone">-->
-                <!--    <div id="new_stores">-->
-                <!--        <p class="category_header">Now Open</p>-->
-                <!--        <div id="new_store_container">-->
-                <!--            <h5 class="category_name"><a href="/stores/{{slug}}">{{name}}</a></h5>-->
-                <!--        </div>-->
-                <!--    </div>-->
-                <!--    <div id="coming_soon_stores">-->
-                <!--        <p class="category_header">Opening Soon</p>-->
-                <!--        <div id="coming_soon_container">-->
-                <!--            <h5 class="category_name"><a href="/stores/{{slug}}">{{name}}</a></h5>-->
-                <!--        </div>-->
-                <!--    </div>-->
-                <!--    <p class="category_header">Categories</p>-->
-                <!--    <h5 class="category_name active_cat hidden_phone"><a href="#" class="show_all_stores">All</a></h5>-->
-                <!--    <div id="category_container" class="hidden_phone">-->
-                <!--        <h5 class="category_name"><a href="#" class="show_cat_stores" data-id="{{id}}">{{name}}</a></h5>-->
-                <!--    </div>-->
-                    
-                    
-                <!--</div>-->
+                <div class="main_container">
+                <div class="newsletter_container text-center">
+                        <h2 class="heading">SIGN UP TO RECEIVE OUR UPDATES</h2>
+                        <p class="newsletter_desc sub_title">Special Offers <br class="show_phone" /><span>•</span> New Store Openings <br class="show_phone" /><span>•</span> Exclusive Events</p>
+                        <router-link to="/newsletter" class="animated_btn newsletter_btn">Subscribe</router-link>
+                    </div>
+                 <hr/>
+            </div>
             </div>
         </div>
     </div>
