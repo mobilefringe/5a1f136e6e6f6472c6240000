@@ -29,7 +29,7 @@
     color: #708090;
   }
   .top_promo_date{
-      
+      top_promo_date
   }
 </style>
 
