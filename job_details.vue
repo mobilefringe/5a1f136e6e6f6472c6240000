@@ -7,7 +7,7 @@
             <div class="col-md-4 col-sm-4">
                 <img :src="currentJob.store.image_url"  alt="Store Logo" class="details_image" />
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8 col-sm-8">
                 <h2 class="promo_list_name">{{currentJob.name}}</h2>
                 <p class="promo_dates sub_title">{{currentJob.start_date | moment("MMM D", timezone)}} - {{currentJob.end_date | moment("MMM D", timezone)}}</p>
                 <div class="store_details_desc">{{currentJob.description}}</div>
