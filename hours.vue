@@ -18,7 +18,7 @@
                         </div>
                     </div>
                     <div class="col-md-7 col-sm-7 hidden_phone">
-                        <img style="margin-bottom:20px;    width: 100%;" src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512574241932/placeholder_insidepage_image.png" alt="plaza">
+                        <img style="margin-bottom:20px; width: 100%;" src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512574241932/placeholder_insidepage_image.png" alt="plaza">
                     </div> 
                 </div>
                 <hr/>
