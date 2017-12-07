@@ -6,7 +6,7 @@
             <div class="col-md-4" v-for="promo in events">
                 <hr class="show_phone">
                 <div class="promo_list_container text_center">
-                    <p>{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
+                    <p class="top_promo_date">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
                     <div class="promo_list_img_container">
                         <!--<a :href="promo.image_url" target="_blank">-->
                         <img :src="promo.image_url" class="promo_list_img">
