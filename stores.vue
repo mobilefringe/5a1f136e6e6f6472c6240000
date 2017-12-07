@@ -140,7 +140,7 @@
                 selected_cat : function () {
                     console.log (this.selected_cat)
                     var cat_id= this.findCategoryByName(this.selected_cat);
-                    console.log();
+                    
                 }
             },
             methods: {
