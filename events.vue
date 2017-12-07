@@ -29,6 +29,9 @@
   .store-section a{
     color: #708090;
   }
+  .top_promo_date{
+      margin-top:10px;
+  }
 </style>
 
 <script>
