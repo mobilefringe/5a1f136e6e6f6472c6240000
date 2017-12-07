@@ -1,5 +1,5 @@
 <template>
-    <div class=" main_container" id="promotions_container"> <!-- for some reason if you do not put an outer container div this component template will not render -->
+    <div id="promotions_container"> <!-- for some reason if you do not put an outer container div this component template will not render -->
         <img style="margin-bottom:20px;" src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512574241932/placeholder_insidepage_image.png" alt="plaza">  
         <div>
             
