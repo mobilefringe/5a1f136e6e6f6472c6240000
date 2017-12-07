@@ -14,13 +14,14 @@
                 <div class="text_center padding_tb_20">
                     <social-sharing :url="shareURL(currentJob.slug)" :title="currentJob.title" :description="currentJob.body" :quote="truncate(currentJob.description)" twitter-user="ShopCanyonCrest" :media="currentJob.image_url" inline-template>
                         <div class="blog-social-share">
-                            <h5>Share this promotion</h5>
-                            <network network="facebook">
-                                <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512057980767/fb@2x_whiteborder.png" class="" alt="">
-                            </network>
-                            <network network="twitter">
-                                <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512058120246/twt@2x_whiteborder.png" class="" alt="">
-                            </network>
+                            <div class="social_share">
+                                <network network="facebook">
+                                    <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512057980767/fb@2x_whiteborder.png" class="" alt="">
+                                </network>
+                                <network network="twitter">
+                                    <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512058120246/twt@2x_whiteborder.png" class="" alt="">
+                                </network>
+                            </div>
                         </div>
                     </social-sharing>
                 </div>
