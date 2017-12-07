@@ -38,7 +38,7 @@
                         <img class="promo_store_image" :src="promo.image_url" :alt="promo.name" />
                     </div>
                     <div class="col-md-7 padding_tb_20">
-                        <router-link :to="'/promotions/'+promo.slug" class="">
+                        <router-link :to="'/events/'+promo.slug" class="">
                             <h2 class="promo_list_name">{{promo.name}}</h2>
                         </router-link>
                         <p>
