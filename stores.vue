@@ -180,7 +180,7 @@
                     return this.$store.getters.processedCategories;
                 },
                 allCategories() {
-                    var cats = [''All'];
+                    var cats = ['All'];
                     return this.$store.getters.processedCategories;
                 },
                 storesByAlphaIndex() {
