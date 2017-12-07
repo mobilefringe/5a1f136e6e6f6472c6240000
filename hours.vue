@@ -21,6 +21,7 @@
                         <img style="margin-bottom:20px; width: 100%;" src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512574241932/placeholder_insidepage_image.png" alt="plaza">
                     </div> 
                 </div>
+                <div class="padding_top_20 show_phone"></div>
                 <hr/>
                 <div class="row">
                     <div class="col-md-12 ">
