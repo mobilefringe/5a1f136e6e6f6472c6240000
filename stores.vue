@@ -139,7 +139,7 @@
             watch : {
                 selected_cat : function () {
                     console.log (this.selected_cat)
-                    var cat-id= 
+                    var cat-id= this.findCategoryByName(this.selected_cat);
                     console.log();
                 }
             },
