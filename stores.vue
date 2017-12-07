@@ -190,8 +190,8 @@
                 allMobileCategories() {
                     var cats =_.map(this.$store.getters.processedCategories, 'name');
                     cats = cats.unshift('All');
-                    console.log();
-                    return ;
+                    console.log(cats);
+                    return cats;
                 },
                 storesByAlphaIndex() {
                     console.log(this.$store.getters.storesByAlphaIndex);
