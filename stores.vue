@@ -189,7 +189,7 @@
                 },
                 allMobileCategories() {
                     var cats =_.map(this.$store.getters.processedCategories, 'name');
-                    cats = cats.unshift('All');
+                    cats.unshift('All');
                     console.log(cats);
                     return cats;
                 },
