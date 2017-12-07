@@ -181,7 +181,8 @@
                 },
                 allCategories() {
                     var cats = ['All'];
-                    return this.$store.getters.processedCategories;
+                    _.map(this.$store.getters.processedCategories, 'user');
+                    return ;
                 },
                 storesByAlphaIndex() {
                     console.log(this.$store.getters.storesByAlphaIndex);
