@@ -25,7 +25,7 @@
             <h2 class="stores_main_heading">Shops & Entertaiment</h2>
             <p class="store_main_desc sub_title">Explore • Enjoy • Shop</p>
             <div class="mobile_padding show_phone">
-                <a href="/map" class="mobile_dd">Open Center Map</a>
+                <!--<a href="/map" class="mobile_dd">Open Center Map</a>-->
                 <!--<select id="mobile_cat_list" class="form-control custom_form_control">-->
                 <!--        <option value="{{id}}">{{name}}</option>-->
                 <!--</select>-->
