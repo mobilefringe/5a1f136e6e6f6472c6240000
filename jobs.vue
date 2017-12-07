@@ -12,7 +12,7 @@
                         <div class="col-md-5 no_padding">
                             <img class="promo_store_image" :src="promo.store.image_url" :alt="promo.name" />
                         </div>
-                        <div class="col-md-7 padding_tb_20">
+                        <div class="col-md-7 col-xs-4 padding_tb_20">
                             <router-link :to="'/promotions/'+promo.slug" class="">
                                 <h2 class="promo_list_name">{{promo.name}}</h2>
                             </router-link>
