@@ -153,7 +153,7 @@
                         this.processedStores = this.storesByAlphaIndex;//this.storesByAlphaIndex;
                     }
                     else {
-                        var find = this.findCategoryById;
+                        var find = this.findCategoryByName;
                         var filtered = _.filter(this.allStores, function(o) {return _.indexOf(o.categories, _.toNumber(category_id)) > -1; });
                         _.forEach(filtered, function(value, i) {
                             value.currentCategory = find(category_id).name;
