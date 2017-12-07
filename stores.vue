@@ -67,7 +67,7 @@
                     </div>
                    
                 </div>
-                <div class="show_phone padding_top-_0">
+                <div class="show_phone padding_top_20">
                     <hr/>
                     <div class="newsletter_container text-center">
                             <h2 class="heading">SIGN UP TO RECEIVE OUR UPDATES</h2>
