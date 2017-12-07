@@ -138,7 +138,6 @@
             },
             watch : {
                 selected_cat : function () {
-                    console.log (this.selected_cat)
                     var cat_id = null;
                     if(this.selected_cat == "All"){
                         cat_id = this.selected_cat;
