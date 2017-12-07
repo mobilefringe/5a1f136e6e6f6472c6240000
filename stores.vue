@@ -111,7 +111,7 @@
                     'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
                     ],
                     selected_cat : 'Select a Category',
-                    selected_aplha : 'Select Store A-Z'
+                    selected_alpha : 'Select Store A-Z'
                 }
             },
             created (){
