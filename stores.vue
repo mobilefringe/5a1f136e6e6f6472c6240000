@@ -128,6 +128,7 @@
                 selected_cat : function () {
                     var cat_id = null;
                     if(this.selected_cat == "All" || this.selected_cat == null ||  this.selected_cat == undefined){
+                        this.selected_cat
                         cat_id = "All";
                     }
                     else {
