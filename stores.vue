@@ -137,7 +137,9 @@
                 // console.log(x);
             },
             watch : {
-                selected_cat = ""
+                selected_cat : function () {
+                    
+                }
             },
             methods: {
                 changeMode (mode) {
