@@ -1,5 +1,5 @@
 <template>
- <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512663245990/shop_mobile_placeholder.png" class="shop_mobile_banner" alt="">
+
     <div class="content_container main_container position_relative padding_top_20">
         <div class="row hidden_phone">
             <div class="col-sm-4">
