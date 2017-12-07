@@ -137,6 +137,7 @@ Vue.component('v-select', VueSelect.VueSelect);
                 this.show_map = false;
             }
             console.log("Changed to route:",this.$route.path, "subscription is", this.show_subscrption);
+            this.show_mobile_menu = false;
         },
         mobile_search : function () {
             console.log(this.mobile_search);
