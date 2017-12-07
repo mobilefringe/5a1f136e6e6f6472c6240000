@@ -155,7 +155,7 @@
                     // else {
                     //     cat_id= this.findCategoryByName(this.selected_alpha).id;
                     // }
-                    this.filteredByCategory(cat_id);
+                    this.filterStores(cat_id);
                 }
             },
             methods: {
