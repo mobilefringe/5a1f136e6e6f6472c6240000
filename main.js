@@ -186,7 +186,7 @@ Vue.component('v-select', VueSelect.VueSelect);
       onOptionSelect(option) {
         console.log('Selected option:', option);
         
-        // this.$router.push("/stores/"+option.slug);
+        this.$router.push("/stores/"+option.slug);
         // $(".bannerSearch .options-list").hide();
         },
     },
