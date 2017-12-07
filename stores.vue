@@ -179,6 +179,9 @@
                 allCategories() {
                     return this.$store.getters.processedCategories;
                 },
+                allCategories() {
+                    return this.$store.getters.processedCategories;
+                },
                 storesByAlphaIndex() {
                     console.log(this.$store.getters.storesByAlphaIndex);
                     return this.$store.getters.storesByAlphaIndex;
