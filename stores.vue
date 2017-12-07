@@ -157,6 +157,7 @@
                     
                 },
                 filteredByCategory (category_id) {
+                    console.log("category_id",category_id)
                     if(category_id == "All"){
                         this.processedStores = this.storesByAlphaIndex;//this.storesByAlphaIndex;
                     }
