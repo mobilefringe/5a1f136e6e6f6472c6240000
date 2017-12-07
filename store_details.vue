@@ -31,7 +31,7 @@
                 </div> 
             </div>
             <div class="row is-table-row">
-                <div class="col-md-8">
+                <div class="col-md-8 col-sm-8 ">
                             <div class="store_details_desc hidden_phone">{{currentStore.description}}</div>
                       
                 </div>
