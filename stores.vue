@@ -34,7 +34,7 @@
                     <option value="7">#</option>
                     <option v-for="letter in alphabet" :value="letter"> {{letter}}</option>
                 </select>
-                
+                <v-select v-model="selected_cat" :options="allCatergories" :searchable="false" class="open" :on-change="consoleCallback" label="name"></v-select> 
             </div>
             <div class="row padding_bottom_50">
                 <div class="col-md-12">
