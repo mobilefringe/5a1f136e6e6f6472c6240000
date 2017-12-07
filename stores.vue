@@ -180,7 +180,7 @@
                     return this.$store.getters.processedCategories;
                 },
                 allMobileCategories() {
-                    var cats = ['All'];
+                    var cats =_.map(this.$store.getters.processedCategories, 'name');;
                     
                     return ;
                 },
