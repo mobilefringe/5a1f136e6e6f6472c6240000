@@ -68,6 +68,7 @@
                    
                 </div>
                 <div class="main_container show_phone">
+                    <hr/>
                     <div class="newsletter_container text-center">
                             <h2 class="heading">SIGN UP TO RECEIVE OUR UPDATES</h2>
                             <p class="newsletter_desc sub_title">Special Offers <br class="show_phone" /><span>•</span> New Store Openings <br class="show_phone" /><span>•</span> Exclusive Events</p>
