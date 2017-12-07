@@ -147,6 +147,7 @@
                     else {
                         var cat_id= this.findCategoryByName(this.selected_cat);
                     }
+                    this.filteredByCategory(cat_id);
                 }
             },
             methods: {
