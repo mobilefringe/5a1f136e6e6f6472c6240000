@@ -32,7 +32,7 @@
                OTHER {{currentJob.store.name | uppercase }} JOBS
         </div>
         <div id="promos_container" v-if="storeJobs.length > 0">
-            <div class="col-md-6 no_padding" v-for="promo in storeJobs" :data-cat="promo.cat_list">
+            <div class="col-md-6 col-sm-6 no_padding" v-for="promo in storeJobs" :data-cat="promo.cat_list">
                 <div class="promo_item cats_row is-table-row">
                     <div class="col-md-5 col-xs-4 no_padding">
                         <img class="promo_store_image" :src="promo.store.image_url" :alt="promo.name" />
