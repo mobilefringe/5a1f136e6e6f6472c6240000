@@ -67,7 +67,7 @@
                     </div>
                    
                 </div>
-                <div class="main_container show_phone">
+                <div class="show_phone">
                     <hr/>
                     <div class="newsletter_container text-center">
                             <h2 class="heading">SIGN UP TO RECEIVE OUR UPDATES</h2>
