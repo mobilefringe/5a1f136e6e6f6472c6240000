@@ -127,7 +127,7 @@
             watch : {
                 selected_cat : function () {
                     var cat_id = null;
-                    if(this.selected_cat == "All"){
+                    if(this.selected_cat == "All" || this.selected_cat == null ||  this.selected_cat == nul){
                         cat_id = "All";
                     }
                     else {
