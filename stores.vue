@@ -138,7 +138,7 @@
             },
             watch : {
                 selected_cat : function () {
-                    
+                    console.log (this.selected_cat)
                 }
             },
             methods: {
