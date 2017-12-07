@@ -35,6 +35,7 @@
                 <!--    <option v-for="letter in alphabet" :value="letter"> {{letter}}</option>-->
                 <!--</select>-->
                 <v-select v-model="selected_cat" :options="mobile_aphabet" :searchable="false" :placeholder="'Select Store A-Z'" :on-change="filterStores" label="name" id="mobile_alpha_list"></v-select> 
+                <v-select v-model="selected_cat" :options="mobile_aphabet" :searchable="false" :placeholder="'Select Store A-Z'" :on-change="filterStores" label="name" id="mobile_alpha_list"></v-select> 
             </div>
             <div class="row padding_bottom_50">
                 <div class="col-md-12">
