@@ -183,7 +183,7 @@
                 },
                 allMobileCategories() {
                     var cats =_.map(this.$store.getters.processedCategories, 'name');;
-                    console.log(cats.unshift(cats,'All'));
+                    console.log(cats.unshift('All'));
                     return ;
                 },
                 storesByAlphaIndex() {
