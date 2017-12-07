@@ -140,7 +140,6 @@
                 selected_cat : function () {
                     console.log (this.selected_cat)
                     
-                    this.filteredByCategory(cat_id);
                     if(this.selected_cat == "All"){
                         this.processedStores = this.storesByAlphaIndex;//this.storesByAlphaIndex;
                         var cat_id= this.findCategoryByName(this.selected_cat);
