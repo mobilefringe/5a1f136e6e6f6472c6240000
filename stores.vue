@@ -147,7 +147,7 @@
                     }
                     this.filteredByCategory(cat_id);
                 },
-                selected_cat : function () {
+                selected_alpha : function () {
                     var cat_id = null;
                     if(this.selected_cat == "All"){
                         cat_id = this.selected_cat;
