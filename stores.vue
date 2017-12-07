@@ -5,7 +5,7 @@
                 <p class="category_header">Categories</p>
                 <div id="category_container">
                     <h5 class="category_name active_cat hidden_phone"><a @click="filteredByCategory('All')" class="show_all_stores">All</a></h5>
-                    <div  class="hidden_phone" v-for="cat in allCategories">
+                    <div  class="" v-for="cat in allCategories">
                         <h5 class="category_name"><a @click="filteredByCategory(cat.id)" class="show_cat_stores" :data-id="cat.id">{{cat.name}}</a></h5>
                     </div>
                 </div>
