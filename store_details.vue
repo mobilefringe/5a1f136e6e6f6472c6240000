@@ -25,7 +25,7 @@
                     </div>
                     
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-4">
                     <img :src="currentStore.image_url" class="store_logo hidden_phone" :alt="currentStore.name" style="margin:0;max-width:100%;" />
                    
                 </div> 
