@@ -134,7 +134,7 @@
                         "Sunday", "Monday","Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
                     ],
                     currentPage: null,
-                    user : null,
+                    user : "",
                     usernamer: null
                 }
             },
