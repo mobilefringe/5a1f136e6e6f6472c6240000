@@ -129,7 +129,7 @@
                     var cat_id = null;
                     if(this.selected_cat == "All")
                     if(this.selected_cat == "All"){
-                        cat_id = this.selected_cat;
+                        cat_id = "all";
                     }
                     else {
                         cat_id= this.findCategoryByName(this.selected_cat).id;
