@@ -62,48 +62,48 @@
                         
                     <!--</form>-->
                     <form class="form-horizontal" action="form-submit" @submit.prevent="validateBeforeSubmit">
-  <div class="form-group ">
-    <div class="col-xs-12" :class="{'has-error': errors.has('email')}">
-      <!-- <input class="form-control" type="email" required="" placeholder="Email"> -->
-      <input v-model="user.username" v-validate="'required|email'" class="form-control" :class="{'input': true}" name="email" type="email"
-        placeholder="Email" data-vv-delay="1000">
-      <span v-show="errors.has('email')" class="form-control-feedback">{{ errors.first('email') }}</span>
-    </div>
-  </div>
-
-  <div class="form-group">
-    <div class="col-xs-12" :class="{'has-error': errors.has('password')}">
-      <input v-model="user.password" name="password" v-validate="'required'" class="form-control" :class="{'input': true}" type="password"
-        placeholder="Password">
-      <span v-show="errors.has('password')" class="form-control-feedback">{{ errors.first('password') }}</span>
-    </div>
-  </div>
-
-  <div class="form-group ">
-    <div class="col-xs-12">
-      <div class="checkbox checkbox-success">
-        <input id="checkbox-signup" type="checkbox" v-model="user.remember_me">
-        <label for="checkbox-signup">
-          Remember me
-        </label>
-      </div>
-    </div>
-  </div>
-
-  <div class="form-group text-center m-t-30">
-    <div class="col-sm-12">
-      <a href="page-recoverpw.html" class="text-muted">
-        <i class="fa fa-lock m-r-5"></i> Forgot your password?</a>
-    </div>
-  </div>
-
-  <div class="form-group account-btn text-center m-t-10">
-    <div class="col-xs-12">
-      <button class="btn w-md btn-bordered btn-custom waves-effect waves-light" type="submit" :disabled="loginPending">Log In</button>
-    </div>
-  </div>
-
-</form>
+                      <div class="form-group ">
+                        <div class="col-xs-12" :class="{'has-error': errors.has('email')}">
+                          <!-- <input class="form-control" type="email" required="" placeholder="Email"> -->
+                          <input v-model="user.username" v-validate="'required|email'" class="form-control" :class="{'input': true}" name="email" type="email"
+                            placeholder="Email" data-vv-delay="1000">
+                          <span v-show="errors.has('email')" class="form-control-feedback">{{ errors.first('email') }}</span>
+                        </div>
+                      </div>
+                    
+                      <div class="form-group">
+                        <div class="col-xs-12" :class="{'has-error': errors.has('password')}">
+                          <input v-model="user.password" name="password" v-validate="'required'" class="form-control" :class="{'input': true}" type="password"
+                            placeholder="Password">
+                          <span v-show="errors.has('password')" class="form-control-feedback">{{ errors.first('password') }}</span>
+                        </div>
+                      </div>
+                    
+                      <div class="form-group ">
+                        <div class="col-xs-12">
+                          <div class="checkbox checkbox-success">
+                            <input id="checkbox-signup" type="checkbox" v-model="user.remember_me">
+                            <label for="checkbox-signup">
+                              Remember me
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    
+                      <div class="form-group text-center m-t-30">
+                        <div class="col-sm-12">
+                          <a href="page-recoverpw.html" class="text-muted">
+                            <i class="fa fa-lock m-r-5"></i> Forgot your password?</a>
+                        </div>
+                      </div>
+                    
+                      <div class="form-group account-btn text-center m-t-10">
+                        <div class="col-xs-12">
+                          <button class="btn w-md btn-bordered btn-custom waves-effect waves-light" type="submit" :disabled="loginPending">Log In</button>
+                        </div>
+                      </div>
+                    
+                    </form>
                     <div id="send_contact_success" class="alert alert-success" role="alert" style="display:none">
                         <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
                         <span class="sr-only">Success</span>
