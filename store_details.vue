@@ -19,7 +19,7 @@
                 </div>
             </div>
             <div class="row is-table-row">
-                <div class="col-md-8">
+                <div class="col-md-8 ">
                     <div id="map">
                         <svg-map @updateMap="updateSVGMap()" :svgMapUrl="getSVGurl" ></svg-map>
                     </div>
