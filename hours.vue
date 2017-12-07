@@ -48,7 +48,6 @@
                 <div class="padding_top_40"></div>
             </div>
         </div >
-        
     </div>
 </template>
 
