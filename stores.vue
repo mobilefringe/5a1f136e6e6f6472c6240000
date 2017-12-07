@@ -146,6 +146,7 @@
                         var cat_id= this.findCategoryByName(this.selected_cat);
                     }
                     else {
+                        var cat_id= this.findCategoryByName(this.selected_cat);
                     }
                 }
             },
