@@ -1,5 +1,4 @@
 <template>
-
     <div class="content_container main_container position_relative padding_top_20">
         <div class="row hidden_phone">
             <div class="col-sm-4">
