@@ -133,7 +133,9 @@
                     dayOfTheWeek : [
                         "Sunday", "Monday","Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
                     ],
-                    currentPage: null
+                    currentPage: null,
+                    user : null,
+                    usernamer: null
                 }
             },
             beforeRouteEnter (to, from, next) {
