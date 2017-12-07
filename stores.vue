@@ -123,6 +123,9 @@
                 
                 // console.log(x);
             },
+            watch : {
+                
+            }
             methods: {
                 changeMode (mode) {
                     this.listMode = mode;
