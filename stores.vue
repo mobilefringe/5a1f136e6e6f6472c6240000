@@ -34,7 +34,7 @@
                 <!--    <option value="7">#</option>-->
                 <!--    <option v-for="letter in alphabet" :value="letter"> {{letter}}</option>-->
                 <!--</select>-->
-                <div>
+                <div class="select_container">
                     <v-select :value="selected_cat" :options="mobile_aphabet" :searchable="false" :on-change="filteredByCategory" id="mobile_cat_list"></v-select> 
                 </div>
                 <div>
