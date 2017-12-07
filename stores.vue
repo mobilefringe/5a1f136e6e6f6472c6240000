@@ -1,5 +1,6 @@
 <template>
     <div class="content_container main_container position_relative padding_top_20">
+    <div></div>
         <div class="row hidden_phone">
             <div class="col-sm-4">
                 <p class="category_header">Categories</p>
