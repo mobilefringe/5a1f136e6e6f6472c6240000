@@ -34,7 +34,7 @@
                 <!--    <option value="7">#</option>-->
                 <!--    <option v-for="letter in alphabet" :value="letter"> {{letter}}</option>-->
                 <!--</select>-->
-                <v-select v-model="selected_cat" :options="alphabet" :searchable="false" :placeholder="Select Store A-Z" :on-change="consoleCallback" label="name" id="mobile_alpha_list"></v-select> 
+                <v-select v-model="selected_cat" :options="alphabet" :searchable="false" :placeholder="Select Store A-Z" :on-change="filterStores(selected_cat)" label="name" id="mobile_alpha_list"></v-select> 
             </div>
             <div class="row padding_bottom_50">
                 <div class="col-md-12">
@@ -124,8 +124,6 @@
                 // console.log(x);
             },
             watch : {
-                
-            }
             methods: {
                 changeMode (mode) {
                     this.listMode = mode;
