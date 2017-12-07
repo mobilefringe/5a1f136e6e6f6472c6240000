@@ -78,6 +78,7 @@
       },
       watch : {
         currentPromo : function (){
+            if(this.currentPromo != null)
             var vm = this;
             var temp_promo = [];
             var current_id =_.toNumber(this.currentPromo.id);
