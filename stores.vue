@@ -142,6 +142,7 @@
                     var cat_id = null;
                     if(this.selected_cat == "All"){
                         cat_id = this.selected_cat;
+                    }
                     else {
                         cat_id= this.findCategoryByName(this.selected_cat);
                     }
