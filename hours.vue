@@ -23,7 +23,7 @@
                 </div>
                 <hr/>
                 <div class="row">
-                    <div class="col-md-12 no_padding">
+                    <div class="col-md-12 ">
                         <div class="padding_top_20"></div>
                         
                         <h3 class="hours_heading">Reduced Holiday Hours of Operation</h3>
