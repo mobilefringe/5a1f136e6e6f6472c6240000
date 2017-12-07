@@ -188,7 +188,8 @@
                     return this.$store.getters.processedCategories;
                 },
                 allMobileCategories() {
-                    var cats =_.map(this.$store.getters.processedCategories, 'name');;
+                    var cats =_.map(this.$store.getters.processedCategories, 'name');
+                    cats = cats.unshift('All');
                     console.log();
                     return ;
                 },
