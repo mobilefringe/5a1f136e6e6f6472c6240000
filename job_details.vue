@@ -4,7 +4,7 @@
                 {{currentJob.store.name | uppercase}}
         </div>
         <div class="row mobile_padding" id="promo_details_container">
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-4">
                 <img :src="currentJob.store.image_url"  alt="Store Logo" class="details_image" />
             </div>
             <div class="col-md-8">
