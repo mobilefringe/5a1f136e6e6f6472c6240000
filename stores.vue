@@ -19,7 +19,7 @@
                 </div>
             </div>
         </div>
-        
+        <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512663245990/shop_mobile_placeholder.png" class="shop_mobile_banner" alt="">
         <h2 class="stores_main_heading">Shops & Entertaiment</h2>
         <p class="store_main_desc sub_title">Explore • Enjoy • Shop</p>
         <div class="mobile_padding show_phone">
