@@ -142,10 +142,10 @@
                     var cat_id = null;
                     if(this.selected_cat == "All"){
                         this.processedStores = this.storesByAlphaIndex;//this.storesByAlphaIndex;
-                        var cat_id= this.findCategoryByName(this.selected_cat);
+                        cat_id= this.findCategoryByName(this.selected_cat);
                     }
                     else {
-                        var cat_id= this.findCategoryByName(this.selected_cat);
+                        cat_id= this.findCategoryByName(this.selected_cat);
                     }
                     this.filteredByCategory(cat_id);
                 }
