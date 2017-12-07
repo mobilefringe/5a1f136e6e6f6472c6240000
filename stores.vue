@@ -146,7 +146,6 @@
                     else {
                         cat_id= this.findCategoryByName(this.selected_cat).id;
                     }
-                    console.log(cat_id);
                     this.filteredByCategory(cat_id);
                 }
             },
