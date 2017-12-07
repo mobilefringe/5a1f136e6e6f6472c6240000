@@ -149,11 +149,11 @@
                 },
                 selected_alpha : function () {
                     var cat_id = null;
-                    if(this.selected_cat == "All"){
+                    if(this.selected_alpha == "All"){
                         cat_id = this.selected_cat;
                     }
                     else {
-                        cat_id= this.findCategoryByName(this.selected_cat).id;
+                        cat_id= this.findCategoryByName(this.selected_alpha).id;
                     }
                     this.filteredByCategory(cat_id);
                 }
