@@ -126,7 +126,7 @@
             mounted () {
                 this.processedStores = this.storesByAlphaIndex;// this.storesByAlphaIndex;
                 var total_stores;
-                this.allMobileCategories;
+                // this.allMobileCategories;
                 // _.forEach(this.storesByAlphaIndex, function(value) {
                 //   console.log(value.length);
                 //   total_stores = _.add(value.length,total_stores);
