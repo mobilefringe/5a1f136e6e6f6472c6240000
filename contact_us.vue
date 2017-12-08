@@ -135,7 +135,7 @@
                         "Sunday", "Monday","Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
                     ],
                     currentPage: null,
-                    form_data : "",
+                    form_data : {},
                     loginPending: null
                 }
             },
