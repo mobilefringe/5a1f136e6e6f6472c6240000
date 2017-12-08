@@ -215,6 +215,7 @@
                                 try {
                                     if (error.response.status == 401) {
                                         console.log("Data load error: " + error.message);
+                                        this.formError = true;
                                     } 
                                     else {
                                         console.log("Data load error: " + error.message);
