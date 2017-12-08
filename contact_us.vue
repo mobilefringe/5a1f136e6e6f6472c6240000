@@ -138,7 +138,7 @@
                     form_data : {},
                     loginPending: null,
                     formSuccess : false,
-                    formError: false;
+                    formError: false
                 }
             },
             beforeRouteEnter (to, from, next) {
