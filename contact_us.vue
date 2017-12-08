@@ -136,7 +136,9 @@
                     ],
                     currentPage: null,
                     form_data : {},
-                    loginPending: null
+                    loginPending: null,
+                    formSuccess : false,
+                    formError: false;
                 }
             },
             beforeRouteEnter (to, from, next) {
@@ -208,6 +210,7 @@
                                 // this.$router.replace({
                                 //     name: 'home'
                                 // })
+                                
                             }).catch(error => {
                                 try {
                                     if (error.response.status == 401) {
