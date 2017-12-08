@@ -180,7 +180,7 @@
                     return this.$store.getters.getProperty;
                 },
                 getSVGurl () {
-                    // return "https://www.mallmaverick.com" + this.property.svgmap_url;
+                    return "https://www.mallmaverick.com" + this.property.svgmap_url;
                     return "//www.mallmaverick.com/system/site_images/photos/000/035/014/original/Canyon_Crest_-_Map.svg?1512066588";
                 },
                 allStores() {
