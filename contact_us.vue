@@ -14,53 +14,6 @@
             <hr/>
             <div class="row"> 
                 <div class="col-md-12 contact_contents padding_top_20">
-            
-                    <!--<form name="contact_form" id="contact_form" method="post">-->
-                    <!--    <div class="row "  style="margin-left:0px;margin-right:0px">-->
-                    <!--        <h5 class="promo_list_desc">We value your feedback. Send us your comments or questions by completing the contact form below.</h5>-->
-                    <!--    </div>-->
-                    <!--    <div class="row padding_top_20" >-->
-                    <!--        <div class="col-sm-6 col-md-6 ">-->
-                    <!--            <label for="name">Name</label>-->
-                    <!--            <input name="name" id="name" class="form-control" type="text" value="" required>-->
-                    <!--        </div>-->
-                    <!--        <div class="col-sm-6 col-md-6">-->
-                    <!--            <label for="email" >E-mail</label>-->
-                    <!--            <input name="email" id="email" class="form-control" type="text" value="" required>-->
-                    <!--        </div>-->
-                    <!--    </div>-->
-                    <!--    <br>-->
-                    <!--    <div class="row">-->
-                    <!--        <div class="col-sm-12 col-md-12">-->
-                    <!--            <label for="subject">Subject</label>-->
-                    <!--            <input name="subject" id="subject" class="form-control" type="text" required>-->
-                    <!--        </div>-->
-                    <!--    </div>-->
-                    <!--    <br>-->
-                    <!--    <div class="row">-->
-                    <!--        <div class="col-sm-12 col-md-12">-->
-                    <!--            <label for="message">Message</label>-->
-                    <!--            <textarea name="message" id="message" rows="8" class="form-control" required></textarea>-->
-                    <!--        </div>-->
-                    <!--        <div class="col-sm-12 col-md-12">-->
-                    <!--        <br>-->
-                    <!--            <label for="enterVerify">Enter the following number below to proceed: <div id="verifyNum">{{rannumber}}</div></label><br>-->
-                    <!--            <input type="hidden" :value="rannumber" id="verifyNumHidden" name="verifyNumHidden" />-->
-                    <!--            <div class="col-sm-4 col-md-4 no_padding">-->
-                    <!--                <input type="text" class="form-control" id="enterVerify" name="enterVerify" />-->
-                    <!--            </div>-->
-                    <!--        </div>-->
-                    <!--    </div>-->
-                        
-                    <!--    <div class="row">-->
-                    <!--            <div class="col-sm-12 col-md-12"><br/>-->
-                    <!--            <button id="submit" class="animated_btn" type="submit">Submit</button>-->
-                    <!--        </div>-->
-                    <!--    </div>-->
-                        
-                        
-                        
-                    <!--</form>-->
                     <form class="form-horizontal" action="form-submit" @submit.prevent="validateBeforeSubmit">
                         <div class="form-group ">
                             <div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('name')}">
