@@ -200,7 +200,7 @@
                     this.$validator.validateAll().then((result) => {
                         if (result) {
                             let errors = this.errors;
-                            console.log("sending form data",form_data)
+                            console.log("sending form data",form_data);
                             this.$store.dispatch("CONTACT_US", this.form_data).then(res => {
                                 this.$router.replace({
                                     name: 'home'
