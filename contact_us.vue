@@ -80,7 +80,7 @@
                       </div>
                     
                       <div class="form-group">
-                        <div class="col-xs-6" :class="{'has-error': errors.has('email')}">
+                        <div class="col-xs-6" :class="{'has-error': errors.has('phone')}">
                             <label class="label" for="email">Email</label>
                           <!-- <input class="form-control" type="email" required="" placeholder="Email"> -->
                           <input v-model="user.username" v-validate="'required|email'" class="form-control" :class="{'input': true}" name="email" type="email"
