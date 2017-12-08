@@ -96,7 +96,6 @@
                                 <button class="animated_btn" type="submit" :disabled="formSuccess">Log In</button>
                             </div>
                         </div>
-                    
                     </form>
                     <div id="send_contact_success" class="alert alert-success" role="alert" v-show="formSuccess">
                         <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
