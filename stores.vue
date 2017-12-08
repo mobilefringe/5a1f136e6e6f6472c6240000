@@ -14,9 +14,9 @@
                 </div>
                 <div class="col-sm-8">
                     <div class="map_container">
-                        <div id="map" class="hidden_phone">
+                        <!--<div id="map" class="hidden_phone">-->
                             <!--<img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1511892740000/Canyon Crest - Map-01.png" class="" alt="" style="max-height:100%">-->
-                        </div>
+                        <!--</div>-->
                         <svg-map :svgMapUrl="getSVGurl"></svg-map>
                     </div>
                 </div>
