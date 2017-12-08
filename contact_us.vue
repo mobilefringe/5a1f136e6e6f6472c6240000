@@ -80,10 +80,12 @@
                       </div>
                     
                       <div class="form-group">
-                        <div class="col-xs-12" :class="{'has-error': errors.has('password')}">
-                          <input v-model="user.password" name="password" v-validate="'required'" class="form-control" :class="{'input': true}" type="password"
-                            placeholder="Password">
-                          <span v-show="errors.has('password')" class="form-control-feedback">{{ errors.first('password') }}</span>
+                        <div class="col-xs-6" :class="{'has-error': errors.has('email')}">
+                            <label class="label" for="email">Email</label>
+                          <!-- <input class="form-control" type="email" required="" placeholder="Email"> -->
+                          <input v-model="user.username" v-validate="'required|email'" class="form-control" :class="{'input': true}" name="email" type="email"
+                            placeholder="Email" data-vv-delay="1000">
+                          <span v-show="errors.has('email')" class="form-control-feedback">{{ errors.first('email') }}</span>
                         </div>
                       </div>
                     
