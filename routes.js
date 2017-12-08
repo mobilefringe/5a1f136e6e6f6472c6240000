@@ -91,7 +91,7 @@ define([], function () {
       ]
     },
     {
-      path: '/contact_us',
+      path: '/newsletter',
       component: view('default'),
       children: [
         {
