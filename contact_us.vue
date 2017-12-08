@@ -91,7 +91,7 @@
                         </div>
                       </div>
                         <div class="form-group">
-                        <div class="col-xs-6" :class="{'has-error': errors.has('phone')}">
+                        <div class="col-xs-6" :class="{'has-error': errors.has('message')}">
                             <label class="label" for="email">Phone</label>
                           <!-- <input class="form-control" type="email" required="" placeholder="Email"> -->
                           <input v-model="user.phone" v-validate="'required|phone'" class="form-control" :class="{'input': true}" name="phone" type="phone"
