@@ -206,8 +206,8 @@
                             let errors = this.errors;
                             this.$store.dispatch("login", this.user).then(res => {
                                 this.$router.replace({
-                                name: 'home'
-                            })
+                                    name: 'home'
+                                })
                             }).catch(error => {
                                 try {
                                     if (error.response.status == 401) {
