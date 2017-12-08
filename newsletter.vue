@@ -8,7 +8,7 @@
                 <!--    </div>-->
                 <!--</div>-->
                 <div class="col-md-12">
-                    <img style="margin-bottom:20px;widtg:100%" src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512580269422/placeholder_contact_image.png" alt="plaza">
+                    <img style="margin-bottom:20px;width:100%" src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512580269422/placeholder_contact_image.png" alt="plaza">
                 </div> 
             </div>
             <hr/>
