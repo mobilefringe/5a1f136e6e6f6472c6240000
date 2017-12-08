@@ -208,7 +208,7 @@
                             }).catch(error => {
                                 try {
                                     if (error.response.status == 401) {
-                                        
+                                        console.log("Data load error: " + error.message);
                                     } 
                                     else {
                                         swal('Oops...', 'Something went wrong!', 'error')
