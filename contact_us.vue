@@ -65,7 +65,6 @@
                       <div class="form-group ">
                         <div class="col-xs-6" :class="{'has-error': errors.has('name')}">
                             <label class="label" for="name">Name</label>
-                          <!-- <input class="form-control" type="email" required="" placeholder="Email"> -->
                           <input v-model="form_data.name" v-validate="'required|alpha_spaces'" class="form-control" :class="{'input': true}" name="name" type="text"
                             placeholder="Name" data-vv-delay="1000">
                           <span v-show="errors.has('name')" class="form-control-feedback">{{ errors.first('name') }}</span>
@@ -75,7 +74,6 @@
                       <div class="form-group">
                         <div class="col-xs-6" :class="{'has-error': errors.has('email')}">
                             <label class="label" for="email">Email</label>
-                          <!-- <input class="form-control" type="email" required="" placeholder="Email"> -->
                           <input v-model="form_data.email" v-validate="'required|email'" class="form-control" :class="{'input': true}" name="email" type="email"
                             placeholder="Email" data-vv-delay="1000">
                           <span v-show="errors.has('email')" class="form-control-feedback">{{ errors.first('email') }}</span>
@@ -84,7 +82,6 @@
                       <div class="form-group">
                         <div class="col-xs-6" :class="{'has-error': errors.has('phone')}">
                             <label class="label" for="phone">Phone</label>
-                          <!-- <input class="form-control" type="email" required="" placeholder="Email"> -->
                           <input v-model="form_data.phone"  v-validate="{regex: /^(?:(?:\+?1\s*(?:[.-]\s*)?)?(?:\(\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\s*\)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\s*(?:[.-]\s*)?)?([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2})\s*(?:[.-]\s*)?([0-9]{4})(?:\s*(?:#|x\.?|ext\.?|extension)\s*(\d+))?$/}" class="form-control" :class="{'input': true}" name="phone" type="phone" placeholder="Phone" data-vv-delay="1000">
                           <span v-show="errors.has('phone')" class="form-control-feedback">{{ errors.first('phone') }}</span>
                         </div>
