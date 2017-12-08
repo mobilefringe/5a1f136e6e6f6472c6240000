@@ -135,7 +135,8 @@
                         "Sunday", "Monday","Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
                     ],
                     currentPage: null,
-                    user : ""
+                    user : "",
+                    loginPending: null
                 }
             },
             beforeRouteEnter (to, from, next) {
