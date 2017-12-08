@@ -99,16 +99,6 @@
                           <span v-show="errors.has('message')" class="form-control-feedback">{{ errors.first('message') }}</span>
                         </div>
                       </div>
-                      <div class="form-group ">
-                        <div class="col-xs-12">
-                          <div class="checkbox checkbox-success">
-                            <input id="checkbox-signup" type="checkbox" v-model="user.remember_me">
-                            <label for="checkbox-signup">
-                              Remember me
-                            </label>
-                          </div>
-                        </div>
-                      </div>
                     
                       <div class="form-group text-center m-t-30">
                         <div class="col-sm-12">
