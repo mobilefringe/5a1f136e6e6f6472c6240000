@@ -198,7 +198,32 @@
                     }
                     return rannumber;
                 }
+            },
+            methods: {
+  validateBeforeSubmit() {
+    this.$validator.validateAll().then((result) => {
+      if (result) {
+        let errors = this.errors;
+        this.$store.dispatch("login", this.user).then(res => {
+          this.$router.replace({
+            name: 'home'
+          })
+        }).catch(error => {
+          try {
+            if (error.response.status == 401) {
+              this.errors.add('email', 'Please check your credentials', 'server')
+              this.errors.add('password', 'Please check your credentials', 'server')
+            } else {
+              swal('Oops...', 'Something went wrong!', 'error')
             }
+          } catch (e) {
+            swal('Oops...', 'Something went wrong!', 'error')
+          }
+        })
+      }
+    })
+  }
+}
         });
     });
 </script>
