@@ -222,6 +222,7 @@
                                 } 
                                 catch (e) {
                                     console.log("Data load error: " + error.message);
+                                    this.formError = true;
                                 }
                             })
                         }
