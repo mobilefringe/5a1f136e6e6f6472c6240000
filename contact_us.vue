@@ -210,7 +210,7 @@
                                 // this.$router.replace({
                                 //     name: 'home'
                                 // })
-                                
+                                this.formSuccess = true;
                             }).catch(error => {
                                 try {
                                     if (error.response.status == 401) {
