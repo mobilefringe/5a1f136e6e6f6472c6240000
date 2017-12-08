@@ -205,9 +205,9 @@
                             send_data.url = this.property.mm_host + '/api/v1/contact_us';
                             send_data.form_data = this.form_data;
                             this.$store.dispatch("CONTACT_US", send_data).then(res => {
-                                this.$router.replace({
-                                    name: 'home'
-                                })
+                                // this.$router.replace({
+                                //     name: 'home'
+                                // })
                             }).catch(error => {
                                 try {
                                     if (error.response.status == 401) {
