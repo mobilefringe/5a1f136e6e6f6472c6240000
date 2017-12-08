@@ -2,11 +2,11 @@
     <div class=" main_container" id="promotions_container"> <!-- for some reason if you do not put an outer container div this component template will not render -->
         <div class="margin_25_across padding_top_40">
             <div class="row">
-                <div class="col-md-5">
-                    <div class="col-md-12" v-if="currentPage">
-                        <div class="description_text text_left" v-html="currentPage.body"></div>
-                    </div>
-                </div>
+                <!--<div class="col-md-5">-->
+                <!--    <div class="col-md-12" v-if="currentPage">-->
+                <!--        <div class="description_text text_left" v-html="currentPage.body"></div>-->
+                <!--    </div>-->
+                <!--</div>-->
                 <div class="col-md-12">
                     <img style="margin-bottom:20px;" src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512580269422/placeholder_contact_image.png" alt="plaza">
                 </div> 
