@@ -203,7 +203,7 @@
                     this.$validator.validateAll().then((result) => {
                         if (result) {
                             let errors = this.errors;
-                            this.$store.dispatch("login", this.user).then(res => {
+                            this.$store.dispatch("CONTACT_US", this.user).then(res => {
                                 this.$router.replace({
                                     name: 'home'
                                 })
