@@ -97,7 +97,7 @@ define([], function () {
         {
           path: '',
           component: view('newsletter'),
-          name: 'contactUs'
+          name: 'newsletter'
         }
       ]
     },
