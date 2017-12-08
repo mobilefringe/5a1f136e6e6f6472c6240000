@@ -208,20 +208,20 @@
                                 this.$router.replace({
                                 name: 'home'
                             })
-                            }).catch(error => {
-                                try {
-                                    if (error.response.status == 401) {
-                                        this.errors.add('email', 'Please check your credentials', 'server')
-                                        this.errors.add('password', 'Please check your credentials', 'server')
-                                    } 
-                                    else {
-                                        swal('Oops...', 'Something went wrong!', 'error')
-                                    }
+                        }).catch(error => {
+                            try {
+                                if (error.response.status == 401) {
+                                    this.errors.add('email', 'Please check your credentials', 'server')
+                                    this.errors.add('password', 'Please check your credentials', 'server')
                                 } 
-                                catch (e) {
+                                else {
                                     swal('Oops...', 'Something went wrong!', 'error')
                                 }
-                            })
+                            } 
+                            catch (e) {
+                                swal('Oops...', 'Something went wrong!', 'error')
+                            }
+                        })
                         }
                     })
                 }
