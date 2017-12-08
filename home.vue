@@ -59,7 +59,7 @@
             </div>
         </div>
         
-        <div class="content_container  position_relative hidden-phone" style="padding:0">
+        <div class="content_container  position_relative hidden_phone" style="padding:0">
             <div class="main_container">
                 <div class="newsletter_container text-center">
                         <h2 class="heading">SIGN UP TO RECEIVE OUR UPDATES</h2>
