@@ -78,8 +78,7 @@
                           <span v-show="errors.has('email')" class="form-control-feedback">{{ errors.first('email') }}</span>
                         </div>
                       </div>
-                        
-                        <div class="form-group">
+                      <div class="form-group">
                         <div class="col-xs-6" :class="{'has-error': errors.has('phone')}">
                             <label class="label" for="email">Phone</label>
                           <!-- <input class="form-control" type="email" required="" placeholder="Email"> -->
