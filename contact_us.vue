@@ -92,7 +92,7 @@
                       </div>
                         <div class="form-group">
                         <div class="col-xs-6" :class="{'has-error': errors.has('message')}">
-                            <label class="label" for="email">Message</label>
+                            <label class="label" for="message">Message</label>
                           <!-- <input class="form-control" type="email" required="" placeholder="Email"> -->
                           <input v-model="user.phone" v-validate="'required|phone'" class="form-control" :class="{'input': true}" name="message" type="text"
                             placeholder="Message" data-vv-delay="1000">
