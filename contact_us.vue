@@ -85,7 +85,7 @@
                           <!-- <input class="form-control" type="email" required="" placeholder="Email"> -->
                           <input v-model="user.phone" v-validate="'required|phone'" class="form-control" :class="{'input': true}" name="phone" type="phone"
                             placeholder="Phone" data-vv-delay="1000">
-                          <span v-show="errors.has('email')" class="form-control-feedback">{{ errors.first('phone') }}</span>
+                          <span v-show="errors.has('phone')" class="form-control-feedback">{{ errors.first('phone') }}</span>
                         </div>
                       </div>
                     
