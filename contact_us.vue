@@ -215,7 +215,7 @@
                                     }
                                 } 
                                 catch (e) {
-                                    swal('Oops...', 'Something went wrong!', 'error')
+                                    console.log("Data load error: " + error.message);
                                 }
                             })
                         }
