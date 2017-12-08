@@ -95,8 +95,6 @@
                         </div>
                       </div>
                     
-                
-                    
                       <div class="form-group account-btn text-center m-t-10">
                         <div class="col-xs-12">
                           <button class="animated_btn" type="submit" :disabled="formSuccess">Log In</button>
