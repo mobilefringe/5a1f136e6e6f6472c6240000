@@ -201,6 +201,8 @@
                         if (result) {
                             let errors = this.errors;
                             console.log("sending form data", this.form_data);
+                            send_data = {};
+                            
                             this.$store.dispatch("CONTACT_US", this.property.mm_host + '/api/v1/contact_us',this.form_data).then(res => {
                                 this.$router.replace({
                                     name: 'home'
