@@ -142,6 +142,9 @@
                 changeMode (mode) {
                     this.listMode = mode;
                 },
+                updateSVGMap (map) {
+                    this.map = map;
+                },
                 dropPin(store) {
                     this.svgMapRef.hideMarkers();
                     console.log(store);
