@@ -218,6 +218,7 @@
                                     } 
                                     else {
                                         console.log("Data load error: " + error.message);
+                                        this.formError = true;
                                     }
                                 } 
                                 catch (e) {
