@@ -69,7 +69,6 @@
                                 placeholder="Name" data-vv-delay="1000">
                               <span v-show="errors.has('name')" class="form-control-feedback">{{ errors.first('name') }}</span>
                             </div>
-                        
                         </div>
                         <div class="form-group">
                             <div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('email')}">
