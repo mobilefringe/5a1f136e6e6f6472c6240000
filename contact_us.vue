@@ -94,7 +94,7 @@
                         <div class="col-xs-12" :class="{'has-error': errors.has('message')}">
                             <label class="label" for="message">Message</label>
                           <!-- <input class="form-control" type="email" required="" placeholder="Email"> -->
-                          <input v-model="user.message" v-validate="'required|alpha'" class="form-control" :class="{'input': true}" name="message" type="text"
+                          <input v-model="user.message" v-validate="'required|alpha_spaces'" class="form-control" :class="{'input': true}" name="message" type="text"
                             placeholder="Message" data-vv-delay="1000">
                           <span v-show="errors.has('message')" class="form-control-feedback">{{ errors.first('message') }}</span>
                         </div>
