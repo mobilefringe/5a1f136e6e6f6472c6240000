@@ -95,7 +95,7 @@
                             <label class="label" for="email">Message</label>
                           <!-- <input class="form-control" type="email" required="" placeholder="Email"> -->
                           <input v-model="user.phone" v-validate="'required|phone'" class="form-control" :class="{'input': true}" name="message" type="text"
-                            placeholder="message" data-vv-delay="1000">
+                            placeholder="Message" data-vv-delay="1000">
                           <span v-show="errors.has('phone')" class="form-control-feedback">{{ errors.first('phone') }}</span>
                         </div>
                       </div>
