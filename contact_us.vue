@@ -85,8 +85,7 @@
                         <div class="col-xs-6" :class="{'has-error': errors.has('phone')}">
                             <label class="label" for="phone">Phone</label>
                           <!-- <input class="form-control" type="email" required="" placeholder="Email"> -->
-                          <input v-model="user.phone"  v-validate="{regex: /^(?:(?:\+?1\s*(?:[.-]\s*)?)?(?:\(\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\s*\)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\s*(?:[.-]\s*)?)?([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2})\s*(?:[.-]\s*)?([0-9]{4})(?:\s*(?:#|x\.?|ext\.?|extension)\s*(\d+))?$/}" class="form-control" :class="{'input': true}" name="phone" type="phone"
-                            placeholder="Phone" data-vv-delay="1000">
+                          <input v-model="user.phone"  v-validate="{regex: /^(?:(?:\+?1\s*(?:[.-]\s*)?)?(?:\(\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\s*\)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\s*(?:[.-]\s*)?)?([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2})\s*(?:[.-]\s*)?([0-9]{4})(?:\s*(?:#|x\.?|ext\.?|extension)\s*(\d+))?$/}" class="form-control" :class="{'input': true}" name="phone" type="phone" placeholder="Phone" data-vv-delay="1000">
                           <span v-show="errors.has('phone')" class="form-control-feedback">{{ errors.first('phone') }}</span>
                         </div>
                       </div>
