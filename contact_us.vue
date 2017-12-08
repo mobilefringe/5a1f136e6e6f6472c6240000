@@ -211,7 +211,7 @@
                                         console.log("Data load error: " + error.message);
                                     } 
                                     else {
-                                        swal('Oops...', 'Something went wrong!', 'error')
+                                        console.log("Data load error: " + error.message);
                                     }
                                 } 
                                 catch (e) {
