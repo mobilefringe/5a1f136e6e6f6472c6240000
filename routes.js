@@ -91,6 +91,17 @@ define([], function () {
       ]
     },
     {
+      path: '/contact_us',
+      component: view('default'),
+      children: [
+        {
+          path: '',
+          component: view('contact_us'),
+          name: 'contactUs'
+        }
+      ]
+    },
+    {
       path: '/pages',
       component: view('default'),
       redirect: '/404',
