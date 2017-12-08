@@ -64,7 +64,7 @@
                     <form class="form-horizontal" action="form-submit" @submit.prevent="validateBeforeSubmit">
                       <div class="form-group ">
                         <div class="col-xs-6" :class="{'has-error': errors.has('name')}">
-                            <label class="label" for="email">Email</label>
+                            <label class="label" for="name">Email</label>
                           <!-- <input class="form-control" type="email" required="" placeholder="Email"> -->
                           <input v-model="user.username" v-validate="'required|email'" class="form-control" :class="{'input': true}" name="email" type="email"
                             placeholder="Email" data-vv-delay="1000">
