@@ -3,16 +3,7 @@
         <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512663245990/shop_mobile_placeholder.png" class="shop_mobile_banner show_phone" alt="">
         <div class="main_container">
             <div class="row hidden_phone">
-                <div class="col-sm-4">
-                    <p class="category_header">Categories</p>
-                    <div id="category_container">
-                        <h5 class="category_name active_cat hidden_phone"><a @click="filteredByCategory('All')" class="show_all_stores">All</a></h5>
-                        <div  class="" v-for="cat in allCategories">
-                            <h5 class="category_name"><a @click="filteredByCategory(cat.name)" class="show_cat_stores" :data-id="cat.id">{{cat.name}}</a></h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-8">
+                <div class="col-sm-12">
                     <div class="map_container">
                         <!--<div id="map" class="hidden_phone">-->
                             <!--<img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1511892740000/Canyon Crest - Map-01.png" class="" alt="" style="max-height:100%">-->
@@ -22,52 +13,6 @@
                 </div>
             </div>
             
-            <h2 class="stores_main_heading">Shops & Entertaiment</h2>
-            <p class="store_main_desc sub_title">Explore • Enjoy • Shop</p>
-            <div class="mobile_padding show_phone">
-                <!--<a href="/map" class="mobile_dd">Open Center Map</a>-->
-                <!--<select id="mobile_cat_list" class="form-control custom_form_control">-->
-                <!--        <option value="{{id}}">{{name}}</option>-->
-                <!--</select>-->
-                <!--<select id="mobile_alpha_list" class="form-control custom_form_control">-->
-                <!--    <option disabled="disabled" selected>Index</option>-->
-                <!--    <option value="7">#</option>-->
-                <!--    <option v-for="letter in alphabet" :value="letter"> {{letter}}</option>-->
-                <!--</select>-->
-                <div class="select_container">
-                    <v-select v-model="selected_cat" :options="allMobileCategories" :placeholder="'Select By Categoty'" :searchable="false" id="mobile_cat_list"></v-select> 
-                </div>
-                <div class="select_container">
-                    <v-select :value="selected_alpha" :options="mobile_aphabet" :placeholder="'Select Store A-Z'" :searchable="false" :on-change="filterStores" id="mobile_alpha_list"></v-select> 
-                </div>
-                
-                
-            </div>
-            <div class="row padding_bottom_50 padding_top_60">
-                <div class="col-md-12">
-                    <div class="alpha_list">
-                        <a @click="filterStores('All')" class="all_a">All</a>
-                        <a @click="filterStores('#')">#</a>
-                        <a v-for="letter in alphabet" @click="filterStores(letter)">{{letter}}</a>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <h5 class="category_header" style="display:none" id="cat_name_header">All</h5>
-                    <div class="row" v-if="processedStores">
-                        <div class="col-md-4 store_col_1">
-                            <div v-for="(stores,key) in processedStores">
-                                <span class="store_initial" :data-initial="key">{{key}}</span>
-                                <div id="store_list_container" class="store_list" v-for="store in stores">
-                                    <div class="store_list_content cats_row" :data-cat="store.cat_list">
-                                        <p class="store_name"><router-link :to="'/stores/'+store.slug">{{store.name}}</router-link></p>
-                                    </div>
-                                </div>   
-                            </div>
-                        </div>
-                    </div>
-                   
-                </div>
-            </div>
         </div>
     </div>
 </template>
