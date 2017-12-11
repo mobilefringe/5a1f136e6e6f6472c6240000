@@ -148,10 +148,10 @@ Vue.component('v-select', VueSelect.VueSelect);
         // computed property for locale which returns locale value from data store and also updates the data store with new locale information
         locale: {
             get () {
-              return this.$store.state.locale
+                return this.$store.state.locale
             },
             set (value) {
-              this.$store.commit('SET_LOCALE', { lang: value })
+                this.$store.commit('SET_LOCALE', { lang: value })
             }
         },
         getBanners () {
