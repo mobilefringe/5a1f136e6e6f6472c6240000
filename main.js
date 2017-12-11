@@ -185,7 +185,7 @@ Vue.component('v-select', VueSelect.VueSelect);
         this.locale = val; // this will update the data store, which in turn will trigger the watcher to update the locale in the system
       },
       onOptionSelect(option) {
-        console.log('Selected option:', option);
+            console.log('Selected option:', option);
         
             this.$router.push("/stores/"+option.slug);
             this.show_mobile_search = false;
