@@ -2,7 +2,7 @@
     <div class="content_container  position_relative padding_top_20 storelist_container">
         <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512663245990/shop_mobile_placeholder.png" class="shop_mobile_banner show_phone" alt="">
         <div class="main_container">
-            <div class="row hidden_phone">
+            <div class="row">
                 <div class="col-sm-12">
                     <div class="map_container">
                         <!--<div id="map" class="hidden_phone">-->
