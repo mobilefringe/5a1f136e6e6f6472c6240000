@@ -69,6 +69,18 @@ define([], function () {
       ]
     },
     {
+      path: '/map',
+      component: view('default'),
+      redirect: '/404',
+      children: [
+        {
+          path: ':id',
+          component: view('map'),
+          name: 'pageDetails'
+        }
+      ]
+    },
+    {
       path: '/hours',
       component: view('default'),
       children: [
