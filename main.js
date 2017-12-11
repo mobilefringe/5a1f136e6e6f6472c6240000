@@ -181,9 +181,9 @@ Vue.component('v-select', VueSelect.VueSelect);
     },
     methods: {
       // utility method to allow user to change locale value
-      changeLocale: function(val) {
-        this.locale = val; // this will update the data store, which in turn will trigger the watcher to update the locale in the system
-      },
+        changeLocale: function(val) {
+            this.locale = val; // this will update the data store, which in turn will trigger the watcher to update the locale in the system
+        },
       onOptionSelect(option) {
             console.log('Selected option:', option);
         
