@@ -74,7 +74,7 @@ define([], function () {
       redirect: '/404',
       children: [
         {
-          path: ':id',
+          path: '',
           component: view('map'),
           name: 'map'
         }
