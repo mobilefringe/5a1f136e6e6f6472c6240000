@@ -190,7 +190,7 @@ Vue.component('v-select', VueSelect.VueSelect);
         this.$router.push("/stores/"+option.slug);
         this.show_mobile_search = false;
         // $(".bannerSearch .options-list").hide();
-            this.mobile_search =null;
+            this.mobile_search = "";
             this.desktop_search = null;
         },
     },
