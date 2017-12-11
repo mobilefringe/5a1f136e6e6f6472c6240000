@@ -76,7 +76,7 @@ define([], function () {
         {
           path: ':id',
           component: view('map'),
-          name: 'pageDetails'
+          name: 'map'
         }
       ]
     },
