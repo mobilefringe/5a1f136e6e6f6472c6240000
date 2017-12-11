@@ -55,7 +55,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
   });
 
 Vue.component('v-select', VueSelect.VueSelect);
-Vue.component('vue-datepicker-local', VueDatepickerLocal);
+Vue.component('vue-datepicker-local', VueDatepickerLocal.VueDatepickerLocal);
 
   /* bootstrap app */
   const vm = new Vue({
