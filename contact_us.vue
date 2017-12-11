@@ -85,7 +85,8 @@
                     form_data : {},
                     loginPending: null,
                     formSuccess : false,
-                    formError: false
+                    formError: false,
+                    time: new Date(),
                 }
             },
             beforeRouteEnter (to, from, next) {
