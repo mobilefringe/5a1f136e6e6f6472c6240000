@@ -40,7 +40,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
   Vue.use(Vue2Filters);
   Vue.use(VueI18n);
     Vue.use(SocialSharing);
-    // Vue.use(DatepickerLocal);
+    Vue.use(DatepickerLocal);
   /* initialize router */
   const router = new VueRouter({
     mode: 'history',
@@ -55,7 +55,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
   });
 
 Vue.component('v-select', VueSelect.VueSelect);
-Vue.component('vue-datepicker-local', DatepickerLocal.DatepickerLocal);
+Vue.component('vue-datepicker-local', DatepickerLocal.);
 
   /* bootstrap app */
   const vm = new Vue({
