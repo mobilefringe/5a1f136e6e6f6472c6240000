@@ -191,7 +191,7 @@ Vue.component('v-select', VueSelect.VueSelect);
         this.show_mobile_search = false;
         // $(".bannerSearch .options-list").hide();
             this.mobile_search = "";
-            this.desktop_search = null;
+            this.desktop_search = "";
         },
     },
     router: router,
