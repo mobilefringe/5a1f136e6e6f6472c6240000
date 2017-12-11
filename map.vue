@@ -83,60 +83,17 @@
 
 <script>
     define(["Vue","jquery", "Raphael", "mm_mapsvg","mousewheel", "vue!svg-map"], function(Vue,$, Raphael, mapSvg,mousewheel,SVGMapComponent) {
-        return Vue.component("stores-component", {
+        return Vue.component("map-component", {
             template: template, // the variable template will be injected
             data: function() {
                 return {
-                    listMode: "alphabetical",
-                    processedStores: null,
-                    mobile_aphabet : ['All',
-                    'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
-                    ],
-                    alphabet : [
-                    'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
-                    ],
-                    selected_cat : 'All',
-                    selected_alpha : 'All'
+                    listMode: "alphabetical"
                 }
             },
             created (){
                 window.Raphael = Raphael; // our mapSvg plugin is stupid and outdated. need this hack to tie Raphael to window object (global variable)
             },
             mounted () {
-                this.processedStores = this.storesByAlphaIndex;// this.storesByAlphaIndex;
-                var total_stores;
-                // this.allMobileCategories;
-                // _.forEach(this.storesByAlphaIndex, function(value) {
-                //   console.log(value.length);
-                //   total_stores = _.add(value.length,total_stores);
-                // });
-                // console.log(total_stores);
-                // var x = 
-                
-                // console.log(x);
-            },
-            watch : {
-                selected_cat : function () {
-                    var cat_id = null;
-                    if(this.selected_cat == "All" || this.selected_cat == null ||  this.selected_cat == undefined){
-                        this.selected_cat = "All";
-                        cat_id = "All";
-                    }
-                    else {
-                        cat_id= this.findCategoryByName(this.selected_cat).id;
-                    }
-                    this.filteredByCategory(cat_id);
-                },
-                selected_alpha : function () {
-                    // var cat_id = null;
-                    // if(this.selected_alpha == "All"){
-                    //     cat_id = this.selected_cat;
-                    // }
-                    // else {
-                    //     cat_id= this.findCategoryByName(this.selected_alpha).id;
-                    // }
-                    this.filterStores(this.selected_alpha);
-                }
             },
             methods: {
                 changeMode (mode) {
@@ -150,32 +107,6 @@
                     console.log(store);
                     this.svgMapRef.addMarker(store,'//codecloud.cdn.speedyrails.net/sites/589e308f6e6f641b9f010000/image/png/1484850466000/show_pin.png');
                     this.svgMapRef.setViewBox(store)
-                },
-                filterStores (letter) {
-                    if(letter == "All"){
-                        this.processedStores = this.storesByAlphaIndex;//this.storesByAlphaIndex;
-                    }
-                    else {
-                        var filtered = _.filter(this.storesByAlphaIndex, function(o,i) { return _.lowerCase(i) == _.lowerCase(letter); })[0];
-                        this.processedStores = _.groupBy(filtered, store => (isNaN(store.name.charAt(0)) ? store.name.charAt(0) : "#"));
-                    }
-                    
-                },
-                filteredByCategory (category_id) {
-                    if(category_id == "All"){
-                        this.processedStores = this.storesByAlphaIndex;//this.storesByAlphaIndex;
-                    }
-                    else {
-                        var find = this.findCategoryById;
-                        var filtered = _.filter(this.allStores, function(o) {return _.indexOf(o.categories, _.toNumber(category_id)) > -1; });
-                        _.forEach(filtered, function(value, i) {
-                            value.currentCategory = find(category_id).name;
-                        });
-                        console.log(filtered)
-                        sortedCats = _.groupBy(filtered, store => store.currentCategory);
-                        console.log(sortedCats);
-                        this.processedStores = sortedCats;
-                    }
                 }
             },
             computed: {
@@ -186,66 +117,8 @@
                     return "https://www.mallmaverick.com" + this.property.svgmap_url;
                     // return "//www.mallmaverick.com/system/site_images/photos/000/035/014/original/Canyon_Crest_-_Map.svg?1512066588";
                 },
-                allStores() {
-                    return this.$store.getters.processedStores;
-                },
-                allCategories() {
-                    return this.$store.getters.processedCategories;
-                },
-                allMobileCategories() {
-                    var cats =_.map(this.$store.getters.processedCategories, 'name');
-                    cats.unshift('All');
-                    console.log(cats);
-                    return cats;
-                },
-                storesByAlphaIndex() {
-                    console.log(this.$store.getters.storesByAlphaIndex);
-                    return this.$store.getters.storesByAlphaIndex;
-                },
-                storesByCategoryName() {
-                  return this.$store.getters.storesByCategoryName;
-                },
-                findCategoryById () {
-                    return this.$store.getters.findCategoryById;
-                },
-                findCategoryByName (){
-                    return this.$store.getters.findCategoryByName;
-                },
                 svgMapRef() {
                     return _.filter(this.$children, function(o) { return (o.$el.className == "svg-map") })[0];
-                },
-                sliceAllStores(start,end){
-                    var div_stores = _.ceil(this.allStores.length/ 3);
-                    var chunks = [];//_.chunk(this.allStores,div_stores);
-                    // console.log(chunks);
-                    var num_store = 0;
-                    var chunky = 0;
-                    var temp_stores = [];
-                    _.forEach(this.storesByAlphaIndex, function(value, i) {
-                        // chunks[i]=_.groupBy(value, store => (isNaN(store.name.charAt(0)) ? store.name.charAt(0) : "#"));
-                        num_store = _.add(value.length, num_store);
-                        temp_stores.push(value);
-                        console.log(value,i)
-                        // console.log (num_store,div_stores)
-                        if( num_store >= div_stores){
-                            console.log("temp_stores",temp_stores);
-                            var x = _.groupBy(temp_stores, store => (isNaN(store.name.charAt(0)) ? store.name.charAt(0) : "#"));
-                            console.log("x",x);
-                            chunks[chunky] = x;
-                            temp_stores= [];
-                            chunky++;
-                            num_store= 0 ;
-                        }
-                    });
-                    
-                    console.log("chunks",chunks);
-                    // if (end >=20){
-                    //     end = this.alphabet.length;
-                    // }
-                    // var x =_.pick(this.storesByAlphaIndex, _.slice(this.alphabet, start, end));
-                    // // console.log(start,end);
-                    // // console.log(x);
-                   return chunks;
                 }
             }
         });
