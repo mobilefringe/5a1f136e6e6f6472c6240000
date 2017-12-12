@@ -148,8 +148,6 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             else {
                 this.show_map = false;
             }
-            
-            
             console.log("Changed to route:",this.$route.path, "subscription is", this.show_subscrption);
             this.show_mobile_menu = false; //close menu when navigating to new page
         },
