@@ -205,9 +205,10 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         },
         enableStickyNavbar (e) {
             if (window.pageYOffset >= sticky) {
+                stickyMenu = truel
                 // this.navbar.classList.add("sticky")
             } else {
-                this.navbar.classList.remove("sticky");
+                // this.navbar.classList.remove("sticky");
             }
 
         }
