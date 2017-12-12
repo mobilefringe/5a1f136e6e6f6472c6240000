@@ -73,6 +73,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         suggestionAttribute: 'name',
         stickyMenu : false,
         isSticky : null,
+        navbar : null,
         menu_items: [
             // {
             //     name: "Home",
