@@ -34,7 +34,7 @@ require.config({
   }
 });
 
-require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'locales', 'moment', "vue-meta", "moment-timezone", "vue-moment",'vue-social-sharing','vue-select', "vue!search-component", 'vue-datepicker-local', 'jquery'], function (Vue, Vue2Filters, VueRouter, appRoutes, store, VueI18n, messages, moment, Meta, tz, VueMoment,SocialSharing, VueSelect, SearchComponent, DatepickerLocal) {
+require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'locales', 'moment', "vue-meta", "moment-timezone", "vue-moment",'vue-social-sharing','vue-select', "vue!search-component", 'vue-datepicker-local', 'jquery'], function (Vue, Vue2Filters, VueRouter, appRoutes, store, VueI18n, messages, moment, Meta, tz, VueMoment,SocialSharing, VueSelect, SearchComponent, DatepickerLocal, $) {
   Vue.use(Meta);
   Vue.use(VueRouter);
   Vue.use(Vue2Filters);
