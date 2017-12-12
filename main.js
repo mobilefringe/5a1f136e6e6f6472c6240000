@@ -208,6 +208,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 this.stickyMenu = true;
                 // this.navbar.classList.add("sticky")
             } else {
+                this.stickyMenu = false;
                 // this.navbar.classList.remove("sticky");
             }
 
