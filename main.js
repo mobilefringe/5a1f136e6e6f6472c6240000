@@ -71,7 +71,8 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         mobile_search : null,
         desktop_search : null,
         suggestionAttribute: 'name',
-        stickMenu : false,
+        stickyMenu : false,
+        isSticky : null,
         menu_items: [
             // {
             //     name: "Home",
