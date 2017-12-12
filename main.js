@@ -153,6 +153,9 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             if(this.$route.path == "/") {
                 this.isSticky = 800;
             }
+            else {
+                
+            }
             console.log("Changed to route:",this.$route.path, "subscription is", this.show_subscrption);
             this.show_mobile_menu = false; //close menu when navigating to new page
         },
