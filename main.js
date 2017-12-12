@@ -122,7 +122,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
       });
       
         this.navbar = $(".stc_nav");
-        this.isSticky = navbar.offsetTop;
+        this.isSticky = this.navbar.offsetTop;
 
     },
     watch: {
