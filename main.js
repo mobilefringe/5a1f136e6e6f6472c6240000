@@ -123,6 +123,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
       });
         window.addEventListener('scroll', this.enableStickyNavbar);
         this.navbar = $(".stc_nav");
+        console.log(this.navbar)
         this.isSticky = this.navbar.offsetTop;
 
     },
