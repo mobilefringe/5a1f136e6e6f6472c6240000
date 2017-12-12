@@ -122,7 +122,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
       });
       
         var navbar = $(".stc_nav");
-        var isSticky = navbar.offsetTop;
+        this.isSticky = navbar.offsetTop;
 
     },
     watch: {
