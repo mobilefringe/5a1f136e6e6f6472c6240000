@@ -205,8 +205,8 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             this.desktop_search = "";
         },
         enableStickyNavbar (e) {
-            console.log("scrolling");
-            console.log(window.pageYOffset,this.isSticky,window.pageYOffset >= this.isSticky );
+            // console.log("scrolling");
+            // console.log(window.pageYOffset,this.isSticky,window.pageYOffset >= this.isSticky );
             if (window.pageYOffset >= this.isSticky) {
                 this.stickyMenu = true;
                 // this.navbar.classList.add("sticky")
