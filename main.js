@@ -121,7 +121,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
       }, error => {
         console.error("Could not retrieve data from server. Please check internet connection and try again.");
       });
-        window.addEventListener('scroll', this.handleScroll);
+        window.addEventListener('scroll', this.enableStickyNavbar);
         this.navbar = $(".stc_nav");
         this.isSticky = this.navbar.offsetTop;
 
