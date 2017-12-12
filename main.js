@@ -207,7 +207,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             if (window.pageYOffset >= sticky) {
                 navbar.classList.add("sticky")
             } else {
-                navbar.classList.remove("sticky");
+                this.navbar.classList.remove("sticky");
             }
 
         }
