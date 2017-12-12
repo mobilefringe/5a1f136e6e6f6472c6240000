@@ -121,7 +121,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         console.error("Could not retrieve data from server. Please check internet connection and try again.");
       });
       
-        this,navbar = $(".stc_nav");
+        this.navbar = $(".stc_nav");
         this.isSticky = navbar.offsetTop;
 
     },
