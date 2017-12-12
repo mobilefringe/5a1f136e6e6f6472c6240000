@@ -196,6 +196,9 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             this.mobile_search = "";
             this.desktop_search = "";
         },
+        enableStickyNavbar () {
+            
+        }
     },
     router: router,
     store,
