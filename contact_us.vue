@@ -43,9 +43,9 @@
                                 <span v-show="errors.has('subject')" class="form-control-feedback">{{ errors.first('subject') }}</span>
                             </div>
                         </div>
-                        <div class="form-group ">
+                        <!--<div class="form-group ">-->
                             
-                        </div>
+                        <!--</div>-->
                         <div class="form-group">
                             <div class="col-xs-12" :class="{'has-error': errors.has('message')}">
                                 <label class="label" for="message">Message</label>
