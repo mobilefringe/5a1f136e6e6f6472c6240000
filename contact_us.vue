@@ -37,7 +37,13 @@
                                 <span v-show="errors.has('phone')" class="form-control-feedback">{{ errors.first('phone') }}</span>
                             </div>
                         </div>
-                        
+                        <div class="form-group ">
+                            <div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('name')}">
+                                <label class="label" for="name">Name</label>
+                                <input v-model="form_data.name" v-validate="'required|alpha_spaces'" class="form-control" :class="{'input': true}" name="name" type="text" placeholder="Name" data-vv-delay="1000">
+                                <span v-show="errors.has('name')" class="form-control-feedback">{{ errors.first('name') }}</span>
+                            </div>
+                        </div>
                         <div class="form-group">
                             <div class="col-xs-12" :class="{'has-error': errors.has('message')}">
                                 <label class="label" for="message">Message</label>
