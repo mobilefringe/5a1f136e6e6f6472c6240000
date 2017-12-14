@@ -22,13 +22,14 @@
                                 <input v-model="form_data.name" v-validate="'required|alpha_spaces'" class="form-control" :class="{'input': true}" name="name" type="text" placeholder="Name" data-vv-delay="1000">
                                 <span v-show="errors.has('name')" class="form-control-feedback">{{ errors.first('name') }}</span>
                             </div>
-                        </div>
-                        <div class="form-group">
                             <div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('email')}">
                                 <label class="label" for="email">Email</label>
                                 <input v-model="form_data.email" v-validate="'required|email'" class="form-control" :class="{'input': true}" name="email" type="email" placeholder="Email" data-vv-delay="1000">
                                 <span v-show="errors.has('email')" class="form-control-feedback">{{ errors.first('email') }}</span>
                             </div>
+                        </div>
+                        <div class="form-group">
+                            
                         </div>
                         <div class="form-group">
                             <div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('phone')}">
