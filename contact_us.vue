@@ -15,7 +15,7 @@
             <hr/>
             <div class="row"> 
                 <div class="col-md-12 contact_contents padding_top_20">
-                    <form class="form-horizontal" action="form-submit" @submit.prevent="validateBeforeSubmit" id="contact_us_form">
+                    <form class="form-horizontal" action="form-submit" @submit.prevent="validateBeforeSubmit">
                         <div class="form-group ">
                             <div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('name')}">
                                 <label class="label" for="name">Name</label>
@@ -153,8 +153,8 @@
                             console.log("sending form data", this.form_data);
                             send_data = {};
                             send_data.url = '/api/v1/contact_us';
-                            // let formData =
-                            send_data.form_data =  new FormData(document.getElementById('contact_us_form'));//JSON.stringify(this.form_data);
+                            let formData =
+                            send_data.form_data = JSON.stringify(this.form_data);
                             this.$store.dispatch("CONTACT_US", send_data).then(res => {
                                 // this.$router.replace({
                                 //     name: 'home'
