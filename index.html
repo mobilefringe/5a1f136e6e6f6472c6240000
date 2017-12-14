@@ -33,6 +33,8 @@
                     <div class="tel_num">
                         {{property.contact_phone}}
                     </div>
+                    
+                    {{todays_hours.open_time | moment("h:mmA", timezone)}} - {{todays_hours.close_time | moment("h:mmA", timezone)}}
                     <!--<h4 id="close_menu" @click="show_mobile_menu = !show_mobile_menu">close</h4>-->
                     <!--<hr class="strikethrough" />-->
                     <div class="social_icons_menu show_phone text-center">
