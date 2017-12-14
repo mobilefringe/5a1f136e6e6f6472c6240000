@@ -15,7 +15,7 @@
                 <div class="col-sm-8">
                     <div class="map_container">
                     <div>
-                        <v-select :options="allMobileCategories" :placeholder="'Select By Categoty'" :searchable="false" id="mobile_cat_list"></v-select> 
+                        <v-select :options="allMobileCategories" :placeholder="'Select AStore'" :searchable="false" id="mobile_cat_list"></v-select> 
                     </div>
                         <!--<div id="map" class="hidden_phone">-->
                             <!--<img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1511892740000/Canyon Crest - Map-01.png" class="" alt="" style="max-height:100%">-->
