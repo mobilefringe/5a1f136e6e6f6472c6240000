@@ -188,7 +188,7 @@
                         tempVal.value = value;
                         // console.log(key);
                         // counter ++;
-                        newObj.push();
+                        newObj.push(tempVal);
                     });
                     return newObj;
                 }
