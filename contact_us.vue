@@ -183,6 +183,7 @@
                     var newObj = [];
                     var counter = 0;
                     _.forEach(obj, function(value, key) {
+                        var tempVal = {};
                         console.log(key);
                         counter ++;
                     });
