@@ -183,6 +183,7 @@
                     var counter = 0;
                     _.forEach(obj, function(value, key) {
                         console.log(key);
+                        counter ++;
                     });
                     return obj;
                 }
