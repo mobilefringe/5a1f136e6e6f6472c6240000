@@ -180,6 +180,7 @@
                 },
                 serializeObject (obj) {
                     console.log(obj);
+                    
                     _.forEach({ 'a': 1, 'b': 2 }, function(value, key) {
                         console.log(key);
                     });
