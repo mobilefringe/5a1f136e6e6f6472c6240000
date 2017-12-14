@@ -178,7 +178,7 @@
                         }
                     })
                 },
-                serializeObject () {
+                serializeObject (obj) {
                     
                 }
             }
