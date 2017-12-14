@@ -179,7 +179,7 @@
                     })
                 },
                 serializeObject (obj) {
-                    
+                    return obj;
                 }
             }
         });
