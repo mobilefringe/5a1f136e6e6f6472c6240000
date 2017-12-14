@@ -28,9 +28,9 @@
                                 <span v-show="errors.has('email')" class="form-control-feedback">{{ errors.first('email') }}</span>
                             </div>
                         </div>
-                        <div class="form-group">
+                        <!--<div class="form-group">-->
                             
-                        </div>
+                        <!--</div>-->
                         <div class="form-group">
                             <div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('phone')}">
                                 <label class="label" for="phone">Phone</label>
