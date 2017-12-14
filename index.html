@@ -57,6 +57,7 @@
                     </div>
                 </div>
             </div>
+            </transition>
             <section class="content_container  position_relative menu_header">
                 <div class="mobile_search visible_phone position_relative" v-show="show_mobile_search">
                     <search-component :list="allStores" placeholder="Find Your Store" :suggestion-attribute="suggestionAttribute" v-model="mobile_search" @select="onOptionSelect" class="">
