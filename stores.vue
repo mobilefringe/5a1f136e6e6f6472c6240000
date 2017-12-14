@@ -14,7 +14,7 @@
                 </div>
                 <div class="col-sm-8">
                     <div class="map_container">
-                    <div>
+                    <div class="map_storelist">
                         <v-select :options="allStores" :placeholder="'Select A Store'" :searchable="false" ></v-select> 
                     </div>
                         <!--<div id="map" class="hidden_phone">-->
