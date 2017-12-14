@@ -185,7 +185,7 @@
                     _.forEach(obj, function(value, key) {
                         var tempVal = {};
                         tempVal.name = key;
-                        tempVal.value = key;
+                        tempVal.value = value;
                         console.log(key);
                         counter ++;
                     });
