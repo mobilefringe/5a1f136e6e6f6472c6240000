@@ -181,7 +181,7 @@
                 serializeObject (obj) {
                     console.log(obj);
                     
-                    _.forEach({ 'a': 1, 'b': 2 }, function(value, key) {
+                    _.forEach(obj, function(value, key) {
                         console.log(key);
                     });
                     return obj;
