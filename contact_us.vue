@@ -154,7 +154,7 @@
                             send_data = {};
                             send_data.url = '/api/v1/contact_us';
                             // let formData =
-                            send_data.form_data =  new FormData(document.getElementById('YOUR_FORM_ID'));//JSON.stringify(this.form_data);
+                            send_data.form_data =  new FormData(document.getElementById('contact_us_form'));//JSON.stringify(this.form_data);
                             this.$store.dispatch("CONTACT_US", send_data).then(res => {
                                 // this.$router.replace({
                                 //     name: 'home'
