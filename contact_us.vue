@@ -186,7 +186,7 @@
                         var tempVal = {};
                         tempVal.name = key;
                         tempVal.value = value;
-                        console.log(key);
+                        // console.log(key);
                         counter ++;
                     });
                     return newObj;
