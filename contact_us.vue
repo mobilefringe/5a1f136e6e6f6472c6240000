@@ -2,12 +2,12 @@
     <div class=" main_container" id="promotions_container"> <!-- for some reason if you do not put an outer container div this component template will not render -->
         <div class="margin_25_across padding_top_40">
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-5 col-sm-5">
                     <div class="col-md-12" v-if="currentPage">
                         <div class="description_text text_left" v-html="currentPage.body"></div>
                     </div>
                 </div>
-                <div class="col-md-7 hidden_phone">
+                <div class="col-md-7 col-sm-7 hidden_phone">
                     <img style="margin-bottom:20px;" src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512580269422/placeholder_contact_image.png" alt="plaza">
                 </div> 
                 <!--<vue-datepicker-local v-model="time" type="inline"></vue-datepicker-local>-->
