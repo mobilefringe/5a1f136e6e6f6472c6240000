@@ -219,21 +219,21 @@
           storePromos : null
         }
       },
-      beforeRouteEnter (to, from, next) {
-        next(vm => {
-          // access to component instance via `vm`
-          vm.currentEvent = vm.findEventBySlug(to.params.id);
-          if (vm.currentEvent === null || vm.currentEvent === undefined){
-            vm.$router.replace({ name: '404'});
-          }
-        })
-      },
-      beforeRouteUpdate (to, from, next) {
-        this.currentEvent = this.findEventBySlug(to.params.id);
-        if (this.currentEvent === null || this.currentEvent === undefined){
-          this.$router.replace({ name: '404'});
-        }
-      },
+    //   beforeRouteEnter (to, from, next) {
+    //     next(vm => {
+    //       // access to component instance via `vm`
+    //       vm.currentEvent = vm.findEventBySlug(to.params.id);
+    //       if (vm.currentEvent === null || vm.currentEvent === undefined){
+    //         vm.$router.replace({ name: '404'});
+    //       }
+    //     })
+    //   },
+    //   beforeRouteUpdate (to, from, next) {
+    //     this.currentEvent = this.findEventBySlug(to.params.id);
+    //     if (this.currentEvent === null || this.currentEvent === undefined){
+    //       this.$router.replace({ name: '404'});
+    //     }
+    //   },
       watch : {
         currentEvent : function (){
             var vm = this;
