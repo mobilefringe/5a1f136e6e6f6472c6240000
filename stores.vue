@@ -211,7 +211,7 @@
                 storesByAlphaIndex() {
                     var stores = this.$store.getters.storesByAlphaIndex;
                     if (_.size(stores) >= 4) { 
-                        
+                        this.breakIntoCol = false;
                     }
                     return stores;
                 },
