@@ -188,6 +188,9 @@
                 </div>
             </div>
         </div>
+        <div id="events_empty_section" style="display:none;">
+            <p>Check back later for exciting contest details!</p>
+        </div>
     </div>
     
 </template>
