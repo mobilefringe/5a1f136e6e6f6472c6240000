@@ -152,7 +152,7 @@
             console.log("promos",this.storePromos);
         }  
       },
-      computed: {
+            computed: {
                 findContestBySlug () {
                   return this.$store.getters.findContestBySlug;
                 },
