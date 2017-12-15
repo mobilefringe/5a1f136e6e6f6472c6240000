@@ -150,6 +150,8 @@
                     this.svgMapRef.setViewBox(store)
                 },
                 filterStores (letter) {
+                    
+                        this.breakIntoCol = false;
                     if(letter == "All"){
                         this.processedStores = this.storesByAlphaIndex;//this.storesByAlphaIndex;
                         // this.breakIntoCol = true;
