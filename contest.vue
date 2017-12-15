@@ -153,20 +153,20 @@
         }  
       },
       computed: {
-        findContestBySlug () {
-          return this.$store.getters.findContestBySlug;
-        },
-        findContestById () {
-          return this.$store.getters.findContestById;
-        },
-        allEvents () {
-             return this.$store.getters.processedEvents;
-        },
-        timezone() {
-          return this.$store.getters.getTimezone;
-        },
-        property (){
-            return this.$store.getters.getProperty;
+            findContestBySlug () {
+              return this.$store.getters.findContestBySlug;
+            },
+            findContestById () {
+              return this.$store.getters.findContestById;
+            },
+            allEvents () {
+                 return this.$store.getters.processedEvents;
+            },
+            timezone() {
+              return this.$store.getters.getTimezone;
+            },
+            property (){
+                return this.$store.getters.getProperty;
                 }
             },
             methods: {
