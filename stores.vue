@@ -209,7 +209,7 @@
                     return cats;
                 },
                 storesByAlphaIndex() {
-                    console.log(this.$store.getters.storesByAlphaIndex);
+                    // console.log(this.$store.getters.storesByAlphaIndex);
                     return this.$store.getters.storesByAlphaIndex;
                 },
                 storesByCategoryName() {
