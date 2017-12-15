@@ -110,13 +110,13 @@
         Vue.use(Meta);
         Vue.use(VeeValidate);
         return Vue.component("contest-component", {
-                  template: template, // the variable template will be injected,
-      data: function() {
-        return {
-          currentContest: null,
-          success_subscribe : false,
-          storePromos : null
-        }
+            template: template, // the variable template will be injected,
+            data: function() {
+            return {
+                currentContest: null,
+                success_subscribe : false,
+                storePromos : null
+            }
       },
     //   beforeRouteEnter (to, from, next) {
     //     next(vm => {
