@@ -133,7 +133,7 @@
     //       this.$router.replace({ name: '404'});
     //     }
     //   },
-      watch : {
+        watch : {
             currentContest : function (){
                 // var vm = this;
                 // var temp_promo = [];
