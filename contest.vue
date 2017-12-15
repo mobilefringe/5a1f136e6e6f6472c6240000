@@ -75,35 +75,35 @@
     
 </template>
 
-/*<style>*/
-/*    .event-image{*/
-/*        text-align:center;*/
-/*        position:relative;*/
-/*        width:100%;*/
-/*        height:500px;*/
-/*    }*/
-/*    .event-image img {*/
-/*         max-height: 100%;  */
-/*        max-width: 100%; */
-/*        width: auto;*/
-/*        height: auto;*/
-/*        position: absolute;  */
-/*        top: 0;  */
-/*        bottom: 0;  */
-/*        left: 0;  */
-/*        right: 0;  */
-/*        margin: auto;*/
-/*    }*/
-/*    .store_header_btns{*/
-/*        margin:0px;*/
-/*    }*/
-/*    @media(max-width: 768px){*/
-/*        .event-image{*/
-/*            height:300px;*/
-/*        }*/
+<style>
+    .event-image{
+        text-align:center;
+        position:relative;
+        width:100%;
+        height:500px;
+    }
+    .event-image img {
+         max-height: 100%;  
+        max-width: 100%; 
+        width: auto;
+        height: auto;
+        position: absolute;  
+        top: 0;  
+        bottom: 0;  
+        left: 0;  
+        right: 0;  
+        margin: auto;
+    }
+    .store_header_btns{
+        margin:0px;
+    }
+    @media(max-width: 768px){
+        .event-image{
+            height:300px;
+        }
        
-/*    }*/
-/*</style>*/
+    }
+</style>
 
 <script>
     define(["Vue", "moment", "moment-timezone", "vue-moment", "vue-meta",'vee-validate'], function(Vue, moment, tz, VueMoment, Meta, VeeValidate) {
