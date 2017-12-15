@@ -37,7 +37,7 @@
                                 <input v-model="form_data.phone" v-validate="'required|alpha_dash'" class="form-control" :class="{'input': true}" name="phone" type="phone" placeholder="Phone" data-vv-delay="1000">
                                 <span v-show="errors.has('phone')" class="form-control-feedback">{{ errors.first('phone') }}</span>
                             </div>
-                            <div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('name')}">
+                            <div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('subject')}">
                                 <label class="label" for="subject">Subject</label>
                                 <input v-model="form_data.subject" v-validate="'required|alpha_spaces'" class="form-control" :class="{'input': true}" name="subject" type="text" placeholder="Subject" data-vv-delay="1000">
                                 <span v-show="errors.has('subject')" class="form-control-feedback">{{ errors.first('subject') }}</span>
