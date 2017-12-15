@@ -171,7 +171,7 @@
                         category_id = "All";
                     }
                     else {
-                        category_id= this.findCategoryByName(this.selected_cat).id;
+                        category_id= this.findCategoryByName(category_id).id;
                     }
                     
                     console.log(category_id);
