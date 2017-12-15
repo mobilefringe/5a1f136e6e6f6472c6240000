@@ -167,6 +167,14 @@
                     
                 },
                 filteredByCategory (category_id) {
+                    if(this.selected_cat == "All" || this.selected_cat == null ||  this.selected_cat == undefined){
+                        this.selected_cat = "All";
+                        cat_id = "All";
+                    }
+                    else {
+                        cat_id= this.findCategoryByName(this.selected_cat).id;
+                    }
+                    
                     console.log(category_id);
                     if(category_id == "All"){
                         this.processedStores = this.storesByAlphaIndex;//this.storesByAlphaIndex;
