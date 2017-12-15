@@ -255,10 +255,10 @@
       },
       computed: {
         findContestBySlug () {
-          return this.$store.getters.findEventBySlug;
+          return this.$store.getters.findContestBySlug;
         },
         findContestById () {
-          return this.$store.getters.findEventById;
+          return this.$store.getters.findContestById;
         },
         allEvents () {
              return this.$store.getters.processedEvents;
