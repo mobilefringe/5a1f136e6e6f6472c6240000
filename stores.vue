@@ -193,6 +193,7 @@
                         sortedCats = _.groupBy(filtered, store => store.currentCategory);
                         console.log(sortedCats);
                         this.processedStores = sortedCats;
+                        this.break_into_col = false;
                     }
                 }
             },
