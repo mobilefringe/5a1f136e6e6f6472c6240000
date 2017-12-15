@@ -127,6 +127,7 @@
                     if(this.selected_cat == "All" || this.selected_cat == null ||  this.selected_cat == undefined){
                         this.selected_cat = "All";
                         cat_id = "All";
+                        this.break_into_col = true;
                     }
                     else {
                         cat_id= this.findCategoryByName(this.selected_cat).id;
