@@ -210,7 +210,7 @@
                 },
                 storesByAlphaIndex() {
                     var stores = this.$store.getters.storesByAlphaIndex;
-                    if (_.size(stores) >= 5) 
+                    if (_.size(stores) >= 3) 
                     return this.$store.getters.storesByAlphaIndex;
                 },
                 storesByCategoryName() {
