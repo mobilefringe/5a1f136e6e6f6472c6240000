@@ -5,7 +5,7 @@
         <div class="row" v-if="currentContest">
             <div class="promo-details">
                 <div class="event-image">
-                    <img class="contest banner" :src="currentContest.alt_photo_url">
+                    <img class="contest banner" :src="currentContest.image_url">
                 </div>
                 <br>
                 <div class="event-description" v-html="currentContest.rich_description">
@@ -118,7 +118,7 @@
                     storePromos : null,
                     form_data : {},
                     formSuccess : false,
-                    formError: false,
+                    formError: false
                 }
             },
             mounted () {
