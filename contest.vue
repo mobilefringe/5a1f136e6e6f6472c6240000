@@ -151,7 +151,7 @@
             var currentContest = .findContestBySlug('canyoncrest-test-contest');
             console.log("promos",this.storePromos);
         }  
-      },
+            },
             computed: {
                 findContestBySlug () {
                   return this.$store.getters.findContestBySlug;
