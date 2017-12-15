@@ -213,7 +213,7 @@
                     if (_.size(stores) >= 4) { 
                         
                     }
-                    return this.$store.getters.storesByAlphaIndex;
+                    return stores;
                 },
                 storesByCategoryName() {
                   return this.$store.getters.storesByCategoryName;
