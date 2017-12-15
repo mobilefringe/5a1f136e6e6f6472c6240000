@@ -167,7 +167,7 @@
         },
         property (){
             return this.$store.getters.getProperty;
-        }
+                }
             },
             methods: {
                 truncate(val_body){
