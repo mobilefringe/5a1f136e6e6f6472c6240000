@@ -116,7 +116,9 @@
                     currentContest: null,
                     success_subscribe : false,
                     storePromos : null,
-                    form_data : {}
+                    form_data : {},
+                    formSuccess : false,
+                    formError: false,
                 }
             },
             mounted () {
