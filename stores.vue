@@ -43,7 +43,7 @@
                     <v-select :options="allMobileCategories" :placeholder="'Select By Categoty'" :searchable="false" :on-change="filteredByCategory" id="mobile_cat_list"></v-select> 
                 </div>
                 <div class="select_container">
-                    <v-select :options="mobile_aphabet" :placeholder="'Select Store A-Z'" :searchable="false" :on-change="filterStores" id="mobile_alpha_list"></v-select> 
+                    <v-select :options="mobileAlphabet" :placeholder="'Select Store A-Z'" :searchable="false" :on-change="filterStores" id="mobile_alpha_list"></v-select> 
                 </div>
                 
                 
@@ -59,7 +59,7 @@
                 <div class="col-md-12">
                     <h5 class="category_header" style="display:none" id="cat_name_header">All</h5>
                     <div class="row" v-if="processedStores">
-                        <div class="'col-md-12 store_col_1' + { storelist_container: break_into_col }">
+                        <div class="'col-md-12 store_col_1' + { storelist_container: breakIntoCol }">
                             <div v-for="(stores,key) in processedStores" style="padding:0 10px;">
                                 <span class="store_initial" :data-initial="key">{{key}}</span>
                                 <div id="store_list_container" class="store_list" v-for="store in stores">
@@ -94,13 +94,13 @@
                 return {
                     listMode: "alphabetical",
                     processedStores: null,
-                    mobile_aphabet : ['All',
+                    mobileAlphabet : ['All',
                     'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
                     ],
                     alphabet : [
                     'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
                     ],
-                    break_into_col : true
+                    breakIntoCol : true
                     // selected_cat : 'All',
                     // selected_alpha : 'All'
                 }
@@ -127,7 +127,7 @@
                     if(this.selected_cat == "All" || this.selected_cat == null ||  this.selected_cat == undefined){
                         this.selected_cat = "All";
                         cat_id = "All";
-                        this.break_into_col = true;
+                        this.breakIntoCol = true;
                     }
                     else {
                         cat_id= this.findCategoryByName(this.selected_cat).id;
@@ -161,12 +161,12 @@
                 filterStores (letter) {
                     if(letter == "All"){
                         this.processedStores = this.storesByAlphaIndex;//this.storesByAlphaIndex;
-                        this.break_into_col = true;
+                        this.breakIntoCol = true;
                     }
                     else {
                         var filtered = _.filter(this.storesByAlphaIndex, function(o,i) { return _.lowerCase(i) == _.lowerCase(letter); })[0];
                         this.processedStores = _.groupBy(filtered, store => (isNaN(store.name.charAt(0)) ? store.name.charAt(0) : "#"));
-                        this.break_into_col = false;
+                        this.breakIntoCol = false;
                     }
                     
                 },
@@ -181,7 +181,7 @@
                     console.log(category_id);
                     if(category_id == "All"){
                         this.processedStores = this.storesByAlphaIndex;//this.storesByAlphaIndex;
-                        this.break_into_col = true;
+                        this.breakIntoCol = true;
                     }
                     else {
                         var find = this.findCategoryById;
@@ -193,7 +193,7 @@
                         sortedCats = _.groupBy(filtered, store => store.currentCategory);
                         console.log(sortedCats);
                         this.processedStores = sortedCats;
-                        this.break_into_col = false;
+                        this.breakIntoCol = false;
                     }
                 }
             },
