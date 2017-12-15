@@ -209,7 +209,8 @@
                     return cats;
                 },
                 storesByAlphaIndex() {
-                    // console.log(this.$store.getters.storesByAlphaIndex);
+                    var stores = this.$store.getters.storesByAlphaIndex;
+                    if () 
                     return this.$store.getters.storesByAlphaIndex;
                 },
                 storesByCategoryName() {
