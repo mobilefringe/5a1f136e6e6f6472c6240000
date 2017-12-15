@@ -169,10 +169,10 @@
                 filteredByCategory (category_id) {
                     if(this.selected_cat == "All" || this.selected_cat == null ||  this.selected_cat == undefined){
                         this.selected_cat = "All";
-                        cat_id = "All";
+                        category_id = "All";
                     }
                     else {
-                        cat_id= this.findCategoryByName(this.selected_cat).id;
+                        category_id= this.findCategoryByName(this.selected_cat).id;
                     }
                     
                     console.log(category_id);
