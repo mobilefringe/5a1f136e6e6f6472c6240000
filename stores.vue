@@ -180,6 +180,7 @@
                     console.log(category_id);
                     if(category_id == "All"){
                         this.processedStores = this.storesByAlphaIndex;//this.storesByAlphaIndex;
+                        this.break_into_col = true;
                     }
                     else {
                         var find = this.findCategoryById;
