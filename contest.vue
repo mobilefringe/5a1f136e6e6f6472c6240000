@@ -254,7 +254,7 @@
         }  
       },
       computed: {
-        findEventBySlug () {
+        findContestBySlug () {
           return this.$store.getters.findEventBySlug;
         },
         findEventById () {
