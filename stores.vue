@@ -161,6 +161,7 @@
                 filterStores (letter) {
                     if(letter == "All"){
                         this.processedStores = this.storesByAlphaIndex;//this.storesByAlphaIndex;
+                        this.break_into_col = true;
                     }
                     else {
                         var filtered = _.filter(this.storesByAlphaIndex, function(o,i) { return _.lowerCase(i) == _.lowerCase(letter); })[0];
