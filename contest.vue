@@ -188,7 +188,7 @@
                 </div>
             </div>
         </div>
-        <div id="events_empty_section" style="display:none;">
+        <div id="events_empty_section" v-show="currentContest">
             <p>Check back later for exciting contest details!</p>
         </div>
     </div>
