@@ -8,8 +8,7 @@
                     <img class="contest banner" src="{{alt_photo_url}}">
                 </div>
                 <br>
-                <div class="event-description">
-                    {{{ rich_description }}}
+                <div class="event-description" v-html="currentContest.rich_description">
                 </div>
                 <br>
             </div> 
