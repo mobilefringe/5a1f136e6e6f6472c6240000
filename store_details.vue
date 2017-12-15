@@ -38,7 +38,7 @@
                 <div class="col-md-4 col-sm-4">
                     <div class="side_stores">
                         <div class="store_header_btns animated_btn" v-if="currentStore.phone">
-                            <a :href="'tel:'+currentStore.phone" >{{currentStore.phone}} <i class="fa fa-phone"></i>
+                            <a :href="'tel:'+currentStore.phone" >{{currentStore.phone}} <i class="fa fa-phone pull-right"></i>
                             <!--<img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512504104945/phone_icon.png" class="" alt="">-->
                                 
                             </a>
