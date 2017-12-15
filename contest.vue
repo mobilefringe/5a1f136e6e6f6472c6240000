@@ -249,7 +249,7 @@
             //     }
             // });
             // this.storePromos = temp_promo;
-            var currentContest = .findContestBySlug(to.params.id);
+            var currentContest = .findContestBySlug('canyoncrest-test-contest');
             console.log("promos",this.storePromos);
         }  
       },
