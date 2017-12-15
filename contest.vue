@@ -16,34 +16,34 @@
                 <div class="form-group ">
                     <div class="col-sm-4 col-xs-12" :class="{'has-error': errors.has('first_name')}">
                         <label class="label" for="first_name">First Name</label>
-                        <input v-model="form_data.first_name" v-validate="'required|alpha_spaces'" class="form-control" :class="{'input': true}" name="first_name" type="text" placeholder="First Name" data-vv-delay="1000">
+                        <input v-model="contest.first_name" v-validate="'required|alpha_spaces'" class="form-control" :class="{'input': true}" name="first_name" type="text" placeholder="First Name" data-vv-delay="1000">
                         <span v-show="errors.has('name')" class="form-control-feedback">{{ errors.first('first_name') }}</span>
                     </div>
                     <div class="col-sm-4 col-xs-12" :class="{'has-error': errors.has('last_name')}">
                         <label class="label" for="last_name">Last Name</label>
-                        <input v-model="form_data.last_name" v-validate="'required|alpha_spaces'" class="form-control" :class="{'input': true}" name="last_name" type="text" placeholder="Last Name" data-vv-delay="1000">
+                        <input v-model="contest.last_name" v-validate="'required|alpha_spaces'" class="form-control" :class="{'input': true}" name="last_name" type="text" placeholder="Last Name" data-vv-delay="1000">
                         <span v-show="errors.has('name')" class="form-control-feedback">{{ errors.first('last_name') }}</span>
                     </div>
                     <div class="col-sm-4 col-xs-12" :class="{'has-error': errors.has('email')}">
                         <label class="label" for="email">Email</label>
-                        <input v-model="form_data.email" v-validate="'required|email'" class="form-control" :class="{'input': true}" name="email" type="email" placeholder="Email" data-vv-delay="1000">
+                        <input v-model="contest.email" v-validate="'required|email'" class="form-control" :class="{'input': true}" name="email" type="email" placeholder="Email" data-vv-delay="1000">
                         <span v-show="errors.has('email')" class="form-control-feedback">{{ errors.first('email') }}</span>
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="col-sm-4 col-xs-12" :class="{'has-error': errors.has('phone')}">
                         <label class="label" for="phone">Phone</label>
-                        <input v-model="form_data.phone" v-validate="'required|alpha_dash'" class="form-control" :class="{'input': true}" name="phone" type="phone" placeholder="Phone" data-vv-delay="1000">
+                        <input v-model="contest.phone" v-validate="'required|alpha_dash'" class="form-control" :class="{'input': true}" name="phone" type="phone" placeholder="Phone" data-vv-delay="1000">
                         <span v-show="errors.has('phone')" class="form-control-feedback">{{ errors.first('phone') }}</span>
                     </div>
                     <div class="col-sm-4 col-xs-12" :class="{'has-error': errors.has('postal_code')}">
                         <label class="label" for="postal_code">Postal Code</label>
-                        <input v-model="form_data.postal_code" v-validate="'required|alpha_dash'" class="form-control" :class="{'input': true}" name="postal_code" type="text" placeholder="postal_code" data-vv-delay="1000">
+                        <input v-model="contest.postal_code" v-validate="'required|alpha_dash'" class="form-control" :class="{'input': true}" name="postal_code" type="text" placeholder="postal_code" data-vv-delay="1000">
                         <span v-show="errors.has('postal_code')" class="form-control-feedback">{{ errors.first('postal_code') }}</span>
                     </div>
                     <div class="col-sm-4 col-xs-12" :class="{'has-error': errors.has('city')}">
                         <label class="label" for="city">City</label>
-                        <input v-model="form_data.city" v-validate="'required|alpha_spaces'" class="form-control" :class="{'input': true}" name="city" type="text" placeholder="city" data-vv-delay="1000">
+                        <input v-model="contest.city" v-validate="'required|alpha_spaces'" class="form-control" :class="{'input': true}" name="city" type="text" placeholder="city" data-vv-delay="1000">
                         <span v-show="errors.has('city')" class="form-control-feedback">{{ errors.first('city') }}</span>
                     </div>
                 </div>
@@ -112,7 +112,7 @@
                     currentContest: null,
                     success_subscribe : false,
                     storePromos : null,
-                    form_data : {},
+                    contest : {},
                     formSuccess : false,
                     formError: false
                 }
@@ -171,10 +171,10 @@
                     this.$validator.validateAll().then((result) => {
                         if (result) {
                             let errors = this.errors;
-                            console.log("sending form data", this.form_data);
+                            console.log("sending form data", this.contest);
                             send_data = {};
                             send_data.url = this.property.mm_host + '/newsletter_no_captcha';
-                            send_data.form_data = JSON.stringify(this.form_data);
+                            send_data.form_data = JSON.stringify(this.contest);
                             this.$store.dispatch("POST_TO_MM", send_data).then(res => {
                                 // this.$router.replace({
                                 //     name: 'home'
