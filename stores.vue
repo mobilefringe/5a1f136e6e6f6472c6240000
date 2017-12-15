@@ -40,7 +40,7 @@
                 <!--    <option v-for="letter in alphabet" :value="letter"> {{letter}}</option>-->
                 <!--</select>-->
                 <div class="select_container">
-                    <v-select :options="allMobileCategories" :placeholder="'Select By Categoty'" :searchable="false" id="mobile_cat_list"></v-select> 
+                    <v-select :options="allMobileCategories" :placeholder="'Select By Categoty'" :searchable="false" :on-change="filterStores" id="mobile_cat_list"></v-select> 
                 </div>
                 <div class="select_container">
                     <v-select :options="mobile_aphabet" :placeholder="'Select Store A-Z'" :searchable="false" :on-change="filterStores" id="mobile_alpha_list"></v-select> 
