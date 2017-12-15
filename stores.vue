@@ -1,6 +1,6 @@
 <template>
     <div class="content_container  position_relative padding_top_20 storelist_container">
-        <div>
+        <div class="shop_mobile_banner show_phone">
             <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512663245990/shop_mobile_placeholder.png" alt="">
         </div>
         <div class="main_container">
