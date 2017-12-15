@@ -57,7 +57,7 @@
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <h5 class="category_header" style="display:none" id="cat_name_header">All</h5>
+                    <h5 class="category_header" style="display:none" class="cat_name_header">All</h5>
                     <div class="row" v-if="processedStores">
                         <div class="col-md-12 store_col_1" id="{ storelist_container: break_into_col }">
                             <div v-for="(stores,key) in processedStores" style="padding:0 10px;">
