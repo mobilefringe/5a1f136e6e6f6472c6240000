@@ -112,12 +112,12 @@
         return Vue.component("contest-component", {
             template: template, // the variable template will be injected,
             data: function() {
-            return {
-                currentContest: null,
-                success_subscribe : false,
-                storePromos : null
-            }
-              },
+                return {
+                    currentContest: null,
+                    success_subscribe : false,
+                    storePromos : null
+                }
+             },
             watch : {
             currentContest : function (){
                 // var vm = this;
