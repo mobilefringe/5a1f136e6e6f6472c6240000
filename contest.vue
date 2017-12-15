@@ -41,8 +41,8 @@
                         <input v-model="form_data.postal_code" v-validate="'required|alpha_spaces'" class="form-control" :class="{'input': true}" name="postal_code" type="text" placeholder="postal_code" data-vv-delay="1000">
                         <span v-show="errors.has('postal_code')" class="form-control-feedback">{{ errors.first('postal_code') }}</span>
                     </div>
-                    <div class="col-sm-4 col-xs-12" :class="{'has-error': errors.has('postal_code')}">
-                        <label class="label" for="postal_code">Postal Code</label>
+                    <div class="col-sm-4 col-xs-12" :class="{'has-error': errors.has('city')}">
+                        <label class="label" for="postal_code">City</label>
                         <input v-model="form_data.postal_code" v-validate="'required|alpha_spaces'" class="form-control" :class="{'input': true}" name="postal_code" type="text" placeholder="postal_code" data-vv-delay="1000">
                         <span v-show="errors.has('postal_code')" class="form-control-feedback">{{ errors.first('postal_code') }}</span>
                     </div>
