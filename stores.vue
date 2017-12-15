@@ -210,7 +210,7 @@
                 },
                 storesByAlphaIndex() {
                     var stores = this.$store.getters.storesByAlphaIndex;
-                    if () 
+                    if (stores) 
                     return this.$store.getters.storesByAlphaIndex;
                 },
                 storesByCategoryName() {
