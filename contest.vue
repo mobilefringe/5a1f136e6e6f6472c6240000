@@ -205,33 +205,7 @@
 </style>
 
 <script>
-  define(["Vue", "moment", "moment-timezone", "vue-moment", "vue-meta"], function(Vue, moment, tz, VueMoment, Meta) {
-    Vue.use(Meta);
-    return Vue.component("contest-component", {
-      template: template, // the variable template will be injected
-      data: function() {
-        return {
-          success_subscribe : false
-        }
-      },
-      computed: {
-        events() {
-            // var promos = this.$store.getters.processedEvents;
-            // console.log(this.$store);
-            // _.forEach(promos, function (val) {
-            //     if(val.description.length >50) {
-            //       val.description = _.truncate(val.description, {'length':50,'separator': ' '})
-            //     }
-            // });
-          return this.$store.getters.processedEvents;
-        },
-        timezone () {
-          return this.$store.getters.getTimezone;
-        },
-        property (){
-            return this.$store.getters.getProperty;
-        },
-      }
-    });
-  });
-</script>
+    define(["Vue", "moment", "moment-timezone", "vue-moment", "vue-meta"], function(Vue, moment, tz, VueMoment, Meta) {
+        Vue.use(Meta);
+        return Vue.component("contest-component", {
+      
