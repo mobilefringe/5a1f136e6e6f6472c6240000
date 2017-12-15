@@ -249,7 +249,7 @@
             //     }
             // });
             // this.storePromos = temp_promo;
-            var currentContest = .findEventBySlug(to.params.id);
+            var currentContest = .findContestBySlug(to.params.id);
             console.log("promos",this.storePromos);
         }  
       },
