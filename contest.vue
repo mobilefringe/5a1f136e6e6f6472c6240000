@@ -12,71 +12,51 @@
                 </div>
                 <br>
             </div> 
-            <form id="contest_form">
-                <input id="property_id" name="contest[property_id]" type="hidden" value="{{property_id}}"/>
-                <input id="contest_id" name="contest[contest_id]" type="hidden"  value="{{id}}" />
-                <input type="hidden" name="cm-name" id="cm-name" />
-                <div class="row ">
-                    <div class="col-md-4 margin_30">
-                        <label for="first_name">First Name</label>  
-                        <input class="form-control" id="first_name" name="contest[first_name]" type="text" required data-validation="required" tabindex="1"/>
-                    </div>
-                    <div class="col-md-4 margin_30">
-                        <label for="last_name">Last Name</label>  
-                        <input class="form-control" id="last_name" name="contest[last_name]" type="text" required data-validation="required" tabindex="2"/>
-                    </div>
-                    <div class="col-md-4 margin_30">
-                        <label for="phone">Phone Number</label>  
-                        <input class="form-control" id="phone" name="contest[phone]" type="text" required data-validation="required" tabindex="3"/>    
-                    </div>
-                </div>
-                <br class="hidden_phone">
-                <div class="row">
-                    <div class="col-md-4">
-                        <label for="postal_code">Postal Code</label>  
-                        <input class="form-control" id="postal_code" name="contest[postal_code]" type="text" required data-validation="required" tabindex="4"/>
-                    </div>
-                    <div class="col-md-4">
-                        <label for="city">City</label>  
-                        <input class="form-control" id="city" name="contest[city]" type="text" required data-validation="required" tabindex="5"/>    
-                    </div>
-                    <div class="col-md-4">
-                        <label for="email">Email</label> 
-                        <input class="form-control" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="6"/>
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-md-12">
-                        <label class="agree">
-                            <input id="newsletter_signup" type="checkbox" name="contest[newsletter]" tabindex="7"/> 
-                            Yes, I would like to receive information about events and promotions from Yuba Sutter Mall.
-                        </label>
-                        
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <a class="contest_link" href="/pages/yubasutter-rules-regulations" target="_blank" tabindex="8">Click here</a> to view the rules and regulations.
-                        <br/><br/>
-                        <button class=" store_header_btns" tabindex="9">Submit</button>
-                        <br/><br/>
-                    </div>
-                    <div id="success_subscribe_popup" class="hidden_now">
-                        <div class="alert alert-success fade in" style="margin-top:18px;">
-                            <a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a>
-                            <strong>Success!</strong> Thank you, your entry has been received.
+            <form class="form-horizontal" action="form-submit" @submit.prevent="validateBeforeSubmit">
+                        <div class="form-group ">
+                            <div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('name')}">
+                                <label class="label" for="name">Name</label>
+                                <input v-model="form_data.name" v-validate="'required|alpha_spaces'" class="form-control" :class="{'input': true}" name="name" type="text" placeholder="Name" data-vv-delay="1000">
+                                <span v-show="errors.has('name')" class="form-control-feedback">{{ errors.first('name') }}</span>
+                            </div>
+                            <div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('email')}">
+                                <label class="label" for="email">Email</label>
+                                <input v-model="form_data.email" v-validate="'required|email'" class="form-control" :class="{'input': true}" name="email" type="email" placeholder="Email" data-vv-delay="1000">
+                                <span v-show="errors.has('email')" class="form-control-feedback">{{ errors.first('email') }}</span>
+                            </div>
                         </div>
-                    </div>
-                    <div id="error_subscribe_popup" class="hidden_now">
-                        <div class="alert alert-error fade in" style="margin-top:12px;">
-                            <a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a>
-                            <strong>Sorry!</strong> There was a problem submiting your request. Please try again later!
+                        <!--<div class="form-group">-->
+                            
+                        <!--</div>-->
+                        <div class="form-group">
+                            <div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('phone')}">
+                                <label class="label" for="phone">Phone</label>
+                                <input v-model="form_data.phone" v-validate="'required|alpha_dash'" class="form-control" :class="{'input': true}" name="phone" type="phone" placeholder="Phone" data-vv-delay="1000">
+                                <span v-show="errors.has('phone')" class="form-control-feedback">{{ errors.first('phone') }}</span>
+                            </div>
+                            <div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('name')}">
+                                <label class="label" for="subject">Subject</label>
+                                <input v-model="form_data.subject" v-validate="'required|alpha_spaces'" class="form-control" :class="{'input': true}" name="subject" type="text" placeholder="Subject" data-vv-delay="1000">
+                                <span v-show="errors.has('subject')" class="form-control-feedback">{{ errors.first('subject') }}</span>
+                            </div>
                         </div>
-                    </div>
-                    <br/><br/>
-                </div>
-            </form>
+                        <!--<div class="form-group ">-->
+                            
+                        <!--</div>-->
+                        <div class="form-group">
+                            <div class="col-xs-12" :class="{'has-error': errors.has('message')}">
+                                <label class="label" for="message">Message</label>
+                                <input v-model="form_data.message" v-validate="'required|alpha_spaces'" class="form-control" :class="{'input': true}" name="message" type="text" placeholder="Message" data-vv-delay="1000">
+                                <span v-show="errors.has('message')" class="form-control-feedback">{{ errors.first('message') }}</span>
+                            </div>
+                        </div>
+                    
+                        <div class="form-group account-btn text-left m-t-10">
+                            <div class="col-xs-12">
+                                <button class="animated_btn" type="submit" :disabled="formSuccess">Submit</button>
+                            </div>
+                        </div>
+                    </form>
         </div>
         <div id="events_empty_section" v-show="currentContest">
             <p>Check back later for exciting contest details!</p>
