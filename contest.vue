@@ -257,7 +257,7 @@
         findContestBySlug () {
           return this.$store.getters.findEventBySlug;
         },
-        findEventById () {
+        findContestById () {
           return this.$store.getters.findEventById;
         },
         allEvents () {
