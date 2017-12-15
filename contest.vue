@@ -123,7 +123,7 @@
                 
             },
             watch : {
-            currentContest : function (){
+                currentContest : function (){
                 // var vm = this;
                 // var temp_promo = [];
                 // var current_id =_.toNumber(this.currentEvent.id);
