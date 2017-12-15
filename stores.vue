@@ -216,6 +216,10 @@
                     if (_.size(stores) >= 4) { 
                         this.breakIntoCol = false;
                     }
+                    else {
+                        
+                        this.breakIntoCol = true;
+                    }
                     return stores;
                 },
                 storesByCategoryName() {
