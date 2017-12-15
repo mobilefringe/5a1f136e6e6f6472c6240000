@@ -151,7 +151,7 @@
                 },
                 filterStores (letter) {
                     
-                        this.breakIntoCol = false;
+                    this.breakIntoCol = false;
                     if(letter == "All"){
                         this.processedStores = this.storesByAlphaIndex;//this.storesByAlphaIndex;
                         // this.breakIntoCol = true;
