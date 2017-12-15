@@ -169,6 +169,7 @@
                         category_id= this.findCategoryByName(category_id).id;
                     }
                     
+                    //  this.breakIntoCol = false;
                     console.log(category_id);
                     if(category_id == "All"){
                         this.processedStores = this.storesByAlphaIndex;//this.storesByAlphaIndex;
@@ -176,7 +177,6 @@
                     }
                     else {
                         
-                        this.breakIntoCol = false;
                         var find = this.findCategoryById;
                         var filtered = _.filter(this.allStores, function(o) {return _.indexOf(o.categories, _.toNumber(category_id)) > -1; });
                         _.forEach(filtered, function(value, i) {
