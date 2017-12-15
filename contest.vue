@@ -115,7 +115,8 @@
                 return {
                     currentContest: null,
                     success_subscribe : false,
-                    storePromos : null
+                    storePromos : null,
+                    form_data : null
                 }
             },
             watch : {
