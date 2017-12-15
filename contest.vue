@@ -174,7 +174,7 @@
                             console.log("sending form data", this.form_data);
                             send_data = {};
                             send_data.url = this.property.mm_host + '/newsletter_no_captcha';
-                            send_data.form_data = JSON.stringify(this.serializeObject(this.form_data));
+                            send_data.form_data = JSON.stringify(this.form_data);
                             this.$store.dispatch("POST_TO_MM", send_data).then(res => {
                                 // this.$router.replace({
                                 //     name: 'home'
