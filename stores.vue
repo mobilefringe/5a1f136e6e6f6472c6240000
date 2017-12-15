@@ -211,6 +211,7 @@
                 storesByAlphaIndex() {
                     var stores = this.$store.getters.storesByAlphaIndex;
                     if (_.size(stores) >= 4) { 
+                        
                     }
                     return this.$store.getters.storesByAlphaIndex;
                 },
