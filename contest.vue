@@ -119,6 +119,9 @@
                     form_data : null
                 }
             },
+            mounted () {
+                
+            },
             watch : {
             currentContest : function (){
                 // var vm = this;
