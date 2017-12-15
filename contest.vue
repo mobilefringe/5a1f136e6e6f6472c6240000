@@ -20,7 +20,7 @@
                         <span v-show="errors.has('name')" class="form-control-feedback">{{ errors.first('first_name') }}</span>
                     </div>
                     <div class="col-sm-4 col-xs-12" :class="{'has-error': errors.has('name')}">
-                        <label class="label" for="last_name">First Name</label>
+                        <label class="label" for="last_name">Last Name</label>
                         <input v-model="form_data.first_name" v-validate="'required|alpha_spaces'" class="form-control" :class="{'input': true}" name="first_name" type="text" placeholder="First Name" data-vv-delay="1000">
                         <span v-show="errors.has('name')" class="form-control-feedback">{{ errors.first('first_name') }}</span>
                     </div>
