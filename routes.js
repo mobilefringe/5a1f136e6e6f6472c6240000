@@ -92,6 +92,17 @@ define([], function () {
       ]
     },
     {
+      path: '/contest',
+      component: view('default'),
+      children: [
+        {
+          path: '',
+          component: view('contest'),
+          name: 'contestList'
+        }
+      ]
+    },
+    {
       path: '/contact_us',
       component: view('default'),
       children: [
