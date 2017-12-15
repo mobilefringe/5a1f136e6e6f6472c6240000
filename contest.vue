@@ -1,32 +1,4 @@
-<style>
-    .event-image{
-        text-align:center;
-        position:relative;
-        width:100%;
-        height:500px;
-    }
-    .event-image img {
-         max-height: 100%;  
-        max-width: 100%; 
-        width: auto;
-        height: auto;
-        position: absolute;  
-        top: 0;  
-        bottom: 0;  
-        left: 0;  
-        right: 0;  
-        margin: auto;
-    }
-    .store_header_btns{
-        margin:0px;
-    }
-    @media(max-width: 768px){
-        .event-image{
-            height:300px;
-        }
-       
-    }
-</style>
+
 
 <div class="content_container main_container mobile_padding padding_bottom_50">
     <h4 class="promo_main_header show_phone">Contests</h4>
@@ -196,15 +168,33 @@
 </template>
 
 <style>
-  .center{
-    text-align: center
-  }
-  .store-section a{
-    color: #708090;
-  }
-  .top_promo_date{
-      margin-top:10px;
-  }
+    .event-image{
+        text-align:center;
+        position:relative;
+        width:100%;
+        height:500px;
+    }
+    .event-image img {
+         max-height: 100%;  
+        max-width: 100%; 
+        width: auto;
+        height: auto;
+        position: absolute;  
+        top: 0;  
+        bottom: 0;  
+        left: 0;  
+        right: 0;  
+        margin: auto;
+    }
+    .store_header_btns{
+        margin:0px;
+    }
+    @media(max-width: 768px){
+        .event-image{
+            height:300px;
+        }
+       
+    }
 </style>
 
 <script>
