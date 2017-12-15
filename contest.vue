@@ -117,7 +117,7 @@
                     success_subscribe : false,
                     storePromos : null
                 }
-             },
+            },
             watch : {
             currentContest : function (){
                 // var vm = this;
