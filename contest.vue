@@ -144,51 +144,51 @@
         </div>  
     </div>
 </div>
-<script>
-    $(document).ready(function(e) {
-        init(e);
-        function renderPageData(){
-            var pathArray = window.location.pathname.split( '/' );
-            var slug = pathArray[pathArray.length-1];
-            console.log(slug);
-            var contest_details = getContestBySlug(slug);
-            console.log(contest_details);
-            renderContest("#contest_container", '#contest_template', contest_details)
+// <script>
+//     $(document).ready(function(e) {
+//         init(e);
+//         function renderPageData(){
+//             var pathArray = window.location.pathname.split( '/' );
+//             var slug = pathArray[pathArray.length-1];
+//             console.log(slug);
+//             var contest_details = getContestBySlug(slug);
+//             console.log(contest_details);
+//             renderContest("#contest_container", '#contest_template', contest_details)
 
-            // show_content();
+//             // show_content();
             
-            $.validate();
+//             $.validate();
             
-            $('#contest_form').submit(function(e){
-                e.preventDefault();
-                $('.contest_btn').prop('disabled', true);
-                // submit_contest(slug);
-                submit_contest($(this).serialize());
-                // $('html, body').animate({scrollBottom : 0},800);
-            });
-        }
+//             $('#contest_form').submit(function(e){
+//                 e.preventDefault();
+//                 $('.contest_btn').prop('disabled', true);
+//                 // submit_contest(slug);
+//                 submit_contest($(this).serialize());
+//                 // $('html, body').animate({scrollBottom : 0},800);
+//             });
+//         }
         
-        function renderContest(container, template, collection){
-            var item_list = [];
-            var item_rendered = [];
-            var template_html = $(template).html();
-            Mustache.parse(template_html);   // optional, speeds up future uses
-            console.log(collection);
-            collection.alt_photo_url = getImageURL(collection.photo_url);
-            collection.property_name = getPropertyDetails().name;
-            var rendered = Mustache.render(template_html,collection);
-            item_rendered.push(rendered);
+//         function renderContest(container, template, collection){
+//             var item_list = [];
+//             var item_rendered = [];
+//             var template_html = $(template).html();
+//             Mustache.parse(template_html);   // optional, speeds up future uses
+//             console.log(collection);
+//             collection.alt_photo_url = getImageURL(collection.photo_url);
+//             collection.property_name = getPropertyDetails().name;
+//             var rendered = Mustache.render(template_html,collection);
+//             item_rendered.push(rendered);
             
-            $(container).show();
-            $(container).html(item_rendered.join(''));
-        }
+//             $(container).show();
+//             $(container).html(item_rendered.join(''));
+//         }
 
-        loadMallDataCached(renderPageData);
-    });
-    $(window).load(function(e){
-        show_content();
-    });
-</script>
+//         loadMallDataCached(renderPageData);
+//     });
+//     $(window).load(function(e){
+//         show_content();
+//     });
+// </script>
 
 <template>
     <div class=" main_container" id="events_container"><!-- for some reason if you do not put an outer container div this component template will not render -->
