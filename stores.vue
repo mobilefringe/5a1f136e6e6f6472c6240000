@@ -168,7 +168,6 @@
                 },
                 filteredByCategory (category_id) {
                     if(category_id == "All" || category_id == null ||  category_id == undefined){
-                        this.selected_cat = "All";
                         category_id = "All";
                     }
                     else {
