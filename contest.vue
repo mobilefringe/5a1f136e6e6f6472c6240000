@@ -180,6 +180,6 @@
                     return share_url;
                 }
             }
+        });
     });
-  });
 </script>
