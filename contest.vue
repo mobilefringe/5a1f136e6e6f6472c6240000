@@ -43,7 +43,7 @@
                     </div>
                     <div class="col-sm-4 col-xs-12" :class="{'has-error': errors.has('city')}">
                         <label class="label" for="city">City</label>
-                        <input v-model="form_data.city" v-validate="'required|alpha_spaces'" class="form-control" :class="{'input': true}" name="city" type="text" placeholder="city" data-vv-delay="1000">
+                        <input v-model="form_data.city" v-validate="'required|alpha_dash'" class="form-control" :class="{'input': true}" name="city" type="text" placeholder="city" data-vv-delay="1000">
                         <span v-show="errors.has('city')" class="form-control-feedback">{{ errors.first('city') }}</span>
                     </div>
                 </div>
