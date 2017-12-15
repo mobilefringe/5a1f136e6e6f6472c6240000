@@ -39,7 +39,7 @@
                     <div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('postal_code')}">
                         <label class="label" for="postal_code">Postal Code</label>
                         <input v-model="form_data.postal_code" v-validate="'required|alpha_spaces'" class="form-control" :class="{'input': true}" name="postal_code" type="text" placeholder="postal_code" data-vv-delay="1000">
-                        <span v-show="errors.has('postal_code')" class="form-control-feedback">{{ errors.first('subject') }}</span>
+                        <span v-show="errors.has('postal_code')" class="form-control-feedback">{{ errors.first('postal_code') }}</span>
                     </div>
                 </div>
                 <div class="form-group account-btn text-left m-t-10">
