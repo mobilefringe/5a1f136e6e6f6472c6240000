@@ -208,4 +208,76 @@
     define(["Vue", "moment", "moment-timezone", "vue-moment", "vue-meta"], function(Vue, moment, tz, VueMoment, Meta) {
         Vue.use(Meta);
         return Vue.component("contest-component", {
+                  template: template, // the variable template will be injected,
+      data: function() {
+        return {
+          currentEvent: null,
+          success_subscribe : false,
+          storePromos : null
+        }
+      },
+      beforeRouteEnter (to, from, next) {
+        next(vm => {
+          // access to component instance via `vm`
+          vm.currentEvent = vm.findEventBySlug(to.params.id);
+          if (vm.currentEvent === null || vm.currentEvent === undefined){
+            vm.$router.replace({ name: '404'});
+          }
+        })
+      },
+      beforeRouteUpdate (to, from, next) {
+        this.currentEvent = this.findEventBySlug(to.params.id);
+        if (this.currentEvent === null || this.currentEvent === undefined){
+          this.$router.replace({ name: '404'});
+        }
+      },
+      watch : {
+        currentEvent : function (){
+            var vm = this;
+            var temp_promo = [];
+            var current_id =_.toNumber(this.currentEvent.id);
+            console.log(current_id);
+            _.forEach(this.allEvents, function(value, key) {
+                console.log(value)
+                if(_.toNumber(value.id) != current_id){
+                    var current_promo = vm.findEventById(value.id);
+                    current_promo.description_short = _.truncate(current_promo.description, {'length': 70});
+                    temp_promo.push(current_promo);
+                }
+            });
+            this.storePromos = temp_promo;
+            console.log("promos",this.storePromos);
+        }  
+      },
+      computed: {
+        findEventBySlug () {
+          return this.$store.getters.findEventBySlug;
+        },
+        findEventById () {
+          return this.$store.getters.findEventById;
+        },
+        allEvents () {
+             return this.$store.getters.processedEvents;
+        },
+        timezone() {
+          return this.$store.getters.getTimezone;
+        },
+        property (){
+            return this.$store.getters.getProperty;
+        }
+      },
+      methods: {
+                truncate(val_body){
+                    var truncate = _.truncate(val_body, { 'length': 99, 'separator': ' ' });
+                    return truncate;
+                },
+                shareURL(slug){
+                    // console.log(window.location.host, "\n http://"+ window.location.host);
+                    var share_url = "http://www.shopcanyoncrest.com/events/" + slug;
+                    return share_url;
+                }
+            }
+    });
+  });
+</script>
       
