@@ -120,7 +120,7 @@
                 }
             },
             mounted () {
-                currentContest = .findContestBySlug('canyoncrest-test-contest');
+                this.currentContest = .findContestBySlug('canyoncrest-test-contest');
             },
             // watch : {
             //     currentContest : function (){
