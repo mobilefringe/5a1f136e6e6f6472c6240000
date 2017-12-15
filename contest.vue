@@ -214,7 +214,7 @@
                   template: template, // the variable template will be injected,
       data: function() {
         return {
-          currentEvent: null,
+          currentContest: null,
           success_subscribe : false,
           storePromos : null
         }
