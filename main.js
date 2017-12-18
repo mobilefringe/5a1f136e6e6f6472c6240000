@@ -72,7 +72,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         desktop_search : null,
         suggestionAttribute: 'name',
         stickyMenu : false,
-        isSticky : 155,
+        isSticky : 165,
         navbar : null,
         menu_items: [
             // {
