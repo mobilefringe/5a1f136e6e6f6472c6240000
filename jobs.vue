@@ -53,7 +53,7 @@
       },
       computed: {
         allJobs() {
-            var jobs = this.$store.getters.processedJobs;
+            var jobs = _.filter(this.$store.state.results.hours, function(o) { return o.store_ids==null && o.is_holiday==0 });
             console.log(jobs);
             jobs = _.sortBy(jobs, [function(o) { if(o.store) return o.store.name; }]);
             // console.log(_.groupBy(jobs, job => job.store.name));
