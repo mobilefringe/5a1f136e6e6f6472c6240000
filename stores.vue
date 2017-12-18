@@ -39,7 +39,7 @@
                 
                 
             </div>
-            <div class="row padding_bottom_50 ">
+            <div class="row padding_bottom_50 phone_padding_top_60">
                 <div class="col-md-12">
                     <div class="alpha_list">
                         <a @click="filterStores('All')" class="all_a">All</a>
