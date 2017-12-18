@@ -54,7 +54,7 @@
       computed: {
         allJobs() {
             console.log(this.$store.getters.processedJobs);
-            var jobs = _.filter(this.$store.getters.processedJobs, function(o) { return o.store!=null && o.jobable_type === "Store" });
+            var jobs = _.filter(this.$store.getters.processedJobs, function(o) { return o.store!=null });
             console.log(jobs);
             jobs = _.sortBy(jobs, [function(o) { if(o.store) return o.store.name; }]);
             // console.log(_.groupBy(jobs, job => job.store.name));
