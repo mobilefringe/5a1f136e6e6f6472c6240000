@@ -152,7 +152,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             this.show_mobile_menu = false; //close menu when navigating to new page
         },
         mobile_search : function () {
-            console.log(this.mobile_search);
+            // console.log(this.mobile_search);
         }
     },
     computed: {
