@@ -55,7 +55,7 @@
         allJobs() {
             var jobs = this.$store.getters.processedJobs;
             jobs = _.sortBy(jobs, [function(o) { if(o.store) return o.store.name; }]);
-            console.log(_.groupBy(jobs, job => job.store.name));
+            // console.log(_.groupBy(jobs, job => job.store.name));
           return _.groupBy(jobs, job => job.store.name);
         },
         timezone () {
