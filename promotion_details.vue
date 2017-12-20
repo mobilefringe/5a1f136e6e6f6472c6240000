@@ -66,7 +66,7 @@
         }
       },
             beforeRouteEnter (to, from, next) {
-            next(vm => {
+                next(vm => {
                 // access to component instance via `vm`
                 vm.currentPromo = vm.findPromoBySlug(to.params.id);
                     if (vm.currentPromo === null || vm.currentPromo === undefined){
