@@ -98,7 +98,7 @@
             console.log("promos",this.storePromos);
             }
         }  
-      },
+            },
             computed: {
                 findPromoBySlug () {
                   return this.$store.getters.findPromoBySlug;
