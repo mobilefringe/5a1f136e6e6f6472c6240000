@@ -181,9 +181,9 @@
                         _.forEach(filtered, function(value, i) {
                             value.currentCategory = find(category_id).name;
                         });
-                        console.log(filtered)
+                        // console.log(filtered)
                         sortedCats = _.groupBy(filtered, store => store.currentCategory);
-                        console.log(sortedCats);
+                        // console.log(sortedCats);
                         this.processedStores = sortedCats;
                     }
                 }
