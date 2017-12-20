@@ -209,7 +209,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             // this.$router.push({name:"/stores/"+option.slug});
             var userId = option.slug;
             this.$router.push({ name: 'storeList', params: { userId }})
-            this.nextTick(function(){
+            this.$nextTick(function(){
                 this.is_searching = false;
             })
             console.log(this.$router);
