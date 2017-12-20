@@ -151,12 +151,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             console.log("Changed to route:",this.$route.path, "subscription is", this.show_subscrption);
             this.show_mobile_menu = false; //close menu when navigating to new page
             
-            //clear search when changing routes
-            this.show_mobile_search = false;
-            this.is_searching = false;
-            // $(".bannerSearch .options-list").hide();
-            this.mobile_search = "";
-            this.desktop_search = "";
+            
         },
         mobile_search : function () {
             // console.log(this.mobile_search);
