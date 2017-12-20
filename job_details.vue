@@ -9,7 +9,7 @@
         <div class="row mobile_padding" id="promo_details_container">
             <div class="col-md-4 col-sm-4">
                 <img v-if="currentJob.store" :src="currentJob.store.image_url"  alt="Store Logo" class="details_image" />
-                <img class="promo_store_image" v-else src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1513356843893/canyon_crest_logo.png" :alt="promo.name" />
+                <img class="promo_store_image" v-else src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1513356843893/canyon_crest_logo.png" :alt="property.name" />
             </div>
             <div class="col-md-8 col-sm-8">
                 <h2 class="promo_list_name">{{currentJob.name}}</h2>
