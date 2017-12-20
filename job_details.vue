@@ -1,6 +1,6 @@
 <template>
     <div class="row main_container" v-if="currentJob">
-        <div class="promo_main_header sub_title" v-if="property">
+        <div class="promo_main_header sub_title" v-if="currentJob.store">
                 {{currentJob.store.name | uppercase}}
         </div>
         <div class="row mobile_padding" id="promo_details_container">
