@@ -204,7 +204,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             this.desktop_search = "";
             console.log(this.is_searching);
             this.$router.push("/stores/"+option.slug);
-            this.$nextTick(function () {});
+            this.$nextTick();
         },
         currentlySearching (value) {
             console.log('currentlySearching:', value);
