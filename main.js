@@ -207,7 +207,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         },
         currentlySearching (value) {
             // console.log('currentlySearching:', value);
-            if(){
+            if(value.length{
                 this.is_searching = false;
             }
             else {
