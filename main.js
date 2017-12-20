@@ -152,6 +152,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             this.show_mobile_menu = false; //close menu when navigating to new page
             
             //clear search when changing routes
+            
         },
         mobile_search : function () {
             // console.log(this.mobile_search);
@@ -206,7 +207,6 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             this.desktop_search = "";
             console.log(this.is_searching);
             this.$router.push("/stores/"+option.slug);
-            this.$nextTick();
         },
         currentlySearching (value) {
             console.log('currentlySearching:', value);
