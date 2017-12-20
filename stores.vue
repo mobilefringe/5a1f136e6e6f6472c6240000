@@ -177,7 +177,7 @@
                     else {
                         
                         var find = this.findCategoryById;
-                        var filtered = _.filter(this.allStores, function(o) {console.log(o.categories);return _.indexOf(o.categories, _.toNumber(category_id)) > -1; });
+                        var filtered = _.filter(this.allStores, function(o) {return _.indexOf(o.categories, _.toNumber(category_id)) > -1; });
                         console.log(filtered);
                         _.forEach(filtered, function(value, i) {
                             value.currentCategory = find(category_id).name;
