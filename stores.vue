@@ -215,7 +215,6 @@
                         this.breakIntoCol = false;
                     }
                     else {
-                        
                         this.breakIntoCol = true;
                     }
                     return stores;
