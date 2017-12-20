@@ -68,10 +68,10 @@
       beforeRouteEnter (to, from, next) {
         next(vm => {
           // access to component instance via `vm`
-          vm.currentPromo = vm.findPromoBySlug(to.params.id);
-          if (vm.currentPromo === null || vm.currentPromo === undefined){
-            vm.$router.replace({ name: '404'});
-          }
+                vm.currentPromo = vm.findPromoBySlug(to.params.id);
+                    if (vm.currentPromo === null || vm.currentPromo === undefined){
+                        vm.$router.replace({ name: '404'});
+                    }
                 })
             },
             beforeRouteUpdate (to, from, next) {
