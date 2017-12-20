@@ -21,7 +21,7 @@
                                     <div class="teamy__back"></div>
                                     <p class="feature_text">{{item.name}}</p>
                                 </router-link>
-                                <router-link  v-else to="/">
+                                <router-link v-else to="/">
                                     <div class="teamy__preview">
                                         <img :src="item.image_url" class="teamy__avatar" alt="The demo photo">
                                     </div>
