@@ -205,11 +205,11 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             // this.$router.push({ name: 'storeDetails', params: { userId }})
             this.$nextTick(function(){
                 //clear search when changing routes
-            this.show_mobile_search = false;
-            this.is_searching = false;
-            // $(".bannerSearch .options-list").hide();
-            this.mobile_search = "";
-            this.desktop_search = "";
+                this.show_mobile_search = false;
+                this.is_searching = false;
+                // $(".bannerSearch .options-list").hide();
+                this.mobile_search = "";
+                this.desktop_search = "";
             })
             this.$router.push("/stores/"+option.slug);
             console.log(this.$router);
