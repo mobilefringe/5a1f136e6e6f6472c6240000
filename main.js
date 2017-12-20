@@ -197,7 +197,12 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         },
         onOptionSelect(option) {
             console.log('Selected option:', option);
-        
+            this.show_mobile_search = false;
+            this.is_searching = false;
+            // $(".bannerSearch .options-list").hide();
+            this.mobile_search = "";
+            this.desktop_search = "";
+            console.log(this.is_searching);
             this.$router.push("/stores/"+option.slug);
             
         },
