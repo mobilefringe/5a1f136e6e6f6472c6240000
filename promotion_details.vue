@@ -81,23 +81,23 @@
         }
       },
       watch : {
-        currentPromo : function (){
-            if(this.currentPromo != null) {
-            var vm = this;
-            var temp_promo = [];
-            var current_id =_.toNumber(this.currentPromo.id);
-            // console.log(x);
-            _.forEach(this.currentPromo.store.promotions, function(value, key) {
-                if(_.toNumber(value) != current_id){
-                    var current_promo = vm.findPromoById(value);
-                    current_promo.description_short = _.truncate(current_promo.description, {'length': 70});
-                    temp_promo.push(current_promo);
+            currentPromo : function (){
+                if(this.currentPromo != null) {
+                var vm = this;
+                var temp_promo = [];
+                var current_id =_.toNumber(this.currentPromo.id);
+                // console.log(x);
+                _.forEach(this.currentPromo.store.promotions, function(value, key) {
+                    if(_.toNumber(value) != current_id){
+                        var current_promo = vm.findPromoById(value);
+                        current_promo.description_short = _.truncate(current_promo.description, {'length': 70});
+                        temp_promo.push(current_promo);
+                    }
+                });
+                    this.storePromos = temp_promo;
+                    console.log("promos",this.storePromos);
                 }
-            });
-            this.storePromos = temp_promo;
-            console.log("promos",this.storePromos);
-            }
-        }  
+            }  
             },
             computed: {
                 findPromoBySlug () {
