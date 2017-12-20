@@ -54,7 +54,7 @@
       computed: {
         allJobs() {
             console.log(this.$store.getters.processedJobs);
-            var jobs = //_.filter(this.$store.getters.processedJobs, function(o) { return o.store !=null && o.jobable_type === "Store" });
+            var jobs =this.$store.getters.processedJobs; //_.filter(this.$store.getters.processedJobs, function(o) { return o.store !=null && o.jobable_type === "Store" });
             console.log(jobs);
             if (jobs.length==0) {
                 
