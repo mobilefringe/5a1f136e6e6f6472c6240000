@@ -205,7 +205,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             this.mobile_search = "";
             this.desktop_search = "";
         },
-        currentlySearching (option) {
+        currentlySearching (value) {
             console.log('currentlySearching:', option);
         },
         enableStickyNavbar (e) {
