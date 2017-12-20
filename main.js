@@ -210,7 +210,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 // $(".bannerSearch .options-list").hide();
                 this.mobile_search = "";
                 this.desktop_search = "";
-            })
+            });
             this.$router.push("/stores/"+option.slug);
             console.log(this.$router);
         },
