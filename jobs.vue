@@ -10,7 +10,7 @@
                 <div class="col-md-6 no_padding" v-for="promo in jobs" :data-cat="promo.cat_list">
                     <div class="promo_item cats_row is-table-row" v-if="promo">
                         <div class="col-md-5 col-xs-4 no_padding">
-                            <img class="promo_store_image" :src="promo.store.image_url" :alt="promo.name" />
+                            <img class="promo_store_image" v-if="promo.store.image_url" :src="promo.store.image_url" :alt="promo.name" />
                         </div>
                         <div class="col-md-7  padding_tb_20">
                             <router-link :to="'/jobs/'+promo.slug" class="">
