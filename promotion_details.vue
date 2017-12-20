@@ -57,7 +57,7 @@
 
 <script>
   define(["Vue", "moment", "moment-timezone", "vue-moment", "vue-social-sharing"], function(Vue, moment, tz, VueMoment, SocialSharing) {
-    return Vue.component("promo-details-component", {
+        return Vue.component("promo-details-component", {
             template: template, // the variable template will be injected,
             data: function() {
                 return {
