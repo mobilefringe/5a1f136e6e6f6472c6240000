@@ -178,11 +178,10 @@
                         
                         var find = this.findCategoryById;
                         var filtered = _.filter(this.allStores, function(o) {return _.indexOf(o.categories, _.toNumber(category_id)) > -1; });
-                        console.log(filtered);
                         _.forEach(filtered, function(value, i) {
                             value.currentCategory = find(category_id).name;
                         });
-                        console.log(filtered);
+                        console.log(filtered)
                         sortedCats = _.groupBy(filtered, store => store.currentCategory);
                         console.log(sortedCats);
                         this.processedStores = sortedCats;
@@ -211,14 +210,13 @@
                 },
                 storesByAlphaIndex() {
                     var stores = this.$store.getters.storesByAlphaIndex;
+                    console.log(_.size(stores));
                     if (_.size(stores) <= 4) { 
                         this.breakIntoCol = false;
                     }
                     else {
                         this.breakIntoCol = true;
                     }
-                    
-                    console.log(_.size(stores), "break?", this.breakIntoCol);
                     return stores;
                 },
                 storesByCategoryName() {
