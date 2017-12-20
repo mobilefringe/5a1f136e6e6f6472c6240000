@@ -205,8 +205,8 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             this.mobile_search = "";
             this.desktop_search = "";
         },
-        currentlySearching () {
-            
+        currentlySearching (option) {
+            console.log('Selected option:', option);
         },
         enableStickyNavbar (e) {
             // console.log("scrolling");
