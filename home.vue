@@ -4,7 +4,7 @@
             <div v-for="banner in banners" v-if="banners">
                 <div style="background-image:url(http://placehold.it/1920x500)" class="banner_image_div">
                     <router-link v-if="item.url" :to="banner.url" class="banner_image_li"></router-link>
-                    <router-link v-if="item.url" :to="banner.url" class="banner_image_li"></router-link>
+                    <router-link v-else :to="banner.url" class="banner_image_li"></router-link>
                 </div>
                 <!--<img :src="banner.image_url" class="" alt="">-->
             </div>
