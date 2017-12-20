@@ -207,7 +207,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             
             console.log(this.is_searching);
             this.$router.push({name:"/stores/"+option.slug});
-            var userId = option.slug;
+            // var userId = option.slug;
             // this.$router.push({ name: 'storeDetails', params: { userId }})
             this.$nextTick(function(){
                 this.is_searching = false;
