@@ -4,7 +4,7 @@
                 {{currentJob.store.name | uppercase}}
         </div>
         <div class="promo_main_header sub_title" v-else>
-                {{currentJob.store.name | uppercase}}
+                {{property.name | uppercase}}
         </div>
         <div class="row mobile_padding" id="promo_details_container">
             <div class="col-md-4 col-sm-4">
