@@ -217,6 +217,7 @@
                     else {
                         this.breakIntoCol = true;
                     }
+                    console.log(_.size(stores),"break?",this.breakIntoCol);
                     return stores;
                 },
                 storesByCategoryName() {
