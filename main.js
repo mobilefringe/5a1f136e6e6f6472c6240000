@@ -207,7 +207,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         },
         currentlySearching (value) {
             // console.log('currentlySearching:', value);
-            
+            this.is_searching = true;
         },
         enableStickyNavbar (e) {
             // console.log("scrolling");
