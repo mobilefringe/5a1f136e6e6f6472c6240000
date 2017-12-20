@@ -61,10 +61,10 @@
       template: template, // the variable template will be injected,
       data: function() {
         return {
-          currentPromo: null,
-          storePromos : null
-        }
-      },
+                    currentPromo: null,
+                    storePromos : null
+                }
+            },
             beforeRouteEnter (to, from, next) {
                 next(vm => {
                     // access to component instance via `vm`
