@@ -99,16 +99,16 @@
             }
         }  
       },
-      computed: {
-        findPromoBySlug () {
-          return this.$store.getters.findPromoBySlug;
-        },
-        findPromoById () {
-                    return this.$store.getters.findPromoById;
-                },
-        timezone() {
-          return this.$store.getters.getTimezone;
-        }
+        computed: {
+            findPromoBySlug () {
+              return this.$store.getters.findPromoBySlug;
+            },
+            findPromoById () {
+                        return this.$store.getters.findPromoById;
+                    },
+            timezone() {
+              return this.$store.getters.getTimezone;
+            }
             },
             methods: {
                 truncate(val_body){
