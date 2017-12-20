@@ -206,7 +206,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             this.desktop_search = "";
         },
         currentlySearching (value) {
-            console.log('currentlySearching:', value, value.size);
+            console.log('currentlySearching:', value, value.length);
             if(value.size > 0){
                 this.is_searching = true;
             }
