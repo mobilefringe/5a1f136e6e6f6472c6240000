@@ -60,7 +60,7 @@
     return Vue.component("promo-details-component", {
       template: template, // the variable template will be injected,
       data: function() {
-        return {
+            return {
                     currentPromo: null,
                     storePromos : null
                 }
