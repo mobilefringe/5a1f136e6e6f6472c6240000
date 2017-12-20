@@ -79,7 +79,7 @@
         if (this.currentPromo === null || this.currentPromo === undefined){
           this.$router.replace({ name: '404'});
         }
-      },
+            },
             watch : {
                 currentPromo : function (){
                     if(this.currentPromo != null) {
