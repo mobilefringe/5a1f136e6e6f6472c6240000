@@ -212,6 +212,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             this.$nextTick(function(){
                 console.log("i am ticking");
                 this.is_searching = false;
+                console.log("i am ticking");
             })
             console.log(this.$router);
         },
