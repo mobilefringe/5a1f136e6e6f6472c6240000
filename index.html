@@ -95,7 +95,7 @@
                         
                         <img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/jpeg/1456781961000/icon_close.jpg" class="close_search close_search_desk hidden_phone" alt="search" v-show="is_searching">
                         <!--<input type="text" placeholder="Search" id="site_search" class="site_search search_field hidden_phone" />-->
-                        <search-component :list="allStores" placeholder="Find Your Store" :suggestion-attribute="suggestionAttribute" v-model="mobile_search" @select="onOptionSelect" :input="" class="desktop_search hidden_phone">
+                        <search-component :list="allStores" placeholder="Find Your Store" :suggestion-attribute="suggestionAttribute" v-model="mobile_search" @select="onOptionSelect" :input="currentlySearching" class="desktop_search hidden_phone">
                             <template slot="item" scope="option" class="manual">
                                 <article class="media">
                                     <p>
