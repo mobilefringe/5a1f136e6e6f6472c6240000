@@ -57,7 +57,7 @@
             var jobs = this.$store.getters.processedJobs; //_.filter(this.$store.getters.processedJobs, function(o) { return o.store !=null && o.jobable_type === "Store" });
             console.log(jobs);
             jobs = _.sortBy(jobs, [function(o) { if(o.store) return o.store.name; }]);
-            console.log(_.groupBy(jobs, job => (isNaN(job.store) ? job.store.name : this.property.name)););
+            console.log(_.groupBy(jobs, job => (isNaN(job.store) ? job.store.name : this.property.name)));
           return _.groupBy(jobs, job => (isNaN(job.store) ? job.store.name : this.property.name));
         },
         timezone () {
