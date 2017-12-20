@@ -207,6 +207,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             
             console.log(this.is_searching);
             this.$router.replace("/stores/"+option.slug);
+            console.log(this.$router);
         },
         currentlySearching (value) {
             console.log('currentlySearching:', value);
