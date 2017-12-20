@@ -110,7 +110,7 @@
           return this.$store.getters.getTimezone;
         }
       },
-      methods: {
+        methods: {
                 truncate(val_body){
                     var truncate = _.truncate(val_body, { 'length': 99, 'separator': ' ' });
                     return truncate;
