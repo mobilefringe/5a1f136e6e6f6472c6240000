@@ -210,7 +210,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             // var userId = option.slug;
             // this.$router.push({ name: 'storeDetails', params: { userId }})
             this.$nextTick(function(){
-                console.log("i am ticking")
+                console.log("i am ticking");
                 this.is_searching = false;
             })
             console.log(this.$router);
