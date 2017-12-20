@@ -200,7 +200,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         
             this.$router.push("/stores/"+option.slug);
             this.show_mobile_search = false;
-            this.is_searching = 
+            this.is_searching = false;
             // $(".bannerSearch .options-list").hide();
             this.mobile_search = "";
             this.desktop_search = "";
