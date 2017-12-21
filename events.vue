@@ -76,7 +76,10 @@
                 property (){
                     return this.$store.getters.getProperty;
                 },
-            }
+            },
+            methods : {
+                
+            },
         });
     });
 </script>
