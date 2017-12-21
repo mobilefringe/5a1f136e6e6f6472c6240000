@@ -79,7 +79,7 @@
             },
             methods : {
                 eventClick(event) {
-                    co
+                    console.log();
                 }  
             },
         });
