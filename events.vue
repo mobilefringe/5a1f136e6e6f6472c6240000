@@ -79,7 +79,7 @@
             },
             methods : {
                 eventClick(event) {
-                    console.log();
+                    console.log("event clicked", event);
                 }  
             },
         });
