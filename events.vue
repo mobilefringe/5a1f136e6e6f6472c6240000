@@ -17,7 +17,6 @@
                     <router-link :to="{ name: 'eventDetails', params: { id: promo.slug }}" class="animated_btn text_center">Read More</router-link>
                 </div>
             </div>
-            <full-calendar :events="fcEvents" locale="en"></full-calendar>
         </div>
     </div>
     
