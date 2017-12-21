@@ -63,6 +63,7 @@
                     event.end = moment(event.end_date).format("YYYY-MM-DD").tzthis.timezone);
                     event.YOUR_DATA = {event.description};
                 });
+                this.fcEvents=temp_events;
             },
             computed: {
                 events() {
