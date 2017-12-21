@@ -49,7 +49,7 @@
                   start : '2016-08-25',
                   end : '2017-07-27'
                 }
-        ]
+            ]
         }
       },
       computed: {
@@ -70,6 +70,7 @@
             return this.$store.getters.getProperty;
         },
       }
-    });
+    },
+    'full-calendar': require('vue-fullcalendar')	);
   });
 </script>
