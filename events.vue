@@ -55,7 +55,7 @@
                 }
             },
             mounted () : {
-          
+                // rearrange event data as it should be on the 
             },
             computed: {
                 events() {
