@@ -44,11 +44,11 @@
         return {
             success_subscribe : false,
             fcEvents : [
-        	{
-              title : 'Sunny Out of Office',
-              start : '2016-08-25',
-              end : '2017-07-27'
-            }
+            	{
+                  title : 'Sunny Out of Office',
+                  start : '2016-08-25',
+                  end : '2017-07-27'
+                }
         ]
         }
       },
