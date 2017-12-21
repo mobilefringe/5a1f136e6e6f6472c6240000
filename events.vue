@@ -78,7 +78,9 @@
                 },
             },
             methods : {
-                  
+                eventClick(event) {
+                    co
+                }  
             },
         });
     });
