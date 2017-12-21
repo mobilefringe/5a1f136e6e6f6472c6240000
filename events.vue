@@ -57,7 +57,7 @@
             mounted () : {
                 // rearrange event data as it should be for the calendar plugin
                 var temp_events = this.events;
-                temp_events.map(promo => {
+                temp_events.map(events => {
                     promo.image_url = promo.promo_image_url_abs;
                     promo.locale = state.locale;
                     promo.store = null;
