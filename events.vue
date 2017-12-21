@@ -58,7 +58,7 @@
                 // rearrange event data as it should be for the calendar plugin
                 var temp_events = this.events;
                 temp_events.map(event => {
-                    event.title = event.event_image_url_abs;
+                    event.title = event.name;
                     event.locale = state.locale;
                     event.store = null;
                     if (event.eventable_type === "Store") {
