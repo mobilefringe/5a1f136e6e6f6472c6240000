@@ -40,8 +40,9 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
     Vue.use(Vue2Filters);
     Vue.use(VueI18n);
     Vue.use(SocialSharing);
+    
     /* initialize router */
-  const router = new VueRouter({
+    const router = new VueRouter({
     mode: 'history',
     routes: appRoutes,
     scrollBehavior (to, from, savedPosition) {
