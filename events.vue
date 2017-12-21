@@ -18,7 +18,7 @@
                 </div>
             </div>
         </div>
-        <div>
+        <div class="row">
             <full-calendar :events="fcEvents" locale="en"></full-calendar>
         </div>
     </div>
