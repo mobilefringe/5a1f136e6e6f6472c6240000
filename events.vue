@@ -19,7 +19,11 @@
             </div>
         </div>
         <div class="row">
-            <full-calendar v-if="fcEvents" :events="fcEvents" locale="en" @eventClick="eventClicked"></full-calendar>
+            <full-calendar v-if="fcEvents" :events="fcEvents" locale="en" @eventClick="eventClicked">
+                <template slot="fc-event-card" scope="p">
+                    <p><i class="fa">sadfsd</i> {{ p.event.title }} test</p>
+                </template>
+            </full-calendar>
             <slot name="fc-header-left">Next</slot>
         </div>
     </div>
