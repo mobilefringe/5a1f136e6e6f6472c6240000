@@ -59,7 +59,7 @@
                 var temp_events = this.events;
                 temp_events.map(event => {
                     event.title = event.name;
-                    event.locale = state.locale;
+                    event.start = state.locale;
                     event.store = null;
                     if (event.eventable_type === "Store") {
                         let foundStore = stores.find(store => store.id === event.eventable_id.toString());
