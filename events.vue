@@ -18,6 +18,9 @@
                 </div>
             </div>
         </div>
+        <div>
+            <full-calendar :events="fcEvents" locale="en"></full-calendar>
+        </div>
     </div>
     
 </template>
