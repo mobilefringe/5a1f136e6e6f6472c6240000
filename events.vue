@@ -53,8 +53,8 @@
                         }
                     ]
                 }
-        },
-      mounted () : {
+            },
+        mounted () : {
           
       },
       computed: {
