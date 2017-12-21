@@ -57,24 +57,24 @@
             mounted () : {
           
             },
-        computed: {
-            events() {
-                // var promos = this.$store.getters.processedEvents;
-                // console.log(this.$store);
-                // _.forEach(promos, function (val) {
-                //     if(val.description.length >50) {
-                //       val.description = _.truncate(val.description, {'length':50,'separator': ' '})
-                //     }
-                // });
-              return this.$store.getters.processedEvents;
-            },
-            timezone () {
-              return this.$store.getters.getTimezone;
-            },
-            property (){
-                return this.$store.getters.getProperty;
-            },
-        }
+            computed: {
+                events() {
+                    // var promos = this.$store.getters.processedEvents;
+                    // console.log(this.$store);
+                    // _.forEach(promos, function (val) {
+                    //     if(val.description.length >50) {
+                    //       val.description = _.truncate(val.description, {'length':50,'separator': ' '})
+                    //     }
+                    // });
+                  return this.$store.getters.processedEvents;
+                },
+                timezone () {
+                  return this.$store.getters.getTimezone;
+                },
+                property (){
+                    return this.$store.getters.getProperty;
+                },
+            }
         });
     });
 </script>
