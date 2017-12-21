@@ -24,7 +24,7 @@
                     <p><i class="fa">sadfsd</i> Next</p>
                 </template>
             </full-calendar>
-            <slot name="fc-header-left">Next</slot>
+            <!--<slot name="fc-header-left">Next</slot>-->
         </div>
     </div>
     
