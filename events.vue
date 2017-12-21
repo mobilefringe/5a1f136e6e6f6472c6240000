@@ -64,7 +64,7 @@
                     event.YOUR_DATA = {event.description};
                 });
                 this.fcEvents=temp_events;
-                console.log(this.fcEvents)
+                console.log(this.fcEvents);
             },
             computed: {
                 events() {
