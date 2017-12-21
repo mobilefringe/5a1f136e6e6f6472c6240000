@@ -57,7 +57,7 @@
             mounted () : {
           
             },
-      computed: {
+        computed: {
         events() {
             // var promos = this.$store.getters.processedEvents;
             // console.log(this.$store);
