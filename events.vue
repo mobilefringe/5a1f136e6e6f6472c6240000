@@ -43,7 +43,7 @@
       data: function() {
         return {
             success_subscribe : false,
-            fcEvents :[
+            fcEvents : [
         	{
               title : 'Sunny Out of Office',
               start : '2016-08-25',
