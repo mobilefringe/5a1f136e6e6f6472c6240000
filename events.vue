@@ -56,6 +56,7 @@
             },
             mounted () : {
                 // rearrange event data as it should be for the calendar plugin
+                this.fcEvents
                 promos.map(promo => {
                     promo.image_url = promo.promo_image_url_abs;
                     promo.locale = state.locale;
