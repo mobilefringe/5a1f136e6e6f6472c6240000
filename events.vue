@@ -63,7 +63,6 @@
             return this.$store.getters.getProperty;
         },
       }
-    },
-    'full-calendar': require('vue-fullcalendar'));
+    });
   });
 </script>
