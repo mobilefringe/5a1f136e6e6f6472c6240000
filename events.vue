@@ -42,7 +42,7 @@
         Vue.use(Meta);
         return Vue.component("events-component", {
             template: template, // the variable template will be injected
-      data: function() {
+            data: function() {
         return {
             success_subscribe : false,
             fcEvents : [
