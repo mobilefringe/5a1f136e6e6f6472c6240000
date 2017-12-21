@@ -74,7 +74,7 @@
             property (){
                 return this.$store.getters.getProperty;
             },
-      }
+        }
     });
   });
 </script>
