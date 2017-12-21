@@ -35,10 +35,10 @@ require.config({
 });
 
 require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'locales','jquery', 'moment', "vue-meta", "moment-timezone", "vue-moment",'vue-social-sharing','vue-select', "vue!search-component", 'vue-fullcalendar'], function (Vue, Vue2Filters, VueRouter, appRoutes, store, VueI18n, messages,$, moment, Meta, tz, VueMoment,SocialSharing, VueSelect, SearchComponent, FullCalendar) {
-  Vue.use(Meta);
-  Vue.use(VueRouter);
-  Vue.use(Vue2Filters);
-  Vue.use(VueI18n);
+    Vue.use(Meta);
+    Vue.use(VueRouter);
+    Vue.use(Vue2Filters);
+    Vue.use(VueI18n);
     Vue.use(SocialSharing);
     // Vue.use(DatepickerLocal);
   /* initialize router */
