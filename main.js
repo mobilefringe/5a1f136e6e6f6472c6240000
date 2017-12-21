@@ -30,18 +30,17 @@ require.config({
     'svg-map': 'https://preview-5a1f136e6e6f6472c6240000.codecloudapp.com/svg_map.vue?noext',
     'vue-social-sharing': 'https://cdn.jsdelivr.net/npm/vue-social-sharing@2.3.1/dist/vue-social-sharing.min',
     'vee-validate' : 'https://cdn.jsdelivr.net/npm/vee-validate@latest/dist/vee-validate',
-    'vue-fullcalendar' : 'https://cdn.jsdelivr.net/npm/vue-fullcalendar@1.0.9/dist/vue-fullcalendar.min',
-    'vue-full-calendar' : 'https://cdn.jsdelivr.net/npm/vue-full-calendar@2.5.1/index.min'
+    'vue-fullcalendar' : 'https://cdn.jsdelivr.net/npm/vue-fullcalendar@1.0.9/dist/vue-fullcalendar.min'
   }
 });
 
-require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'locales','jquery', 'moment', "vue-meta", "moment-timezone", "vue-moment",'vue-social-sharing','vue-select', "vue!search-component", 'vue-fullcalendar', 'vue-full-calendar'], function (Vue, Vue2Filters, VueRouter, appRoutes, store, VueI18n, messages,$, moment, Meta, tz, VueMoment,SocialSharing, VueSelect, SearchComponent, FullCalendar, VueFullCalendar) {
+require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'locales','jquery', 'moment', "vue-meta", "moment-timezone", "vue-moment",'vue-social-sharing','vue-select', "vue!search-component", 'vue-fullcalendar'], function (Vue, Vue2Filters, VueRouter, appRoutes, store, VueI18n, messages,$, moment, Meta, tz, VueMoment,SocialSharing, VueSelect, SearchComponent, FullCalendar) {
     Vue.use(Meta);
     Vue.use(VueRouter);
     Vue.use(Vue2Filters);
     Vue.use(VueI18n);
     Vue.use(SocialSharing);
-    Vue.use(VueFullCalendar)
+    
     /* initialize router */
     const router = new VueRouter({
         mode: 'history',
@@ -59,8 +58,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
   });
 
     Vue.component('v-select', VueSelect.VueSelect);
-    // Vue.component('full-calendar', FullCalendar)
-    Vue.component('full-calendar', VueFullCalendar)
+    Vue.component('full-calendar', FullCalendar)
   /* bootstrap app */
   const vm = new Vue({
     el: '#app',
