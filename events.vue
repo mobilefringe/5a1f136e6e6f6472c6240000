@@ -59,7 +59,7 @@
                 var temp_events = this.events;
                 temp_events.map(event => {
                     event.title = event.name;
-                    event.start = moment(event.start_date).format("YYYY-MM-D", timezone)
+                    event.start = moment(event.start_date).format("YYYY-MM-DD", timezone)
                     event.end = moment(event.end_date).format("MMM D", timezone)
                     if (event.eventable_type === "Store") {
                         let foundStore = stores.find(store => store.id === event.eventable_id.toString());
