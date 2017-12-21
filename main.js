@@ -30,7 +30,8 @@ require.config({
     'svg-map': 'https://preview-5a1f136e6e6f6472c6240000.codecloudapp.com/svg_map.vue?noext',
     'vue-social-sharing': 'https://cdn.jsdelivr.net/npm/vue-social-sharing@2.3.1/dist/vue-social-sharing.min',
     'vee-validate' : 'https://cdn.jsdelivr.net/npm/vee-validate@latest/dist/vee-validate',
-    'vue-fullcalendar' : 'https://cdn.jsdelivr.net/npm/vue-fullcalendar@1.0.9/dist/vue-fullcalendar.min'
+    'vue-fullcalendar' : 'https://cdn.jsdelivr.net/npm/vue-fullcalendar@1.0.9/dist/vue-fullcalendar.min',
+    'vue-full-calendar' : 'https://cdn.jsdelivr.net/npm/vue-full-calendar@2.5.1/index.min'
   }
 });
 
