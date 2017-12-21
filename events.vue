@@ -20,7 +20,7 @@
         </div>
         <div class="row">
             <full-calendar v-if="fcEvents" :events="fcEvents" locale="en" @eventClick="eventClicked"></full-calendar>
-            <slot name="fc-header-left"></slot>
+            <slot name="fc-header-left">Next</slot>
         </div>
     </div>
     
