@@ -45,13 +45,7 @@
             data: function() {
                 return {
                     success_subscribe : false,
-                    fcEvents : [
-                    	{
-                          title : 'Sunny Out of Office',
-                          start : '2017-12-25',
-                          end : '2017-12-27'
-                        }
-                    ]
+                    fcEvents : null
                 }
             },
             mounted () : {
