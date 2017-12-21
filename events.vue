@@ -43,16 +43,16 @@
         return Vue.component("events-component", {
             template: template, // the variable template will be injected
             data: function() {
-        return {
-            success_subscribe : false,
-            fcEvents : [
-            	{
-                  title : 'Sunny Out of Office',
-                  start : '2017-12-25',
-                  end : '2017-12-27'
+                return {
+                    success_subscribe : false,
+                    fcEvents : [
+                    	{
+                          title : 'Sunny Out of Office',
+                          start : '2017-12-25',
+                          end : '2017-12-27'
+                        }
+                    ]
                 }
-            ]
-        }
       },
       mounted () : {
           
