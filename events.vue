@@ -56,7 +56,17 @@
             },
             mounted () : {
                 // rearrange event data as it should be for the calendar plugin
-                
+                promos.map(promo => {
+                    promo.image_url = promo.promo_image_url_abs;
+                    promo.locale = state.locale;
+                    promo.store = null;
+                    if (promo.promotionable_type === "Store") {
+                        let foundStore = stores.find(store => store.id === promo.promotionable_id.toString());
+                        if (foundStore) {
+                            promo.store = foundStore;
+                        }
+                    }
+                });
             },
             computed: {
                 events() {
