@@ -69,7 +69,7 @@
                     return this.$store.getters.processedEvents;
                 },
                 timezone () {
-                  return this.$store.getters.getTimezone;
+                    return this.$store.getters.getTimezone;
                 },
                 property (){
                     return this.$store.getters.getProperty;
