@@ -20,7 +20,9 @@
         </div>
         <div class="row">
             <full-calendar v-if="fcEvents" :events="fcEvents" locale="en" @eventClick="eventClicked"></full-calendar>
-            <slot class="header-left"></slot>
+            <slot class="header-left">
+                <img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512595712551/mmlogo.png" class="" alt=""><img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512595712551/mmlogo.png" class="" alt="">
+            </slot>
         </div>
     </div>
     
