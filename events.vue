@@ -60,7 +60,7 @@
                 temp_events.map(event => {
                     event.title = event.name;
                     event.start = state.locale;
-                    event.store = null;
+                    event.end = null;
                     if (event.eventable_type === "Store") {
                         let foundStore = stores.find(store => store.id === event.eventable_id.toString());
                         if (foundStore) {
