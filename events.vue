@@ -54,7 +54,7 @@
                 temp_events.map(event => {
                     event.title = event.name;
                     event.start = moment(event.start_date).format("YYYY-MM-DD").tz(this.timezone);
-                    event.end = moment(event.end_date).format("YYYY-MM-DD").tzthis.timezone);
+                    event.end = moment(event.end_date).format("YYYY-MM-DD").tz(this.timezone);
                     event.YOUR_DATA = {event.description};
                 });
                 this.fcEvents=temp_events;
