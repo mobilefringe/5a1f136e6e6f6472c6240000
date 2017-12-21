@@ -19,7 +19,7 @@
             </div>
         </div>
         <div class="row">
-            <full-calendar v-if="fcEvents":events="fcEvents" locale="en"></full-calendar>
+            <full-calendar v-if="fcEvents" :events="fcEvents" locale="en"></full-calendar>
         </div>
     </div>
     
@@ -53,8 +53,8 @@
                 var temp_events = this.events;
                 temp_events.map(event => {
                     event.title = event.name;
-                    event.start = moment(event.start_date).format("YYYY-MM-DD").tz(this.timezone);
-                    event.end = moment(event.end_date).format("YYYY-MM-DD").tz(this.timezone);
+                    event.start = moment(event.start_date).format("YYYY-MM-DD");
+                    event.end = moment(event.end_date).format("YYYY-MM-DD");
                 });
                 this.fcEvents=temp_events;
                 console.log(this.fcEvents);
