@@ -54,9 +54,9 @@
                     ]
                 }
             },
-        mounted () : {
+            mounted () : {
           
-      },
+            },
       computed: {
         events() {
             // var promos = this.$store.getters.processedEvents;
