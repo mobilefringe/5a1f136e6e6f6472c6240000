@@ -30,12 +30,11 @@ require.config({
     'svg-map': 'https://preview-5a1f136e6e6f6472c6240000.codecloudapp.com/svg_map.vue?noext',
     'vue-social-sharing': 'https://cdn.jsdelivr.net/npm/vue-social-sharing@2.3.1/dist/vue-social-sharing.min',
     'vee-validate' : 'https://cdn.jsdelivr.net/npm/vee-validate@latest/dist/vee-validate',
-    'vue-datepicker-local' : 'https://cdn.jsdelivr.net/npm/vue-datepicker-local@1.0.9/dist/vue-datepicker-local',
-    'es6-promise': 'https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min'
+    'vue-datepicker-local' : 'https://cdn.jsdelivr.net/npm/vue-datepicker-local@1.0.9/dist/vue-datepicker-local'
   }
 });
 
-require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'locales', 'moment', "vue-meta", "moment-timezone", "vue-moment",'vue-social-sharing','vue-select', "vue!search-component", 'vue-datepicker-local', 'jquery', 'es6-promise'], function (Vue, Vue2Filters, VueRouter, appRoutes, store, VueI18n, messages, moment, Meta, tz, VueMoment,SocialSharing, VueSelect, SearchComponent, DatepickerLocal, $, Promise) {
+require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'locales', 'moment', "vue-meta", "moment-timezone", "vue-moment",'vue-social-sharing','vue-select', "vue!search-component", 'vue-datepicker-local', 'jquery'], function (Vue, Vue2Filters, VueRouter, appRoutes, store, VueI18n, messages, moment, Meta, tz, VueMoment,SocialSharing, VueSelect, SearchComponent, DatepickerLocal, $) {
   Vue.use(Meta);
   Vue.use(VueRouter);
   Vue.use(Vue2Filters);
