@@ -56,6 +56,7 @@
             },
             mounted () : {
                 // rearrange event data as it should be for the calendar plugin
+                
             },
             computed: {
                 events() {
