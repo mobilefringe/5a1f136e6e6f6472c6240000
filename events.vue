@@ -80,6 +80,7 @@
             methods : {
                 eventClicked(event) {
                     console.log("event clicked", event);
+                    this.$router.push('/events'+event.slug)
                 }  
             },
         });
