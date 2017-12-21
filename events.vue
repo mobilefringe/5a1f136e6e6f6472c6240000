@@ -42,8 +42,8 @@
       template: template, // the variable template will be injected
       data: function() {
         return {
-         success_subscribe : false,
-          [
+            success_subscribe : false,
+            fcEvents :[
         	{
               title : 'Sunny Out of Office',
               start : '2016-08-25',
