@@ -20,11 +20,7 @@
         </div>
         <div class="row">
             <full-calendar v-if="fcEvents" :events="fcEvents" locale="en" @eventClick="eventClicked">
-                <!--<template slot="fc-header-left" scope="p">-->
-                <!--    <span class="prev-month">Next</span> -->
-                <!--</template>-->
             </full-calendar>
-            <!--<slot name="fc-header-left">Next</slot>-->
         </div>
     </div>
     
