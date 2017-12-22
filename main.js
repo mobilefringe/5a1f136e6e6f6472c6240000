@@ -44,17 +44,17 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
     /* initialize router */
     const router = new VueRouter({
         mode: 'history',
-        routes: appRoutes
-        // scrollBehavior (to, from, savedPosition) {
-        //     return { x: 0, y: 0 }
-        // }
+        routes: appRoutes,
+        scrollBehavior (to, from, savedPosition) {
+            return { x: 0, y: 0 }
+        }
     });
 
   /* initialize i18n */
   const i18n = new VueI18n({
     locale: 'en-ca',
     fallbackLocale: 'en-ca',
-    messages : ''
+    messages,
   });
 
     Vue.component('v-select', VueSelect.VueSelect);
