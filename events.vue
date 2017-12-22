@@ -21,7 +21,7 @@
         <div class="row">
             <full-calendar v-if="fcEvents" :events="fcEvents" locale="en" @eventClick="eventClicked">
                 <template slot="fc-header-left" scope="p">
-                    <p><i class="fa">sadfsd</i> Next</p>
+                    <span>Next</span> 
                 </template>
             </full-calendar>
             <!--<slot name="fc-header-left">Next</slot>-->
