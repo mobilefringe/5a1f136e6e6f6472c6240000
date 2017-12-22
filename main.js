@@ -55,7 +55,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
   const i18n = new VueI18n({
     locale: 'en-ca',
     fallbackLocale: 'en-ca',
-    messages,
+    messages
   });
 
     Vue.component('v-select', VueSelect.VueSelect);
