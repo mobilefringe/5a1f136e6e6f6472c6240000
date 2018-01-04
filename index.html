@@ -31,7 +31,7 @@
                         <a :href="'tel:'+property.contact_phone">{{property.contact_phone}}</a>
                     </div>
                     
-                    <!--<div class="m_menu_today_hour">-->
+                    <!--<div class="m_menu_today_hour" v-if="todays_hours">-->
                     <!--   Open Today: {{todays_hours.open_time | moment("h:mma", timezone)}} - {{todays_hours.close_time | moment("h:mma", timezone)}}-->
                     <!--</div>-->
                     <div class="social_icons_menu show_phone text-center">
