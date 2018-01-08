@@ -19,7 +19,7 @@
                     <div class="map_storelist">
                         <v-select :options="allStores" :placeholder="'Select A Store'" :searchable="false" :label="'name'" :on-change="dropPin"></v-select> 
                     </div>
-                        <svg-map v-bind:svgMapUrl="getSVGurl"></svg-map>
+                        <svg-map v-bind:svg-map-url="getSVGurl"></svg-map>
                     </div>
                 </div>
             </div>
