@@ -56,6 +56,9 @@
         allJobs() {
             console.log(this.$store.getters.processedJobs);
             var jobs = this.$store.getters.processedJobs; //_.filter(this.$store.getters.processedJobs, function(o) { return o.store !=null && o.jobable_type === "Store" });
+            jobs.map(store => {
+                    store.image_url = "https://mallmaverick.cdn.speedyrails.net" + store.store_front_url;
+                });
             console.log(jobs);
             jobs = _.sortBy(jobs, [function(o) { if(o.store) return o.store.name; }]);
             console.log(_.groupBy(jobs, job => (isNaN(job.store) ? job.store.name : this.property.name)));
