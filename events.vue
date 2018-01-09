@@ -19,7 +19,7 @@
         <!--    </div>-->
         <!--</div>-->
         <div class="row">
-            <full-calendar v-if="fcEvents" :events="fcEvents" locale="en" @eventClick="eventClicked" class="hidden_phone"></full-calendar>
+            <full-calendar v-if="fcEvents" :events="fcEvents" locale="en" v-on:eventClick="eventClicked" class="hidden_phone"></full-calendar>
         </div>
     </div>
     
