@@ -118,7 +118,7 @@
                             if(event.store != null && event.store != undefined && _.includes(event.store.image_url, 'missing'))
                                 event.store.image_url = "//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/jpeg/1515531874445/canyon_crest_default.jpg";
                     });
-                    return jobs;
+                    return events;
                 },
                 timezone() {
                     return this.$store.getters.getTimezone;
