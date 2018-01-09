@@ -40,7 +40,7 @@
       template: template, // the variable template will be injected
       computed: {
         promotions() {
-          return this.$store.getters.processedPromos;
+        //   return this.$store.getters.processedPromos;
           var jobs = this.$store.getters.processedPromos;
             jobs.map(job => {
                     if(job.store != null && job.store != undefined && _.includes(job.store.image_url, 'missing'))
