@@ -113,7 +113,7 @@
                     return this.$store.getters.findEventById;
                 },
                 allEvents() {
-                    return this.$store.getters.processedEvents;
+                    return 
                     var jobs = this.$store.getters.processedJobs;
                     jobs.map(job => {
                             if(job.store != null && job.store != undefined && _.includes(job.store.image_url, 'missing'))
