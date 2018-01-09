@@ -93,7 +93,7 @@
                             if(_.toNumber(value) != current_id){
                                 var current_promo = vm.findPromoById(value);
                                 current_promo.description_short = _.truncate(current_promo.description, {'length': 70});
-                                
+                                current_promo.store = 
                                 if(_.includes(current_promo.store.image_url, 'missing'))
                                     this.currentPromo.store.image_url = "//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/jpeg/1515531874445/canyon_crest_default.jpg";
                                 temp_promo.push(current_promo);
