@@ -87,6 +87,8 @@
             },
             watch: {
                 currentEvent: function() {
+                    if(this.currentJob.store != null && this.currentJob.store != undefined && _.includes(this.currentJob.store.image_url, 'missing'))
+                this.currentJob.store.image_url = "//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/jpeg/1515531874445/canyon_crest_default.jpg";
                     var vm = this;
                     var temp_promo = [];
                     var current_id = _.toNumber(this.currentEvent.id);
