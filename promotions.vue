@@ -43,7 +43,7 @@
         //   return this.$store.getters.processedPromos;
           var promos = this.$store.getters.processedPromos;
             promos.map(promo => {
-                    if(job.store != null && job.store != undefined && _.includes(job.store.image_url, 'missing'))
+                    if(promo.store != null && job.store != undefined && _.includes(job.store.image_url, 'missing'))
                         job.store.image_url = "//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/jpeg/1515531874445/canyon_crest_default.jpg";
             });
              return promos;
