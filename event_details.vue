@@ -108,6 +108,11 @@
                 }
             },
             computed: {
+                ...Vuex.mapGetters([
+                    'property',
+                    'timezone',
+                    'processedJobs'
+                ]),
                 findEventBySlug() {
                     return this.$store.getters.findEventBySlug;
                 },
