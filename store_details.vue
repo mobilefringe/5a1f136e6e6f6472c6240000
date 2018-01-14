@@ -217,9 +217,9 @@
                 svgMapRef () {
                     return _.filter(this.$children, function(o) { return (o.$el.className == "svg-map") })[0];
                 },
-                timezone () {
-                    return this.$store.getters.getTimezone;
-                }
+                // timezone () {
+                //     return this.$store.getters.getTimezone;
+                // }
             },
             methods: {
                 updateSVGMap (map) {
