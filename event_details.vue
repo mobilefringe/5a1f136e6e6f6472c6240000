@@ -112,7 +112,8 @@
                     'property',
                     'timezone',
                     'processedEvents',
-                    'findEventBySlug'
+                    'findEventBySlug',
+                    'findEventById'
                 ]),
                 findEventBySlug() {
                     return this.$store.getters.findEventBySlug;
