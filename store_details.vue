@@ -187,6 +187,18 @@
                 }
             },
             computed: {
+                ...Vuex.mapGetters([
+                    'property',
+                    'timezone',
+                    'repos',
+                    'findRepoByName',
+                    'processedStores',
+                    'processedCategories',
+                    'storesByAlphaIndex',
+                    'storesByCategoryName',
+                    'findCategoryById',
+                    'findCategoryByName',
+                ]),
                 findStoreBySlug () {
                   return this.$store.getters.findStoreBySlug;
                 },
