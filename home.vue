@@ -88,7 +88,7 @@
 </template>
 
 <script>
-    define(["Vue", "vuex", "vue!today_hours", "vue!vue-slick","moment", "moment-timezone", "vue-moment", "vue-meta"], function(Vue,Vuex, TodayHoursComponent, slick ,moment, tz, VueMoment, Meta) {
+    define(["Vue", "vuex", "vue!today_hours", "vue!vue-slick","moment", "moment-timezone", "vue-moment", "vue-meta"], function(Vue, sVuex, TodayHoursComponent, slick ,moment, tz, VueMoment, Meta) {
         return Vue.component("home-component", {
             template: template, // the variable template will be injected
             data: function() {
@@ -107,7 +107,8 @@
                 }
             },
             created () {
-                this.$store.dispatch("getData", "banners")  
+                this.$store.dispatch("getData", "banners");
+                this.$store.dispatch("getData", "feature_items")
             },
             computed: {
                 ...Vuex.mapGetters([
