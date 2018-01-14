@@ -141,6 +141,11 @@
             //     }  
             // },
             computed: {
+                ...Vuex.mapGetters([
+                    'property',
+                    'timezone',
+                    'processedJobs'
+                ]),
                 findContestBySlug () {
                   return this.$store.getters.findContestBySlug;
                 },
