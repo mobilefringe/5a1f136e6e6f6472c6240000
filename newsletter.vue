@@ -115,6 +115,10 @@
               console.log(this.holidayHours);
             },
             computed: {
+                ...Vuex.mapGetters([
+                    'property',
+                    'timezone',
+                ]),
                 timezone () {
                   return this.$store.getters.getTimezone;
                 },
