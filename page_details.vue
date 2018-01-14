@@ -45,7 +45,7 @@
             });
       },
       computed: {
-       ...Vuex.mapGetters([
+        ...Vuex.mapGetters([
             'property',
             'timezone',
         ]),
