@@ -72,7 +72,7 @@
                 ...Vuex.mapGetters([
                     'property',
                     'timezone',
-                    'hours'
+                    'hours',
                 ]),
                 timezone () {
                   return this.$store.getters.getTimezone;
