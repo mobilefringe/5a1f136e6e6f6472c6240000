@@ -116,14 +116,14 @@
                     'processedStores',
                     'timezone',
                     'processedPromos',
-                    'feature_items'
+                    'feature_items',
                 ]),
                 // property(){
                 //   return this.$store.getters.getProperty;
                 // },
-                // timezone () {
-                //     return this.$store.getters.getTimezone;
-                // },
+                timezone () {
+                    return this.$store.getters.getTimezone;
+                },
                 // processedStores() {
                 //   return this.$store.getters.processedStores;
                 // },
