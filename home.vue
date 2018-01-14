@@ -114,7 +114,7 @@
                 ...Vuex.mapGetters([
                     'property',
                     'processedStores',
-                    'timezone',
+                    'getTimezone',
                     'processedPromos',
                     'feature_items',
                 ]),
