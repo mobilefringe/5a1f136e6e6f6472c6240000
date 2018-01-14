@@ -195,9 +195,6 @@
                     'processedStores',
                     'findPromoById',
                     'findJobById',
-                    'storesByCategoryName',
-                    'findCategoryById',
-                    'findCategoryByName',
                 ]),
                 findStoreBySlug () {
                   return this.$store.getters.findStoreBySlug;
