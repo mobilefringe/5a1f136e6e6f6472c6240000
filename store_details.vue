@@ -191,7 +191,7 @@
                     'property',
                     'timezone',
                     'repos',
-                    'findRepoByName',
+                    'findStoreBySlug',
                     'processedStores',
                     'processedCategories',
                     'storesByAlphaIndex',
