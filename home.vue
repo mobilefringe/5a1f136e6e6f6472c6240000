@@ -114,17 +114,18 @@
                 ...Vuex.mapGetters([
                     'property',
                     'processedStores',
-                    'timezone'
+                    'timezone',
+                    'processedPromos'
                 ]),
-                property(){
-                  return this.$store.getters.getProperty;
-                },
-                timezone () {
-                    return this.$store.getters.getTimezone;
-                },
-                processedStores() {
-                  return this.$store.getters.processedStores;
-                },
+                // property(){
+                //   return this.$store.getters.getProperty;
+                // },
+                // timezone () {
+                //     return this.$store.getters.getTimezone;
+                // },
+                // processedStores() {
+                //   return this.$store.getters.processedStores;
+                // },
                 banners () {
                     return _.orderBy(this.$store.state.banners, ['position'], ['asc']);
                 },
@@ -132,10 +133,10 @@
                     console.log(this.$store.state.results.feature_items);
                     return  _.slice(this.$store.state.results.feature_items, 0, 3);
                 },
-                promotions () {
-                    // console.log(this.$store.getters.processedPromos);
-                    return this.$store.getters.processedPromos;
-                }
+                // promotions () {
+                //     // console.log(this.$store.getters.processedPromos);
+                //     return this.$store.getters.processedPromos;
+                // }
             },
             methods: {
                 onOptionSelect(option) {
