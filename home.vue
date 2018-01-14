@@ -108,7 +108,7 @@
             },
             created () {
                 this.$store.dispatch("getData", "banners");
-                this.$store.dispatch("getData", "feature_items")
+                this.$store.dispatch("getData", "feature_items");
             },
             computed: {
                 ...Vuex.mapGetters([
