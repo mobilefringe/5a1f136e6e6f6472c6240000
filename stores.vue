@@ -196,6 +196,7 @@
                     'findRepoByName',
                     'processedStores',
                     'processedCategories',
+                    'storesByAlphaIndex',
                 ]),
                 property (){
                     return this.$store.getters.getProperty;
