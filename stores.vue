@@ -198,6 +198,8 @@
                     'processedCategories',
                     'storesByAlphaIndex',
                     'storesByCategoryName',
+                    'findCategoryById',
+                    'findCategoryByName'
                 ]),
                 property (){
                     return this.$store.getters.getProperty;
