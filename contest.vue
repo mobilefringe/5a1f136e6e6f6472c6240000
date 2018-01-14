@@ -144,7 +144,7 @@
                 ...Vuex.mapGetters([
                     'property',
                     'timezone',
-                    'processedJobs'
+                    'contests'
                 ]),
                 findContestBySlug () {
                   return this.$store.getters.findContestBySlug;
