@@ -113,7 +113,8 @@
             computed: {
                 ...Vuex.mapGetters([
                     'property',
-                    'processedStores'
+                    'processedStores',
+                    'timezone'
                 ]),
                 property(){
                   return this.$store.getters.getProperty;
