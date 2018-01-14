@@ -111,8 +111,8 @@
             },
             computed: {
                 ...Vuex.mapGetters([
-                      'property',
-                      'processedStores'
+                    'property',
+                    'processedStores'
                 ]),
                 property(){
                   return this.$store.getters.getProperty;
