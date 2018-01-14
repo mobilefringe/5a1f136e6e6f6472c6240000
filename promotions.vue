@@ -34,29 +34,29 @@
 </style>
 
 <script>
-  define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "vue-meta"], function(Vue, Vuex, moment, tz, VueMoment, Meta) {
-    Vue.use(Meta);
-    return Vue.component("promos-component", {
-      template: template, // the variable template will be injected
-      computed: {
-        ...Vuex.mapGetters([
-            'property',
-            'timezone',
-            'processedPromos',
-        ]),
-        promotions() {
-        //   return this.$store.getters.processedPromos;
-          var promos = this.$store.getters.processedPromos;
-            promos.map(promo => {
-                if(promo.store != null && promo.store != undefined && _.includes(promo.store.image_url, 'missing'))
-                    promo.store.image_url = "//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/jpeg/1515531874445/canyon_crest_default.jpg";
-            });
-            return promos;
-        },
-        // timezone () {
-        //   return this.$store.getters.getTimezone;
-        // }
-      }
+    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "vue-meta"], function(Vue, Vuex, moment, tz, VueMoment, Meta) {
+        Vue.use(Meta);
+        return Vue.component("promos-component", {
+            template: template, // the variable template will be injected
+            computed: {
+                ...Vuex.mapGetters([
+                    'property',
+                    'timezone',
+                    'processedPromos',
+                ]),
+                promotions() {
+                    //   return this.$store.getters.processedPromos;
+                    var promos = this.$store.getters.processedPromos;
+                    promos.map(promo => {
+                        if (promo.store != null && promo.store != undefined && _.includes(promo.store.image_url, 'missing'))
+                            promo.store.image_url = "//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/jpeg/1515531874445/canyon_crest_default.jpg";
+                    });
+                    return promos;
+                },
+                // timezone () {
+                //   return this.$store.getters.getTimezone;
+                // }
+            }
+        });
     });
-  });
 </script>
