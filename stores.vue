@@ -199,7 +199,7 @@
                     'storesByAlphaIndex',
                     'storesByCategoryName',
                     'findCategoryById',
-                    'findCategoryByName'
+                    'findCategoryByName',
                 ]),
                 property (){
                     return this.$store.getters.getProperty;
