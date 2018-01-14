@@ -42,11 +42,7 @@
         ...Vuex.mapGetters([
             'property',
             'timezone',
-            'repos',
-            'processedStores',
-            'findStoreBySlug',
-            'findPromoById',
-            'findJobById',
+            'processedPromos',
         ]),
         promotions() {
         //   return this.$store.getters.processedPromos;
