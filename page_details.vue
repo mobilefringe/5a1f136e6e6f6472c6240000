@@ -46,6 +46,10 @@
             });
       },
       computed: {
+       ...Vuex.mapGetters([
+            'property',
+            'timezone',
+        ]),
         timezone() {
           return this.$store.getters.getTimezone;
         },
