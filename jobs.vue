@@ -56,6 +56,7 @@
           ...Vuex.mapGetters([
             'property',
             'timezone',
+            'processedJobs'
         ]),
         allJobs() {
             console.log(this.$store.getters.processedJobs);
