@@ -194,7 +194,7 @@
                     'timezone',
                     'repos',
                     'findRepoByName',
-                    'processedEvents',
+                    'processedStores',
                 ]),
                 property (){
                     return this.$store.getters.getProperty;
