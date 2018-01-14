@@ -107,7 +107,6 @@
                 }
             },
             created () {
-                
                 this.$store.dispatch("getData", "banners")  
             },
             computed: {
