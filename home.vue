@@ -108,7 +108,7 @@
             },
             created () {
                 
-      this.$store.dispatch("getData", "banners")  
+                this.$store.dispatch("getData", "banners")  
             },
             computed: {
                 property(){
