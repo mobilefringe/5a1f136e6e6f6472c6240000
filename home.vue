@@ -115,7 +115,7 @@
                     'property',
                     'processedStores',
                     'timezone',
-                    'processedPromos'
+                    'processedPromos',
                 ]),
                 // property(){
                 //   return this.$store.getters.getProperty;
