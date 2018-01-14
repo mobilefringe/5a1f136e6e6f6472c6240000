@@ -106,6 +106,10 @@
                     }
                 }
             },
+            created () {
+                
+      this.$store.dispatch("getData", "banners")  
+            },
             computed: {
                 property(){
                   return this.$store.getters.getProperty;
