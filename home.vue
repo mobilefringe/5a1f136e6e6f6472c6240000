@@ -110,6 +110,10 @@
                 this.$store.dispatch("getData", "banners")  
             },
             computed: {
+                ...Vuex.mapGetters([
+                      'property',
+                      'processedStores'
+                ]),
                 property(){
                   return this.$store.getters.getProperty;
                 },
