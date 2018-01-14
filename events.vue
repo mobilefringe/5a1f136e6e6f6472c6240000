@@ -60,6 +60,11 @@
                 console.log(this.fcEvents);
             },
             computed: {
+                ...Vuex.mapGetters([
+                    'property',
+                    'timezone',
+                    'processedJobs'
+                ]),
                 events() {
                     // var promos = this.$store.getters.processedEvents;
                     // console.log(this.$store);
