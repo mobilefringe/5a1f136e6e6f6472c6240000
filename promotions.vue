@@ -39,6 +39,15 @@
     return Vue.component("promos-component", {
       template: template, // the variable template will be injected
       computed: {
+        ...Vuex.mapGetters([
+            'property',
+            'timezone',
+            'repos',
+            'processedStores',
+            'findStoreBySlug',
+            'findPromoById',
+            'findJobById',
+        ]),
         promotions() {
         //   return this.$store.getters.processedPromos;
           var promos = this.$store.getters.processedPromos;
