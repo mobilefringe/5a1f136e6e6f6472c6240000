@@ -63,7 +63,7 @@
                 ...Vuex.mapGetters([
                     'property',
                     'timezone',
-                    'processedJobs'
+                    'processedEvents'
                 ]),
                 events() {
                     // var promos = this.$store.getters.processedEvents;
