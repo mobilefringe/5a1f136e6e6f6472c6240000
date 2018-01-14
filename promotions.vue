@@ -53,9 +53,9 @@
             });
             return promos;
         },
-        timezone () {
-          return this.$store.getters.getTimezone;
-        }
+        // timezone () {
+        //   return this.$store.getters.getTimezone;
+        // }
       }
     });
   });
