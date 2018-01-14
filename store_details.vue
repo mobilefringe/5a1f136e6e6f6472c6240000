@@ -208,9 +208,9 @@
                 findJobById () {
                     return this.$store.getters.findJobById;
                 },
-                property (){
-                    return this.$store.getters.getProperty;
-                },
+                // property (){
+                //     return this.$store.getters.getProperty;
+                // },
                 getSVGurl () {
                     return "https://www.mallmaverick.com" + this.property.svgmap_url;
                 },
