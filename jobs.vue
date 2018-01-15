@@ -62,8 +62,8 @@
                     'processedJobs'
                 ]),
                 allJobs() {
-                    console.log(this.$store.getters.processedJobs);
-                    var jobs = this.$store.getters.processedJobs; //_.filter(this.$store.getters.processedJobs, function(o) { return o.store !=null && o.jobable_type === "Store" });
+                    console.log(this.processedJobs);
+                    var jobs = this.processedJobs; //_.filter(this.$store.getters.processedJobs, function(o) { return o.store !=null && o.jobable_type === "Store" });
                     jobs.map(job => {
                         if (job.store != null && job.store != undefined && _.includes(job.store.image_url, 'missing'))
                             job.store.image_url = "//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/jpeg/1515531874445/canyon_crest_default.jpg";
@@ -75,12 +75,12 @@
                     console.log(_.groupBy(jobs, job => (isNaN(job.store) ? job.store.name : this.property.name)));
                     return _.groupBy(jobs, job => (isNaN(job.store) ? job.store.name : this.property.name));
                 },
-                timezone() {
-                    return this.$store.getters.getTimezone;
-                },
-                property() {
-                    return this.$store.getters.getProperty;
-                }
+                // timezone() {
+                //     return this.$store.getters.getTimezone;
+                // },
+                // property() {
+                //     return this.$store.getters.getProperty;
+                // }
 
             },
             methods: {
