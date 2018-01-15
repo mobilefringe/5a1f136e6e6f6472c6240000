@@ -14,7 +14,8 @@ define([], function() {
                 {
                     path: ':id',
                     component: view('store_details'),
-                    name: 'storeDetails'
+                    name: 'storeDetails',
+                    props: true
                 }
             ]
         },
