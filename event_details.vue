@@ -64,8 +64,7 @@
                 return {
                     currentEvent: null,
                     success_subscribe: false,
-                    storePromos: null,
-                    dataLoaded: false
+                    storePromos: null
                 }
             },
             created () {
