@@ -216,7 +216,7 @@
                     return this.processedCategories;
                 },
                 allMobileCategories() {
-                    var cats =_.map(this.$store.getters.processedCategories, 'name');
+                    var cats =_.map(this.processedCategories, 'name');
                     cats.unshift('All');
                     console.log(cats);
                     return cats;
