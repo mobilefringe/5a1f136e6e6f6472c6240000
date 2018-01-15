@@ -189,7 +189,7 @@
                     }
                     
                     $('html, body').animate({
-                		scrollTop: $($(this).attr('href')).offset().top
+                		scrollTop: $("#cat_name_headerjquer").offset().top
                 	}, 500, 'linear');
                 }
             },
