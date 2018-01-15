@@ -1,5 +1,5 @@
 <template>
-    <div class="row main_container" v-if="currentEvent">
+    <div class="row main_container" v-if="dataLoaded && currentEvent">
         <div class="promo_main_header sub_title" v-if="property">
                 {{property.name | uppercase}}
         </div>
