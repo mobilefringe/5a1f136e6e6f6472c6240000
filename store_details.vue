@@ -188,6 +188,8 @@
                     _.forEach(this.currentStore.jobs, function(value, key) {
                         var current_job = vm.findJobById(value);
                         current_job.description_short = _.truncate(current_job.description, {'length': 70});
+                        if(current_promo.store != null && current_promo.store != undefined && _.includes(current_promo.store.image_url, 'missing'))
+                                    current_promo.store.image_url = "//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/jpeg/1515531874445/canyon_crest_default.jpg";
                         temp_job.push(current_job);
                         
                     })
