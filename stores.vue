@@ -187,7 +187,7 @@
                         // console.log(sortedCats);
                         this.filteredStores = sortedCats;
                     }
-                    $("#cat_name_headerjquer")
+                    
                     $('html, body').animate({
                 		scrollTop: $($(this).attr('href')).offset().top
                 	}, 500, 'linear');
