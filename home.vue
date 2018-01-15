@@ -115,7 +115,6 @@
                 ...Vuex.mapGetters([
                     'property',
                     'timezone',
-                    // 'processedPromos',
                     'feature_items',
                 ]),
                 // property(){
