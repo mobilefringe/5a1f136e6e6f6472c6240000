@@ -155,7 +155,7 @@
             created (){
                 window.Raphael = Raphael; // our mapSvg plugin is stupid and outdated. need this hack to tie Raphael to window object (global variable)
                 this.$store.dispatch("getData", "promotions");
-                    this.$store.dispatch("getData", "jobs")
+                this.$store.dispatch("getData", "jobs")
                 this.$store.dispatch("getData", "stores").then(response => {
                     this.updateCurrentStore(this.id);
                     
