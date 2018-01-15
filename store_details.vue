@@ -190,21 +190,20 @@
                 ...Vuex.mapGetters([
                     'property',
                     'timezone',
-                    'repos',
                     'processedStores',
                     'findStoreBySlug',
                     'findPromoById',
                     'findJobById',
                 ]),
-                findStoreBySlug () {
-                  return this.$store.getters.findStoreBySlug;
-                },
-                findPromoById () {
-                    return this.$store.getters.findPromoById;
-                },
-                findJobById () {
-                    return this.$store.getters.findJobById;
-                },
+                // findStoreBySlug () {
+                //   return this.$store.getters.findStoreBySlug;
+                // },
+                // findPromoById () {
+                //     return this.$store.getters.findPromoById;
+                // },
+                // findJobById () {
+                //     return this.$store.getters.findJobById;
+                // },
                 // property (){
                 //     return this.$store.getters.getProperty;
                 // },
