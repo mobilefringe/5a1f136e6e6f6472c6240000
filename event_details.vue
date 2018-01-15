@@ -59,6 +59,7 @@
     define(["Vue", "vuex","moment", "moment-timezone", "vue-moment"], function(Vue, Vuex, moment, tz, VueMoment) {
         return Vue.component("event-details-component", {
             template: template, // the variable template will be injected,
+            props:['id'],
             data: function() {
                 return {
                     currentEvent: null,
