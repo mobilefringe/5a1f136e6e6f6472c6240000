@@ -69,15 +69,15 @@
             created () {
                 this.$store.dispatch("getData", "promotions").then(response => {
                     // console.log(response);
-                   this.dataLoaded = true;
-                   var temp_events = this.processedEvents;
-                    temp_events.map(event => {
-                        event.title = event.name;
-                        event.start = moment(event.start_date).format("YYYY-MM-DD");
-                        event.end = moment(event.end_date).format("YYYY-MM-DD");
-                    });
-                    this.fcEvents = temp_events;
-                    console.log(this.fcEvents);
+                //   this.dataLoaded = true;
+                //   var temp_events = this.processedEvents;
+                //     temp_events.map(event => {
+                //         event.title = event.name;
+                //         event.start = moment(event.start_date).format("YYYY-MM-DD");
+                //         event.end = moment(event.end_date).format("YYYY-MM-DD");
+                //     });
+                //     this.fcEvents = temp_events;
+                //     console.log(this.fcEvents);
                 }, error => {
                     console.error("Could not retrieve data from server. Please check internet connection and try again.");
                     this.$router.replace({ name: '404'});
