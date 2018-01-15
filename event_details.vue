@@ -138,12 +138,12 @@
                     });
                     return events;
                 },
-                timezone() {
-                    return this.$store.getters.getTimezone;
-                },
-                property() {
-                    return this.$store.getters.getProperty;
-                }
+                // timezone() {
+                //     return this.$store.getters.getTimezone;
+                // },
+                // property() {
+                //     return this.$store.getters.getProperty;
+                // }
             },
             methods: {
                 truncate(val_body) {
