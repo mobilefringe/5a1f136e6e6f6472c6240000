@@ -213,7 +213,7 @@
                     return this.processedStores;
                 },
                 allCategories() {
-                    return this.$store.getters.processedCategories;
+                    return this.processedCategories;
                 },
                 allMobileCategories() {
                     var cats =_.map(this.$store.getters.processedCategories, 'name');
