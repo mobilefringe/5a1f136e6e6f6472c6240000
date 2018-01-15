@@ -63,7 +63,8 @@
                 return {
                     currentEvent: null,
                     success_subscribe: false,
-                    storePromos: null
+                    storePromos: null,
+                    dataLoaded: false
                 }
             },
             created () {
