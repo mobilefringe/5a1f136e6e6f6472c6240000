@@ -52,6 +52,9 @@
                     success_subscribe: false
                 }
             },
+            created () {
+                
+            },
             computed: {
                 ...Vuex.mapGetters([
                     'property',
