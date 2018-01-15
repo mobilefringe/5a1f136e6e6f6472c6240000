@@ -136,21 +136,21 @@
                     map: null
                 }
             },
-            beforeRouteEnter (to, from, next) {
-                next(vm => {
-                    // access to component instance via `vm`
-                    vm.currentStore = vm.findStoreBySlug(to.params.id);
-                    if (vm.currentStore === null || vm.currentStore === undefined){
-                        vm.$router.replace({ name: '404'});
-                    }
-                })
-            },
-            beforeRouteUpdate (to, from, next) {
-                this.currentStore = this.findStoreBySlug(to.params.id);
-                if (this.currentStore === null || this.currentStore === undefined){
-                    this.$router.replace({ name: '404'});
-                }
-            },
+            // beforeRouteEnter (to, from, next) {
+            //     next(vm => {
+            //         // access to component instance via `vm`
+            //         vm.currentStore = vm.findStoreBySlug(to.params.id);
+            //         if (vm.currentStore === null || vm.currentStore === undefined){
+            //             vm.$router.replace({ name: '404'});
+            //         }
+            //     })
+            // },
+            // beforeRouteUpdate (to, from, next) {
+            //     this.currentStore = this.findStoreBySlug(to.params.id);
+            //     if (this.currentStore === null || this.currentStore === undefined){
+            //         this.$router.replace({ name: '404'});
+            //     }
+            // },
             created (){
                 window.Raphael = Raphael; // our mapSvg plugin is stupid and outdated. need this hack to tie Raphael to window object (global variable)
             },
