@@ -188,7 +188,7 @@
                     console.log("promos",this.promotions);
                 },
                 $route : function () {
-                    this.updateCurrentPromo(this.$route.params.id);
+                    this.updateCurrentStore(this.$route.params.id);
                 }
             },
             computed: {
