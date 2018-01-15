@@ -197,7 +197,7 @@
                         temp_job.push(current_job);
                         
                     });
-                    console.log(_.includes(this.currentStore.image_url, 'missing'));
+                    console.log("_.includes(this.currentStore.image_url, 'missing')",_.includes(this.currentStore.image_url, 'missing'));
                     if(_.includes(this.currentStore.image_url, 'missing'))
                         this.currentStore.image_url = "//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/jpeg/1515531874445/canyon_crest_default.jpg";
                     this.promotions = temp_promo;
