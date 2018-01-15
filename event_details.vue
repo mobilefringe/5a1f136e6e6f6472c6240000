@@ -67,47 +67,32 @@
                 }
             },
             created () {
-                this.$store.dispatch("getData", "events").then(response => {
-                    // console.log(response);
-                //   this.dataLoaded = true;
-                //   var temp_events = this.processedEvents;
-                //     temp_events.map(event => {
-                //         event.title = event.name;
-                //         event.start = moment(event.start_date).format("YYYY-MM-DD");
-                //         event.end = moment(event.end_date).format("YYYY-MM-DD");
-                //     });
-                //     this.fcEvents = temp_events;
-                //     console.log(this.fcEvents);
-                    this.currentEvent = this.findEventBySlug(to.params.id);
-                    if (this.currentEvent === null || this.currentEvent === undefined) {
-                        this.$router.replace({
-                            name: '404'
-                        });
-                    }
+                this.$store.dispatch("getData", "promotions").then(response => {
+                    this.dataLoaded = true;
                 }, error => {
                     console.error("Could not retrieve data from server. Please check internet connection and try again.");
                     this.$router.replace({ name: '404'});
                 });  
             },
-            // beforeRouteEnter(to, from, next) {
-            //     next(vm => {
-            //         // access to component instance via `vm`
-            //         vm.currentEvent = vm.findEventBySlug(to.params.id);
-            //         if (vm.currentEvent === null || vm.currentEvent === undefined) {
-            //             vm.$router.replace({
-            //                 name: '404'
-            //             });
-            //         }
-            //     })
-            // },
-            // beforeRouteUpdate(to, from, next) {
-            //     this.currentEvent = this.findEventBySlug(to.params.id);
-            //     if (this.currentEvent === null || this.currentEvent === undefined) {
-            //         this.$router.replace({
-            //             name: '404'
-            //         });
-            //     }
-            // },
+            beforeRouteEnter(to, from, next) {
+                next(vm => {
+                    // access to component instance via `vm`
+                    vm.currentEvent = vm.findEventBySlug(to.params.id);
+                    if (vm.currentEvent === null || vm.currentEvent === undefined) {
+                        vm.$router.replace({
+                            name: '404'
+                        });
+                    }
+                })
+            },
+            beforeRouteUpdate(to, from, next) {
+                this.currentEvent = this.findEventBySlug(to.params.id);
+                if (this.currentEvent === null || this.currentEvent === undefined) {
+                    this.$router.replace({
+                        name: '404'
+                    });
+                }
+            },
             watch: {
                 currentEvent: function() {
                     if(this.currentEvent.store != null && this.currentEvent.store != undefined && _.includes(this.currentEvent.store.image_url, 'missing'))
@@ -152,12 +137,12 @@
                     });
                     return events;
                 },
-                // timezone() {
-                //     return this.$store.getters.getTimezone;
-                // },
-                // property() {
-                //     return this.$store.getters.getProperty;
-                // }
+                timezone() {
+                    return this.$store.getters.getTimezone;
+                },
+                property() {
+                    return this.$store.getters.getProperty;
+                }
             },
             methods: {
                 truncate(val_body) {
