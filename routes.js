@@ -44,7 +44,8 @@ define([], function() {
                 {
                     path: ':id',
                     component: view('event_details'),
-                    name: 'eventDetails'
+                    name: 'eventDetails',
+                    props: true
                 }
             ]
         },
