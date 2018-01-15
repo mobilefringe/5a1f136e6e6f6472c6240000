@@ -38,6 +38,9 @@
         Vue.use(Meta);
         return Vue.component("promos-component", {
             template: template, // the variable template will be injected
+            created () {
+                this.$store.dispatch("getData", "promotions");    
+            },
             computed: {
                 ...Vuex.mapGetters([
                     'property',
