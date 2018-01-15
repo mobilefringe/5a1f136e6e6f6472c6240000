@@ -68,7 +68,7 @@
                 }
             },
             created () {
-                this.$store.dispatch("getData", "promotions").then(response => {
+                this.$store.dispatch("getData", "events").then(response => {
                     this.dataLoaded = true;
                     console.log("data is loaded")
                 }, error => {
