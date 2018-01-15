@@ -73,7 +73,7 @@
                     console.log("data is loaded")
                 }, error => {
                     console.error("Could not retrieve data from server. Please check internet connection and try again.");
-                    this.$router.replace({ name: '404'});
+                    // this.$router.replace({ name: '404'});
                 });  
             },
             beforeRouteEnter(to, from, next) {
