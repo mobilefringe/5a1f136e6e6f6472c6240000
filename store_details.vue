@@ -180,12 +180,12 @@
                         // console.log(vm.findPromoById(value));
                         var current_promo = vm.findPromoById(value);
                         current_promo.description_short = _.truncate(current_promo.description, {'length': 70});
-                        if(this.currentEvent.store !== null && this.currentEvent.store !== undefined && _.includes(this.currentEvent.store.image_url, 'missing')) {
-                        this.currentEvent.store.image_url = "//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/jpeg/1515531874445/canyon_crest_default.jpg";
+                        if(current_promot.store !== null && current_promo.store !== undefined && _.includes(this.currentEvent.store.image_url, 'missing')) {
+                        current_promo.store.image_url = "//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/jpeg/1515531874445/canyon_crest_default.jpg";
                         }
-                        else if (this.currentEvent.store == null && this.currentEvent.store == undefined) {
-                            this.currentEvent.store = {};
-                            this.currentEvent.store.image_url = "//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/jpeg/1515531874445/canyon_crest_default.jpg";
+                        else if (current_promo.store == null && current_promo.store == undefined) {
+                            current_promo.store = {};
+                            current_promo.store.image_url = "//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/jpeg/1515531874445/canyon_crest_default.jpg";
                         }
                                     
                         temp_promo.push(current_promo);
@@ -194,8 +194,8 @@
                         var current_job = vm.findJobById(value);
                         current_job.description_short = _.truncate(current_job.description, {'length': 70});
                         if(this.currentEvent.store !== null && this.currentEvent.store !== undefined && _.includes(this.currentEvent.store.image_url, 'missing')) {
-                        this.currentEvent.store.image_url = "//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/jpeg/1515531874445/canyon_crest_default.jpg";
-                    }
+                            this.currentEvent.store.image_url = "//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/jpeg/1515531874445/canyon_crest_default.jpg";
+                        }
                         else if (this.currentEvent.store == null && this.currentEvent.store == undefined) {
                             this.currentEvent.store = {};
                             this.currentEvent.store.image_url = "//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/jpeg/1515531874445/canyon_crest_default.jpg";
