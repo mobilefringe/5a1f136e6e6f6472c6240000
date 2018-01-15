@@ -193,8 +193,13 @@
                     _.forEach(this.currentStore.jobs, function(value, key) {
                         var current_job = vm.findJobById(value);
                         current_job.description_short = _.truncate(current_job.description, {'length': 70});
-                        if(current_job.store != null && current_job.store != undefined && _.includes(current_job.store.image_url, 'missing'))
-                                    current_job.store.image_url = "//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/jpeg/1515531874445/canyon_crest_default.jpg";
+                        if(this.currentEvent.store !== null && this.currentEvent.store !== undefined && _.includes(this.currentEvent.store.image_url, 'missing')) {
+                        this.currentEvent.store.image_url = "//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/jpeg/1515531874445/canyon_crest_default.jpg";
+                    }
+                    else if (this.currentEvent.store == null && this.currentEvent.store == undefined) {
+                        this.currentEvent.store = {};
+                        this.currentEvent.store.image_url = "//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/jpeg/1515531874445/canyon_crest_default.jpg";
+                    }
                         temp_job.push(current_job);
                         
                     })
