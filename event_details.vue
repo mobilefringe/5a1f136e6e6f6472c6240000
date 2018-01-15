@@ -67,7 +67,7 @@
                 }
             },
             created () {
-                this.$store.dispatch("getData", "events").then(response => {
+                this.$store.dispatch("getData", "promotions").then(response => {
                     // console.log(response);
                    this.dataLoaded = true;
                    var temp_events = this.processedEvents;
