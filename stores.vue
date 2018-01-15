@@ -210,7 +210,7 @@
                     // return "//www.mallmaverick.com/system/site_images/photos/000/035/014/original/Canyon_Crest_-_Map.svg?1512066588";
                 },
                 allStores() {
-                    return this.$store.getters.processedStores;
+                    return this.processedStores;
                 },
                 allCategories() {
                     return this.$store.getters.processedCategories;
