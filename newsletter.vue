@@ -156,7 +156,7 @@
                             send_data = {};
                             send_data.url = this.property.mm_host + '/api/v1/contact_us';
                             send_data.form_data = this.form_data;
-                            this.$store.dispatch("CONTACT_US", send_data).then(res => {
+                            this.$store.dispatch("POST_TO_MM", send_data).then(res => {
                                 // this.$router.replace({
                                 //     name: 'home'
                                 // })
