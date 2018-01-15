@@ -187,6 +187,7 @@
                         // console.log(sortedCats);
                         this.filteredStores = sortedCats;
                     }
+                    $(cat_name_header)
                 }
             },
             computed: {
