@@ -196,10 +196,10 @@
                         if(this.currentEvent.store !== null && this.currentEvent.store !== undefined && _.includes(this.currentEvent.store.image_url, 'missing')) {
                         this.currentEvent.store.image_url = "//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/jpeg/1515531874445/canyon_crest_default.jpg";
                     }
-                    else if (this.currentEvent.store == null && this.currentEvent.store == undefined) {
-                        this.currentEvent.store = {};
-                        this.currentEvent.store.image_url = "//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/jpeg/1515531874445/canyon_crest_default.jpg";
-                    }
+                        else if (this.currentEvent.store == null && this.currentEvent.store == undefined) {
+                            this.currentEvent.store = {};
+                            this.currentEvent.store.image_url = "//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/jpeg/1515531874445/canyon_crest_default.jpg";
+                        }
                         temp_job.push(current_job);
                         
                     })
