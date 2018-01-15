@@ -53,7 +53,7 @@
                 }
             },
             created () {
-                
+                this.$store.dispatch("getData", "jobs");
             },
             computed: {
                 ...Vuex.mapGetters([
