@@ -187,7 +187,7 @@
                         // console.log(sortedCats);
                         this.filteredStores = sortedCats;
                     }
-                    var position = $($(this).attr("href")).offset().top;
+                    var position = $("#cat_name_header").offset().top;
 
                     // 	$("body, html").animate({
                     // 		scrollTop: position
