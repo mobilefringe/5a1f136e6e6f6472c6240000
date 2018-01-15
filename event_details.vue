@@ -124,12 +124,12 @@
                     'findEventBySlug',
                     'findEventById'
                 ]),
-                findEventBySlug() {
-                    return this.$store.getters.findEventBySlug;
-                },
-                findEventById() {
-                    return this.$store.getters.findEventById;
-                },
+                // findEventBySlug() {
+                //     return this.$store.getters.findEventBySlug;
+                // },
+                // findEventById() {
+                //     return this.$store.getters.findEventById;
+                // },
                 allEvents() {
                     var events = this.$store.getters.processedEvents;
                     events.map(event => {
