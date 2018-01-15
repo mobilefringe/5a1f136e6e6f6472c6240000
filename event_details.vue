@@ -102,7 +102,7 @@
                     var temp_promo = [];
                     var current_id = _.toNumber(this.currentEvent.id);
                     console.log(current_id);
-                    _.forEach(this.processedEvents, function(value, key) {
+                    _.forEach(this.allEvents, function(value, key) {
                         console.log(value)
                         if (_.toNumber(value.id) != current_id) {
                             var current_promo = vm.findEventById(value.id);
@@ -131,7 +131,7 @@
                 //     return this.$store.getters.findEventById;
                 // },
                 allEvents() {
-                    var events = this.$store.getters.processedEvents;
+                    var events = this.processedEvents;
                     events.map(event => {
                             if(event.store != null && event.store != undefined && _.includes(event.store.image_url, 'missing'))
                                 event.store.image_url = "//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/jpeg/1515531874445/canyon_crest_default.jpg";
