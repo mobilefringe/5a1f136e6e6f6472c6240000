@@ -62,7 +62,8 @@ define([], function() {
                 {
                     path: ':id',
                     component: view('job_details'),
-                    name: 'jobDetails'
+                    name: 'jobDetails',
+                    props: true
                 }
             ]
         },
