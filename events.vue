@@ -48,6 +48,9 @@
                     fcEvents : null
                 }
             },
+            created() {
+                
+            }.
             mounted () {
                 // rearrange event data as it should be for the calendar plugin
                 var temp_events = this.events;
