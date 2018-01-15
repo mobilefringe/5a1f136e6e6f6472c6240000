@@ -46,9 +46,9 @@
                 </div>
                 <div class="col-md-12">
                     <h5 class="category_header" style="display:none" id="cat_name_header">All</h5>
-                    <div class="row" v-if="processedStores">
+                    <div class="row" v-if="filteredStores">
                         <div class="col-md-12 store_col_1" :class="{ all_storelist_container: breakIntoCol }">
-                            <div v-for="(stores,key) in processedStores" style="padding:0 10px;">
+                            <div v-for="(stores,key) in filteredStores" style="padding:0 10px;">
                                 <span class="store_initial" :data-initial="key">{{key}}</span>
                                 <div id="store_list_container" class="store_list" v-for="store in stores">
                                     <div class="store_list_content cats_row" :data-cat="store.cat_list">
@@ -81,7 +81,7 @@
             data: function() {
                 return {
                     listMode: "alphabetical",
-                    processedStores: null,
+                    filteredStores: null,
                     mobileAlphabet : ['All',
                     'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
                     ],
@@ -97,7 +97,7 @@
                 window.Raphael = Raphael; // our mapSvg plugin is stupid and outdated. need this hack to tie Raphael to window object (global variable)
             },
             mounted () {
-                this.processedStores = this.storesByAlphaIndex;// this.storesByAlphaIndex;
+                this.filteredStores = this.storesByAlphaIndex;// this.storesByAlphaIndex;
                 var total_stores;
                 // this.allMobileCategories;
                 // _.forEach(this.storesByAlphaIndex, function(value) {
@@ -150,12 +150,12 @@
                     
                     this.breakIntoCol = false;
                     if(letter == "All"){
-                        this.processedStores = this.storesByAlphaIndex;//this.storesByAlphaIndex;
+                        this.filteredStores = this.storesByAlphaIndex;//this.storesByAlphaIndex;
                         // this.breakIntoCol = true;
                     }
                     else {
                         var filtered = _.filter(this.storesByAlphaIndex, function(o,i) { return _.lowerCase(i) == _.lowerCase(letter); })[0];
-                        this.processedStores = _.groupBy(filtered, store => (isNaN(store.name.charAt(0)) ? store.name.charAt(0) : "#"));
+                        this.filteredStores = _.groupBy(filtered, store => (isNaN(store.name.charAt(0)) ? store.name.charAt(0) : "#"));
                         this.breakIntoCol = false;
                     }
                     
@@ -171,7 +171,7 @@
                     this.breakIntoCol = false;
                     console.log(category_id);
                     if(category_id == "All"){
-                        this.processedStores = this.storesByAlphaIndex;//this.storesByAlphaIndex;
+                        this.filteredStores = this.storesByAlphaIndex;//this.storesByAlphaIndex;
                         // this.breakIntoCol = true;
                     }
                     else {
@@ -184,7 +184,7 @@
                         // console.log(filtered)
                         sortedCats = _.groupBy(filtered, store => store.currentCategory);
                         // console.log(sortedCats);
-                        this.processedStores = sortedCats;
+                        this.filteredStores = sortedCats;
                     }
                 }
             },
