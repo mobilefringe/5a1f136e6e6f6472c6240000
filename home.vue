@@ -115,7 +115,7 @@
                 ...Vuex.mapGetters([
                     'property',
                     'timezone',
-                    'feature_items',
+                    // 'feature_items',
                 ]),
                 // property(){
                 //   return this.$store.getters.getProperty;
