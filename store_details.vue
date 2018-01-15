@@ -224,8 +224,8 @@
             },
             methods: {
                 updateCurrentStore (id) {
-                    this.currentPromo = this.findStoreBySlug(id);
-                    if (this.currentPromo === null || this.currentPromo === undefined){
+                    this.currentStore = this.findStoreBySlug(id);
+                    if (this.currentStore === null || this.currentStore === undefined){
                         this.$router.replace({ name: '404'});
                     }
                 },
