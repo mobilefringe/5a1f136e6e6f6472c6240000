@@ -157,6 +157,7 @@
                  this.$store.dispatch("getData", "stores").then(response => {
                     this.updateCurrentStore(this.id);
                     this.$store.dispatch("getData", "promotions");
+                    this.$store.dispatch("getData", "jobs")
                 }, error => {
                   console.error("Could not retrieve data from server. Please check internet connection and try again.");
                 });
