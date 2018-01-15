@@ -73,7 +73,8 @@
                     'property',
                     'timezone',
                     // 'hours',
-                    'getPropertyHours'
+                    'getPropertyHours',
+                    'getPropertyHolidayHours'
                 ]),
                 // timezone () {
                 //   return this.$store.getters.getTimezone;
