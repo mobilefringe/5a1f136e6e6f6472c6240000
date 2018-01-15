@@ -81,6 +81,7 @@
                     // access to component instance via `vm`
                     console.log(vm);
                     vm.currentEvent = vm.findEventBySlug(to.params.id);
+                    console.log(" vm.currentEvent", vm.currentEvent);
                     if (vm.currentEvent === null || vm.currentEvent === undefined) {
                         // vm.$router.replace({
                         //     name: '404'
