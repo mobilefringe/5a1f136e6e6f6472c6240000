@@ -155,7 +155,7 @@
             created (){
                 window.Raphael = Raphael; // our mapSvg plugin is stupid and outdated. need this hack to tie Raphael to window object (global variable)
                 this.$store.dispatch("getData", "promotions");
-                this.$store.dispatch("getData", "jobs")
+                this.$store.dispatch("getData", "jobs");
                 this.$store.dispatch("getData", "stores").then(response => {
                     this.updateCurrentStore(this.id);
                     
@@ -180,6 +180,9 @@
                         // console.log(vm.findPromoById(value));
                         var current_promo = vm.findPromoById(value);
                         current_promo.description_short = _.truncate(current_promo.description, {'length': 70});
+                        if(current_promo.store != null && current_promo.store != undefined && _.includes(current_promo.store.image_url, 'missing'))
+                                    current_promo.store.image_url = "//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/jpeg/1515531874445/canyon_crest_default.jpg";
+                                    
                         temp_promo.push(current_promo);
                     });
                     _.forEach(this.currentStore.jobs, function(value, key) {
