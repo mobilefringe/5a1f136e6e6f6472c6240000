@@ -186,6 +186,9 @@
                     this.promotions = temp_promo;
                     this.jobs = temp_job;
                     console.log("promos",this.promotions);
+                },
+                $route : function () {
+                    
                 }
             },
             computed: {
