@@ -154,8 +154,10 @@
             props:['id'],
             created (){
                 window.Raphael = Raphael; // our mapSvg plugin is stupid and outdated. need this hack to tie Raphael to window object (global variable)
-                this.$store.dispatch("getData", "promotions").then(response => {
-                    this.updateCurrentStore(this.id);
+                 this.$store.dispatch("getData", "promotions").then(response => {
+                    this.updateCurrentPromo(this.id);
+                }, error => {
+                  console.error("Could not retrieve data from server. Please check internet connection and try again.");
                 });
             },
             watch : {
