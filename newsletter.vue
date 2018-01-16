@@ -2,11 +2,6 @@
     <div class=" main_container" id="promotions_container"> <!-- for some reason if you do not put an outer container div this component template will not render -->
         <div class="margin_25_across padding_top_40">
             <div class="row">
-                <!--<div class="col-md-5">-->
-                <!--    <div class="col-md-12" v-if="currentPage">-->
-                <!--        <div class="description_text text_left" v-html="currentPage.body"></div>-->
-                <!--    </div>-->
-                <!--</div>-->
                 <div class="col-md-12 text-center">
                     <img style="margin-bottom:20px; max-width:100%;" src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512580269422/placeholder_contact_image.png" alt="plaza">
                 </div> 
@@ -29,21 +24,6 @@
                                 <span v-show="errors.has('email')" class="form-control-feedback">{{ errors.first('email') }}</span>
                             </div>
                         </div>
-                        <!--<div class="form-group">-->
-                        <!--    <div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('phone')}">-->
-                        <!--        <label class="label" for="phone">Phone</label>-->
-                        <!--        <input v-model="form_data.phone" v-validate="'required|alpha_dash'" class="form-control" :class="{'input': true}" name="phone" type="phone" placeholder="Phone" data-vv-delay="1000">-->
-                        <!--        <span v-show="errors.has('phone')" class="form-control-feedback">{{ errors.first('phone') }}</span>-->
-                        <!--    </div>-->
-                        <!--</div>-->
-                        <!--<div class="form-group">-->
-                        <!--    <div class="col-xs-12" :class="{'has-error': errors.has('message')}">-->
-                        <!--        <label class="label" for="message">Message</label>-->
-                        <!--        <input v-model="form_data.message" v-validate="'required|alpha_spaces'" class="form-control" :class="{'input': true}" name="message" type="text" placeholder="Message" data-vv-delay="1000">-->
-                        <!--        <span v-show="errors.has('message')" class="form-control-feedback">{{ errors.first('message') }}</span>-->
-                        <!--    </div>-->
-                        <!--</div>-->
-                    
                         <div class="form-group account-btn text-left m-t-10">
                             <div class="col-xs-12">
                                 <button class="animated_btn" type="submit" :disabled="formSuccess">Subscribe</button>
