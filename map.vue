@@ -3,7 +3,7 @@
         <div class="main_container">
             <div class="row">
                 <div class="select_container">
-                    <v-select :options="allStores" :placeholder="'Select A Store'" :searchable="false" :label="'name'" :on-change="dropPin"></v-select> 
+                    <v-select :options="allStores" :placeholder="'Select A Store'" :searchable="false" :label="'name'" :on-change="dropPin" id="mobile_alpha_list></v-select> 
                 </div>
                 <div class="col-sm-12">
                     <div class="map_container">
