@@ -1,5 +1,5 @@
 <template>
-    <div class=" main_container" id="events_container"><!-- for some reason if you do not put an outer container div this component template will not render -->
+    <div class=" main_container" id="jobs_container"><!-- for some reason if you do not put an outer container div this component template will not render -->
         <h3 class="promotion_heading" v-if="property">Start your Career at {{property.name}}</h3>
         <p class="exclusive_deals sub_title">Join our family of dedicated professionals!</p>
         <div class="row" v-for="(jobs,store_name) in allJobs">
