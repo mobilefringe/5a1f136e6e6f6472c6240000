@@ -206,9 +206,6 @@
                     'findCategoryById',
                     'findCategoryByName',
                 ]),
-                // property (){
-                //     return this.$store.getters.getProperty;
-                // },
                 getSVGurl () {
                     return "https://www.mallmaverick.com" + this.property.svgmap_url;
                     // return "//www.mallmaverick.com/system/site_images/photos/000/035/014/original/Canyon_Crest_-_Map.svg?1512066588";
@@ -225,27 +222,6 @@
                     console.log(cats);
                     return cats;
                 },
-                // storesByAlphaIndex() {
-                //     var stores = this.$store.getters.storesByAlphaIndex;
-                    
-                //     if (_.size(stores) <= 4) { 
-                //         this.breakIntoCol = false;
-                //     }
-                //     else {
-                //         this.breakIntoCol = true;
-                //     }
-                //     console.log(_.size(stores),"break?",this.breakIntoCol);
-                //     return stores;
-                // },
-                // storesByCategoryName() {
-                //   return this.$store.getters.storesByCategoryName;
-                // },
-                // findCategoryById () {
-                //     return this.$store.getters.findCategoryById;
-                // },
-                // findCategoryByName (){
-                //     return this.$store.getters.findCategoryByName;
-                // },
                 svgMapRef() {
                     return _.filter(this.$children, function(o) { return (o.$el.className == "svg-map") })[0];
                 }
