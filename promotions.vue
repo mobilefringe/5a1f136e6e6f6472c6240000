@@ -40,7 +40,7 @@
             template: template, // the variable template will be injected
             data: function() {
                 return {
-                    dataloaded: null
+                    dataloaded: false
                 }
             },
             created () {
