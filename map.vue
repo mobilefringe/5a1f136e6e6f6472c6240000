@@ -3,7 +3,7 @@
         <div class="main_container">
             <div class="row">
                 <div class="select_container">
-                    <v-select :options="mobileAlphabet" :placeholder="'Select Store A-Z'" :searchable="false" :on-change="filterStores" id="mobile_alpha_list"></v-select> 
+                    <v-select :options="mobileAlphabet" :placeholder="'Select Store'" :searchable="false" :on-change="filterStores" id="mobile_alpha_list"></v-select> 
                 </div>
                 <div class="col-sm-12">
                     <div class="map_container">
