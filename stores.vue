@@ -99,7 +99,7 @@
             },
             mounted () {
                 this.filteredStores = this.storesByAlphaIndex;// this.storesByAlphaIndex;
-                var total_stores;
+                // var total_stores;
                 // this.allMobileCategories;
                 // _.forEach(this.storesByAlphaIndex, function(value) {
                 //   console.log(value.length);
