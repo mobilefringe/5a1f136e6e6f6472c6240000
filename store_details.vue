@@ -168,7 +168,7 @@
                     _.forEach(this.currentStore.promotions, function(value, key) {
                         // console.log(vm.findPromoById(value));
                         var current_promo = vm.findPromoById(value);
-                        console.log("current_promo " + current_promo);
+                        console.log("current_promo " + current_promo.description);
                         current_promo.description_short = _.truncate(current_promo.description, {'length': 70});
                         if(current_promo.store !== null && current_promo.store !== undefined && _.includes(this.currentEvent.store.image_url, 'missing')) {
                         current_promo.store.image_url = "//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/jpeg/1515531874445/canyon_crest_default.jpg";
