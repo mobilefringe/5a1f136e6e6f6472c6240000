@@ -8,9 +8,9 @@
                 
                 <div class="col-sm-12">
                     <div class="map_container">
-                        <!--<div id="map" class="hidden_phone">-->
-                            <!--<img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1511892740000/Canyon Crest - Map-01.png" class="" alt="" style="max-height:100%">-->
-                        <!--</div>-->
+                        <div class="map_storelist hidden_phone">
+                            <v-select :options="allStores" :placeholder="'Select A Store'" :searchable="false" :label="'name'" :on-change="dropPin"></v-select> 
+                        </div>
                         <svg-map v-bind:svgMapUrl="getSVGurl"></svg-map>
                     </div>
                 </div>
