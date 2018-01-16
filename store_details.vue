@@ -176,7 +176,7 @@
                             current_promo.store = {};
                             current_promo.store.image_url = "//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/jpeg/1515531874445/canyon_crest_default.jpg";
                         }
-                                    
+                        console.log("promo",temp_promo);
                         temp_promo.push(current_promo);
                     });
                     _.forEach(this.currentStore.jobs, function(value, key) {
