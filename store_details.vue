@@ -161,7 +161,7 @@
                       }, 500);
                 },
                 currentStore : function (){
-                    console.log("currentStore is",this.currentStore );
+                    console.log("currentStore is: ",this.currentStore );
                     var vm = this;
                     var temp_promo = [];
                     var temp_job = [];
@@ -229,7 +229,6 @@
                 },
                 updateSVGMap (map) {
                     this.map = map;
-                    console.log("this",this);
                 },
                 dropPin () {
                     console.log(this.currentStore);
