@@ -5,9 +5,7 @@
                 <div class="select_container show_phone">
                     <v-select :options="allStores" :placeholder="'Select A Store'" :searchable="false" :label="'name'" :on-change="dropPin" id="mobile_alpha_list"></v-select> 
                 </div>
-                <div class="map_storelist hidden_phone">
-                        <v-select :options="allStores" :placeholder="'Select A Store'" :searchable="false" :label="'name'" :on-change="dropPin"></v-select> 
-                    </div>
+                
                 <div class="col-sm-12">
                     <div class="map_container">
                         <!--<div id="map" class="hidden_phone">-->
