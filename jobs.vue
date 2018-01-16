@@ -7,13 +7,13 @@
                     {{store_name}}
                 </h2>
             <div id="promos_container">
-                <div class="col-md-6 no_padding" v-for="promo in jobs" :data-cat="promo.cat_list">
+                <div class="col-sm-6 no_padding" v-for="promo in jobs" :data-cat="promo.cat_list">
                     <div class="promo_item cats_row is-table-row" v-if="promo">
-                        <div class="col-md-5 col-xs-4 no_padding">
+                        <div class="col-sm-5 col-xs-4 no_padding">
                             <img class="promo_store_image" v-if="promo.store" :src="promo.store.image_url" :alt="promo.name" />
                             <img class="promo_store_image" v-else src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/jpeg/1515531874445/canyon_crest_default.jpg" :alt="promo.name" />
                         </div>
-                        <div class="col-md-7  padding_tb_20">
+                        <div class="col-sm-7  padding_tb_20">
                             <router-link :to="'/jobs/'+promo.slug" class="">
                                 <h2 class="promo_list_name">{{promo.name}}</h2>
                             </router-link>
