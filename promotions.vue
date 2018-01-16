@@ -68,9 +68,6 @@
                     console.log("promos 2", promos);
                     return promos;
                 },
-                // timezone () {
-                //   return this.$store.getters.getTimezone;
-                // }
             },
         });
     });
