@@ -168,7 +168,6 @@
                     _.forEach(this.currentStore.promotions, function(value, key) {
                         // console.log(vm.findPromoById(value));
                         var current_promo = vm.findPromoById(value);
-                        console.log("current_promo " + current_promo.description);
                         current_promo.description_short = _.truncate(current_promo.description, {'length': 70});
                         if(current_promo.store !== null && current_promo.store !== undefined && _.includes(this.currentEvent.store.image_url, 'missing')) {
                         current_promo.store.image_url = "//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/jpeg/1515531874445/canyon_crest_default.jpg";
@@ -177,7 +176,7 @@
                             current_promo.store = {};
                             current_promo.store.image_url = "//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/jpeg/1515531874445/canyon_crest_default.jpg";
                         }
-                        // console.log("promo",temp_promo);
+                        console.log("promo",temp_promo);
                         temp_promo.push(current_promo);
                     });
                     _.forEach(this.currentStore.jobs, function(value, key) {
