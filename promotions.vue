@@ -59,7 +59,7 @@
                 promotions() {
                     //   return this.$store.getters.processedPromos;
                     var promos = this.processedPromos;
-                    console.log("promos 1", promos);
+                    console.log("promos 1", this.processedPromos);
                     // console.log(this);
                     promos.map(promo => {
                         if (promo.store != null && promo.store != undefined && _.includes(promo.store.image_url, 'missing'))
