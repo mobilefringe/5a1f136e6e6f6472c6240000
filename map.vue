@@ -3,7 +3,7 @@
         <div class="main_container">
             <div class="row">
                 <div class="select_container">
-                    <v-select :options="allStores" :placeholder="'Select A Store'" :searchable="false" :label="'name'" :on-change="dropPin" id="mobile_alpha_list></v-select> 
+                    <v-select :options="allStores" :placeholder="'Select A Store'" :searchable="false" :label="'name'" :on-change="dropPin" id="mobile_alpha_list"></v-select> 
                 </div>
                 <div class="col-sm-12">
                     <div class="map_container">
@@ -54,7 +54,7 @@
                     console.log(store);
                     this.svgMapRef.addMarker(store,'//codecloud.cdn.speedyrails.net/sites/589e308f6e6f641b9f010000/image/png/1484850466000/show_pin.png');
                     this.svgMapRef.setViewBox(store)
-                }
+                },
             },
             computed: {
                 ...Vuex.mapGetters([
