@@ -60,6 +60,7 @@
                 ...Vuex.mapGetters([
                     'property',
                     'timezone',
+                    'processedStores'
                 ]),
                 allStores() {
                     return this.processedStores;
