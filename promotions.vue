@@ -38,6 +38,11 @@
         Vue.use(Meta);
         return Vue.component("promos-component", {
             template: template, // the variable template will be injected
+            data: function() {
+                return {
+                    dataloaded: null
+                }
+            },
             created () {
                 this.$store.dispatch("getData", "promotions").then(response => {
                     this.updateCurrentPromo(this.id);
