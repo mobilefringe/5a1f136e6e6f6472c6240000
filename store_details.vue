@@ -214,10 +214,10 @@
             methods: {
                 loadData: async function() {
                     try {
-                        await this.$store.dispatch('initializeApi', {
-                            site: "canyoncrest",
-                            version: "v4"
-                        });
+                        // await this.$store.dispatch('initializeApi', {
+                        //     site: "canyoncrest",
+                        //     version: "v4"
+                        // });
                         // avoid making LOAD_META_DATA call for now as it will cause the entire Promise.all to fail since no meta data is set up.
                         let results = await Promise.all([this.$store.dispatch("promotions"), this.$store.dispatch("getData", "jobs")]);
                     } catch (e) {
