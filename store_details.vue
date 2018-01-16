@@ -147,6 +147,9 @@
                 }, error => {
                   console.error("Could not retrieve data from server. Please check internet connection and try again.");
                 });
+                this.loadData().then(response => {
+                    this.dataLoaded = true;
+                });
             },
             watch : {
                 map : function (){
@@ -216,7 +219,7 @@
                             version: "v4"
                         });
                         // avoid making LOAD_META_DATA call for now as it will cause the entire Promise.all to fail since no meta data is set up.
-                        let results = await Promise.all([this.$store.dispatch("INITIALIZE_LOCALE"), this.$store.dispatch("getData", "property"), this.$store.dispatch("getData", "hours"), this.$store.dispatch("getData", "stores")]);
+                        let results = await Promise.all([this.$store.dispatch("promotions"), this.$store.dispatch("getData", "jobs")]);
                     } catch (e) {
                         console.log("Error loading data: " + e.message);
                     }
