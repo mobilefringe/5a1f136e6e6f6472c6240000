@@ -188,9 +188,6 @@
                         this.filteredStores = sortedCats;
                     }
                     var position = $(".store_initial").offset().top;
-                    // 	$("body, html").animate({
-                    // 		scrollTop: position
-                    // 	} /* speed */ );
                     $('html, body').animate({
                 		scrollTop: position
                 	}, 500, 'linear');
