@@ -3,7 +3,7 @@
         <h3 class="promotion_heading">Up Coming Events & Promotions!</h3>
         <p class="exclusive_deals sub_title">Don’t miss our exclusive deals & events</p>
         <div class="row">
-            <div class="col-md-4" v-for="promo in promotions">
+            <div class="col-sm-4" v-for="promo in promotions">
                 <hr class="show_phone">
                 <div class="promo_list_container text_center">
                     <p class="top_promo_date">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
