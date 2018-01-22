@@ -156,7 +156,7 @@
                 }
             },
             methods: {
-                updateContactUsPage (id) {
+                updateContactUsPage () {
                     this.$store.dispatch('LOAD_PAGE_DATA', {
                         url: this.property.mm_host + "/pages/canyoncrest-contact.json"
                     }).then(response => {
