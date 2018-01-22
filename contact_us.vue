@@ -135,10 +135,6 @@
                     this.$router.replace({ name: '404'});
                 });
             },
-            mounted () {
-              console.log(this.hours);
-              console.log(this.holidayHours);
-            },
             watch: {
                 $route : function () {
                     console.log("$route",this.$route);
