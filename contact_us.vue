@@ -15,8 +15,7 @@
                 </div>
                 <div class="col-md-7 col-sm-7 hidden_phone">
                     <img style="margin-bottom:20px;" src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512580269422/placeholder_contact_image.png" alt="plaza">
-                </div> 
-                <!--<vue-datepicker-local v-model="time" type="inline"></vue-datepicker-local>-->
+                </div>
             </div>
             <hr/>
             <div class="row"> 
@@ -49,9 +48,6 @@
                                 <span v-show="errors.has('subject')" class="form-control-feedback">{{ errors.first('subject') }}</span>
                             </div>
                         </div>
-                        <!--<div class="form-group ">-->
-                            
-                        <!--</div>-->
                         <div class="form-group">
                             <div class="col-xs-12" :class="{'has-error': errors.has('message')}">
                                 <label class="label" for="message">Message</label>
