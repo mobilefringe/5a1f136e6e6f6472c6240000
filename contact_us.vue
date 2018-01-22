@@ -6,7 +6,7 @@
                     <div class="description_text text_left" v-html="leasingPage.body"></div>
                 </div>
             </div>
-            <hr class="padding_tb_20"/>
+            <hr class="margin_tb_20"/>
             <div class="row">
                 <div class="col-md-5 col-sm-5">
                     <div class="col-md-12" v-if="currentPage">
