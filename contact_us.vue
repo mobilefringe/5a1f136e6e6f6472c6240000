@@ -159,6 +159,12 @@
                 }
             },
             methods: {
+                updateLeasingInfo (id) {
+                    this.currentPromo = this.findPromoBySlug(id);
+                    if (this.currentPromo === null || this.currentPromo === undefined){
+                        this.$router.replace({ name: '404'});
+                    }
+                },
                 validateBeforeSubmit() {
                     this.$validator.validateAll().then((result) => {
                         if (result) {
