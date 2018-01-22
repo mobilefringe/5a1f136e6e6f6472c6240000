@@ -160,10 +160,18 @@
             },
             methods: {
                 updateLeasingInfo () {
-                    this.currentPromo = this.findPromoBySlug(id);
-                    if (this.currentPromo === null || this.currentPromo === undefined){
-                        this.$router.replace({ name: '404'});
-                    }
+                    this.$store.dispatch('LOAD_PAGE_DATA', {
+                        url: this.property.mm_host + "/pages/" + id + ".json"
+                    }).then(response => {
+                        // this.dataLoaded = true;
+                        this.currentPage = response.data;
+                        console.log(this.currentPage);
+                    }, error => {
+                        console.error("Could not retrieve data from server. Please check internet connection and try again.");
+                        this.$router.replace({
+                            name: '404'
+                        });
+                    });
                 },
                 validateBeforeSubmit() {
                     this.$validator.validateAll().then((result) => {
