@@ -94,7 +94,6 @@
                     formSuccess : false,
                     formError: false,
                     time: new Date(),
-                    currentPage: null
                 }
             },
             beforeRouteEnter (to, from, next) {
