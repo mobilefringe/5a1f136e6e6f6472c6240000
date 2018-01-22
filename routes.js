@@ -102,7 +102,7 @@ define([], function() {
                 path: '',
                 component: view('contact_us'),
                 name: 'contactUs',
-                props: true
+                
             }]
         },
         {
