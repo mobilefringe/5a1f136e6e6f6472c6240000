@@ -2,8 +2,8 @@
     <div class=" main_container" id="promotions_container"> <!-- for some reason if you do not put an outer container div this component template will not render -->
         <div class="margin_25_across padding_top_40">
             <div class="row">
-                <div class="col-sm-12" v-if="updateLeasingInfo">
-                    <div class="description_text text_left" v-html="updateLeasingInfo"></div>
+                <div class="col-sm-12" v-if="leasingPage">
+                    <div class="description_text text_left" v-html="leasingPage.body"></div>
                 </div>
                 <!--<div class="col-md-7 col-sm-7 hidden_phone">-->
                 <!--    <img style="margin-bottom:20px;" src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512580269422/placeholder_contact_image.png" alt="plaza">-->
