@@ -158,7 +158,7 @@
             methods: {
                 updateContactUsPage (id) {
                     this.$store.dispatch('LOAD_PAGE_DATA', {
-                        url: this.property.mm_host + "/pages/" + id + ".json"
+                        url: this.property.mm_host + "/pages/canyoncrest-contact.json"
                     }).then(response => {
                         // this.dataLoaded = true;
                         this.currentPage = response.data;
