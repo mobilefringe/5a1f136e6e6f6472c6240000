@@ -101,7 +101,8 @@ define([], function() {
             children: [{
                 path: '',
                 component: view('contact_us'),
-                name: 'contactUs'
+                name: 'contactUs',
+                props: true
             }]
         },
         {
