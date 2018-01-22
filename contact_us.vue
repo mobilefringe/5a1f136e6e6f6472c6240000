@@ -114,7 +114,7 @@
                     vm.$store.dispatch('LOAD_PAGE_DATA', {url:vm.property.mm_host + "/pages/canyoncrest-contact.json"}).then(response => {
                         
                         vm.currentPage = response.data;
-                        this.updateLeasingInfo()
+                        vm.updateLeasingInfo();
                         console.log(vm.currentPage);
                     }, error => {
                         console.error("Could not retrieve data from server. Please check internet connection and try again.");
