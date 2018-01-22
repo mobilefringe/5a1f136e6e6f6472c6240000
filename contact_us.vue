@@ -109,7 +109,7 @@
                 }
             },
             created(){
-               this.updateContactUsPage(this.id);
+               this.updateContactUsPage();
                this.updateLeasingInfo();
             },
             // beforeRouteEnter (to, from, next) {
