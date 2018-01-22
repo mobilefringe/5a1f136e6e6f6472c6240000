@@ -108,6 +108,7 @@
                     leasingPage: null
                 }
             },
+            props:['id'],
             created(){
                this.updateCurrentPage(this.id);
             },
