@@ -156,7 +156,7 @@
                 }
             },
             methods: {
-                updateCurrentPage (id) {
+                updateContactUsPage (id) {
                     this.$store.dispatch('LOAD_PAGE_DATA', {
                         url: this.property.mm_host + "/pages/" + id + ".json"
                     }).then(response => {
