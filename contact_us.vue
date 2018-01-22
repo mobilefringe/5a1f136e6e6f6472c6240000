@@ -139,6 +139,12 @@
               console.log(this.hours);
               console.log(this.holidayHours);
             },
+            watch: {
+                $route : function () {
+                    console.log("$route",this.$route);
+                    this.updateCurrentPage(this.$route.params.id);
+                }  
+            },
             computed: {
                 ...Vuex.mapGetters([
                     'property',
