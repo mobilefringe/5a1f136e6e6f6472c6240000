@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-md-5 col-sm-5">
                     <div class="col-md-12" v-if="currentPage">
-                        <div class="description_text text_left" v-html="currentPage.body"></div>
+                        <div class="description_text text_left" v-html="updateLeasingInfo.body"></div>
                     </div>
                 </div>
                 <div class="col-md-7 col-sm-7 hidden_phone">
@@ -12,7 +12,7 @@
                 </div> 
                 <!--<vue-datepicker-local v-model="time" type="inline"></vue-datepicker-local>-->
             </div>
-            <hr/>updateLeasingInfo
+            <hr/>
             <div class="row">
                 <div class="col-md-5 col-sm-5">
                     <div class="col-md-12" v-if="currentPage">
