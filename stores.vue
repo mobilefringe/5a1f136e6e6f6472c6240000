@@ -94,7 +94,6 @@
             created (){
                 window.Raphael = Raphael; // our mapSvg plugin is stupid and outdated. need this hack to tie Raphael to window object (global variable)
                 this.$store.dispatch("getData", "categories");
-                this.filteredStores = this.storesByAlphaIndex;
             },
             mounted () {
                 this.filteredStores = this.storesByAlphaIndex;
@@ -113,13 +112,6 @@
                     this.filteredByCategory(cat_id);
                 },
                 selected_alpha : function () {
-                    // var cat_id = null;
-                    // if(this.selected_alpha == "All"){
-                    //     cat_id = this.selected_cat;
-                    // }
-                    // else {
-                    //     cat_id= this.findCategoryByName(this.selected_alpha).id;
-                    // }
                     this.filterStores(this.selected_alpha);
                 }
             },
