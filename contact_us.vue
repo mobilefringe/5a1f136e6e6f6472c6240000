@@ -1,6 +1,6 @@
 <template>
     <div class=" main_container" id="promotions_container"> <!-- for some reason if you do not put an outer container div this component template will not render -->
-        <div class="margin_25_across padding_top_40">
+        <div class="margin_25_across">
             <h2 class="all_caps">Leasing </h2>
             <div class="row">
                 <div class="col-sm-12" v-if="leasingPage">
