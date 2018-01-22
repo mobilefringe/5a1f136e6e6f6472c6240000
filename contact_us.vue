@@ -145,7 +145,6 @@
                 ...Vuex.mapGetters([
                     'property',
                     'timezone',
-                    'processedJobs'
                 ]),
                 // timezone () {
                 //   return this.$store.getters.getTimezone;
