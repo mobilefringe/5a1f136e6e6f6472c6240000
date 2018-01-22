@@ -146,26 +146,6 @@
                     'property',
                     'timezone',
                 ]),
-                // timezone () {
-                //   return this.$store.getters.getTimezone;
-                // },
-                // property (){
-                //     return this.$store.getters.getProperty;
-                // },
-                // hours () {
-                //     return this.$store.getters.getPropertyHours;
-                // },
-                // holidayHours () {
-                //     return this.$store.getters.getPropertyHolidayHours;
-                // },
-                // reducedHolidays () {
-                //     var holidayHours = this.holidayHours;
-                //     return _.filter(holidayHours, function(o) { return !o.is_closed; });
-                // },
-                // closeHolidays () {
-                //     var holidayHours = this.holidayHours;
-                //     return _.filter(holidayHours, function(o) { return o.is_closed; });
-                // },
                 rannumber () {
                     var rannumber='';
                     for(ranNum=1; ranNum<=6; ranNum++){
