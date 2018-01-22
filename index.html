@@ -23,7 +23,7 @@
                     
                     <ul>
                         <li v-for="item in menu_items">
-                            <a v-if="item.id='magazine_link'"></a>
+                            <a v-if="item.id=='magazine_link'"></a>
                             <router-link :to="item.href" :id="item.id" class="all_caps">{{item.name}} </router-link>
                             
                         </li>
