@@ -1,6 +1,7 @@
 <template>
     <div class=" main_container" id="promotions_container"> <!-- for some reason if you do not put an outer container div this component template will not render -->
         <div class="margin_25_across padding_top_40">
+            <hr/>
             <div class="row">
                 <div class="col-md-5 col-sm-5">
                     <div class="col-md-12" v-if="currentPage">
