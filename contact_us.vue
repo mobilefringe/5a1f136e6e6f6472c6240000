@@ -110,7 +110,7 @@
             },
             props:['id'],
             created(){
-               this.updateCurrentPage(this.id);
+               this.updateContactUsPage(this.id);
             },
             // beforeRouteEnter (to, from, next) {
             //     next(vm => {
