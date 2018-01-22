@@ -111,6 +111,7 @@
             props:['id'],
             created(){
                this.updateContactUsPage(this.id);
+               this.updateLeasingInfo();
             },
             // beforeRouteEnter (to, from, next) {
             //     next(vm => {
