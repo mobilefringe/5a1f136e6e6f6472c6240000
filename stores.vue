@@ -96,9 +96,6 @@
                 this.$store.dispatch("getData", "categories");
                 this.filteredStores = this.storesByAlphaIndex;
             },
-            mounted () {
-                this.filteredStores = this.storesByAlphaIndex;
-            },
             watch : {
                 selected_cat : function () {
                     var cat_id = null;
