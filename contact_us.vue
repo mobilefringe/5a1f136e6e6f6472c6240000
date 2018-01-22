@@ -94,6 +94,7 @@
                     formSuccess : false,
                     formError: false,
                     time: new Date(),
+                    leasingPage: null
                 }
             },
             beforeRouteEnter (to, from, next) {
