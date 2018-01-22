@@ -180,7 +180,7 @@
                         // console.log(sortedCats);
                         this.filteredStores = sortedCats;
                     }
-                    var position = $(".store_initial").offset().top;
+                    var position = $(".alpha_list").offset().top;
                     $('html, body').animate({
                 		scrollTop: position
                 	}, 500, 'linear');
