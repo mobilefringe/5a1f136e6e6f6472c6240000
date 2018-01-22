@@ -161,7 +161,7 @@
             methods: {
                 updateLeasingInfo () {
                     this.$store.dispatch('LOAD_PAGE_DATA', {
-                        url: this.property.mm_host + "/pages/" + id + ".json"
+                        url: this.property.mm_host + "/pages/canyoncrest-leasing-info.json"
                     }).then(response => {
                         // this.dataLoaded = true;
                         this.currentPage = response.data;
