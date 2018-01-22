@@ -96,17 +96,7 @@
                 this.$store.dispatch("getData", "categories");
             },
             mounted () {
-                this.filteredStores = this.storesByAlphaIndex;// this.storesByAlphaIndex;
-                // var total_stores;
-                // this.allMobileCategories;
-                // _.forEach(this.storesByAlphaIndex, function(value) {
-                //   console.log(value.length);
-                //   total_stores = _.add(value.length,total_stores);
-                // });
-                // console.log(total_stores);
-                // var x = 
-                
-                // console.log(x);
+                this.filteredStores = this.storesByAlphaIndex;
             },
             watch : {
                 selected_cat : function () {
