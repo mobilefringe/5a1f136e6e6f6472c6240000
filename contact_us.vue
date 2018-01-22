@@ -108,7 +108,6 @@
                     leasingPage: null
                 }
             },
-            props:['id'],
             created(){
                this.updateContactUsPage(this.id);
                this.updateLeasingInfo();
