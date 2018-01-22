@@ -10,7 +10,7 @@
             <hr class="margin_tb_20"/>
             <div class="row">
                 <div class="col-md-5 col-sm-5">
-                    <div class="col-md-12" v-if="currentPage">
+                    <div  v-if="currentPage">
                         <div class="description_text text_left" v-html="currentPage.body"></div>
                     </div>
                 </div>
