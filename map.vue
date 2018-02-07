@@ -70,7 +70,7 @@
                     // return "//www.mallmaverick.com/system/site_images/photos/000/035/014/original/Canyon_Crest_-_Map.svg?1512066588";
                 },
                 svgMapRef() {
-                    return _.filter(this.$children, function(o) { return (o.$el.className == "svg-map") })[0];
+                    return this.$refs.svgRef;//_.filter(this.$children, function(o) { return (o.$el.className == "svg-map") })[0];
                 },
                 regions () {
                     var regions = {}
