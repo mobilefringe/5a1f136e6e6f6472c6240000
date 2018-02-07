@@ -10,7 +10,7 @@
                     <div class="map_container">
                         <div class="map_storelist hidden_phone">
                             <v-select :options="allStores" :placeholder="'Select A Store'" :searchable="false" :label="'name'" :on-change="dropPin"></v-select>                         </div>
-                        <svg-map v-bind:svgMapUrl="getSVGurl"></svg-map>
+                        <svg-map ref="svgMap" v-bind:svgMapUrl="getSVGurl"></svg-map>
                     </div>
                 </div>
             </div>
