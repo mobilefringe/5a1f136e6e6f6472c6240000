@@ -60,7 +60,7 @@
                    {{currentStore.name}} Hours
                 </h2>
                 <div id="promos_container">
-                    <div class="col-md-6 col-sm-6 no_padding" v-for="hour in storeHours" :data-cat="promo.cat_list">
+                    <div class="col-md-6 col-sm-6 no_padding" v-for="hour in storeHours">
                         <div class="promo_item cats_row is-table-row">
                             <!--<div class="col-md-5 col-xs-4 no_padding">-->
                             <!--    <img class="promo_store_image" :src="promo.store.image_url" :alt="promo.name" />-->
