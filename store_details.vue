@@ -55,7 +55,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12 promo_item" id="promos_main" v-if="currentStore && currentStore.total_published_promos > 0">
+            <div class="col-md-12 promo_item" id="promos_main"  v-if="storeHours.length > 0 ">
                 <h2 class="store_details_promo_heading sub_title">
                    {{currentStore.name}} Hours
                 </h2>
