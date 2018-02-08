@@ -62,7 +62,7 @@
                 <div id="promos_container">
                     <div class="col-md-6 col-sm-6 no_padding" v-for="hour in storeHours">
                         <span class="col-xs-6 text-left">{{hour.day_of_week | moment("dddd", timezone)}}</span>
-								<span class="col-xs-6 text-left">{{hour.open_time | moment("h A", timezone)}} - {{hour.close_time | moment("h A", timezone)}}</span>
+						<span class="col-xs-6 text-left">{{hour.open_time | moment("h A", timezone)}} - {{hour.close_time | moment("h A", timezone)}}</span>
                         <!--<div class="promo_item cats_row is-table-row">-->
                             <!--<div class="col-md-5 col-xs-4 no_padding">-->
                             <!--    <img class="promo_store_image" :src="promo.store.image_url" :alt="promo.name" />-->
