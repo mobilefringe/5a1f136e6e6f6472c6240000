@@ -59,7 +59,7 @@
                 <h2 class="store_details_promo_heading sub_title">
                    {{currentStore.name}} Hours
                 </h2>
-                <div id="promos_container" class="col-sm-6">
+                <div id="promos_container" class="col-sm-6 no_padding">
                     <div class="no_padding" v-for="hour in storeHours">
                         <span class="col-xs-6 text-left">{{hour.day_of_week | moment("dddd", timezone)}}</span>
 						<span class="col-xs-6 text-left">{{hour.open_time | moment("h A", timezone)}} - {{hour.close_time | moment("h A", timezone)}}</span>
