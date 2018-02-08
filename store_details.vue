@@ -32,8 +32,7 @@
             </div>
             <div class="row is-table-row" style="width:100%;">
                 <div class="col-md-8 col-sm-8 ">
-                            <div class="store_details_desc hidden_phone">{{currentStore.description}}</div>
-                      
+                    <div class="store_details_desc hidden_phone">{{currentStore.description}}</div>
                 </div>
                 <div class="col-md-4 col-sm-4">
                     <div class="side_stores">
@@ -56,6 +55,34 @@
             </div>
         </div>
         <div class="row">
+            <div class="col-md-12 promo_item" id="promos_main" v-if="currentStore && currentStore.total_published_promos > 0">
+                <h2 class="store_details_promo_heading sub_title">
+                   {{currentStore.name}} Hours
+                </h2>
+                <div id="promos_container">
+                    <div class="col-md-6 col-sm-6 no_padding" v-for="hour in storeHours" :data-cat="promo.cat_list">
+                        <div class="promo_item cats_row is-table-row">
+                            <!--<div class="col-md-5 col-xs-4 no_padding">-->
+                            <!--    <img class="promo_store_image" :src="promo.store.image_url" :alt="promo.name" />-->
+                            <!--</div>-->
+                            <div class="col-md-7 padding_tb_20">
+                                <!--<router-link :to="'/promotions/'+promo.slug" class="">-->
+                                <!--    <h2 class="promo_list_name">{{promo.name}}</h2>-->
+                                <!--</router-link>-->
+                                <!--<p>-->
+                                <!--    <span class="promo_dates sub_title">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</span>-->
+                                <!--</p>-->
+                                <!--<div class="promo_list_desc hidden_phone">{{promo.description_short }}</div>-->
+                                <!--<div class="text_center position_relative hidden_phone">-->
+                                <!--    <router-link :to="'/promotions/'+promo.slug" class="animated_btn text_center">Read More</router-link>-->
+                                <!--</div>-->
+                                <span class="col-xs-6 text-left">{{hour.day_of_week | moment("dddd", timezone)}}</span>
+								<span class="col-xs-6 text-left">{{hour.open_time | moment("h A", timezone)}} - {{hour.close_time | moment("h A", timezone)}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="col-md-12 promo_item" id="promos_main" v-if="currentStore && currentStore.total_published_promos > 0">
                 <h2 class="store_details_promo_heading sub_title">
                     <!--<img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456507166000/promo_icon.png" class="" alt="promo icon">-->
@@ -111,7 +138,6 @@
         </div>
     </div>
 </template>
-
 <script>
     define(["Vue","vuex", "jquery", "Raphael", "mm_mapsvg","mousewheel","vue!svg-map", "vue2-filters"], function(Vue, Vuex, $, Raphael, mapSvg,mousewheel,SVGMapComponent, Vue2Filters) {
         return Vue.component("store-details-component", {
@@ -121,7 +147,8 @@
                     currentStore: null,
                     promotions : [],
                     jobs:[],
-                    map: null
+                    map: null,
+                    storeHours :[]
                 }
             },
             props:['id'],
@@ -139,9 +166,12 @@
                     setTimeout(function () {
                         console.log(this);
                         vm.dropPin();
-                      }, 500);
+                    }, 500);
                 },
                 currentStore : function (){
+                    if ( _.includes(this.currentStore.store_front_url_abs, 'missing')) {
+                        this.currentStore.store_front_url_abs = "//codecloud.cdn.speedyrails.net/sites/5a6a54eb6e6f647da51e0100/image/png/1516652189884/ES_logo_red2.png";
+                    }
                     console.log("currentStore is: ",this.currentStore );
                     var vm = this;
                     var temp_promo = [];
@@ -172,6 +202,19 @@
                     this.promotions = temp_promo;
                     this.jobs = temp_job;
                     console.log("promos",this.promotions);
+                    var storeHours = [];
+                    var vm = this;
+                    _.forEach(this.currentStore.store_hours, function (value, key) {
+                        var hour = vm.findHourById(value);
+                        if(hour.day_of_week === 0){
+                            hour.order = 7;
+                        }
+                        else {
+                            hour.order = hour.day_of_week;
+                        }
+                        storeHours.push(hour);
+                    });
+                    this.storeHours = _.sortBy(storeHours, [function(o) { return o.order; }]);
                 },
                 $route : function () {
                     this.updateCurrentStore(this.$route.params.id);
@@ -185,6 +228,7 @@
                     'findStoreBySlug',
                     'findPromoById',
                     'findJobById',
+                    'findHourById'
                 ]),
                 getSVGurl () {
                     return "https://www.mallmaverick.com" + this.property.svgmap_url;
