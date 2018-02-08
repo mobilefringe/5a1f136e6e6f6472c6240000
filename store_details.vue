@@ -61,11 +61,13 @@
                 </h2>
                 <div id="promos_container">
                     <div class="col-md-6 col-sm-6 no_padding" v-for="hour in storeHours">
-                        <div class="promo_item cats_row is-table-row">
+                        <span class="col-xs-6 text-left">{{hour.day_of_week | moment("dddd", timezone)}}</span>
+								<span class="col-xs-6 text-left">{{hour.open_time | moment("h A", timezone)}} - {{hour.close_time | moment("h A", timezone)}}</span>
+                        <!--<div class="promo_item cats_row is-table-row">-->
                             <!--<div class="col-md-5 col-xs-4 no_padding">-->
                             <!--    <img class="promo_store_image" :src="promo.store.image_url" :alt="promo.name" />-->
                             <!--</div>-->
-                            <div class="col-md-7 padding_tb_20">
+                            <!--<div class="col-md-7 padding_tb_20">-->
                                 <!--<router-link :to="'/promotions/'+promo.slug" class="">-->
                                 <!--    <h2 class="promo_list_name">{{promo.name}}</h2>-->
                                 <!--</router-link>-->
@@ -76,10 +78,9 @@
                                 <!--<div class="text_center position_relative hidden_phone">-->
                                 <!--    <router-link :to="'/promotions/'+promo.slug" class="animated_btn text_center">Read More</router-link>-->
                                 <!--</div>-->
-                                <span class="col-xs-6 text-left">{{hour.day_of_week | moment("dddd", timezone)}}</span>
-								<span class="col-xs-6 text-left">{{hour.open_time | moment("h A", timezone)}} - {{hour.close_time | moment("h A", timezone)}}</span>
-                            </div>
-                        </div>
+                                
+                            <!--</div>-->
+                        <!--</div>-->
                     </div>
                 </div>
             </div>
