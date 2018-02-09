@@ -119,7 +119,9 @@
                     </div>
                 </section>
                 
-                <router-view></router-view>
+                <transition name="custom-classes-transition" enter-active-class="fadeIn">
+					<router-view class="content" :locale="locale"></router-view>
+				</transition>
                 
                 <section class="content_container desktop_footer hidden_phone">
                     <div class="newsletter_container text-center main_container" v-show="show_subscrption" style="margin-bottom: 60px;">
