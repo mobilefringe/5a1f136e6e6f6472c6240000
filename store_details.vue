@@ -75,7 +75,8 @@
                                     <h2 class="promo_list_name">{{promo.name}}</h2>
                                 </router-link>
                                 <p>
-                                    <span class="promo_dates sub_title" v-if="promo.is_closed"> Closed</span>{{promo.is_closed}}imezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</span>
+                                    <span class="promo_dates sub_title" v-if="promo.is_closed"> Closed</span>{{promo.is_closed}}
+                                    <span class="promo_dates sub_title" v-else>{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</span>
                                 </p>
                                 <div class="promo_list_desc hidden_phone">{{promo.description_short }}</div>
                                 <div class="text_center position_relative hidden_phone">
