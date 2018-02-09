@@ -12,8 +12,9 @@
         <link rel="stylesheet" href="/style.css">
     </head>
     <body>
-        <div id="app" v-cloak v-if="dataLoaded">
+        <div id="app" v-cloak>
             <loader v-if="!dataLoaded"></loader>
+            <div  v-if="dataLoaded"></div>
             <transition name="custom-classes-transition" enter-active-class="animated slideInDown" leave-active-class="animated slideOutUp">
             <div class="mobile_menu_container" v-show="show_mobile_menu">
                 <div class="opened_mobile_menu" >
