@@ -68,7 +68,6 @@
             </div>
             <div class="col-md-12 promo_item" id="promos_main" v-if="currentStore && currentStore.total_published_promos > 0">
                 <h2 class="store_details_promo_heading sub_title">
-                    <!--<img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456507166000/promo_icon.png" class="" alt="promo icon">-->
                     {{currentStore.name}} Promotions
                 </h2>
                 <div id="promos_container">
