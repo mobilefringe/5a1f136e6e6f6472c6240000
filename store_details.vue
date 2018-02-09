@@ -63,24 +63,6 @@
                     <div class="no_padding" v-for="hour in storeHours">
                         <span class="col-xs-6 text-left">{{hour.day_of_week | moment("dddd", timezone)}}</span>
 						<span class="col-xs-6 text-left">{{hour.open_time | moment("h A", timezone)}} - {{hour.close_time | moment("h A", timezone)}}</span>
-                        <!--<div class="promo_item cats_row is-table-row">-->
-                            <!--<div class="col-md-5 col-xs-4 no_padding">-->
-                            <!--    <img class="promo_store_image" :src="promo.store.image_url" :alt="promo.name" />-->
-                            <!--</div>-->
-                            <!--<div class="col-md-7 padding_tb_20">-->
-                                <!--<router-link :to="'/promotions/'+promo.slug" class="">-->
-                                <!--    <h2 class="promo_list_name">{{promo.name}}</h2>-->
-                                <!--</router-link>-->
-                                <!--<p>-->
-                                <!--    <span class="promo_dates sub_title">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</span>-->
-                                <!--</p>-->
-                                <!--<div class="promo_list_desc hidden_phone">{{promo.description_short }}</div>-->
-                                <!--<div class="text_center position_relative hidden_phone">-->
-                                <!--    <router-link :to="'/promotions/'+promo.slug" class="animated_btn text_center">Read More</router-link>-->
-                                <!--</div>-->
-                                
-                            <!--</div>-->
-                        <!--</div>-->
                     </div>
                 </div>
             </div>
