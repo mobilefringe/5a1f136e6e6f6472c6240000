@@ -56,7 +56,7 @@
                 <div id="promos_container" class="col-sm-6 no_padding">
                     <div class="no_padding" v-for="hour in storeHours">
                         <span class="col-xs-6 text-left">{{hour.day_of_week | moment("dddd", timezone)}}</span>
-                        <span v-if="hour.is_closed"></span>
+                        <span v-if="hour.is_closed">Closed</span>
 						<span v-else class="col-xs-6 text-left">{{hour.open_time | moment("h A", timezone)}} - {{hour.close_time | moment("h A", timezone)}}</span>
                     </div>
                 </div>
