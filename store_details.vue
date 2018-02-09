@@ -94,7 +94,6 @@
             </div>
             <div class="col-md-12 promo_item" id="jobs_main" v-if="currentStore && currentStore.total_published_jobs > 0">
                 <h2 class="store_details_promo_heading sub_title">
-                    <!--<img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456507192000/jobs_icon.png" class="" alt="jobs icon">-->
                     {{currentStore.name}} Jobs
                 </h2>
                 <div id="jobs_container">
