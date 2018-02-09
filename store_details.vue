@@ -42,10 +42,7 @@
                         <br v-if="currentStore.phone"/>
                         <br/>
                         <div class="store_header_btns animated_btn" v-if="currentStore.website">
-                            <a :href="currentStore.website" target="_blank" >Visit Store Website  <i class="fa fa-globe"></i>
-                            <!--<img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512504093874/web_icon.png" class="" alt="">-->
-                                
-                            </a>
+                            <a :href="currentStore.website" target="_blank" >Visit Store Website  <i class="fa fa-globe"></i></a>
                         </div>
                     </div>
                 </div> 
