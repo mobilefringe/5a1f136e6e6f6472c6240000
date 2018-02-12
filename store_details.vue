@@ -53,7 +53,7 @@
                 <h2 class="store_details_promo_heading sub_title">
                    {{currentStore.name}} Hours
                 </h2>
-                <div id="promos_container" class="col-sm-6 no_padding">
+                <div id="promos_container" class="col-sm-6 no_padding" style="color:#424242">
                     <div class="no_padding" v-for="hour in storeHours">
                         <span class="col-xs-4 text-left" style="padding-top:3px;">{{hour.day_of_week | moment("dddd", timezone)}}</span>
                         <span v-if="hour.is_closed" class="col-xs-6 text-left" style="padding-top:3px;">Closed</span>
