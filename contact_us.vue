@@ -1,7 +1,7 @@
 <template>
     <div class=" main_container" id="promotions_container"> <!-- for some reason if you do not put an outer container div this component template will not render -->
         <div class="margin_25_across">
-            <h3 class="all_caps">Leasing Info</h3>
+            <h3 class="all_caps leasing_title">Leasing Info</h3>
             <div class="row">
                 <div class="col-sm-12" v-if="leasingPage">
                     <div class="description_text text_left" v-html="leasingPage.body"></div>
