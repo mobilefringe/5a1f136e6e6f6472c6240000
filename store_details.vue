@@ -137,13 +137,13 @@
                 });
             },
             watch : {
-                map : function (){
-                    var vm = this;
-                    setTimeout(function () {
-                        console.log(this);
-                        vm.dropPin();
-                    }, 500);
-                },
+                // map : function (){
+                //     var vm = this;
+                //     setTimeout(function () {
+                //         console.log(this);
+                //         vm.dropPin();
+                //     }, 500);
+                // },
                 currentStore : function (){
                     if ( _.includes(this.currentStore.store_front_url_abs, 'missing')) {
                         this.currentStore.store_front_url_abs = "//codecloud.cdn.speedyrails.net/sites/5a6a54eb6e6f647da51e0100/image/png/1516652189884/ES_logo_red2.png";
@@ -230,7 +230,7 @@
                 },
                 updateSVGMap (map) {
                     this.map = map;
-                    console.log("map is loaded")
+                    
                 },
                 dropPin () {
                     console.log("this.currentStore.svgmap_region", this.currentStore.svgmap_region);
