@@ -194,7 +194,7 @@
                 },
                 $route : function () {
                     this.updateCurrentStore(this.$route.params.id);
-                    this.svgRef.destroyMap();
+                    this.svgMapRef.destroyMap();
                 }
             },
             computed: {
