@@ -195,6 +195,7 @@
                 $route : function () {
                     this.svgMapRef.destroyMap();
                     this.updateCurrentStore(this.$route.params.id);
+                    this.svgMapRef.init();
                 }
             },
             computed: {
