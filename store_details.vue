@@ -18,7 +18,7 @@
                     </a>
                 </div>
             </div>
-            <div class="row is-table-row" style="width:100%;">
+            <div class="row" style="width:100%;">
                 <div class="col-md-8 col-sm-8  col-xs-12">
                     <div id="map">
                         <svg-map ref="svgRef" @updateMap="updateSVGMap" :svgMapUrl="getSVGurl" :zoomLimit="[0,20]"></svg-map>
