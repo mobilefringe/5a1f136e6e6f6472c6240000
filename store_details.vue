@@ -239,7 +239,8 @@
                 }   
             },
             beforeDestroy: function() {
-                this.map.destroy();
+                this.svgMapRef.destroyMap();
+                console.log(this.svgMapRef);
                 console.log("Destroyed!");
             }
         });
