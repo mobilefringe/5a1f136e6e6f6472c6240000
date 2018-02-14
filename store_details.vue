@@ -230,6 +230,7 @@
                 },
                 updateSVGMap (map) {
                     this.map = map;
+                    console.log("map is loaded")
                 },
                 dropPin () {
                     console.log("this.currentStore.svgmap_region", this.currentStore.svgmap_region);
