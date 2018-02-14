@@ -193,8 +193,6 @@
                     this.storeHours = _.sortBy(storeHours, [function(o) { return o.order; }]);
                 },
                 $route : function () {
-                    this.svgMapRef.destroyMap();
-                    console.log(this.svgMapRef);
                     this.updateCurrentStore(this.$route.params.id);
                 }
             },
