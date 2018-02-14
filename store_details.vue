@@ -238,11 +238,6 @@
                     this.svgMapRef.setViewBox(this.currentStore)
                 }   
             },
-            beforeDestroy: function() {
-                this.svgMapRef.destroyMap();
-                console.log(this.svgMapRef);
-                console.log("Destroyed!");
-            }
         });
     });
 </script>
