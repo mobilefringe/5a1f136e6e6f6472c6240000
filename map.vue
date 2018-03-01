@@ -29,7 +29,7 @@
 </style>
 
 <script>
-    define(["Vue","vuex", "jquery", "Raphael", "mm_mapsvg","mousewheel", "vue!svg-map"], function(Vue, Vuex, $, Raphael, mapSvg,mousewheel,SVGMapComponent, MapplicComponent) {
+    define(["Vue","vuex", "jquery", "Raphael", "mm_mapsvg","mousewheel", "vue!svg-map", "vue!mapplic-map"], function(Vue, Vuex, $, Raphael, mapSvg,mousewheel,SVGMapComponent, MapplicComponent) {
         return Vue.component("map-component", {
             template: template, // the variable template will be injected
             data: function() {
