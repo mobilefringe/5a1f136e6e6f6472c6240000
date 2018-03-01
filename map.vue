@@ -12,6 +12,9 @@
                             <v-select :options="allStores" :placeholder="'Select A Store'" :searchable="false" :label="'name'" :on-change="dropPin"></v-select>                         </div>
                         <svg-map ref="svgRef" v-bind:svgMapUrl="getSVGurl" :regions="regions"></svg-map>
                     </div>
+                    <div>
+                        <mapplic-map ref="mapplic_ref" :height="700" :minimap= "true" :deeplinking="false" :sidebar="false" :hovertip="true" :maxscale= "5" :storelist="allStores" :floorlist="floorList"></mapplic-map>
+                    </div>
                 </div>
             </div>
             
