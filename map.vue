@@ -13,7 +13,7 @@
                         <svg-map ref="svgRef" v-bind:svgMapUrl="getSVGurl" :regions="regions"></svg-map>
                     </div>
                     <div>
-                        <mapplic-map ref="mapplic_ref" :height="700" :minimap= "true" :deeplinking="false" :sidebar="false" :hovertip="true" :maxscale= "5" :storelist="allStores" :floorlist="floorList"></mapplic-map>
+                        <mapplic-map ref="mapplic_ref" :height="700" :minimap= "false" :deeplinking="false" :sidebar="false" :hovertip="true" :maxscale= "5" :storelist="allStores" :floorlist="floorList"></mapplic-map>
                     </div>
                 </div>
             </div>
