@@ -22,7 +22,7 @@
                 <div class="col-md-8 col-sm-8  col-xs-12">
                     <div id="map">
                         <!--<svg-map ref="svgRef" @updateMap="updateSVGMap" :svgMapUrl="getSVGurl" :zoomLimit="[0,20]" :colours="{selected: '#b0931c',hover:'#c3a11f'}" :zoomButtons="{show: true,location: 'right' }"></svg-map>-->
-                        <mapplic-map ref="mapplic_ref" :height="500" :minimap= "false" :deeplinking="false" :sidebar="false" :hovertip="true" :maxscale= "5" :storelist="allStores" :floorlist="floorList" :svgWidth="2000" :svgHeight="2000" tooltiplabel="Info"></mapplic-map>
+                        <mapplic-map ref="mapplic_ref" :height="500" :minimap= "false" :deeplinking="false" :sidebar="false" :hovertip="true" :maxscale= "5" :storelist="allStores" :floorlist="floorList" :svgWidth="2000" :svgHeight="2000" tooltiplabel="Info" :landmark=""></mapplic-map>
                     </div>
                     
                 </div>
