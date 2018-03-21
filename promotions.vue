@@ -66,10 +66,10 @@
                         if (promo.store != null && promo.store != undefined && _.includes(promo.store.store_front_url_abs, 'missing')) {
                             promo.store.store_front_url_abs = vm.property.default_logo_url;
                         }
-                        else if (value.store == null || value.store == undefined) {
-                                value.store = {};
-                                value.store.store_front_url_abs =  vm.property.default_logo_url;
-                            }
+                        else if (promo.store == null || promo.store == undefined) {
+                            promo.store = {};
+                            promo.store.store_front_url_abs =  vm.property.default_logo_url;
+                        }
                     });
                     console.log("promos 2", promos);
                     return promos;
