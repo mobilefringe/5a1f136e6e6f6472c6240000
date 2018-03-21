@@ -2,7 +2,7 @@
     <div class=" main_container" id="promotions_container"> <!-- for some reason if you do not put an outer container div this component template will not render -->
         <div class="margin_25_across padding_top_40">
             <div class="row">
-            <div class="col-sm-5 contact_contents padding_top_20">
+                <div class="col-sm-5 contact_contents padding_top_20">
                     <form class="form-horizontal" action="form-submit" @submit.prevent="validateBeforeSubmit">
                         <div class="form-group ">
                             <div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('name')}">
