@@ -64,11 +64,11 @@
                     var vm= this;
                     promos.map(promo => {
                         if (promo.store != null && promo.store != undefined && _.includes(promo.store.image_url, 'missing')) {
-                            promo.store.image_url = vm.property.default_logo_url;
+                            promo.store.store_front_url_abs = vm.property.default_logo_url;
                         }
                         else if (value.store == null || value.store == undefined) {
                                 value.store = {};
-                                value.store.image_url =  vm.property.default_logo_url;
+                                value.store.store_front_url_abs =  vm.property.default_logo_url;
                             }
                     });
                     console.log("promos 2", promos);
