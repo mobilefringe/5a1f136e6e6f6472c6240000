@@ -13,7 +13,7 @@
                     There was an error when trying to submit your request. Please try again later.
                 </div>
                 <div class="col-sm-5 contact_contents padding_top_20">
-                    <form class="form-horizontal" action="form-submit" @submit.prevent="validateBeforeSubmit">
+                    <form class="form-horizontal" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A6C853307DE1968F369EC40BE733D4D5F8458A5E09D247F6F2E7016EB4DAFD16534D29AAD20BB67ACEC9E0FEFEEEEA5A2" @submit.prevent="validateBeforeSubmit">
                         <div class="form-group ">
                             <div class="col-sm-12 col-xs-12" :class="{'has-error': errors.has('name')}">
                                 <label class="label" for="name">Name</label>
