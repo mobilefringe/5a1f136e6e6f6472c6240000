@@ -164,7 +164,7 @@
                         console.log(this.leasingPage);
                     }, error => {
                         console.error("Could not retrieve data from server. Please check internet connection and try again.");
-                        this.$router.replace('/');
+                        // this.$router.replace('/');
                     });
                 },
                 validateBeforeSubmit() {
