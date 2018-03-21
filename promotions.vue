@@ -63,7 +63,7 @@
                     // console.log(this);
                     var vm= this;
                     promos.map(promo => {
-                        if (promo.store != null && promo.store != undefined && _.includes(promo.store.image_url, 'missing')) {
+                        if (promo.store != null && promo.store != undefined && _.includes(promo.store.store_front_url_abs, 'missing')) {
                             promo.store.store_front_url_abs = vm.property.default_logo_url;
                         }
                         else if (value.store == null || value.store == undefined) {
