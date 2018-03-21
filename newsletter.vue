@@ -91,35 +91,33 @@
                 ])
             },
             methods: {
-                validateBeforeSubmit() {
+                validateBeforeSubmit(form) {
                     this.$validator.validateAll().then((result) => {
                         if (result) {
                             let errors = this.errors;
-                            console.log("sending form data", this.form_data);
-                            send_data = {};
-                            send_data.url = this.property.mm_host + '/api/v1/contact_us'; // replace with campaign monitor or other newsletter url
-                            send_data.form_data = this.form_data;
-                            this.$store.dispatch("POST_TO_MM", send_data).then(res => {
-                                // this.$router.replace({
-                                //     name: 'home'
-                                // })
-                                this.formSuccess = true;
-                            }).catch(error => {
-                                try {
-                                    if (error.response.status == 401) {
-                                        console.log("Data load error: " + error.message);
-                                        this.formError = true;
-                                    } 
-                                    else {
-                                        console.log("Data load error: " + error.message);
-                                        this.formError = true;
+                            
+                            if(errors.length > 0) {
+                                console.log("Error");
+                                this.formError = true;
+                            }
+                            else {
+                                form.preventDefault();
+                                console.log("No Error", form);
+                                var vm = this;
+                                $.getJSON(
+                                    form.target.action ,
+                                    $(form.target).serialize(),
+                                    function (data) {
+                                    if (data.Status === 400) {
+                                      vm.formError = true;
+                                        console.log("ERROR");
+                                    } else { // 200
+                                        vm.formSuccess = true;
+                                        console.log("SUCCESS");
                                     }
-                                } 
-                                catch (e) {
-                                    console.log("Data load error: " + error.message);
-                                    this.formError = true;
-                                }
-                            })
+                                });
+                                form.preventDefault();
+                            }
                         }
                     })
                 }
