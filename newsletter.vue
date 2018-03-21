@@ -88,14 +88,7 @@
                 ...Vuex.mapGetters([
                     'property',
                     'timezone',
-                ]),
-                rannumber () {
-                    var rannumber='';
-                    for(ranNum=1; ranNum<=6; ranNum++){
-                      rannumber+=Math.floor(Math.random()*10).toString();
-                    }
-                    return rannumber;
-                }
+                ])
             },
             methods: {
                 validateBeforeSubmit() {
