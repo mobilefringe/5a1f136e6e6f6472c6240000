@@ -110,7 +110,7 @@
             //             console.log(vm.currentPage);
             //         }, error => {
             //             console.error("Could not retrieve data from server. Please check internet connection and try again.");
-            //             vm.$router.replace({ name: '404'});
+            //             vm.$router.replace('/');
             //         });
             //     })
             // },
