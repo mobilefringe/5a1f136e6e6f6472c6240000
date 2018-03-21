@@ -65,6 +65,10 @@
                         if (promo.store != null && promo.store != undefined && _.includes(promo.store.image_url, 'missing')) {
                             promo.store.image_url = "//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/jpeg/1515531874445/canyon_crest_default.jpg";
                         }
+                        else if (value.store == null || value.store == undefined) {
+                                value.store = {};
+                                value.store.image_url =  vm.property.default_logo_url;
+                            }
                     });
                     console.log("promos 2", promos);
                     return promos;
