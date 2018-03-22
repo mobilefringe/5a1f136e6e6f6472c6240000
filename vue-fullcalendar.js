@@ -827,7 +827,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      return calendar;
 	    },
 	    slotEvents: function slotEvents(date) {
-
+            
 	      // find all events start from this date
 	      var cellIndexArr = [];
 	      var thisDayEvents = this.events.filter(function (day) {
