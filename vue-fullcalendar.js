@@ -827,14 +827,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	      return calendar;
 	    },
 	    slotEvents: function slotEvents(date) {
-            
+            var
 	      // find all events start from this date
 	      var cellIndexArr = [];
 	      var thisDayEvents = this.events.filter(function (day) {
 	        var dt = day.start; //new Date(day.start);
 	        var st = new Date(dt.getFullYear(), dt.getMonth(), dt.getDate());
 	        var ed = day.end ? day.end : st;
-	        console.log('slotEvt', st, ed, date)
+	       // console.log('slotEvt', st, ed, date)
 	        return date >= st && date <= ed;
 	      });
 
