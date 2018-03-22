@@ -831,7 +831,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      // find all events start from this date
 	      var cellIndexArr = [];
 	      var thisDayEvents = this.events.filter(function (day) {
-	        var dt = new Date(day.start);
+	        var dt = day.start; //new Date(day.start);
 	        var st = new Date(dt.getFullYear(), dt.getMonth(), dt.getDate());
 	        var ed = day.end ? new Date(day.end) : st;
 	        console.log('slotEvt', st, ed, date)
