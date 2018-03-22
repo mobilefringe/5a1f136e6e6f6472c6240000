@@ -833,7 +833,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      var thisDayEvents = this.events.filter(function (day) {
 	        var dt = day.start; //new Date(day.start);
 	        var st = new Date(dt.getFullYear(), dt.getMonth(), dt.getDate());
-	        var ed = day.end ? new Date(day.end) : st;
+	        var ed = day.end ? day.end : st;
 	        console.log('slotEvt', st, ed, date)
 	        return date >= st && date <= ed;
 	      });
