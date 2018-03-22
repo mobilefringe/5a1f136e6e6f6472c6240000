@@ -114,7 +114,7 @@
                     <div class="menu_container hidden_phone main_container menu_header_content" id="menubar" :class="{sticky : stickyMenu}">
                         <ul class="stc_nav nav navbar-nav">
                             <li v-for="item in menu_items" :id="item.parent_id" class=" nav_li">
-                                <a v-if="item.id=='magazine_link'" href="//www.mallmaverick.com/system/site_images/photos/000/036/222/original/Lorem-Ipsum.pdf?1516633493" target="_blank" :id="item.id" class="all_caps">Magazine</a>
+                                <a v-if="item.id=='magazine_link'":href="magazine_url.image_url" target="_blank" :id="item.id" class="all_caps">Magazine</a>
                                 <router-link v-else :to="item.href" :id="item.id" class="all_caps">{{item.name}} </router-link>
                             </li>
                         </ul>
