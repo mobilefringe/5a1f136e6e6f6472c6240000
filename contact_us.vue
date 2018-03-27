@@ -123,7 +123,6 @@
                     this.$store.dispatch('LOAD_PAGE_DATA', {
                         url: this.property.mm_host + "/pages/canyoncrest-contact.json"
                     }).then(response => {
-                        // this.dataLoaded = true;
                         this.currentPage = response.data;
                     }, error => {
                         console.error("Could not retrieve data from server. Please check internet connection and try again.");
