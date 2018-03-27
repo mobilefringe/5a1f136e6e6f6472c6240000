@@ -62,7 +62,6 @@
                     'processedJobs'
                 ]),
                 allJobs() {
-                    console.log(this.processedJobs);
                     var jobs = this.processedJobs; //_.filter(this.$store.getters.processedJobs, function(o) { return o.store !=null && o.jobable_type === "Store" });
                     var vm = this;
                     jobs.map(job => {
