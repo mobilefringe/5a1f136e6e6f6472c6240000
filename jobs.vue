@@ -78,13 +78,6 @@
                     }]);
                     return _.groupBy(jobs, job => (isNaN(job.store) ? job.store.name : this.property.name));
                 },
-                // timezone() {
-                //     return this.$store.getters.getTimezone;
-                // },
-                // property() {
-                //     return this.$store.getters.getProperty;
-                // }
-
             },
             methods: {
                 loadData: async function() {
