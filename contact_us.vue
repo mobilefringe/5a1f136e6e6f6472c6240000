@@ -175,8 +175,6 @@
                         var tempVal = {};
                         tempVal.name = key;
                         tempVal.value = value;
-                        // console.log(key);
-                        // counter ++;
                         newObj.push(tempVal);
                     });
                     return newObj;
