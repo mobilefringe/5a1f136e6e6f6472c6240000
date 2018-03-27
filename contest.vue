@@ -119,7 +119,6 @@
             },
             mounted () {
                 this.currentContest = this.findContestBySlug('canyoncrest-test-contest');
-                console.log(this.currentContest);
             },
             // watch : {
             //     currentContest : function (){
