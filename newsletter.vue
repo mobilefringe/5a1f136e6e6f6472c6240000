@@ -105,7 +105,6 @@
                                         console.log("ERROR");
                                     } else { // 200
                                         vm.formSuccess = true;
-                                        console.log("SUCCESS");
                                     }
                                 });
                                 form.preventDefault();
