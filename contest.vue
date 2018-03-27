@@ -190,13 +190,10 @@
                 },
                 serializeObject (obj) {
                     var newObj = [];
-                    // var counter = 0;
                     _.forEach(obj, function(value, key) {
                         var tempVal = {};
                         tempVal.name = key;
                         tempVal.value = value;
-                        // console.log(key);
-                        // counter ++;
                         newObj.push(tempVal);
                     });
                     return newObj;
