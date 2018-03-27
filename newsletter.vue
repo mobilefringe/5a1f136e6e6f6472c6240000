@@ -93,7 +93,6 @@
                             }
                             else {
                                 form.preventDefault();
-                                console.log("Successful", form);
                                 var vm = this;
                                 $.getJSON(
                                     form.target.action ,
