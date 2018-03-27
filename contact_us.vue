@@ -100,30 +100,6 @@
                this.updateContactUsPage();
                this.updateLeasingInfo();
             },
-            // beforeRouteEnter (to, from, next) {
-            //     next(vm => {
-            //       // access to component instance via `vm`
-            //         vm.$store.dispatch('LOAD_PAGE_DATA', {url:vm.property.mm_host + "/pages/canyoncrest-contact.json"}).then(response => {
-                        
-            //             vm.currentPage = response.data;
-            //             vm.updateLeasingInfo();
-            //             console.log(vm.currentPage);
-            //         }, error => {
-            //             console.error("Could not retrieve data from server. Please check internet connection and try again.");
-            //             vm.$router.replace('/');
-            //         });
-            //     })
-            // },
-            // beforeRouteUpdate (to, from, next) {
-            //     this.$store.dispatch('LOAD_PAGE_DATA', {url:this.property.mm_host + "/pages/canyoncrest-contact.json"}).then(response => {
-            //         // this.dataLoaded = true;
-            //         this.currentPage = response.data;
-            //         console.log(this.currentPage);
-            //     }, error => {
-            //         console.error("Could not retrieve data from server. Please check internet connection and try again.");
-            //         this.$router.replace({ name: '404'});
-            //     });
-            // },
             watch: {
                 $route : function () {
                     console.log("$route",this.$route);
@@ -153,7 +129,7 @@
                         console.log(this.currentPage);
                     }, error => {
                         console.error("Could not retrieve data from server. Please check internet connection and try again.");
-                        this.$router.replace('/');
+                        // this.$router.replace('/');
                     });
                 },
                 updateLeasingInfo () {
