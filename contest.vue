@@ -161,7 +161,6 @@
                     this.$validator.validateAll().then((result) => {
                         if (result) {
                             let errors = this.errors;
-                            console.log("sending form data", this.contest);
                             send_data = {};
                             send_data.url = this.property.mm_host + '/newsletter_no_captcha';
                             send_data.form_data = JSON.stringify(this.contest);
