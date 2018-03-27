@@ -146,7 +146,7 @@
                     'contests',
                     'findContestBySlug',
                     'findContestById'
-                ]),
+                ])
             },
             methods: {
                 truncate(val_body){
@@ -154,7 +154,6 @@
                     return truncate;
                 },
                 shareURL(slug){
-                    // console.log(window.location.host, "\n http://"+ window.location.host);
                     var share_url = "http://www.shopcanyoncrest.com/events/" + slug;
                     return share_url;
                 },
