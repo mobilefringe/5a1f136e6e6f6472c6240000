@@ -94,7 +94,7 @@
                             }
                             else {
                                 form.preventDefault();
-                                console.log("No Error", form);
+                                console.log("Successful", form);
                                 var vm = this;
                                 $.getJSON(
                                     form.target.action ,
