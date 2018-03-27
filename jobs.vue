@@ -73,7 +73,6 @@
                             job.store.store_front_url_abs =  vm.property.default_logo_url;
                         }
                     });
-                    console.log(jobs);
                     jobs = _.sortBy(jobs, [function(o) {
                         if (o.store) return o.store.name;
                     }]);
