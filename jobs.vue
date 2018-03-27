@@ -76,7 +76,6 @@
                     jobs = _.sortBy(jobs, [function(o) {
                         if (o.store) return o.store.name;
                     }]);
-                    console.log(_.groupBy(jobs, job => (isNaN(job.store) ? job.store.name : this.property.name)));
                     return _.groupBy(jobs, job => (isNaN(job.store) ? job.store.name : this.property.name));
                 },
                 // timezone() {
