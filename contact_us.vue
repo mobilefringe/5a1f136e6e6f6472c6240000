@@ -125,7 +125,6 @@
                     }).then(response => {
                         // this.dataLoaded = true;
                         this.currentPage = response.data;
-                        console.log(this.currentPage);
                     }, error => {
                         console.error("Could not retrieve data from server. Please check internet connection and try again.");
                         // this.$router.replace('/');
