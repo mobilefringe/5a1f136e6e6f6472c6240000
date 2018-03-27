@@ -102,7 +102,6 @@
             },
             watch: {
                 $route : function () {
-                    console.log("$route",this.$route);
                     this.updateCurrentPage(this.$route.params.id);
                 }  
             },
