@@ -101,8 +101,7 @@
                                     $(form.target).serialize(),
                                     function (data) {
                                     if (data.Status === 400) {
-                                      vm.formError = true;
-                                        console.log("ERROR");
+                                        vm.formError = true;
                                     } else { // 200
                                         vm.formSuccess = true;
                                     }
