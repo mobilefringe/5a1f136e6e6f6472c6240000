@@ -64,15 +64,10 @@
                     ]
                 }
             },
-            mounted () {
-              console.log(this.hours);
-              console.log(this.holidayHours);
-            },
             computed: {
                 ...Vuex.mapGetters([
                     'property',
                     'timezone',
-                    'hours',
                     'getPropertyHours',
                     'getPropertyHolidayHours'
                 ]),
