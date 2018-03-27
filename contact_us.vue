@@ -169,7 +169,6 @@
                     })
                 },
                 serializeObject (obj) {
-                    console.log(obj);
                     var newObj = [];
                     // var counter = 0;
                     _.forEach(obj, function(value, key) {
