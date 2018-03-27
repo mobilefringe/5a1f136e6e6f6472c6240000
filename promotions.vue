@@ -57,22 +57,6 @@
                     'processedPromos',
                 ]),
                 promotions() {
-                    //   return this.$store.getters.processedPromos;
-                    // var promos = this.processedPromos;
-                    // console.log("promos 1", this.processedPromos);
-                    // // console.log(this);
-                    // var vm= this;
-                    // promos.map(promo => {
-                    //     if (promo.store != null && promo.store != undefined && _.includes(promo.store.store_front_url_abs, 'missing')) {
-                    //         promo.store.store_front_url_abs = vm.property.default_logo_url;
-                    //     }
-                    //     else if (promo.store == null || promo.store == undefined) {
-                    //         promo.store = {};
-                    //         promo.store.store_front_url_abs =  vm.property.default_logo_url;
-                    //     }
-                    // });
-                    // console.log("promos 2", promos);
-                    // return promos;
                     var vm = this;
                     var temp_promo = [];
                     _.forEach(this.processedPromos, function(value, key) {
