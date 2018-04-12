@@ -74,7 +74,7 @@
                             }
                             else if (value.store == null || value.store == undefined) {
                                 value.store = {};
-                                value.store.image_url =  vm.property.default_logo_url;
+                                value.store.store_front_url_abs =  vm.property.default_logo_url;
                             }
                             temp_promo.push(value);
                         }
