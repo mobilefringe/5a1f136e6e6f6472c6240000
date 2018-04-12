@@ -62,7 +62,7 @@
                     _.forEach(this.processedPromos, function(value, key) {
                         today = moment().tz(vm.timezone);
                         webDate = moment(value.show_on_web_date).tz(vm.timezone);
-                        if (today.format('DMY') >= webDate.format('DMY')) {
+                        if (today.format() >= webDate.format()) {
                             value.description_short = _.truncate(value.description, {
                                 'length': 150
                             });
