@@ -101,8 +101,7 @@ define([], function() {
             children: [{
                 path: '',
                 component: view('contact_us'),
-                name: 'contactUs',
-                
+                name: 'contactUs'
             }]
         },
         {
@@ -131,7 +130,7 @@ define([], function() {
         },
         {
             path: '*',
-            redirect: '/404'
+            redirect: '/'
         }
     ]
 
