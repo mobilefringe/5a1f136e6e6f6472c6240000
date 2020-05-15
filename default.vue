@@ -38,7 +38,7 @@
                 next(vm => {
                     // access to component instance via `vm`
                     vm.meta = vm.findMetaDataByPath(to.path);
-                    this.$emit('updateHead')
+                    vm.$emit('updateHead')
                 })
             },
             beforeRouteUpdate(to, from, next) {
