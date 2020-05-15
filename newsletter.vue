@@ -45,8 +45,7 @@
 </template>
 
 <script>
-    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "vue-meta", 'vee-validate', 'campaignMonitor'], function(Vue, Vuex, moment, tz, VueMoment, Meta, VeeValidate, campaignMonitor) {
-        Vue.use(Meta);
+    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", 'vee-validate', 'campaignMonitor'], function(Vue, Vuex, moment, tz, VueMoment, VeeValidate, campaignMonitor) {
         Vue.use(VeeValidate);
         return Vue.component("newsletter-component", {
             template: template, // the variable template will be injected
